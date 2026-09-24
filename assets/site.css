@@ -348,6 +348,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 /* Podcast landing: small square portrait beside each episode */
 .hub-podcast .prose > p:first-child img { width: min(22rem, 100%); height: auto; }
 .hub-podcast h3 { margin-top: 2.5em; clear: both; }
+.hub-podcast h3 a { color: var(--color-text); text-decoration-thickness: 1.5px; }
+.hub-podcast h3 a:hover { color: var(--color-accent); }
 .hub-podcast h3 + p { float: left; margin: 0.35rem 1.25rem 0.5rem 0; }
 .hub-podcast h3 + p img { width: 8rem; height: 8rem; object-fit: cover; }
 .hub-podcast .embed-audio { clear: both; padding-top: var(--space-sm); }
