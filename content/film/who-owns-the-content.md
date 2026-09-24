@@ -1,5 +1,5 @@
 ---
-title: "Film: “Who Owns The Content” (2019)"
+title: "Who Owns The Content"
 path: "/film/who-owns-the-content/"
 tier: "live"
 section: "film"
