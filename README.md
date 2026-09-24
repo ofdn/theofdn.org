@@ -8,6 +8,18 @@ Source of theofdn.org. Pages are Markdown files in `content/`. GitHub builds and
 2. Change the text. Keep the block between the two `---` lines at the top.
 3. Commit. The site rebuilds in about two minutes.
 
+## Site status
+
+Open `data/site.yml` and set `status`:
+
+- `live`: the normal site. This is the default.
+- `maintenance`: every page shows a short "being updated" notice instead of its content. Search engines are asked not to index it.
+- `archive`: every page shows a yellow notice at the top saying the site is archived. The content stays.
+
+Commit. The change is live in about two minutes. Set it back to `live` when the work is done.
+
+For one page only, add `status: archive` or `status: maintenance` at the top of that page. `status_message` replaces the standard wording for that page. `archive_message` and `maintenance_message` in `data/site.yml` do the same for the whole site.
+
 ## Sections
 
 | Folder | For | Layout |
@@ -35,6 +47,7 @@ Source of theofdn.org. Pages are Markdown files in `content/`. GitHub builds and
 - `embeds`: video and audio. `[[embed:0]]` in the text places the first one.
 - `transcript`: optional, for films and podcast episodes.
 - `ark`: ARK identifier, once the page has one.
+- `status`: optional. `archive` or `maintenance` for this page only. See "Site status".
 
 ## Film page fields
 
@@ -48,8 +61,15 @@ All optional. Paths point to files in `assets/images/`.
 - `trailer`: video after the hero. Same form as an entry in `embeds`.
 - `details`: datasheet rows. Each has `label` and a `value` list.
 - `press_kit`: link to the press kit.
-- `stills`: list of still images, shown at the end.
+- `stills`: list of still images, shown at the end. A click opens the still in a large view on the same page.
 - `listen`: podcast links. Each has `label` and `url`.
+- `links`: IMDb, DOI, Moviebuff, Letterboxd, Wikidata, Library of Congress and similar pages. One address per line. They show in the details column with a small icon. Do not add logo images in the text.
+
+```
+links:
+- https://www.imdb.com/title/tt12663954/
+- https://doi.org/10.17613/frzt-b139
+```
 
 ## Add a page, blog post or subpage
 
@@ -85,6 +105,8 @@ Write every quote the same way. The site gives them all one look.
 ```
 
 The last line starts with a dash. Put the name in bold and the source in italics. Quotes one after another show as a grid.
+
+For a star rating, start the quote with a line such as `★★★★☆ (4 out of 5)`. The page shows the stars. Screen readers read "Rated 4 out of 5".
 
 ## Section links
 

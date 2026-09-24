@@ -19,6 +19,10 @@ embeds:
 original_url: "https://theofdn.org/film/karinding/"
 hero: /assets/images/karinding-poster-landscape.webp
 poster: /assets/images/karinding-poster-portrait.webp
+links:
+- https://www.imdb.com/title/tt14546368/
+- https://www.moviebuff.com/karinding
+- https://doi.org/10.17613/frzt-b139
 ---
 
 > *Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.*
@@ -131,14 +135,6 @@ Film on Internet Archive ([https://archive.org/details/gyani-maiya](https://arch
 
 EIDR: [10.5240/15FD-F65B-F01B-846E-EB71-E](https://ui.eidr.org/view/content?id=10.5240/15FD-F65B-F01B-846E-EB71-E)
 
-[![Official logo DOI logo by International DOI Foundation (Public Domain)](/assets/logos/doi.svg)](http://dx.doi.org/10.17613/m9zk-9g68)
-
-[10.17613/frzt-b139](http://dx.doi.org/10.17613/frzt-b139)
-
-[![Logo of Internet Movie Database (IMDb)](/assets/logos/imdb.svg)](https://www.imdb.com/title/tt12728670/)
-
-[https://www.imdb.com/title/tt12728670/](https://www.imdb.com/title/tt14546368/)
-
 **Summary**
 
 Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.
@@ -183,7 +179,5 @@ Landscape poster of film “Karinding”. Subhashish Panigrahi (CC-BY 4.0). **[D
 ## Cite this film
 
 APAMLAHarvardVancouverChicagoIEEEO Foundation (OFDN) (September 24, 2026) **Karinding—2020 Documentary**. Retrieved from [https://theofdn.org/film/karinding/](/film/karinding/)."**Karinding—2020 Documentary.**" O Foundation (OFDN) - September 24, 2026, [https://theofdn.org/film/karinding/](/film/karinding/)O Foundation (OFDN) April 29, 2021 **Karinding—2020 Documentary.**, viewed September 24, 2026,\<[https://theofdn.org/film/karinding/](/film/karinding/)\>O Foundation (OFDN) - **Karinding—2020 Documentary.** \[Internet\]. \[Accessed September 24, 2026\]. Available from: [https://theofdn.org/film/karinding/](/film/karinding/)"**Karinding—2020 Documentary.**" O Foundation (OFDN) - Accessed September 24, 2026. [https://theofdn.org/film/karinding/](/film/karinding/)"**Karinding—2020 Documentary.**" O Foundation (OFDN) \[Online\]. Available: [https://theofdn.org/film/karinding/](/film/karinding/). \[Accessed: September 24, 2026\]
-
-##### [![Logo of Internet Movie Database (IMDb)](/assets/logos/imdb.svg)](https://www.imdb.com/title/tt14546368/) [![Moviebuff logo](/assets/logos/moviebuff.webp)](https://www.moviebuff.com/karinding)[![Official logo DOI logo by International DOI Foundation (Public Domain)](/assets/logos/doi.svg)](http://dx.doi.org/10.17613/frzt-b139) [10.17613/frzt-b139](http://dx.doi.org/10.17613/frzt-b139)
 
 © 2020. Subhashish Panigrahi & OFDN. CC-BY-SA 4.0

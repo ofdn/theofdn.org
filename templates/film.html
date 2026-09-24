@@ -46,19 +46,26 @@
       {% if page.listen %}
       <h2 class="label">Listen on</h2>
       <ul class="film__links" role="list">
-        {% for l in page.listen %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>
+        {% for l in page.listen_list %}<li><a href="{{ l.url }}">{% include "icons/" ~ l.icon ~ ".svg" %}{{ l.label }}</a></li>
         {% endfor %}
       </ul>
       {% elif page.embeds or page.press_kit %}
       <h2 class="label">Watch and download</h2>
       <ul class="film__links" role="list">
         {% for e in page.embeds or [] %}
-        {% if e.provider == "youtube" %}<li><a href="https://www.youtube.com/watch?v={{ e.id }}">YouTube</a></li>
-        {% elif e.provider == "archive" %}<li><a href="https://archive.org/details/{{ e.id }}">Internet Archive</a></li>
-        {% elif e.provider == "vimeo" %}<li><a href="https://vimeo.com/{{ e.id }}">Vimeo</a></li>
+        {% if e.provider == "youtube" %}<li><a href="https://www.youtube.com/watch?v={{ e.id }}">{% include "icons/youtube.svg" %}YouTube</a></li>
+        {% elif e.provider == "archive" %}<li><a href="https://archive.org/details/{{ e.id }}">{% include "icons/internetarchive.svg" %}Internet Archive</a></li>
+        {% elif e.provider == "vimeo" %}<li><a href="https://vimeo.com/{{ e.id }}">{% include "icons/vimeo.svg" %}Vimeo</a></li>
         {% endif %}
         {% endfor %}
-        {% if page.press_kit %}<li><a href="{{ page.press_kit }}">Press kit</a></li>{% endif %}
+        {% if page.press_kit %}<li><a href="{{ page.press_kit }}">{% include "icons/link.svg" %}Press kit</a></li>{% endif %}
+      </ul>
+      {% endif %}
+      {% if page.links_list %}
+      <h2 class="label">{% if page.section == "podcast" %}Find this episode{% else %}Find this film{% endif %}</h2>
+      <ul class="film__links" role="list">
+        {% for l in page.links_list %}<li><a href="{{ l.url }}">{% include "icons/" ~ l.icon ~ ".svg" %}{{ l.label }}{% if l.detail %}<span class="film__links-detail">{{ l.detail }}</span>{% endif %}</a></li>
+        {% endfor %}
       </ul>
       {% endif %}
     </aside>
@@ -76,7 +83,7 @@
   <section class="film__posters" aria-labelledby="posters">
     <h2 class="label" id="posters">Posters</h2>
     <ul class="posters" role="list">
-      {% for s in ([page.poster] if page.poster else []) + (page.posters or []) %}<li><a href="{{ s }}">{{ picture(s, "Poster of " ~ page.title) }}</a></li>
+      {% for s in ([page.poster] if page.poster else []) + (page.posters or []) %}<li><a href="{{ s }}" data-viewer="posters">{{ picture(s, "Poster of " ~ page.title) }}</a></li>
       {% endfor %}
     </ul>
   </section>
@@ -85,7 +92,7 @@
   <section class="film__stills" aria-labelledby="stills">
     <h2 class="label" id="stills">Stills</h2>
     <ul class="stills" role="list">
-      {% for s in page.stills %}<li><a href="{{ s }}">{{ picture(s, "Still " ~ loop.index ~ " from " ~ page.title) }}</a></li>
+      {% for s in page.stills %}<li><a href="{{ s }}" data-viewer="stills">{{ picture(s, "Still " ~ loop.index ~ " from " ~ page.title) }}</a></li>
       {% endfor %}
     </ul>
   </section>

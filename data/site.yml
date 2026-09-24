@@ -1,0 +1,11 @@
+# Site status. Change the value, commit and push.
+#   live         the normal site
+#   maintenance  every page shows a short "being updated" notice instead of its content
+#   archive      every page shows a yellow notice at the top: the site is archived
+# One page can have its own status: add "status: archive" (or maintenance)
+# to the block at the top of that page's Markdown file.
+status: live
+
+# Optional. Leave empty to use the standard wording.
+archive_message: ""
+maintenance_message: ""

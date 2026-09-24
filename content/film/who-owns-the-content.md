@@ -20,6 +20,9 @@ laurels:
   alt: OFFICIAL SELECTION - 13th Native Spirit Indigenous Film Festival - 2019
 - src: /assets/images/who-owns-the-content-laurel-first-time-filmmaker.webp
   alt: Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
+links:
+- https://www.imdb.com/title/tt12663954/
+- https://www.moviebuff.com/who-owns-the-content
 ---
 
 No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
@@ -40,8 +43,6 @@ Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
 - Stills: Veethika Mishra & Subhashish Panigrahi from Museo de Culturas de Populares, Mexico City CC-BY-SA 4.0
 - Additional video: Audio Tape Rolling – Green Screen Animation. Nissim Farin. Footage Island. CC-BY 3.0
 - Produced by O Foundation. 2019. CC-BY-SA 4.0 International
-
-##### [![See more in IMDb](/assets/logos/imdb-badge.webp)](https://www.imdb.com/title/tt12663954/) [![Moviebuff](/assets/logos/moviebuff.webp)](https://www.moviebuff.com/who-owns-the-content)
 
 ## Cite this film
 

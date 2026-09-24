@@ -56,6 +56,24 @@ EYEBROW = {
 TEMPLATE = {"film": "film.html", "podcast": "film.html", "oer": "module.html", "tool": "module.html",
             "audio-archive": "module.html", "archive": "page.html", "blog": "page.html", "hub": "page.html", "about": "page.html"}
 
+# Links in the details column of film and podcast pages. The address decides
+# the label and the icon (templates/icons, Simple Icons, CC0).
+LINK_TYPES = [
+    ("imdb.com", "IMDb", "imdb"), ("doi.org", "DOI", "doi"), ("eidr.org", "EIDR", "link"),
+    ("archive.org", "Internet Archive", "internetarchive"), ("wikidata.org", "Wikidata", "wikidata"),
+    ("letterboxd.com", "Letterboxd", "letterboxd"), ("moviebuff.com", "Moviebuff", "link"),
+    ("loc.gov", "Library of Congress", "link"), ("youtube.com", "YouTube", "youtube"),
+    ("vimeo.com", "Vimeo", "vimeo"), ("spotify.com", "Spotify", "spotify"),
+    ("podcasts.apple.com", "Apple Podcasts", "applepodcasts"), ("soundcloud.com", "SoundCloud", "soundcloud"),
+]
+STATUSES = ("live", "maintenance", "archive")
+STATUS_TEXT = {
+    "site": {"archive": "This website has been archived. It is kept as a record and is no longer updated.",
+             "maintenance": "This website is being updated. Please come back in a little while."},
+    "page": {"archive": "This page has been archived. It is kept as a record and is no longer updated.",
+             "maintenance": "This page is being updated. Please come back in a little while."},
+}
+
 # Scripts that get a lang attribute when a block is written in them.
 SCRIPTS = [("sat-Olck", "᱐", "᱿"), ("or", "଀", "୿"), ("hoc-Wara", "\U000118a0", "\U000118ff")]
 
@@ -173,6 +191,47 @@ def inline_md(text):
     return Markup(t)
 
 
+def link_item(entry):
+    """A 'links' entry is an address, or a label and url pair."""
+    url = entry if isinstance(entry, str) else entry["url"]
+    label, icon = None, "link"
+    for host, name, ic in LINK_TYPES:
+        if host in url:
+            label, icon = name, ic
+            break
+    if not isinstance(entry, str) and entry.get("label"):
+        label = entry["label"]
+    if not label:
+        label = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+    detail = None
+    m = re.search(r"(10\.\d{4,}/[^\s?#]+)", url)
+    if icon == "doi" or label == "EIDR":
+        detail = m.group(1) if m else None
+    return {"url": url, "label": label, "icon": icon, "detail": detail}
+
+
+def load_status():
+    f = ROOT / "data" / "site.yml"
+    conf = yaml.safe_load(f.read_text()) if f.exists() else {}
+    conf = conf or {}
+    if conf.get("status", "live") not in STATUSES:
+        sys.exit(f"data/site.yml: status must be one of {', '.join(STATUSES)}")
+    return conf
+
+
+def page_status(page, conf):
+    """The page's own status wins over the site status."""
+    own = page.get("status") if page else None
+    if own and own not in STATUSES:
+        sys.exit(f"{page['file']}: status must be one of {', '.join(STATUSES)}")
+    if own and own != "live":
+        return {"kind": own, "text": page.get("status_message") or STATUS_TEXT["page"][own]}
+    kind = conf.get("status", "live")
+    if kind == "live":
+        return None
+    return {"kind": kind, "text": conf.get(f"{kind}_message") or STATUS_TEXT["site"][kind]}
+
+
 def script_lang(text):
     letters = [c for c in text if c.isalpha()]
     if not letters:
@@ -235,8 +294,17 @@ def polish(html, page):
             last.decompose()
             fig.append(cap)
         for p_ in bq.find_all("p", recursive=False):
-            if re.match(r"^[★☆]", p_.get_text()):
+            text = p_.get_text()
+            if re.match(r"^[★☆]", text):
+                # Stars for the eye; the words for screen readers.
+                stars = re.match(r"^[★☆]+", text).group(0)
+                p_.clear()
                 p_["class"] = "quote__rating"
+                shown = soup.new_tag("span", attrs={"aria-hidden": "true"})
+                shown.string = stars
+                said = soup.new_tag("span", attrs={"class": "visually-hidden"})
+                said.string = f"Rated {stars.count('★')} out of {len(stars)}"
+                p_.extend([shown, said])
     for fig in soup.find_all("figure", class_="quote"):
         if fig.find_parent("div", class_="quotes"):
             continue
@@ -358,6 +426,8 @@ def main():
         by_section.setdefault(p["section"], []).append(p)
     for items in by_section.values():
         items.sort(key=lambda p: p["date"], reverse=True)
+    conf = load_status()
+    site_status = page_status(None, conf)
     common = {"nav": NAV, "footer_nav": FOOTER_NAV, "site_name": SITE_NAME, "year": date.today().year}
 
     def write(path, html):
@@ -376,19 +446,22 @@ def main():
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
             p["transcript_html"] = polish(markdown_to_html(str(p["transcript"])), p)
+        p["links_list"] = [link_item(x) for x in p.get("links") or []]
+        p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else TEMPLATE.get(p["section"], "page.html")
         cite = citations(p)
         html = env.get_template(tpl).render(
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]),
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
-            current=p["path"], lists=by_section, summary=summary, picture=picture, **common)
+            current=p["path"], lists=by_section, summary=summary, picture=picture,
+            status=page_status(p, conf), **common)
         write(p["path"], html)
 
     for path, (title, sections, lede) in LISTS.items():
         items = [p for s in sections for p in by_section.get(s, [])]
         items.sort(key=lambda p: p["date"], reverse=True)
         html = env.get_template("list.html").render(
-            title=title, lede=lede, items=items, summary=summary, current=path, **common)
+            title=title, lede=lede, items=items, summary=summary, current=path, status=site_status, **common)
         write(path, html)
 
     redirects = json.loads((ROOT / "data" / "redirects.json").read_text())
@@ -402,7 +475,7 @@ def main():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(env.get_template("redirect.html").render(target=target))
 
-    (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", **common), base))
+    (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, **common), base))
     (out / ".nojekyll").write_text("")
     urls = [SITE_URL + p["path"] for p in pages] + [SITE_URL + p for p in LISTS]
     (out / "sitemap.xml").write_text(

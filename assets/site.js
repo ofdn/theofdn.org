@@ -77,3 +77,68 @@ document.querySelectorAll("main h2[id], main h3[id]").forEach(function (h) {
     });
   });
 });
+
+// Image viewer: stills and posters open large on the same page.
+// Without JavaScript the link opens the image itself.
+(function () {
+  var groups = {};
+  document.querySelectorAll("a[data-viewer]").forEach(function (a) {
+    var g = a.getAttribute("data-viewer");
+    (groups[g] = groups[g] || []).push(a);
+  });
+  if (!Object.keys(groups).length || typeof HTMLDialogElement !== "function") return;
+
+  var dialog = document.createElement("dialog");
+  dialog.className = "viewer";
+  dialog.setAttribute("aria-label", "Image viewer");
+  dialog.innerHTML =
+    '<div class="viewer__inner">' +
+    '<div class="viewer__bar"><p class="viewer__count" aria-live="polite"></p>' +
+    '<button type="button" class="viewer__close">Close</button></div>' +
+    '<figure class="viewer__figure"><img alt=""></figure>' +
+    '<div class="viewer__nav"><button type="button" class="viewer__prev">Previous</button>' +
+    '<button type="button" class="viewer__next">Next</button></div></div>';
+  document.body.appendChild(dialog);
+  var img = dialog.querySelector("img");
+  var count = dialog.querySelector(".viewer__count");
+  var prev = dialog.querySelector(".viewer__prev");
+  var next = dialog.querySelector(".viewer__next");
+  var list = [], index = 0, opener = null;
+
+  function show(i) {
+    index = (i + list.length) % list.length;
+    var link = list[index];
+    var thumb = link.querySelector("img");
+    img.src = link.getAttribute("href");
+    img.alt = thumb ? thumb.alt : "";
+    count.textContent = (img.alt || "Image") + " (" + (index + 1) + " of " + list.length + ")";
+    prev.hidden = next.hidden = list.length < 2;
+  }
+
+  Object.keys(groups).forEach(function (g) {
+    groups[g].forEach(function (link, i) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        list = groups[g];
+        opener = link;
+        show(i);
+        dialog.showModal();
+        dialog.querySelector(".viewer__close").focus();
+      });
+    });
+  });
+  prev.addEventListener("click", function () { show(index - 1); });
+  next.addEventListener("click", function () { show(index + 1); });
+  dialog.querySelector(".viewer__close").addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (e) {
+    if (e.target === dialog || e.target.classList.contains("viewer__figure")) dialog.close();
+  });
+  dialog.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(index - 1); }
+    if (e.key === "ArrowRight") { e.preventDefault(); show(index + 1); }
+  });
+  dialog.addEventListener("close", function () {
+    img.removeAttribute("src");
+    if (opener) setTimeout(function () { opener.focus(); }, 0);
+  });
+})();

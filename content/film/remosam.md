@@ -14,6 +14,8 @@ featured_image: "/assets/images/remosam-poster.webp"
 original_url: "https://theofdn.org/film/remosam/"
 hero: /assets/images/remosam-poster.webp
 poster: /assets/images/remosam-poster-portrait.webp
+links:
+- https://www.imdb.com/title/tt18233648/
 ---
 
 > Far up on the Bonda hills, the Bondak people are met with dysfunctional governance that fails to feed or keep their language alive.
@@ -130,13 +132,7 @@ https://theofdn.org/film/remosam/
 
 **Entertainment Identifier Registry (EIDR)**
 
-![Official logo DOI logo by International DOI Foundation (Public Domain)](/assets/logos/doi.svg)
-
 [10.5240/B222-043E-AFAA-EC7B-F5F6-2](https://ui.eidr.org/view/content?id=10.5240/B222-043E-AFAA-EC7B-F5F6-2)
-
-![Logo of Internet Movie Database (IMDb)](/assets/logos/imdb.svg)
-
-https://www.imdb.com/title/tt18233648/
 
 **Logline**
 
