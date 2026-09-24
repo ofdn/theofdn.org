@@ -415,7 +415,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 /* People: faces, names and a few words (About page). */
 .prose .people {
   list-style: none; padding: 0; margin-top: var(--space-lg);
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: var(--space-xl) var(--space-md);
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr)); gap: var(--space-xl) var(--space-md);
 }
 .prose .people li + li { margin-top: 0; }
 .person { text-align: center; }

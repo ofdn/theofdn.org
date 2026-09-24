@@ -20,16 +20,9 @@ people:
       - name: "Nasim Ali"
         photo: "/assets/images/people-nasim-ali.webp"
         role: "Technology"
-      - name: "Prateek Pattanaik"
-        photo: "/assets/images/people-prateek-pattanaik.webp"
-        role: "Research and media"
-        url: "https://pattaprateek.com/"
       - name: "Ramjit Tudu"
         photo: "/assets/images/people-ramjit-tudu.webp"
         role: "Community technology"
-      - name: "Sailesh Patnaik"
-        photo: "/assets/images/people-sailesh-patnaik.webp"
-        role: "Outreach and communications"
       - name: "Subhashish Panigrahi"
         photo: "/assets/images/people-subhashish-panigrahi.webp"
         role: "Innovation"
@@ -47,6 +40,10 @@ O Foundation (OFDN) works on openness, digital rights, access to knowledge and m
 ## People
 
 [[people]]
+
+### Alumni
+
+Mrutyunjaya Kar, Shitikantha Dash, Shreekant Kedia, Prateek Pattanaik and Sailesh Patnaik.
 
 ## Core values
 
