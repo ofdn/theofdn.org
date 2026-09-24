@@ -1,6 +1,6 @@
 ---
 title: "Type Design"
-path: "/activities/type/"
+path: "/type/"
 tier: "live"
 section: "hub"
 wp_type: "page"

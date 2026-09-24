@@ -54,8 +54,6 @@ EYEBROW = {
     "film": "Documentary film", "podcast": "Podcast", "oer": "Open educational resource",
     "tool": "Language tool", "audio-archive": "Audio archive", "archive": "Archive", "blog": "Blog",
 }
-TEMPLATE = {"film": "film.html", "podcast": "film.html", "oer": "module.html", "tool": "module.html",
-            "audio-archive": "module.html", "archive": "page.html", "blog": "page.html", "hub": "page.html", "about": "page.html"}
 
 # Links in the details column of film and podcast pages. The address decides
 # the label and the icon (templates/icons, Simple Icons, CC0).
@@ -518,7 +516,7 @@ def main():
             p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]))), p)
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
-        tpl = "home.html" if p["path"] == "/" else TEMPLATE.get(p["section"], "page.html")
+        tpl = "home.html" if p["path"] == "/" else "page.html"
         cite = citations(p)
         html = env.get_template(tpl).render(
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]),

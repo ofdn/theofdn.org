@@ -26,5 +26,6 @@
  "/partners/": "/about/#present-and-past-collaborators",
  "/core/": "/about/#core-values",
  "/diversity-and-inclusion/": "/about/",
- "/people/": "/about/#people"
+ "/people/": "/about/#people",
+ "/activities/type/": "/type/"
 }

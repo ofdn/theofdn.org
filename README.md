@@ -36,40 +36,51 @@ For one page only, add `status: archive` or `status: maintenance` at the top of 
 
 ## Fields at the top of a page
 
+Every page uses one template. A part of the page shows only when its field is filled in. Any page can have an infobox, a byline or posters.
+
+Always needed:
+
 - `title`: page title. Any script.
 - `path`: the page address. Lowercase a–z, 0–9 and hyphens, starting and ending with `/`. Do not change it once the page is live.
 - `section`: one of the folders above.
 - `tier`: `live` or `archive`.
 - `date`: `2026-09-24`.
 - `excerpt`: one or two sentences for lists and search engines.
-- `lede`: optional short line under the title on film and podcast pages.
-- `authors`: list of names. Adds the "Cite this page" box on module pages.
+
+Optional, on any page:
+
+- `lede`: short line under the title.
+- `authors`: list of names. Adds the names and date under the title, and "Cite this page" at the end.
+- `ark`: ARK identifier, once the page has one. Shows a permanent link under the title.
 - `embeds`: video and audio. `[[embed:0]]` in the text places the first one.
-- `transcript`: optional, for films and podcast episodes.
-- `ark`: ARK identifier, once the page has one.
-- `status`: optional. `archive` or `maintenance` for this page only. See "Site status".
+- `transcript`: shown after the text.
+- `status`: `archive` or `maintenance` for this page only. See "Site status".
 
-## Film page fields
+Infobox (a column beside the text). Film and podcast pages always have one; other pages get one when any of these is set:
 
-All optional. Paths point to files in `assets/images/`.
+- `details`: rows. Each has `label` and a `value` list.
+- `details_title`: heading of the infobox. Default: "Film details", "Episode details" or "Details".
+- `links`: IMDb, DOI, Moviebuff, Letterboxd, Wikidata, Library of Congress and similar pages. One address per line. They show with a small icon. Do not add logo images in the text.
+- `listen`: podcast links. Each has `label` and `url`.
+- `press_kit`: link to the press kit.
+
+```
+details:
+  - label: "Script"
+    value: ["Odia"]
+links:
+- https://doi.org/10.17613/frzt-b139
+```
+
+Images and video. Paths point to files in `assets/images/`:
 
 - `hero`: large image at the top, without text.
 - `hero_portrait`: version of the hero for phones.
-- `title_image`: the film title as an image, shown over the hero.
+- `title_image`: the title as an image, shown over the hero.
 - `laurels`: award and selection laurels, shown over the hero. Each has `src` and `alt`.
-- `poster`: theatrical poster, shown in the details column.
-- `trailer`: video after the hero. Same form as an entry in `embeds`.
-- `details`: datasheet rows. Each has `label` and a `value` list.
-- `press_kit`: link to the press kit.
+- `trailer`: video under the title. Same form as an entry in `embeds`.
+- `poster`, `posters`: shown in a Posters section at the end. `poster_credit` is the caption.
 - `stills`: list of still images, shown at the end. A click opens the still in a large view on the same page.
-- `listen`: podcast links. Each has `label` and `url`.
-- `links`: IMDb, DOI, Moviebuff, Letterboxd, Wikidata, Library of Congress and similar pages. One address per line. They show in the details column with a small icon. Do not add logo images in the text.
-
-```
-links:
-- https://www.imdb.com/title/tt12663954/
-- https://doi.org/10.17613/frzt-b139
-```
 
 ## Add a page, blog post or subpage
 
