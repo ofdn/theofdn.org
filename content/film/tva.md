@@ -23,60 +23,30 @@ trailer:
   provider: vimeo
   id: '776572896'
 press_kit: https://drive.google.com/drive/u/2/folders/1D7JsqskXh1XsTq_W89OHt2mcmA_RFifX
-details:
-- label: Title
-  value:
-  - The Volunteer Archivists
-- label: Logline
-  value:
-  - Collective negligence is threatening two centuries of printed publications in Odia, one of India’s official languages. A few volunteer archivists must struggle against all odds, including legal battles, to digitalise crumbling books.
-- label: Cameraperson, recordist, director and producer
-  value:
-  - Subhashish Panigrahi
-- label: Writer(s)
-  value:
-  - Subhashish Panigrahi
-- label: Cast
-  value:
+info:
+  title: The Volunteer Archivists
+  logline: Collective negligence is threatening two centuries of printed publications in Odia, one of India’s official languages. A few volunteer archivists must struggle against all odds, including legal battles, to digitalise crumbling books.
+  cameraperson: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi
+  cast:
   - Puspashree Pattnaik (self)
   - Nikhil Mohan Pattnaik (self)
   - Padmaja (self)
-- label: Language(s)
-  value:
-  - English
-- label: Country of production/origin
-  value:
-  - India
-- label: Filming location(s)
-  value:
-  - Bhubaneswar and Cuttack, Odisha, India
-- label: Year of production
-  value:
-  - 2021-2022
-- label: Release date(s)
-  value:
-  - 26 May 2022 (India—Limited Release)
-- label: Duration
-  value:
-  - 35 minutes (appx.)
-- label: Genre
-  value:
-  - Documentary
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - https://theofdn.org/film/tva
-- label: Permanent archive
-  value:
-  - '[https://archive.org/details/the-volunteer-archivists](https://archive.org/details/the-volunteer-archivists?tab=about)'
-- label: US Library of Congress control number (LCCN)
-  value:
-  - '2020512175'
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - 10.5240/D926-0610-5EAA-FA7E-F91D-9
+  language: English
+  country: India
+  location: Bhubaneswar and Cuttack, Odisha, India
+  year: 2021-2022
+  release: 26 May 2022 (India—Limited Release)
+  duration: 35 minutes (appx.)
+  genre: Documentary
+  distributor: O Foundation
+  website: https://theofdn.org/film/tva
+  archive: '[https://archive.org/details/the-volunteer-archivists](https://archive.org/details/the-volunteer-archivists?tab=about)'
+  lccn: '2020512175'
+  doi: 10.5240/D926-0610-5EAA-FA7E-F91D-9
 stills:
 - /assets/images/tva-still-1.webp
 - /assets/images/tva-still-2.webp

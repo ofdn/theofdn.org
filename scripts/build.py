@@ -85,7 +85,8 @@ def load_pages():
         if not m:
             sys.exit(f"{f}: missing the block between --- lines at the top")
         meta = yaml.safe_load(m.group(1)) or {}
-        meta["body_md"] = expand_tags(m.group(2))
+        meta["info_blocks"] = []
+        meta["body_md"] = expand_tags(m.group(2), meta["info_blocks"])
         meta["file"] = f.relative_to(ROOT).as_posix()
         for key in ("title", "path", "section"):
             if not meta.get(key):
@@ -103,13 +104,62 @@ def load_pages():
 
 
 CAPTION_MARK = "[[caption]]"
+FIELDS = yaml.safe_load((ROOT / "data" / "fields.yml").read_text())
 
 
-def expand_tags(md):
+def info_rows(info, where):
+    """Infobox rows (label, html) from `info:` fields, in the order of data/fields.yml."""
+    if not isinstance(info, dict):
+        sys.exit(f"{where}: info must be a list of 'field: value' lines")
+    for k in info:
+        if k not in FIELDS:
+            sys.exit(f"{where}: unknown info field '{k}'. Add it to data/fields.yml.")
+    rows = []  # [label forms, values, is role]
+    for key, spec in FIELDS.items():
+        if key not in info or info[key] in (None, "", []) or spec.get("image"):
+            continue
+        values = info[key] if isinstance(info[key], list) else [info[key]]
+        values = [str(v) for v in values]
+        many = len(values) > 1 or bool(re.search(r"\sand\s|;" + (r"|,\s" if spec.get("commas") else ""), values[0]))
+        forms = spec["label"] if isinstance(spec["label"], list) else [spec["label"]]
+        label = forms[1] if many and len(forms) > 1 else forms[0]
+        if spec.get("role"):
+            same = next((r for r in rows if r[2] and r[1] == values), None)
+            if same:
+                same[0].append(label)
+                continue
+        rows.append([[label], values, bool(spec.get("role")), spec.get("link")])
+    out = []
+    for labels, values, _, link in rows:
+        label = labels[0] if len(labels) == 1 else (
+            ", ".join([labels[0]] + [l.lower() for l in labels[1:-1]]) + " and " + labels[-1].lower())
+        html = []
+        for v in values:
+            if link and not re.search(r"\]\(|https?://", v):
+                v = f"[{v}]({link.format(v)})"
+            elif re.fullmatch(r"https?://\S+", v):
+                v = f"[{v}]({v})"
+            html.append(str(inline_md(v)))
+        out.append((label, "<br>".join(html)))
+    return out
+
+
+def infobox_html(rows, info=None):
+    dl = '<dl>' + "".join(f"<div><dt>{l}</dt><dd>{v}</dd></div>" for l, v in rows) + "</dl>"
+    img = picture(info["image"], info.get("alt", "")) if info and info.get("image") else ""
+    return f'<div class="infobox{" infobox--image" if img else ""}">{img}{dl}</div>'
+
+
+def expand_tags(md, info_blocks):
     """Short tags for the Markdown body:
       <c>Text</c>                                   caption, on the line after an image
       <quote author="Name" source="Where">Text</quote>
+      <info> field: value lines </info>             an infobox inside the text
     A quote becomes the usual blockquote, so it looks like every other quote."""
+    def info(m):
+        info_blocks.append(yaml.safe_load(m.group(1)) or {})
+        return f"\n\n[[info:{len(info_blocks) - 1}]]\n\n"
+    md = re.sub(r"^[ \t]*<info>[ \t]*\n(.*?)^[ \t]*</info>[ \t]*$", info, md, flags=re.S | re.M)
     md = re.sub(r"[ \t]*<(c|caption)>(.*?)</\1>[ \t]*",
                 lambda m: f"\n\n{CAPTION_MARK} {m.group(2).strip()}\n\n", md, flags=re.S)
 
@@ -297,6 +347,10 @@ def polish(html, page):
             n = int(m.group(1))
             new = embed_html(embeds[n], page["title"], page["section"]) if n < len(embeds) else ""
             p.replace_with(BeautifulSoup(new, "html.parser"))
+        elif re.fullmatch(r"\s*\[\[info:\d+\]\]\s*", p.get_text()):
+            n = int(re.search(r"\d+", p.get_text()).group(0))
+            rows = info_rows(page["info_blocks"][n], page["file"] + " <info>")
+            p.replace_with(BeautifulSoup(infobox_html(rows, page["info_blocks"][n]), "html.parser"))
         elif re.fullmatch(r"\s*\[\[people\]\]\s*", p.get_text()):
             p.replace_with(BeautifulSoup(people_html(page.get("people") or []), "html.parser"))
 
@@ -506,14 +560,14 @@ def main():
     for p in pages:
         body = polish(markdown_to_html(p["body_md"]), p)
         facts = []
-        if p.get("details"):
-            facts = [(d["label"], "<br>".join(str(inline_md(v)) for v in d["value"])) for d in p["details"]]
+        if p.get("info"):
+            facts = info_rows(p["info"], p["file"])
         elif p["section"] == "film":
             body, facts = split_datasheet(body)
         if p.get("trailer"):
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
-            p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]))), p)
+            p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["info_blocks"])), p)
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else "page.html"
@@ -549,6 +603,7 @@ def main():
     for p in pages:
         text = BeautifulSoup(markdown_to_html(p["body_md"]), "html.parser").get_text(" ", strip=True)
         text = re.sub(r"\[\[embed:\d+\]\]", "", text).replace(CAPTION_MARK, "")
+        text = re.sub(r"\[\[info:\d+\]\]", "", text)
         index.append({"t": p["title"], "u": base + p["path"], "s": EYEBROW.get(p["section"], ""),
                       "e": summary(p), "x": re.sub(r"\s+", " ", text)[:4000]})
     (out / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))

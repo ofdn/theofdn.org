@@ -26,67 +26,31 @@ links:
 posters:
 - /assets/images/karinding-poster-landscape.webp
 poster_credit: "Subhashish Panigrahi (CC-BY 4.0)"
-details:
-- label: Title
-  value:
-  - Karinding
-- label: Logline
-  value:
-  - Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.
-- label: Director, producer, writer and recordist
-  value:
-  - Subhashish Panigrahi
-- label: Cast
-  value:
-  - Ilham Nurwansah (self)
-- label: Language(s)
-  value:
-  - Sundanese, English
-- label: Pronunciation (IPA)
-  value:
-  - kɑːɾin̪d̪iŋg
-- label: Country of production
-  value:
-  - India
-- label: Country of origin
-  value:
-  - Sweden
-- label: Filming location(s)
-  value:
-  - T-Centralen station, Stockholm, Sweden
-- label: Year of production
-  value:
-  - '2019'
-- label: Release date(s)
-  value:
-  - 27 July 2020 (India)
-- label: Duration
-  value:
-  - 3 minutes (appx.) / 00:03:19 (hh:mm:ss)
-- label: Genre
-  value:
-  - Documentary
-- label: Production and distribution company
-  value:
-  - O Foundation (OFDN)
-- label: Keywords
-  value:
-  - Sundanese, Sunda, Java, Indonesia, language
-- label: Budget
-  value:
-  - US$500 (estimated)
-- label: Film website
-  value:
-  - https://theofdn.org/film/karinding
-- label: Permanent archive
-  value:
-  - https://archive.org/details/karinding
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - '[10.5240/15FD-F65B-F01B-846E-EB71-E](https://ui.eidr.org/view/content?id=10.5240/15FD-F65B-F01B-846E-EB71-E)'
-- label: Copyright
-  value:
-  - © 2020. Subhashish Panigrahi & OFDN. CC-BY-SA 4.0
+info:
+  title: Karinding
+  logline: Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  cast: Ilham Nurwansah (self)
+  language: Sundanese, English
+  pronunciation: kɑːɾin̪d̪iŋg
+  production_country: India
+  origin_country: Sweden
+  location: T-Centralen station, Stockholm, Sweden
+  year: '2019'
+  release: 27 July 2020 (India)
+  duration: 3 minutes (appx.) / 00:03:19 (hh:mm:ss)
+  genre: Documentary
+  production_company: O Foundation (OFDN)
+  distributor: O Foundation (OFDN)
+  keywords: Sundanese, Sunda, Java, Indonesia, language
+  budget: US$500 (estimated)
+  website: https://theofdn.org/film/karinding
+  archive: https://archive.org/details/karinding
+  doi: '[10.5240/15FD-F65B-F01B-846E-EB71-E](https://ui.eidr.org/view/content?id=10.5240/15FD-F65B-F01B-846E-EB71-E)'
+  copyright: © 2020. Subhashish Panigrahi & OFDN. CC-BY-SA 4.0
 ---
 
 [[embed:0]]

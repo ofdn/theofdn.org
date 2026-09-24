@@ -58,18 +58,34 @@ Optional, on any page:
 
 Infobox (a column beside the text). Film and podcast pages always have one; other pages get one when any of these is set:
 
-- `details`: rows. Each has `label` and a `value` list.
-- `details_title`: heading of the infobox. Default: "Film details", "Episode details" or "Details".
+- `info`: the rows, as `field: value`. Every field is listed once in `data/fields.yml`, with its label and order. A field means the same on every page. Any page can use any field: a font can have `doi`, a film can have `licence`. For several values, use a list. To add a new field, add it to `data/fields.yml` first. The build stops on a field that is not there.
+- `info_title`: heading of the infobox. Default: "Film details", "Episode details" or "Details".
 - `links`: IMDb, DOI, Moviebuff, Letterboxd, Wikidata, Library of Congress and similar pages. One address per line. They show with a small icon. Do not add logo images in the text.
 - `listen`: podcast links. Each has `label` and `url`.
 - `press_kit`: link to the press kit.
 
 ```
-details:
-  - label: "Script"
-    value: ["Odia"]
+info:
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  language: Remosam (Bonda), Odia
+  doi: 10.5240/B222-043E-AFAA-EC7B-F5F6-2
 links:
-- https://doi.org/10.17613/frzt-b139
+- https://www.imdb.com/title/tt12663954/
+```
+
+Roles held by the same person join into one row ("Director and producer"). A bare DOI or LCCN number becomes a link.
+
+For an infobox inside the text, use an `<info>` block. One per typeface on a page is an example. `image` and `alt` put a picture beside the rows:
+
+```
+<info>
+image: /assets/images/type-chapakala19-poster.svg
+alt: Chapakala 19 typeface poster
+script: Odia
+designer: Subhashish Panigrahi
+licence: SIL Open Font License 1.1
+</info>
 ```
 
 Images and video. Paths point to files in `assets/images/`:

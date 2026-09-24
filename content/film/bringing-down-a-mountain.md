@@ -24,61 +24,30 @@ laurels:
 - src: /assets/images/bringing-down-a-mountain-laurel-premiere-interledger.webp
   alt: PREMIRERE Interledger Summit 2023 Costa Rica
 lede: Premiered in Costa Rica on 5 November 2023.
-details:
-- label: Title
-  value:
+info:
+  title:
   - '*ଚୁରମାର ଏକ ପର୍ବତ* (ଓଡ଼ିଆ)'
   - '*Bringing Down a Mountain* (English)'
-- label: Logline
-  value:
-  - The landfill is full, and so are the dreams
-- label: Director
-  value:
-  - Subhashish Panigrahi
-- label: Writer(s)
-  value:
-  - Bharat Majhi and Subhashish Panigrahi
-- label: Advisor
-  value:
-  - Arky AR
-- label: Cast
-  value:
+  logline: The landfill is full, and so are the dreams
+  director: Subhashish Panigrahi
+  writer: Bharat Majhi and Subhashish Panigrahi
+  advisor: Arky AR
+  cast:
   - Debadatta Pati
   - Monalisa Moharana
-- label: Country of production/origin
-  value:
-  - India, Canada
-- label: Filming location(s)
-  value:
+  country: India, Canada
+  location:
   - 'India: Bhubaneswar; Cuttack; Rejingtal, Rayagada district.; Koraput'
   - 'California, US: Navarro, San Francisco'
-- label: Year of production
-  value:
-  - '2023'
-- label: Release date(s)
-  value:
-  - 5 November 2023 (Premiere in Costa Rica)
-- label: Duration
-  value:
-  - 14 minutes (appx.)
-- label: Genre
-  value:
-  - Docu-fiction
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - '[https://theofdn.org/film/bringing-down-a-mountain](/film/bringing-down-a-mountain/)'
-- label: Permanent archive
-  value:
-  - <https://archive.org/details/bringing-down-a-mountain-2023>
-- label: US Library of Congress control number (LCCN)
-  value:
-  - '[2023347988](https://lccn.loc.gov/2023347988)'
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - 10.5240/7379-E473-22A9-DCB4-6B11-C
+  year: '2023'
+  release: 5 November 2023 (Premiere in Costa Rica)
+  duration: 14 minutes (appx.)
+  genre: Docu-fiction
+  distributor: O Foundation
+  website: '[https://theofdn.org/film/bringing-down-a-mountain](/film/bringing-down-a-mountain/)'
+  archive: <https://archive.org/details/bringing-down-a-mountain-2023>
+  lccn: '[2023347988](https://lccn.loc.gov/2023347988)'
+  doi: 10.5240/7379-E473-22A9-DCB4-6B11-C
 stills:
 - /assets/images/bringing-down-a-mountain-still-1.webp
 - /assets/images/bringing-down-a-mountain-still-2.webp

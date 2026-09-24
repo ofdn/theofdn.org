@@ -23,19 +23,12 @@ laurels:
 links:
 - https://www.imdb.com/title/tt12663954/
 - https://www.moviebuff.com/who-owns-the-content
-details:
-- label: Title
-  value:
-  - Who Owns The Content
-- label: Logline
-  value:
-  - No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
-- label: Director and producer
-  value:
-  - Subhashish Panigrahi
-- label: Year of production
-  value:
-  - '2019'
+info:
+  title: Who Owns The Content
+  logline: No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  year: '2019'
 ---
 
 

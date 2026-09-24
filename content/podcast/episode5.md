@@ -14,13 +14,9 @@ embeds:
   - provider: "spotify"
     id: "3IIKgu90x4z7kLc9EyFFDg"
 original_url: "https://theofdn.org/podcast/episode5/"
-details:
-- label: Producer
-  value:
-  - Subhashish Panigrahi
-- label: Guest
-  value:
-  - Zubair Torwali
+info:
+  producer: Subhashish Panigrahi
+  guest: Zubair Torwali
 listen:
 - label: Internet Archive
   url: https://archive.org/details/ofdn-conversations-ep-5

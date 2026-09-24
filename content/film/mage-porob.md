@@ -26,19 +26,17 @@ trailer:
   provider: vimeo
   id: '439161153'
 press_kit: https://drive.google.com/drive/u/2/folders/1H_zprclYG4PPSq_1dKOP50GNBh4T8ay8
-details:
-- label: Title
-  value:
+info:
+  title:
   - Mage Porob (English)
   - 𑢶𑣋𑣈 𑢸𑣉𑣜𑣉𑣗 (Ho)
-- label: Cinematography, sound recording, editing, direction and production
-  value:
-  - Subhashish Panigrahi
-- label: Writer(s)
-  value:
-  - Subhashish Panigrahi
-- label: Cast
-  value:
+  cameraperson: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  editor: Subhashish Panigrahi
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi
+  cast:
   - Singo Haiburu (self)
   - Mangal Sinku (self)
   - Laxmi Haiburu (self)
@@ -57,39 +55,17 @@ details:
   - Pritam Munduya (self)
   - Sidio Singh (self)
   - Tuna Purty (self)
-- label: Country of production/origin
-  value:
-  - India
-- label: Filming location(s)
-  value:
-  - Keshpada, Mayurbhanj district, Odisha, India
-- label: Year of production
-  value:
-  - 2018-2019
-- label: Release date(s)
-  value:
-  - 10 December 2019 (India—Limited Release)
-- label: Duration
-  value:
-  - 40 minutes (appx.)
-- label: Genre
-  value:
-  - Documentary
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - https://theofdn.org/film/mage-porob
-- label: Permanent archive
-  value:
-  - https://archive.org/details/mage-porob
-- label: US Library of Congress control number (LCCN)
-  value:
-  - '2020512172'
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - 10.5240/5487-2EE9-6E70-1EE0-37B5-O
+  country: India
+  location: Keshpada, Mayurbhanj district, Odisha, India
+  year: 2018-2019
+  release: 10 December 2019 (India—Limited Release)
+  duration: 40 minutes (appx.)
+  genre: Documentary
+  distributor: O Foundation
+  website: https://theofdn.org/film/mage-porob
+  archive: https://archive.org/details/mage-porob
+  lccn: '2020512172'
+  doi: 10.5240/5487-2EE9-6E70-1EE0-37B5-O
 stills:
 - /assets/images/mage-porob-still-1.webp
 - /assets/images/mage-porob-still-2.webp

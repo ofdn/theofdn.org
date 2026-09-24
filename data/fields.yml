@@ -1,0 +1,61 @@
+# Infobox fields. One list for the whole site.
+#
+# A page uses any of these under `info:` (the infobox beside the text), or
+# inside an <info> block in the text. Fields do not depend on each other:
+# a font can have `doi`, a film can have `licence`.
+#
+# The order here is the order on every page.
+#   label:  shown name; a second name is used when there is more than one value
+#   link:   turns a bare value into a link; {} is the value
+#   role:   roles; roles with the same person or company join into one row
+#           ("Director and producer")
+#   commas: a comma separates items, so "A, B" counts as two (plural label).
+#           Otherwise only a list, "and" or ";" count as more than one.
+#
+#   image:  shown at the top of the infobox, not as a row; `alt` is its text
+#
+# To add a field, add it here. The build stops on a field that is not listed.
+
+image:                {image: true}
+alt:                  {image: true}
+title:                {label: Title}
+logline:              {label: Logline}
+director:             {label: Director, role: true}
+producer:             {label: [Producer, Producers], commas: true, role: true}
+writer:               {label: [Writer, Writers], commas: true, role: true}
+screenwriter:         {label: Screenwriter, role: true}
+cameraperson:         {label: Cameraperson, role: true}
+recordist:            {label: Recordist, role: true}
+editor:               {label: Editor, role: true}
+designer:             {label: [Designer, Designers], commas: true, role: true}
+cast:                 {label: Cast}
+guest:                {label: [Guest, Guests], commas: true}
+advisor:              {label: [Advisor, Advisors], commas: true}
+script:               {label: [Script, Scripts], commas: true}
+language:             {label: [Language, Languages], commas: true}
+pronunciation:        {label: Pronunciation (IPA)}
+country:              {label: Country of production and origin}
+production_country:   {label: Country of production}
+origin_country:       {label: Country of origin}
+location:             {label: [Filming location, Filming locations]}
+period:               {label: Period covered}
+year:                 {label: Year of production}
+release:              {label: [Release date, Release dates]}
+status:               {label: Status}
+duration:             {label: Duration}
+genre:                {label: Genre}
+production_company:   {label: Production company, role: true}
+distributor:          {label: Distributor, role: true}
+keywords:             {label: Keywords}
+budget:               {label: Budget}
+subtitles:            {label: Subtitles}
+translation:          {label: Additional translation}
+additional_recording: {label: Additional recording}
+website:              {label: Website}
+repository:           {label: Repository}
+archive:              {label: Permanent archive}
+doi:                  {label: DOI, link: "https://doi.org/{}"}
+lccn:                 {label: Library of Congress control number (LCCN), link: "https://lccn.loc.gov/{}"}
+licence:              {label: Licence}
+copyright:            {label: Copyright}
+contact:              {label: Contact}

@@ -15,58 +15,32 @@ original_url: "https://theofdn.org/film/gejmehac-gipan/"
 hero: /assets/images/gejmehac-gipan-hero.webp
 title_image: /assets/images/gejmehac-gipan-title.webp
 poster: /assets/images/gejmehac-gipan-poster.webp
-details:
-- label: Title
-  value:
+info:
+  title:
   - Gejmehac Gipan (English)
   - गेम्येहाक़ गिपन (Kusunda/Nepali)
-- label: Cameraperson, recordist, director and producer
-  value:
-  - Subhashish Panigrahi
-- label: Writer(s)
-  value:
-  - Subhashish Panigrahi, Uday Raj Aaley (Co-Writer)
-- label: Subtitles
-  value:
+  cameraperson: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi, Uday Raj Aaley (Co-Writer)
+  subtitles:
   - Uday Raj Aaley
   - Subhashish Panigrahi
-- label: Additional translation
-  value:
-  - Sanjib Chaudhary
-- label: Cast
-  value:
+  translation: Sanjib Chaudhary
+  cast:
   - Gyani Maiya Sen-Kusunda (self)
   - Uday Raj Aaley (self)
-- label: Language(s)
-  value:
-  - Kusunda, Nepal
-- label: Country of production/origin
-  value:
-  - Nepal
-- label: Filming location(s)
-  value:
-  - Kulmor, Dang district, Nepal
-- label: Year of production
-  value:
-  - 2018-2019
-- label: Release date(s)
-  value:
-  - 24 December 2024
-- label: Duration
-  value:
-  - 10 minutes
-- label: Genre
-  value:
-  - Documentary
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - https://theofdn.org/film/gejmehac-gipan
-- label: Contact
-  value:
-  - '[Subhashish Panigrahi](https://psubhashish.com/contact)'
+  language: Kusunda, Nepal
+  country: Nepal
+  location: Kulmor, Dang district, Nepal
+  year: 2018-2019
+  release: 24 December 2024
+  duration: 10 minutes
+  genre: Documentary
+  distributor: O Foundation
+  website: https://theofdn.org/film/gejmehac-gipan
+  contact: '[Subhashish Panigrahi](https://psubhashish.com/contact)'
 stills:
 - /assets/images/gejmehac-gipan-still-1.webp
 - /assets/images/gejmehac-gipan-still-2.webp

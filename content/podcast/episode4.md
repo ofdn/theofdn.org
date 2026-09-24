@@ -14,16 +14,10 @@ embeds:
   - provider: "spotify"
     id: "2weC0zEhaXcuDIgJUW3aJD"
 original_url: "https://theofdn.org/podcast/episode4/"
-details:
-- label: Producers
-  value:
-  - Subhashish Panigrahi and Ramjit Tudu
-- label: Guests
-  value:
-  - Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu
-- label: Additional recording
-  value:
-  - 'Noam Chomsky ([The minimalist program and language acquisition](https://www.youtube.com/watch?v=Oq5lMTKJiqE). VideoLecturesChannel. CC-BY 3.0, license in video description: CC BY-NC-ND 3.0)'
+info:
+  producer: Subhashish Panigrahi and Ramjit Tudu
+  guest: Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu
+  additional_recording: 'Noam Chomsky ([The minimalist program and language acquisition](https://www.youtube.com/watch?v=Oq5lMTKJiqE). VideoLecturesChannel. CC-BY 3.0, license in video description: CC BY-NC-ND 3.0)'
 listen:
 - label: Internet Archive
   url: https://archive.org/details/ofdn-conversations-ep-4

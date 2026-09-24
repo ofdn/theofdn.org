@@ -16,49 +16,30 @@ hero: /assets/images/nanima-hero.webp
 title_image: /assets/images/nanima-title.webp
 poster: /assets/images/nanima-poster.webp
 press_kit: https://drive.google.com/drive/folders/1IO6NOHSFiogg89r7T5p8DFdvTK3KPnWh?usp=sharing
-details:
-- label: Title
-  value:
+info:
+  title:
   - Nani Ma (English)
   - ନାନୀ ମା (Odia)
-- label: Logline
-  value:
-  - A 95-year-old woman who must share her songs and stories before they are lost forever or she is gone.
-- label: Screenwriter, cameraperson, recordist, director and producer
-  value:
-  - Subhashish Panigrahi
-- label: Cast
-  value:
+  logline: A 95-year-old woman who must share her songs and stories before they are lost forever or she is gone.
+  screenwriter: Subhashish Panigrahi
+  cameraperson: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  cast:
   - Musamoni Panigrahi (self)
   - Damayanti Beshra (self)
   - Panchanan Mohanty (self)
   - Laxmikanta Tripathy (self)
-- label: Country of production/origin
-  value:
-  - India
-- label: Filming location(s)
-  value:
-  - Balasore, Odisha, India
-- label: Year of production
-  value:
-  - '2022'
-- label: Release date(s)
-  value:
-  - 3 October 2022 (India)
-- label: Duration
-  value:
-  - 35 minutes (appx.)
-- label: Genre
-  value:
-  - Documentary
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - https://theofdn.org/film/nanima
-- label: Permanent archive
-  value:
+  country: India
+  location: Balasore, Odisha, India
+  year: '2022'
+  release: 3 October 2022 (India)
+  duration: 35 minutes (appx.)
+  genre: Documentary
+  distributor: O Foundation
+  website: https://theofdn.org/film/nanima
+  archive:
   - https://archive.org/details/nani-ma
   - DVD Archived at the Library of Congress
   - https://lccn.loc.gov/2023336704

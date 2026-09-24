@@ -1,6 +1,7 @@
 {#- One template for every page. Each block shows only when its field is set:
     hero        -> full-width poster (film style)
-    details, links, listen -> infobox beside the text (films and podcasts always get one)
+    info, links, listen -> infobox beside the text (films and podcasts always get one);
+                           fields are listed in data/fields.yml
     trailer     -> video under the title
     authors     -> byline with date, and "Cite this page" at the end
     ark         -> permanent link under the title
@@ -54,7 +55,7 @@
   {% endif %}
   {% if infobox %}<div class="film__body">
     <aside class="film__facts" aria-labelledby="details">
-      <h2 class="label" id="details">{{ page.details_title or {"film": "Film details", "episode": "Episode details"}.get(kind, "Details") }}</h2>
+      <h2 class="label" id="details">{{ page.info_title or {"film": "Film details", "episode": "Episode details"}.get(kind, "Details") }}</h2>
       <dl>
         {% for key, value in facts %}<div><dt>{{ key }}</dt><dd>{{ value | safe }}</dd></div>
         {% endfor %}

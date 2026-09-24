@@ -14,13 +14,9 @@ embeds:
   - provider: "spotify"
     id: "5Vz7braWTciba9OjgzhoJd"
 original_url: "https://theofdn.org/podcast/episode2/"
-details:
-- label: Producer
-  value:
-  - Subhashish Panigrahi
-- label: Guests
-  value:
-  - Ankush Vengurlekar and Ashish Birulee
+info:
+  producer: Subhashish Panigrahi
+  guest: Ankush Vengurlekar and Ashish Birulee
 listen:
 - label: Internet Archive
   url: https://archive.org/details/podcasts-episode2

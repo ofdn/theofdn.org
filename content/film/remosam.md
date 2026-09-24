@@ -19,67 +19,37 @@ links:
 posters:
 - /assets/images/remosam-poster.webp
 poster_credit: "Poster of “Remosam” from a scene where elders Manguli Dhangdamajhi and Kinker Dhangdamajhi sing wedding songs (© Subhashish Panigrahi. CC-BY-SA 4.0)"
-details:
-- label: Title
-  value:
-  - Remosam
-- label: Logline
-  value:
-  - Far up on the Bonda hills, the Bondak people are met with dysfunctional governance that fails to feed or keep their language alive.
-- label: Director, producer, writer and recordist
-  value:
-  - Subhashish Panigrahi
-- label: Cast
-  value:
+info:
+  title: Remosam
+  logline: Far up on the Bonda hills, the Bondak people are met with dysfunctional governance that fails to feed or keep their language alive.
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  cast:
   - Mangala Sisa – Sarpanch (elected administrative head of the village) of Mudulipada village. He narrates the festivals and preparation of *pendom* (fresh rice alcohol).
   - Sukru Dhangda Majhi – Priest of the village who narrates the mythologies of the Bondak community.
   - Buda Dhangdamajhi – Local farmer who would be seen harvesting “sapung” (an alcoholic beverage made from fishtail palms). He narrates the alcohol harvesting and the “*Pusarke*” (winter harvest) festival.
   - Manguli Dhangdamajhi – Community elder who narrates and sings (along with KINKER DHANGDAMAJHI) a song sung during Remosam wedding ceremonies.
   - Kinker Dhangdamajhi – Community elder who narrates and sings a song that is sung during Remosam wedding ceremonies.
   - Gobardhan Panda – A veteran public worker posted in the Mudulipada village and learned to speak Bonda. He compiled the dictionary “Remosam” and other books and consulted for this film project with interviews and translation.
-- label: Language(s)
-  value:
-  - Remosam (Bonda), Odia
-- label: Pronunciation (IPA)
-  value:
-  - /ɾemosam/
-- label: Country of production/origin
-  value:
-  - India
-- label: Filming location(s)
-  value:
-  - Mudulipada, Malkangiri district, Odisha, India
-- label: Year of production
-  value:
-  - 2018-2019
-- label: Release date(s)
-  value:
+  language: Remosam (Bonda), Odia
+  pronunciation: /ɾemosam/
+  country: India
+  location: Mudulipada, Malkangiri district, Odisha, India
+  year: 2018-2019
+  release:
   - 30 June 2019 (India)
   - 01 March 2021 (India; re-release)
-- label: Duration
-  value:
-  - 35 minutes (appx.) / 00:35:00 (hh:mm:ss)
-- label: Genre
-  value:
-  - Documentary
-- label: Production and distribution company
-  value:
-  - O Foundation (OFDN)
-- label: Keywords
-  value:
-  - Remosam, Remo, Bonda, language, oral history
-- label: Budget
-  value:
-  - US$3,500 (estimated)
-- label: Film website
-  value:
-  - https://theofdn.org/film/remosam
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - '[10.5240/B222-043E-AFAA-EC7B-F5F6-2](https://ui.eidr.org/view/content?id=10.5240/B222-043E-AFAA-EC7B-F5F6-2)'
-- label: Copyright
-  value:
-  - 2019 © Subhashish Panigrahi. CC-BY-SA 4.0.
+  duration: 35 minutes (appx.) / 00:35:00 (hh:mm:ss)
+  genre: Documentary
+  production_company: O Foundation (OFDN)
+  distributor: O Foundation (OFDN)
+  keywords: Remosam, Remo, Bonda, language, oral history
+  budget: US$3,500 (estimated)
+  website: https://theofdn.org/film/remosam
+  doi: '[10.5240/B222-043E-AFAA-EC7B-F5F6-2](https://ui.eidr.org/view/content?id=10.5240/B222-043E-AFAA-EC7B-F5F6-2)'
+  copyright: 2019 © Subhashish Panigrahi. CC-BY-SA 4.0.
 ---
 
 ## About the film

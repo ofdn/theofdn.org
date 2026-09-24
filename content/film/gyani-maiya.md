@@ -46,57 +46,30 @@ trailer:
   provider: vimeo
   id: '439168756'
 press_kit: https://drive.google.com/drive/u/2/folders/14568MedcoRZvd9Ij2g6jkOOhxHYOizTl
-details:
-- label: Title
-  value:
+info:
+  title:
   - Gyani Maiya (English)
   - ज्ञानी मैया (Nepali)
-- label: Logline
-  value:
-  - A formerly hunter-gatherer community stopped speaking their language for two generations, and linguists have predicted its death, declaring an 83-year-old the last living speaker. Will her lamenting revive the near-extinct language, her only identity?
-- label: Cameraperson, recordist, director and producer
-  value:
-  - Subhashish Panigrahi
-- label: Writer(s)
-  value:
-  - Subhashish Panigrahi, Uday Raj Aaley (Co-Writer), Sanjib Chaudhary (Co-Writer)
-- label: Cast
-  value:
+  logline: A formerly hunter-gatherer community stopped speaking their language for two generations, and linguists have predicted its death, declaring an 83-year-old the last living speaker. Will her lamenting revive the near-extinct language, her only identity?
+  cameraperson: Subhashish Panigrahi
+  recordist: Subhashish Panigrahi
+  director: Subhashish Panigrahi
+  producer: Subhashish Panigrahi
+  writer: Subhashish Panigrahi, Uday Raj Aaley (Co-Writer), Sanjib Chaudhary (Co-Writer)
+  cast:
   - Gyani Maiya Sen-Kusunda (self)
   - Uday Raj Aaley (self)
-- label: Country of production/origin
-  value:
-  - Nepal
-- label: Filming location(s)
-  value:
-  - Kulmor, Dang district, Nepal
-- label: Year of production
-  value:
-  - 2018-2019
-- label: Release date(s)
-  value:
-  - 10 December 2019 (India—Limited Release)
-- label: Duration
-  value:
-  - 25 minutes (appx.)
-- label: Genre
-  value:
-  - Documentary
-- label: Distribution company
-  value:
-  - O Foundation
-- label: Film website
-  value:
-  - https://theofdn.org/film/gyani-maiya
-- label: Permanent archive
-  value:
-  - https://archive.org/details/gyani-maiya
-- label: US Library of Congress control number (LCCN)
-  value:
-  - '2020512171'
-- label: Digital object identifier (DOI/EIDR)
-  value:
-  - 10.5240/52AE-86BB-F84D-03B2-D938-U
+  country: Nepal
+  location: Kulmor, Dang district, Nepal
+  year: 2018-2019
+  release: 10 December 2019 (India—Limited Release)
+  duration: 25 minutes (appx.)
+  genre: Documentary
+  distributor: O Foundation
+  website: https://theofdn.org/film/gyani-maiya
+  archive: https://archive.org/details/gyani-maiya
+  lccn: '2020512171'
+  doi: 10.5240/52AE-86BB-F84D-03B2-D938-U
 stills:
 - /assets/images/gyani-maiya-still-1.webp
 - /assets/images/gyani-maiya-still-2.webp

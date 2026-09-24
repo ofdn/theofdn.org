@@ -14,13 +14,9 @@ embeds:
   - provider: "spotify"
     id: "6bMmfPwbalwpn4S0Sq0XmO"
 original_url: "https://theofdn.org/podcast/episode3/"
-details:
-- label: Producer
-  value:
-  - Subhashish Panigrahi
-- label: Guest
-  value:
-  - Ilham Nurwansah
+info:
+  producer: Subhashish Panigrahi
+  guest: Ilham Nurwansah
 listen:
 - label: Internet Archive
   url: https://archive.org/details/ofdn-conversations-ep-3

@@ -377,6 +377,28 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .film__facts dd { color: var(--color-text-muted); overflow-wrap: anywhere; }
 .film__facts a { color: var(--color-text); text-decoration-thickness: 1.5px; }
 .film__facts a:hover { color: var(--color-accent); }
+/* Infobox inside the text (<info> block): an optional image beside label/value rows. */
+.prose .infobox {
+  display: grid; gap: var(--space-lg); align-items: start;
+  padding: var(--space-lg) 0; border-top: 1px solid var(--color-rule); border-bottom: 1px solid var(--color-rule);
+}
+.prose .infobox--image { grid-template-columns: minmax(8rem, 14rem) 1fr; }
+.prose .infobox picture img { width: 100%; height: auto; }
+.prose .infobox dl {
+  display: grid; grid-template-columns: minmax(7rem, max-content) 1fr; gap: 0.35rem var(--space-lg);
+  font-family: var(--font-display); font-size: 1rem; line-height: 1.45;
+}
+.prose .infobox dl > div { display: contents; }
+.prose .infobox dt { font-weight: 700; }
+.prose .infobox dd { margin: 0; color: var(--color-text-muted); overflow-wrap: anywhere; }
+.prose .infobox a { color: var(--color-text); text-decoration-thickness: 1.5px; }
+.prose .infobox a:hover { color: var(--color-accent); }
+@media (max-width: 560px) {
+  .prose .infobox--image { grid-template-columns: 1fr; }
+  .prose .infobox picture img { max-width: 16rem; }
+  .prose .infobox dl { grid-template-columns: 1fr; gap: 0; }
+  .prose .infobox dd { margin-bottom: var(--space-sm); }
+}
 .film__links { list-style: none; margin-bottom: var(--space-xl); }
 .film__links li { margin-bottom: var(--space-sm); }
 .film__links a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 24px; }
