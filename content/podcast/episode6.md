@@ -11,14 +11,14 @@ categories:
   - "Podcast"
 excerpt: "EPISODE 6  — Our Majority World “‘Third world’ and ‘developing world’ are not our chosen identity!” — DR SHAHIDUL ALAM This episode features a conversation with noted Bangladeshi photojournalist, activist and writer Shahidul Alam. Recorded and edited by Subhashish Panigrahi during the National Geographic Storytellers Summit 2023 in Washington, D.C., in January and published in […]"
 embeds:
-  - provider: "archive"
-    id: "podcasts-episode5"
+  - provider: "spotify"
+    id: "4C6iCuGHdkgvu2B24iJ6cy"
 original_url: "https://theofdn.org/podcast/episode6/"
 listen:
 - label: Internet Archive
   url: https://archive.org/details/podcasts-episode5
 - label: Spotify
-  url: https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg
+  url: https://open.spotify.com/episode/4C6iCuGHdkgvu2B24iJ6cy
 - label: Apple Podcasts
   url: https://podcasts.apple.com/in/podcast/our-majority-world-shahidul-alam/id1510689609?i=1000604834450
 ---

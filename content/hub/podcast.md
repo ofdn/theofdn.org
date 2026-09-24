@@ -10,9 +10,8 @@ modified: "2023-09-13"
 excerpt: "OFDN Conversations is a podcast hosted at the O Foundation featuring conversations with activists, artists and technologists."
 featured_image: "/assets/images/podcast-mage-porob-still.webp"
 embeds:
-  - provider: "archive"
-    id: "podcasts-episode5"
-    audio: true
+  - provider: "spotify"
+    id: "4C6iCuGHdkgvu2B24iJ6cy"
   - provider: "archive"
     id: "ofdn-conversations-ep-5"
     audio: true
