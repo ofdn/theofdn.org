@@ -43,7 +43,7 @@ O Foundation (OFDN) works on openness, digital rights, access to knowledge and m
 
 ### Alumni
 
-Mrutyunjaya Kar, Shitikantha Dash, Shreekant Kedia, Prateek Pattanaik and Sailesh Patnaik.
+Founding members: Mrutyunjaya Kar, Shitikantha Dash, Shreekant Kedia, Prateek Pattanaik, Sailesh Patnaik; advisor: Siko Bouterse.
 
 ## Core values
 
