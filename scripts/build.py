@@ -121,7 +121,7 @@ def embed_html(e, title, section):
         return (f'<div class="embed-video embed-video--large"><iframe src="https://player.vimeo.com/video/{i}" '
                 f'title="{label}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>')
     if p == "archive":
-        cls = "embed-audio" if section == "podcast" else "embed-video embed-video--large"
+        cls = "embed-audio" if section == "podcast" or e.get("audio") else "embed-video embed-video--large"
         return (f'<div class="{cls}"><iframe src="https://archive.org/embed/{i}" title="{label}" '
                 f'loading="lazy" allowfullscreen></iframe></div>')
     if p == "soundcloud":
@@ -428,7 +428,9 @@ def main():
         items.sort(key=lambda p: p["date"], reverse=True)
     conf = load_status()
     site_status = page_status(None, conf)
-    common = {"nav": NAV, "footer_nav": FOOTER_NAV, "site_name": SITE_NAME, "year": date.today().year}
+    import hashlib
+    asset_v = hashlib.sha1((ROOT / "assets/site.css").read_bytes() + (ROOT / "assets/site.js").read_bytes()).hexdigest()[:8]
+    common = {"asset_v": asset_v, "nav": NAV, "footer_nav": FOOTER_NAV, "site_name": SITE_NAME, "year": date.today().year}
 
     def write(path, html):
         dest = out / path.strip("/") / "index.html" if path != "/" else out / "index.html"

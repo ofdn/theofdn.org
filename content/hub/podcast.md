@@ -12,103 +12,89 @@ featured_image: "/assets/images/podcast-mage-porob-still.webp"
 embeds:
   - provider: "archive"
     id: "podcasts-episode5"
+    audio: true
   - provider: "archive"
     id: "ofdn-conversations-ep-5"
+    audio: true
   - provider: "archive"
     id: "ofdn-conversations-ep-4"
+    audio: true
   - provider: "archive"
     id: "ofdn-conversations-ep-3"
+    audio: true
   - provider: "archive"
     id: "podcasts-episode2"
+    audio: true
   - provider: "archive"
     id: "mandana-seyfeddinipur"
+    audio: true
 original_url: "https://theofdn.org/podcast/"
 ---
-![OFDN Conversations logo in FCBE27](/assets/logos/ofdn-conversations.svg)
 
-People are knowledge, and their voices speak of wisdom.\
-Through *OFDN Conversations*, we are listening about the tenacity of communities to make language, media and technology work for them, from one inspiring individual at a time.
+![OFDN Conversations](/assets/logos/ofdn-conversations.svg)
 
-![Internet Archive logo and watermark](/assets/logos/internet-archive-wordmark.svg "Internet Archive logo and watermark") ![Spotify logo without text](/assets/logos/spotify-white.webp "Spotify logo without text") ![US_UK_Apple_Podcasts_Listen_Badge_RGB](/assets/logos/apple-podcasts-badge.svg "US_UK_Apple_Podcasts_Listen_Badge_RGB") ![EN_Google_Podcasts_Badge](/assets/logos/google-podcasts-badge.svg "EN_Google_Podcasts_Badge")
+People are knowledge, and their voices speak of wisdom. Through *OFDN Conversations*, we are listening about the tenacity of communities to make language, media and technology work for them, from one inspiring individual at a time.
 
-## EPISODES
+Listen on [Spotify](https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg), [Apple Podcasts](https://podcasts.apple.com/in/podcast/o-foundation-conversations/id1510689609) or the [Internet Archive](https://archive.org/search?query=%22OFDN+Conversations%22).
 
-![Shahidul Alam — by re:publica from Germany / CC-BY-2.0](/assets/images/podcast-shahidul-alam.webp "Shahidul Alam — by re:publica from Germany / CC-BY-2.0")
+## Episodes
 
-re:publica / CC-BY-2.0
+### Episode 6: Our Majority World
 
-Episode 6: Our Majority World
+![Shahidul Alam (re:publica, CC BY 2.0)](/assets/images/podcast-shahidul-alam.webp)
 
-> “‘Third World’ and ‘Developing World’ are not our chosen identity!”
->
-> — **Dr. Shahidul Alam**
+Bangladeshi photojournalist, activist and writer Shahidul Alam, recorded during the National Geographic Storytellers Summit 2023 in Washington. He talks about documenting the political landscape of Bangladesh in the 1980s and becoming a social justice activist.
 
-This episode of OFDN Conversations features an interview with noted Bangladeshi photojournalist, activist and writer Shahidul Alam. Recorded during the National Geographic Storytellers Summit 2023 in Washington, it highlights Alam’s journey as a photojournalist who documented the post-liberation political landscape of Bangladesh in the 1980s and eventually became a social justice activist.
+[[embed:0]]
 
-Interview / Editing by — SUBHASHISH PANIGRAHI
+[About episode 6](/podcast/episode6/)
 
-[more..](/podcast/episode6/)
+### Episode 5: Lesser-known Languages of North Pakistan
 
-|                   |
-|-------------------|
-| ; [[embed:0]] |
+![Zubair Torwali](/assets/images/podcast-zubair-torwali.webp)
 
-![Episode 5 - Zubair Torwali](/assets/images/podcast-zubair-torwali.webp "Episode 5 – Zubair Torwali")
+Pakistani language activist Zubair Torwali is working to revitalise nearly 30 languages of Northern Pakistan, including his own language Torwali.
 
-Episode 5: Lesser-known Languages of North Pakistan
+[[embed:1]]
 
-Pakistani language activist ZUBAIR TORWALI is working to revitalise nearly 30 languages of Northern Pakistan, including his own language Torwali.
+[About episode 5](/podcast/episode5/)
 
-[more..](/podcast/episode5/)
+### Episode 4: Imagining a Digital Future for the Santali Language
 
-|                 |
-|-----------------|
-| [[embed:1]] |
+![Santali language activists](/assets/images/podcast-santali.webp)
 
-![Episode 4: Imagining a Digital Future for the Santali Language](/assets/images/podcast-santali.webp "Episode 4: Imagining a Digital Future for the Santali Language")
+Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu, language activists from India’s Santal community, on their work to help the Santali language thrive.
 
-Episode 4: Imagining a Digital Future for the Santali Language
+[[embed:2]]
 
-A group of language activists — MAINA TUDU, R. ASHWANI BANJAN MURMU, MANIK SOREN, FAGU BASKEY and RAMJIT TUDU — from India’s Santal community are a social movement so that their language Santali thrives.
+[About episode 4](/podcast/episode4/)
 
-[more..](/podcast/episode4/)
+### Episode 3: Digitally Documenting the Sundanese Language and Cultural Heritage
 
-|                 |
-|-----------------|
-| [[embed:2]] |
+![Portrait poster of the film Karinding](/assets/images/podcast-karinding-poster-portrait.webp)
 
-![Portrait poster of film "Karinding"](/assets/images/podcast-karinding-poster-portrait.webp "Portrait poster of film “Karinding”")
+Ilham Nurwansah is digitising old texts and sharing encyclopaedic information through Wikipedia in his language, Sundanese, one of Indonesia’s 800 languages.
 
-Episode 3: Digitally-Documenting the Sundanese Language and Cultural Heritage
+[[embed:3]]
 
-ILHAM NURWANSAH is now on a mission to digitise old text and share encyclopedic information through Wikipedia in his language Sundanese, one of Indonesia’s 800 languages. 
+[About episode 3](/podcast/episode3/)
 
-[more..](/podcast/episode3/)
+### Episode 2: Knowledge Commons and the Adivasis
 
-|                 |
-|-----------------|
-| [[embed:3]] |
+![Knowledge Commons and the Adivasis](/assets/images/podcast-alm.webp)
 
-![Episode 2: Knowledge Commons and the Adivasis](/assets/images/podcast-alm.webp "Episode 2: Knowledge Commons and the Adivasis")
+Ankush Vengurlekar and Ashish Birulee co-founded Adivasi Lives Matter, an online platform that trains young Adivasi citizen journalists in India.
 
-Episode 2: Knowledge Commons and the Adivasis
+[[embed:4]]
 
-The Black Lives Matter movement inspired ANKUSH VENGURLEKAR and ASHISH BIRULEE to co-found Adivasi Lives Matter, an online platform that trains many young citizen journalists from India who are Adivasi (indigenous), reversing systemic oppression through the caste system.
+[About episode 2](/podcast/episode2/)
 
-[more..](/podcast/episode2/)
+### Episode 1: Indigenous Languages in the Times of a Pandemic
 
-|                 |
-|-----------------|
-| [[embed:4]] |
+![Mandana Seyfeddinipur](/assets/images/podcast-mandana-seyfeddinipur.webp)
 
-![Indigenous Languages In The Times Of A Pandemic](/assets/images/podcast-mandana-seyfeddinipur.webp "Indigenous Languages In The Times Of A Pandemic")
+Linguist Mandana Seyfeddinipur supports linguists and activists worldwide who document languages as audio and video, so that people who are marginalised can get critical information.
 
-Episode 1: Indigenous Languages In The Times Of A Pandemic
+[[embed:5]]
 
-Noted linguist MANDANA SEYFEDDINIPUR PhD is on a mission to support other linguists and activists worldwide who are documenting languages as audiovisual media, enabling access to critical information for many who are utterly marginalised.
-
-[more..](/podcast/episode1/)
-
-|                 |
-|-----------------|
-| [[embed:5]] |
+[About episode 1](/podcast/episode1/)

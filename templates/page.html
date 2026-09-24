@@ -2,7 +2,7 @@
 {% block title %}{{ page.title }} | {{ site_name }}{% endblock %}
 {% block meta %}{% if page.excerpt %}<meta name="description" content="{{ summary(page) }}">{% endif %}{% endblock %}
 {% block content %}
-<div class="page__wrap">
+<div class="page__wrap{% if page.path == "/podcast/" %} hub-podcast{% endif %}">
   <header class="page__header">
     {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}{% if page.date %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
     <h1 class="page__title">{{ page.title }}</h1>
