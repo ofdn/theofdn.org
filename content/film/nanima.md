@@ -19,10 +19,8 @@ press_kit: https://drive.google.com/drive/folders/1IO6NOHSFiogg89r7T5p8DFdvTK3KP
 details:
 - label: Title
   value:
-  - Nani Ma
-- label: Title in Odia
-  value:
-  - ନାନୀ ମା
+  - Nani Ma (English)
+  - ନାନୀ ମା (Odia)
 - label: Logline
   value:
   - A 95-year-old woman who must share her songs and stories before they are lost forever or she is gone.
@@ -41,9 +39,9 @@ details:
 - label: Filming location(s)
   value:
   - Balasore, Odisha, India
-- label: Date(s)
+- label: Year of production
   value:
-  - Year of Production 2022
+  - '2022'
 - label: Release date(s)
   value:
   - 3 October 2022 (India)
@@ -116,16 +114,9 @@ Nani Ma was selected for the Mozilla Festival 2023 (International Premiere), Lif
 
 ## Reviews and publications
 
-- “[*Nani Ma*](https://filmthreat.com/reviews/nani-ma/)”. *Film Threat*. (by Benjamin Franz)
-- [Nani Ma: A defence of diversity.](http://odishapostepaper.com/viewmap/192691.jpg) *Orissa Post.* (by Atri Prasad Rout)
-
-## Reviews and publications
-
-## Reviews
-
 - [*Film Carnage*](https://filmcarnage.com/2023/03/28/review-nani-ma/) (by Rebecca Cherry)
 - [*Film Threat*](https://filmthreat.com/reviews/nani-ma/) (by Benjamin Franz)
-- [*Orissa Post*](http://odishapostepaper.com/viewmap/192691.jpg) (by Atri Prasad Rout)
+- [*Orissa Post*](http://odishapostepaper.com/viewmap/192691.jpg), “Nani Ma: A defence of diversity” (by Atri Prasad Rout)
 - [UK Film Reviews](https://www.ukfilmreview.co.uk/reviews/nani-ma) (by Swati Verma)
 - [ETV Bharat Odia](https://www.etvbharat.com/oriya/odisha/videos/entertainment/two-documentary-film-nani-maa-and-the-voulnter-archivists-released/or20230510201157712712834) (by Debasmita Rout)
 

@@ -23,121 +23,81 @@ links:
 - https://www.imdb.com/title/tt14546368/
 - https://www.moviebuff.com/karinding
 - https://doi.org/10.17613/frzt-b139
+posters:
+- /assets/images/karinding-poster-landscape.webp
+poster_credit: "Subhashish Panigrahi (CC-BY 4.0)"
+details:
+- label: Title
+  value:
+  - Karinding
+- label: Logline
+  value:
+  - Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.
+- label: Director, producer, writer and recordist
+  value:
+  - Subhashish Panigrahi
+- label: Cast
+  value:
+  - Ilham Nurwansah (self)
+- label: Language(s)
+  value:
+  - Sundanese, English
+- label: Pronunciation (IPA)
+  value:
+  - kɑːɾin̪d̪iŋg
+- label: Country of production
+  value:
+  - India
+- label: Country of origin
+  value:
+  - Sweden
+- label: Filming location(s)
+  value:
+  - T-Centralen station, Stockholm, Sweden
+- label: Year of production
+  value:
+  - '2019'
+- label: Release date(s)
+  value:
+  - 27 July 2020 (India)
+- label: Duration
+  value:
+  - 3 minutes (appx.) / 00:03:19 (hh:mm:ss)
+- label: Genre
+  value:
+  - Documentary
+- label: Production and distribution company
+  value:
+  - O Foundation (OFDN)
+- label: Keywords
+  value:
+  - Sundanese, Sunda, Java, Indonesia, language
+- label: Budget
+  value:
+  - US$500 (estimated)
+- label: Film website
+  value:
+  - https://theofdn.org/film/karinding
+- label: Permanent archive
+  value:
+  - https://archive.org/details/karinding
+- label: Digital object identifier (DOI/EIDR)
+  value:
+  - '[10.5240/15FD-F65B-F01B-846E-EB71-E](https://ui.eidr.org/view/content?id=10.5240/15FD-F65B-F01B-846E-EB71-E)'
+- label: Copyright
+  value:
+  - © 2020. Subhashish Panigrahi & OFDN. CC-BY-SA 4.0
 ---
-
-> *Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.*
 
 [[embed:0]]
 
-## Full Synopsis
+## About the film
 
 A Sundanese saying goes — “language is the identity of \[a\] nation” (Sundanese: asa téh cicirén bangsa”). The colonisation era was complicated for Indonesia — a country with 700 languages — as it is hard to tell how it influenced the Sundanese language and culture. Ilham Nurwansah is on a mission to digitise old Sundanese-language (spoken by over 35 million people) text, and share encyclopedic information through the Sundanese Wikipedia. When not digitising old Sundanese palm leaf manuscripts, he carves bamboo and palm and plays Karinding, a lamellophone instrument similar to Jew’s harp that originated from West Java and Banten in Indonesia. Made from different kinds of local bamboo varieties and midribs of palm trees, the sound of Karinding is “robotic” as Nurwansah’s explains. This short documentary has a narration and performance by Nurwansah that was recorded by Subhashish Panigrahi at the T-Centralen station in Stockholm, Sweden during Wikimania 2019.
 
-## Storyline
+### Storyline
 
 Sundanese-language Wikipedia editor Ilham Nurwansah learned from a friend back home in East Java, Indonesia about carving from bamboo an instrument called Karinding. This lamellophone instrument that resembles the Jew’s harp. Nurwansah not only learned how to make Karindings for himself both from bamboo and palm but he also mastered how to play them. This short documentary, shot handheld at the T-Centralen station in Stockholm, Sweden during the Wikimania conference (Wikipedia’s annual conference), is a gateway to Sundanese folk music. Nurwansah is involved in a number of cultural documentation projects while contributing encyclopedic text to the Sundanese Wikipedia.
-
-## Datasheet
-
-**Title**
-
-Documentary Feature
-
-**Language(s)**
-
-Sundanese, English
-
-**Name in Sundanese**
-
-Karinding
-
-**Name in International Phonetic Alphabet (IPA)**
-
-kɑːɾin̪d̪iŋg
-
-**Director**
-
-Subhashish Panigrahi
-
-**Producer**
-
-Subhashish Panigrahi
-
-**Screenwriter(s)**
-
-Subhashish Panigrahi
-
-**Cast**
-
-Ilham Nurwansah
-
-**Country of production**
-
-India
-
-**Country of Origin**
-
-Sweden
-
-**Filming location(s)**
-
-T-Centralen station, Stockholm, Sweden
-
-**Year of Production**
-
-2019
-
-**Release Dates**
-
-27 July 2020 (India)
-
-**Duration/running time**
-
-3 minutes (appx.) / 00:03:19 (hh:mm:ss)
-
-**Genre**
-
-Documentary
-
-**Distribution company**
-
-O Foundation (OFDN)
-
-**Production company**
-
-O Foundation (OFDN)
-
-**Screenwriter**
-
-Subhashish Panigrahi
-
-**Recordist**
-
-Subhashish Panigrahi
-
-**Keywords**
-
-Sundanese, Sunda, Java, Indonesia, language
-
-**Budget**
-
-US\$500 (estimated)
-
-**Film website**
-
-https://theofdn.org/film/gyani-maiya/
-
-**Permanent media archive**
-
-Film on Internet Archive ([https://archive.org/details/gyani-maiya](https://archive.org/details/karinding))
-
-**Entertainment Identifier Registry (EIDR)**
-
-EIDR: [10.5240/15FD-F65B-F01B-846E-EB71-E](https://ui.eidr.org/view/content?id=10.5240/15FD-F65B-F01B-846E-EB71-E)
-
-**Summary**
-
-Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.
 
 ## Technical details
 
@@ -152,32 +112,14 @@ Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture di
 | Stereoscopy      | No                                               |
 | Captions         | English (Closed Caption), English (Open Caption) |
 
-## Screening
-
-[[embed:1]]
-
-You can watch the film [online on the Internet Archive](https://archive.org/details/gyani-maiya) or download to watch offline for free of cost. You are most welcome to contact the producer if you would like to conduct a discussion post screening.
-
-## Further resources
+## Reviews and publications
 
 - “[Digitally-Documenting the Sundanese Language and Cultural Heritage](/podcast/#episode3)”. O Foundation Conversations (podcast). 24 July 2020.
 - Le Guen, Laila. [Q&A: Meet Ilham Nurwansah, Sundanese language activist](https://rising.globalvoices.org/blog/2020/06/23/qa-meet-ilham-nurwansah-sundanese-language-activist/). Rising Voices. (23 June 2020)
 - Nurwansah, Ilham. “[Playing Karinding in Stockholm](https://inurwansah.my.id/2020/12/08/playing-karinding-in-stockholm/)”. iNurwansah. 8 December 2020.
 
-## Promotional posters
+## Watch and download
 
-![Portrait poster of film "Karinding"](/assets/images/karinding-poster-portrait.webp)
+[[embed:1]]
 
-Portrait poster of film “Karinding”. Subhashish Panigrahi (CC-BY 4.0). [**Download**](/assets/images/karinding-poster-landscape.webp)
-
-![Landscape poster of Karinding](/assets/images/karinding-poster-landscape.webp)
-
-Landscape poster of film “Karinding”. Subhashish Panigrahi (CC-BY 4.0). **[Download](/assets/images/karinding-poster-landscape.webp)**
-
-#####  Last updated: 2021-05-12
-
-## Cite this film
-
-APAMLAHarvardVancouverChicagoIEEEO Foundation (OFDN) (September 24, 2026) **Karinding—2020 Documentary**. Retrieved from [https://theofdn.org/film/karinding/](/film/karinding/)."**Karinding—2020 Documentary.**" O Foundation (OFDN) - September 24, 2026, [https://theofdn.org/film/karinding/](/film/karinding/)O Foundation (OFDN) April 29, 2021 **Karinding—2020 Documentary.**, viewed September 24, 2026,\<[https://theofdn.org/film/karinding/](/film/karinding/)\>O Foundation (OFDN) - **Karinding—2020 Documentary.** \[Internet\]. \[Accessed September 24, 2026\]. Available from: [https://theofdn.org/film/karinding/](/film/karinding/)"**Karinding—2020 Documentary.**" O Foundation (OFDN) - Accessed September 24, 2026. [https://theofdn.org/film/karinding/](/film/karinding/)"**Karinding—2020 Documentary.**" O Foundation (OFDN) \[Online\]. Available: [https://theofdn.org/film/karinding/](/film/karinding/). \[Accessed: September 24, 2026\]
-
-© 2020. Subhashish Panigrahi & OFDN. CC-BY-SA 4.0
+You can watch the film [online on the Internet Archive](https://archive.org/details/karinding) or download to watch offline for free of cost. You are most welcome to contact the producer if you would like to conduct a discussion post screening.

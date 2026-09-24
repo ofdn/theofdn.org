@@ -25,7 +25,7 @@ original_url: "https://theofdn.org/blogs/conference/wikimania2019/"
 
 [!["Can Wikimedia projects help Indigenous languages. If yes, then how?". Subhashish Panigrahi, O Foundation. CC-BY-SA-3.0.](/assets/images/wikimania2019-poster.webp)](/assets/images/wikimania2019-poster.webp)
 
-“Can Wikimedia projects help Indigenous languages. If yes, then how?”. Subhashish Panigrahi, O Foundation. CC-BY-SA-3.0.
+<c>“Can Wikimedia projects help Indigenous languages. If yes, then how?”. Subhashish Panigrahi, O Foundation. CC-BY-SA-3.0.</c>
 
 How to make the Wikipedia/Wikimedia movement a sustainable one? How to make an event like Wikimania—that brings together about a thousand individuals from all over the world—a [carbon-neutral](https://wikimania.wikimedia.org/wiki/2019:Sustainable_travelling) one? Wikimania 2019 came to Stockholm, Sweden to address some such pertinent questions along with bringing together more than 800 volunteers from all over the world that make Wikipedias in 300+ languages (and hundreds of other Wikimedia projects) a reality. The theme for this conference was [Sustainable Development Goals](https://www.undp.org/content/undp/en/home/sustainable-development-goals.html), a set of 17 United Nations global goals for 2030. All the engagements at Wikimania moved around these 17 goals—this was the first time the Wikimedia movement joined forces with the United Nations in such a big scale.
 

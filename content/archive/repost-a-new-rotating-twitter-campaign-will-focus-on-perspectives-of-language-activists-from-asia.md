@@ -20,7 +20,7 @@ original_url: "https://theofdn.org/blogs/repost-a-new-rotating-twitter-campaign-
 ---
 ![Tweet bird Image by Id-iom and used under a CC BY-NC 2.0 Creative Commons license.](/assets/images/asialangsonline-campaign.webp)
 
-Tweet bird Image by Id-iom and used under a CC BY-NC 2.0 Creative Commons license.
+<c>Tweet bird Image by Id-iom and used under a CC BY-NC 2.0 Creative Commons license.</c>
 
 *This post, authored by Rising Voices, originally appeared on Rising* Voices, *and is about a collaborative initiative that we’re also a partner in.*
 

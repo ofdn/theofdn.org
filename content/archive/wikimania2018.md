@@ -26,7 +26,7 @@ original_url: "https://theofdn.org/blogs/conference/wikimania2018/"
 ---
 ![File:Members of Odia Wikimedians User Group, O Foundation and Wikitongues at Wikimania 2018.jpg](/assets/images/wikimania2018-odia-wikimedians-and-wikitongues.webp)
 
-L-R: Daniel Bogre Udell (Wikitongues), Sailesh Patnaik, Jnanaranjan Sahu and Subhashish Panigrahi (OFDN), and Freddie Andrade (Wikitongues) at the Wikimania 2018 collaborative booth. Photo: Netha Hussain (CC-BY-SA-4.0)
+<c>L-R: Daniel Bogre Udell (Wikitongues), Sailesh Patnaik, Jnanaranjan Sahu and Subhashish Panigrahi (OFDN), and Freddie Andrade (Wikitongues) at the Wikimania 2018 collaborative booth. Photo: Netha Hussain (CC-BY-SA-4.0)</c>
 
 Can you imagine a place other than New York City or Papua New Guinea where you can find people speaking hundreds of languages even in a small place? Well, it would be Wikimania, the annual conference of Wikipedia and other Wikimedia projects.
 

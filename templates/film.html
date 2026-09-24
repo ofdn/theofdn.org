@@ -86,6 +86,7 @@
       {% for s in ([page.poster] if page.poster else []) + (page.posters or []) %}<li><a href="{{ s }}" data-viewer="posters">{{ picture(s, "Poster of " ~ page.title) }}</a></li>
       {% endfor %}
     </ul>
+    {% if page.poster_credit %}<p class="caption">{{ inline_md(page.poster_credit) }}</p>{% endif %}
   </section>
   {% endif %}
   {% if page.stills %}

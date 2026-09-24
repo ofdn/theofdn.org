@@ -34,7 +34,7 @@ listen:
 
 ![File:Decolonizing-the-Internet's-Languages-Confererence-060.jpg](/assets/images/episode1-decolonizing-the-internet-2018.webp)
 
-This is at the Decolonizing the Internet’s Language Conference 2020 where I met Dr. Mandana Seyfeddinipur (WhoseKnowledge?, CC-BY-SA-4.0)
+<c>This is at the Decolonizing the Internet’s Language Conference 2020 where I met Dr. Mandana Seyfeddinipur (WhoseKnowledge?, CC-BY-SA-4.0)</c>
 
 How can the speakers of indigenous languages be educated during a pandemic like coronavirus? In this episode of O Foundation Conversations, O Foundation’s Subhashish Panigrahi speaks to Dr. Mandana Seyfeddinipur who is a linguist and heads the Endangered Languages Documentation Programme at the SOAS University of London. (*[read](https://ia802903.us.archive.org/28/items/mandana-seyfeddinipur/Mandana_Seyfeddinipur_transcript.html) transcript in HTML*)
 

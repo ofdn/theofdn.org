@@ -70,9 +70,9 @@ details:
 - label: Filming location(s)
   value:
   - Kulmor, Dang district, Nepal
-- label: Date(s)
+- label: Year of production
   value:
-  - Year of Production 2018-2019
+  - 2018-2019
 - label: Release date(s)
   value:
   - 10 December 2019 (India—Limited Release)
@@ -94,7 +94,7 @@ details:
 - label: US Library of Congress control number (LCCN)
   value:
   - '2020512171'
-- label: Digital object identifier (DOI/EIDR)
+- label: Digital object identifier (DOI/EIDR)
   value:
   - 10.5240/52AE-86BB-F84D-03B2-D938-U
 stills:
@@ -133,9 +133,9 @@ Gyani Maiya was awarded Best Screenplay at the International Film & Entertainmen
 
 - [Asia Matters For America](https://asiamattersforamerica.org/articles/speaker-of-endangered-kusunda-language-heard-in-washington-dc), East-West Center \[by Ramil Mercado\]
 - [*Global Voices*](https://globalvoices.org/2022/10/20/filming-gyani-maiya-sen-who-inspired-efforts-to-revive-the-dying-kusunda-language-in-nepal/) \[by Sanjib Chaudhary and Subhashish Panigrahi\]—available in English, [Malagasy](https://mg.globalvoices.org/2022/10/22/160586/ "Read this post in Malagasy"), [Português](https://pt.globalvoices.org/2022/10/25/filmando-gyani-maiya-sen-que-estimulou-esforcos-para-reavivar-a-lingua-em-extincao-kusunda-no-nepal/ "Read this post in Português") and [Español](https://es.globalvoices.org/2022/11/07/filmaciones-de-gyani-maiya-sen-que-inspiro-iniciativas-por-revivir-el-moribundo-kusunda-en-nepal/ "Read this post in Español")
-- [*Edex Live*](https://www.edexlive.com/happening/2018/aug/25/o-foundation-and-national-geographic-set-out-to-document-endangered-languages-before-they-are-lost-f-3728.html), *The New Indian Express* \[by Seema Rajpal\]\
-  [*Himal Khabar*](https://www.himalkhabar.com/news/116158/) \[in Nepali\]\
-  [*Tuoitre Cuoituan*](https://cuoituan.tuoitre.vn/o-noi-nguoi-ta-khong-biet-noi-khong-20220825110641026.htm) \[in Viet by Phan Bao\]
+- [*Edex Live*](https://www.edexlive.com/happening/2018/aug/25/o-foundation-and-national-geographic-set-out-to-document-endangered-languages-before-they-are-lost-f-3728.html), *The New Indian Express* \[by Seema Rajpal\]
+- [*Himal Khabar*](https://www.himalkhabar.com/news/116158/) \[in Nepali\]
+- [*Tuoitre Cuoituan*](https://cuoituan.tuoitre.vn/o-noi-nguoi-ta-khong-biet-noi-khong-20220825110641026.htm) \[in Viet by Phan Bao\]
 
 For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
 

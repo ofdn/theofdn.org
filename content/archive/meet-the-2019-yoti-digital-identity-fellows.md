@@ -51,7 +51,7 @@ Paz will explore these groups’ lived experiences, starting with the recognitio
 
 ![Subhashish Panigrahi](/assets/images/yoti-fellows-2019-subhashish-panigrahi.webp)
 
-Photo: Sebastiaan ter Burg, CC BY 2.0
+<c>Photo: Sebastiaan ter Burg, CC BY 2.0</c>
 
 Subhashish is a digital storyteller, researcher, documentary filmmaker and activist working towards digital freedom for marginalised communities. With leading community catalyst roles spanning almost a decade for nonprofits like Wikimedia Foundation, Mozilla, Internet Society and the Centre for Internet Society, Subhashish has helped grow the reach of the open internet across the Asia-Pacific region. 
 

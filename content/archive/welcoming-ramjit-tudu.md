@@ -19,7 +19,7 @@ original_url: "https://theofdn.org/blogs/welcoming-ramjit-tudu/"
 ---
 ![File:Ramjit on Task.jpg](/assets/images/ramjit-tudu-at-work.webp)
 
-Ramjit (right) helping a new Santali Wikipedia editor learn the basics of Wikipedia editing. [Photo](https://commons.wikimedia.org/wiki/File:Ramjit_on_Task.jpg#%7B%7Bint%3Afiledesc%7D%7D): R Ashwani Banjan Murmu ([CC-BY-SA-4.0](https://commons.wikimedia.org/wiki/Category:CC-BY-SA-4.0))
+<c>Ramjit (right) helping a new Santali Wikipedia editor learn the basics of Wikipedia editing. [Photo](https://commons.wikimedia.org/wiki/File:Ramjit_on_Task.jpg#%7B%7Bint%3Afiledesc%7D%7D): R Ashwani Banjan Murmu ([CC-BY-SA-4.0](https://commons.wikimedia.org/wiki/Category:CC-BY-SA-4.0))</c>
 
 We are really excited to share the new addition to our core team as Ramjit Tudu has joined us as the lead coordinator for managing the [Marginalized Community Council](/activities/marginalized-community-council/). Ramjit will also spearhead other initiatives focused towards the digital and human rights of the indigenous peoples. Our collaboration with Ramjit started with a Santali Wikipedia workshop in 2018 at the North Odisha University, Baripada (Mayurbhanj, Odisha, India) that was led by him and other friends from the community and some of us assisted with our volunteer Wikipedian hats. Among many other things, Ramjit is a leader in the Wikipedia/Wikimedia movement and has led many open content and open source activities to help his own language, Santali, thrive on the Internet.
 

@@ -106,6 +106,14 @@ Write every quote the same way. The site gives them all one look.
 
 The last line starts with a dash. Put the name in bold and the source in italics. Quotes one after another show as a grid.
 
+The short form gives the same result:
+
+```
+<quote author="Benjamin Franz" source="Film Threat">Quite a visual treat.</quote>
+```
+
+`author` and `source` are both optional. Leave both out for a quote with no name under it.
+
 For a star rating, start the quote with a line such as `★★★★☆ (4 out of 5)`. The page shows the stars. Screen readers read "Rated 4 out of 5".
 
 ## Section links
@@ -137,6 +145,15 @@ Providers:
 1. Put the file in `assets/media/<year>/<month>/`. JPEG, PNG or GIF is fine.
 2. Link it in the page as `/assets/media/...`. Add alt text.
 3. Run `python3 scripts/optimise_media.py`.
+
+To add a caption, put it on the line after the image:
+
+```
+![Two elders singing wedding songs](/assets/images/remosam-poster.webp)
+<c>Poster of “Remosam”. © Subhashish Panigrahi, CC BY-SA 4.0</c>
+```
+
+Links and italics work inside a caption. A caption without an image above it shows as a small caption line.
 
 The script makes a WebP copy and a small fallback for old phones, and updates the link. The original moves to `../theofdn-media-originals/`, outside the repository. Keep that folder backed up.
 

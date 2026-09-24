@@ -22,7 +22,7 @@ original_url: "https://theofdn.org/blogs/funding/openspeaks-got-wings-with-a-nat
 ---
 [![https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Inde_bondo8941a.jpg/640px-Inde_bondo8941a.jpg](/assets/images/natgeo-grant-2017-bondo.webp)](https://commons.wikimedia.org/wiki/File:Inde_bondo8941a.jpg)
 
-A Bonda woman drinking rice alcohol. Image: Inde bondo8941a.jpg by Yves Picq (CC-BY-SA-3.0,2.5,2.0,1.0)
+<c>A Bonda woman drinking rice alcohol. Image: Inde bondo8941a.jpg by Yves Picq (CC-BY-SA-3.0,2.5,2.0,1.0)</c>
 
 Earlier this year, we were lucky to be awarded an [Early Career Grant](https://www.nationalgeographic.org/grants/what-we-fund/) by the National Geographic Society (NGS). When most of our work expenses were borne from out of pocket so far, this grant is going to shape some of our on-ground digital documentation activities. The larger focus of the documentation will be to document the storytelling and other such narratives of these communities.
 

@@ -31,7 +31,8 @@ details:
   value:
   - Mage Porob (English)
   - 𑢶𑣋𑣈 𑢸𑣉𑣜𑣉𑣗 (Ho)
-  - CINEMATOGRAPHY, SOUND RECORDIST, EDITOR, DIRECTOR AND PRODUCER
+- label: Cinematography, sound recording, editing, direction and production
+  value:
   - Subhashish Panigrahi
 - label: Writer(s)
   value:
@@ -62,9 +63,9 @@ details:
 - label: Filming location(s)
   value:
   - Keshpada, Mayurbhanj district, Odisha, India
-- label: Date(s)
+- label: Year of production
   value:
-  - Year of Production 2018-2019
+  - 2018-2019
 - label: Release date(s)
   value:
   - 10 December 2019 (India—Limited Release)
@@ -86,7 +87,7 @@ details:
 - label: US Library of Congress control number (LCCN)
   value:
   - '2020512172'
-- label: Digital object identifier (DOI/EIDR)
+- label: Digital object identifier (DOI/EIDR)
   value:
   - 10.5240/5487-2EE9-6E70-1EE0-37B5-O
 stills:

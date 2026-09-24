@@ -20,10 +20,9 @@ details:
   value:
   - Gejmehac Gipan (English)
   - गेम्येहाक़ गिपन (Kusunda/Nepali)
-- label: Cast
+- label: Cameraperson, recordist, director and producer
   value:
-  - Gyani Maiya Sen-Kusunda (self)
-  - Uday Raj Aaley (self)
+  - Subhashish Panigrahi
 - label: Writer(s)
   value:
   - Subhashish Panigrahi, Uday Raj Aaley (Co-Writer)
@@ -34,21 +33,22 @@ details:
 - label: Additional translation
   value:
   - Sanjib Chaudhary
-- label: Cameraperson, recordist, director and producer
+- label: Cast
   value:
-  - Subhashish Panigrahi
+  - Gyani Maiya Sen-Kusunda (self)
+  - Uday Raj Aaley (self)
+- label: Language(s)
+  value:
+  - Kusunda, Nepal
 - label: Country of production/origin
   value:
   - Nepal
 - label: Filming location(s)
   value:
   - Kulmor, Dang district, Nepal
-- label: Language spoken
+- label: Year of production
   value:
-  - Kusunda, Nepal
-- label: Date(s)
-  value:
-  - Year of Production 2018-2019
+  - 2018-2019
 - label: Release date(s)
   value:
   - 24 December 2024
@@ -64,7 +64,7 @@ details:
 - label: Film website
   value:
   - https://theofdn.org/film/gejmehac-gipan
-- label: For screening, discussion & other queries
+- label: Contact
   value:
   - '[Subhashish Panigrahi](https://psubhashish.com/contact)'
 stills:

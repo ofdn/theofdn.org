@@ -41,24 +41,24 @@ details:
   - Puspashree Pattnaik (self)
   - Nikhil Mohan Pattnaik (self)
   - Padmaja (self)
+- label: Language(s)
+  value:
+  - English
 - label: Country of production/origin
   value:
   - India
 - label: Filming location(s)
   value:
   - Bhubaneswar and Cuttack, Odisha, India
-- label: Date(s)
+- label: Year of production
   value:
-  - Year of Production 2021-2022
+  - 2021-2022
 - label: Release date(s)
   value:
   - 26 May 2022 (India—Limited Release)
 - label: Duration
   value:
   - 35 minutes (appx.)
-- label: Language
-  value:
-  - English
 - label: Genre
   value:
   - Documentary
@@ -74,7 +74,7 @@ details:
 - label: US Library of Congress control number (LCCN)
   value:
   - '2020512175'
-- label: Digital object identifier (DOI/EIDR)
+- label: Digital object identifier (DOI/EIDR)
   value:
   - 10.5240/D926-0610-5EAA-FA7E-F91D-9
 stills:

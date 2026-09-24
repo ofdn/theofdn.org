@@ -87,7 +87,7 @@ def load_pages():
         if not m:
             sys.exit(f"{f}: missing the block between --- lines at the top")
         meta = yaml.safe_load(m.group(1)) or {}
-        meta["body_md"] = m.group(2)
+        meta["body_md"] = expand_tags(m.group(2))
         meta["file"] = f.relative_to(ROOT).as_posix()
         for key in ("title", "path", "section"):
             if not meta.get(key):
@@ -102,6 +102,28 @@ def load_pages():
             sys.exit(f"{p['file']} and {seen[p['path']]} have the same path {p['path']}")
         seen[p["path"]] = p["file"]
     return pages
+
+
+CAPTION_MARK = "[[caption]]"
+
+
+def expand_tags(md):
+    """Short tags for the Markdown body:
+      <c>Text</c>                                   caption, on the line after an image
+      <quote author="Name" source="Where">Text</quote>
+    A quote becomes the usual blockquote, so it looks like every other quote."""
+    md = re.sub(r"[ \t]*<(c|caption)>(.*?)</\1>[ \t]*",
+                lambda m: f"\n\n{CAPTION_MARK} {m.group(2).strip()}\n\n", md, flags=re.S)
+
+    def quote(m):
+        attrs = dict(re.findall(r'(\w+)="([^"]*)"', m.group(1)))
+        lines = [f"> {l}".rstrip() for l in m.group(2).strip().split("\n")]
+        who = ", ".join(x for x in (f"**{attrs['author']}**" if attrs.get("author") else "",
+                                    f"*{attrs['source']}*" if attrs.get("source") else "") if x)
+        if who:
+            lines += [">", f"> — {who}"]
+        return "\n\n" + "\n".join(lines) + "\n\n"
+    return re.sub(r"[ \t]*<quote\b([^>]*)>(.*?)</quote>[ \t]*", quote, md, flags=re.S)
 
 
 def markdown_to_html(md):
@@ -279,6 +301,25 @@ def polish(html, page):
             p.replace_with(BeautifulSoup(new, "html.parser"))
         elif re.fullmatch(r"\s*\[\[people\]\]\s*", p.get_text()):
             p.replace_with(BeautifulSoup(people_html(page.get("people") or []), "html.parser"))
+
+    # <caption> after an image becomes its figcaption; anywhere else it is
+    # a caption-styled line.
+    for cap in soup.find_all("p"):
+        first = cap.contents[0] if cap.contents else None
+        if not (isinstance(first, str) and first.startswith(CAPTION_MARK)):
+            continue
+        first.replace_with(first[len(CAPTION_MARK):].lstrip())
+        img = cap.find_previous_sibling()
+        kids = [k for k in (img.contents if img else []) if not (isinstance(k, str) and not k.strip())]
+        if img is not None and img.name == "p" and len(kids) == 1 and (
+                kids[0].name == "img" or (kids[0].name == "a" and kids[0].find("img"))):
+            fig = soup.new_tag("figure", attrs={"class": "captioned"})
+            img.wrap(fig)
+            img.unwrap()
+            cap.name = "figcaption"
+            fig.append(cap.extract())
+        else:
+            cap["class"] = "caption"
 
     # WebP with a small fallback for browsers that cannot show WebP.
     for img in soup.find_all("img"):
@@ -474,7 +515,7 @@ def main():
         if p.get("trailer"):
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
-            p["transcript_html"] = polish(markdown_to_html(str(p["transcript"])), p)
+            p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]))), p)
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else TEMPLATE.get(p["section"], "page.html")
@@ -482,7 +523,7 @@ def main():
         html = env.get_template(tpl).render(
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]),
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
-            current=p["path"], lists=by_section, summary=summary, picture=picture,
+            current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md,
             status=page_status(p, conf), **common)
         write(p["path"], html)
 
@@ -509,7 +550,7 @@ def main():
     index = []
     for p in pages:
         text = BeautifulSoup(markdown_to_html(p["body_md"]), "html.parser").get_text(" ", strip=True)
-        text = re.sub(r"\[\[embed:\d+\]\]", "", text)
+        text = re.sub(r"\[\[embed:\d+\]\]", "", text).replace(CAPTION_MARK, "")
         index.append({"t": p["title"], "u": base + p["path"], "s": EYEBROW.get(p["section"], ""),
                       "e": summary(p), "x": re.sub(r"\s+", " ", text)[:4000]})
     (out / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))

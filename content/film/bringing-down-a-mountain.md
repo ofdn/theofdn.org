@@ -18,9 +18,9 @@ laurels:
 - src: /assets/images/bringing-down-a-mountain-laurel-folklore-film-festival-kerala.webp
   alt: 8th International Folklore Film Festival 2025@INDIA ,Kerala
 - src: /assets/images/bringing-down-a-mountain-laurel-diversity-toronto.webp
-  alt: Laurel - Political Film Festival, Los Angeles
-- src: /assets/images/bringing-down-a-mountain-laurel-political-los-angeles.webp
   alt: Laurel - DIVERSITY Film Festival & Table Read Screenplays, Toronto
+- src: /assets/images/bringing-down-a-mountain-laurel-political-los-angeles.webp
+  alt: Laurel - Political Film Festival, Los Angeles
 - src: /assets/images/bringing-down-a-mountain-laurel-premiere-interledger.webp
   alt: PREMIRERE Interledger Summit 2023 Costa Rica
 lede: Premiered in Costa Rica on 5 November 2023.
@@ -32,19 +32,19 @@ details:
 - label: Logline
   value:
   - The landfill is full, and so are the dreams
-- label: Directed by
+- label: Director
   value:
   - Subhashish Panigrahi
 - label: Writer(s)
   value:
   - Bharat Majhi and Subhashish Panigrahi
+- label: Advisor
+  value:
+  - Arky AR
 - label: Cast
   value:
   - Debadatta Pati
   - Monalisa Moharana
-- label: Advisor
-  value:
-  - Arky AR
 - label: Country of production/origin
   value:
   - India, Canada
@@ -52,13 +52,13 @@ details:
   value:
   - 'India: Bhubaneswar; Cuttack; Rejingtal, Rayagada district.; Koraput'
   - 'California, US: Navarro, San Francisco'
-- label: Date(s)
+- label: Year of production
   value:
-  - Year of Production 2023
+  - '2023'
 - label: Release date(s)
   value:
   - 5 November 2023 (Premiere in Costa Rica)
-- label: Running time
+- label: Duration
   value:
   - 14 minutes (appx.)
 - label: Genre
@@ -67,18 +67,18 @@ details:
 - label: Distribution company
   value:
   - O Foundation
-- label: DOI (EIDR)
-  value:
-  - 10.5240/7379-E473-22A9-DCB4-6B11-C
-- label: LCCN (Library of Congress)
-  value:
-  - '[2023347988](https://lccn.loc.gov/2023347988)'
 - label: Film website
   value:
   - '[https://theofdn.org/film/bringing-down-a-mountain](/film/bringing-down-a-mountain/)'
-- label: Film archive
+- label: Permanent archive
   value:
   - <https://archive.org/details/bringing-down-a-mountain-2023>
+- label: US Library of Congress control number (LCCN)
+  value:
+  - '[2023347988](https://lccn.loc.gov/2023347988)'
+- label: Digital object identifier (DOI/EIDR)
+  value:
+  - 10.5240/7379-E473-22A9-DCB4-6B11-C
 stills:
 - /assets/images/bringing-down-a-mountain-still-1.webp
 - /assets/images/bringing-down-a-mountain-still-2.webp

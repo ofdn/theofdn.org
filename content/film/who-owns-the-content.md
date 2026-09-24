@@ -23,11 +23,25 @@ laurels:
 links:
 - https://www.imdb.com/title/tt12663954/
 - https://www.moviebuff.com/who-owns-the-content
+details:
+- label: Title
+  value:
+  - Who Owns The Content
+- label: Logline
+  value:
+  - No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
+- label: Director and producer
+  value:
+  - Subhashish Panigrahi
+- label: Year of production
+  value:
+  - '2019'
 ---
 
-No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
 
 [[embed:0]]
+
+## About the film
 
 During a panel at the Global Voices Summit 2017 in Colombo, Sri Lanka, Eddie Avila, Director of Rising Voices, recounted the dilemma a young Colombian man faced after discovering a cache of cassette tapes. The tapes contained recordings of his late father, who was interviewed by a European researcher, but was hidden somewhere. The young man got really excited when the tapes surfaced after all these years. So, he thought it might be interesting to digitise the tapes and share them online, and he did that only to realise that he had made his own siblings upset. They did not approve of the fact that the recordings have gone online. The question Avila leaves everyone with is: “Who owns the content \[in the tape\]?” Is it the researcher who interviewed the late father and recorded those interviews in the first place, is the father who is no more around, or the children, or the community whose songs and stories were recorded?
 
@@ -35,7 +49,7 @@ During a panel at the Global Voices Summit 2017 in Colombo, Sri Lanka, Eddie Avi
 
 Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
 
-#### Credits
+## Credits
 
 - Narration: Eddie Avila, Director, Rising Voices (*recorded during [Global Voices Summit 2017](https://www.youtube.com/watch?v=X2jpBui4Qxk), Colombo, Sri Lanka*)
 - Director and producer: Subhashish Panigrahi
