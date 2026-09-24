@@ -7,7 +7,7 @@ wp_type: "page"
 wp_id: 4709
 date: "2026-04-14"
 modified: "2026-05-27"
-excerpt: "Type design We study type history, develop and maintain open source typefaces for various scripts. Our typefaces are for publishing, archiving and language technology work. Chapakala 19 Revival of 19th-century Odia typeface Script: OdiaDesigner: Subhashish PanigrahiAdvisors: Nasim Ali, Yesha Goshar, Liang HaiPeriod covered: Nineteenth centuryStatus: First releaseLicence: SIL Open Font License 1.1Repository: GitHub Chapakala 19 […]"
+excerpt: "Type design. We study type history, develop and maintain open source typefaces for various scripts. Our typefaces are for publishing, archiving and language technology work. Chapakala 19 Revival of 19th-century Odia typeface Script: Odia Designer: Subhashish Panigrahi Advisors: Nasim Ali, Yesha Goshar, Liang Hai. covered: Nineteenth century. Status: First release. Licence: SIL Open Font License 1.1Repository: GitHub Chapakala 19 […]"
 original_url: "https://theofdn.org/activities/type/"
 ---
 ## Type design
@@ -16,7 +16,7 @@ We study type history, develop and maintain open source typefaces for various sc
 
 ## Chapakala 19
 
-![Shahidul Alam (7165438696](/assets/images/type-shahidul-alam.webp) ![Chapakala 19 typeface poster](/assets/images/type-chapakala19-poster.svg)
+![Chapakala 19 typeface poster](/assets/images/type-chapakala19-poster.svg)
 
 Revival of 19th-century Odia typeface
 
@@ -34,7 +34,7 @@ Chapakala 19 revives a nineteenth‑century workhorse Odia letterpress typeface 
 
 ## Chapakala 20
 
-![Shahidul Alam (7165438696](/assets/images/type-shahidul-alam.webp) ![Chapakala 19 typeface poster](/assets/images/type-chapakala20-poster.svg)
+![Chapakala 19 typeface poster](/assets/images/type-chapakala20-poster.svg)
 
 Revival of 20th-century Odia typeface
 
