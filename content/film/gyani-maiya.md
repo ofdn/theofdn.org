@@ -53,7 +53,7 @@ details:
   - ज्ञानी मैया (Nepali)
 - label: Logline
   value:
-  - A formerly hunter-gather community stopped speaking their language for two generations, and linguists have predicted its death, declaring an 83-year-old the last living speaker. Will her lamenting revive the near-extinct language, her only identity?
+  - A formerly hunter-gatherer community stopped speaking their language for two generations, and linguists have predicted its death, declaring an 83-year-old the last living speaker. Will her lamenting revive the near-extinct language, her only identity?
 - label: Cameraperson, recordist, director and producer
   value:
   - Subhashish Panigrahi
@@ -123,7 +123,8 @@ stills:
 
 ## About the film
 
-The Kusunda people were once a semi-nomadic hunter and gatherer community that settled in villages around the mid-western Nepalese district of Dang. They have long lost their native language Mihaq (Kusunda), to acculturation and other barriers to active use. The community also lost its 83-year-old elder Gyani Maiya Sen-Kusunda in 2020, the most and the only known fluent Kusunda speaker then. Filmed in Kulmor in the Dang District in 2018, this documentary is a memoir of Sen-Kusunda in her own words and a biography of her people who were forced to leave their language and cultural identity. Kusunda is being revived by Kamala Sen Khatri, Sen-Kusunda’s younger sister, and Uday Raj Aaley, a local researcher who is the key collaborator for this film.
+The Kusunda people were once a semi-nomadic hunter-gatherer community that settled in villages in the mid-western Nepalese district of Dang. They have long lost their native language, Mihaq (Kusunda), to acculturation and other barriers to active use. The community also lost its 83-year-old elder, Gyani Maiya Sen-Kusunda, in 2020, the last and only known fluent Kusunda speaker at the time. Filmed in Kulmor, in the Dang District, in 2018, this documentary is a memoir of Sen-Kusunda in her own words and a biography of her people, who were forced to abandon their language and cultural identity. Kusunda is being revived by Kamala Sen Khatri, Sen-Kusunda’s younger sister, and Uday Raj Aaley, a local researcher and the key collaborator 
+this film.
 
 ***This film was supported through a National Geographic Society grant.***
 
