@@ -25,7 +25,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .site-logo { color: #FFFFFF; }
   :root:not([data-theme="light"]) {
     --color-bg: #141312;
     --color-surface: #1E1C1A;
@@ -37,7 +36,6 @@
     --color-accent-hover: #A3DBBF;
   }
 }
-:root[data-theme="dark"] .site-logo { color: #FFFFFF; }
 :root[data-theme="dark"] {
   --color-bg: #141312; --color-surface: #1E1C1A; --color-border: #8A8279; --color-rule: #3A3632;
   --color-text: #F0EDE9; --color-text-muted: #C9C3BB; --color-accent: #7FCBA4; --color-accent-hover: #A3DBBF;
@@ -88,27 +86,37 @@ h1, h2, h3, h4, h5, h6 {
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-/* Header */
+/* Header: grey with the footer's blue, same in both themes */
 .site-header {
+  --header-bg: #E4E6EA; --header-text: #0B1A36;
   position: sticky; top: 0; z-index: 5;
-  background-color: var(--color-bg);
-  border-bottom: 2px solid var(--color-border);
+  background-color: var(--header-bg); color: var(--header-text);
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
   gap: var(--space-sm) var(--space-lg);
   padding: 0.9rem 2rem;
 }
-.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: #000000; text-decoration: none; }
+.site-header a:focus-visible, .site-header button:focus-visible { outline-color: var(--header-text); }
+.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: var(--header-text); text-decoration: none; }
+.site-logo:hover { color: var(--header-text); }
 .site-logo__mark { display: block; height: 30px; width: auto; }
+.site-nav { display: flex; align-items: center; gap: 0.4rem 1.25rem; flex-wrap: wrap; }
 .site-nav__list { display: flex; flex-wrap: wrap; list-style: none; gap: 0.4rem 1.5rem; }
 .site-nav__list a {
   display: inline-block; padding: 0.2rem 0;
   font-family: var(--font-display); font-size: 0.9rem; font-weight: 600;
   letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
-  color: var(--color-text-muted); border-bottom: 1px solid transparent;
+  color: var(--header-text); border-bottom: 2px solid transparent;
 }
 .site-nav__list a:hover, .site-nav__list a[aria-current="page"] {
-  color: var(--color-text); border-bottom-color: var(--color-text);
+  color: var(--header-text); border-bottom-color: var(--header-text);
 }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.25rem; height: 2.25rem; padding: 0; border: 0; border-radius: 50%;
+  background: none; color: var(--header-text); cursor: pointer;
+}
+.theme-toggle:hover { background-color: #CBD0D8; }
+.theme-toggle svg { display: block; }
 
 main { flex: 1; }
 

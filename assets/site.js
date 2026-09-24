@@ -1,3 +1,26 @@
+// Theme toggle, as on psubhashish.com. The choice is kept in this browser.
+(function () {
+  var html = document.documentElement;
+  var btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  function current() {
+    return html.getAttribute("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }
+  function update(theme) {
+    var label = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    btn.setAttribute("aria-label", label);
+    btn.title = label;
+  }
+  update(current());
+  btn.addEventListener("click", function () {
+    var next = current() === "dark" ? "light" : "dark";
+    html.setAttribute("data-theme", next);
+    try { localStorage.setItem("site-theme", next); } catch (e) {}
+    update(next);
+  });
+})();
+
 // Click-to-play video: the YouTube player loads only when someone asks for it.
 document.querySelectorAll(".embed-play").forEach(function (link) {
   link.addEventListener("click", function (event) {
