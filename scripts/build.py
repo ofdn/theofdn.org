@@ -29,9 +29,8 @@ NAV = [
     ("About", "/about/"),
 ]
 FOOTER_NAV = [
-    ("About", [("About us", "/about/"), ("People", "/people/"), ("Partners", "/about/#partners"),
-               ("Core values", "/about/#core-values"), ("Diversity and inclusion", "/about/#diversity-and-inclusion"),
-               ("Contact", "/reach-out/")]),
+    ("About", [("About us", "/about/"), ("People", "/people/"), ("Core values", "/about/#core-values"),
+               ("Collaborators", "/about/#present-and-past-collaborators"), ("Contact", "/reach-out/")]),
     ("Work", [("Films", "/category/film/"), ("Podcast", "/podcast/"), ("Resources", "/category/oer/"),
               ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
     ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
