@@ -12,14 +12,84 @@ categories:
 excerpt: "Bringing Down A Mountain is a speculative film set in a city where everything and everyone is superior, including the internet. Next to the city stands a tall circular mountain, blocking all forms of access to the valley village within it. Will this ever come to an end?"
 featured_image: "/assets/images/bringing-down-a-mountain-still.webp"
 original_url: "https://theofdn.org/film/bringing-down-a-mountain/"
+hero: /assets/images/bringing-down-a-mountain-hero.webp
+title_image: /assets/images/bringing-down-a-mountain-title.webp
+laurels:
+- src: /assets/images/bringing-down-a-mountain-laurel-folklore-film-festival-kerala.webp
+  alt: 8th International Folklore Film Festival 2025@INDIA ,Kerala
+- src: /assets/images/bringing-down-a-mountain-laurel-diversity-toronto.webp
+  alt: Laurel - Political Film Festival, Los Angeles
+- src: /assets/images/bringing-down-a-mountain-laurel-political-los-angeles.webp
+  alt: Laurel - DIVERSITY Film Festival & Table Read Screenplays, Toronto
+- src: /assets/images/bringing-down-a-mountain-laurel-premiere-interledger.webp
+  alt: PREMIRERE Interledger Summit 2023 Costa Rica
+lede: Premiered in Costa Rica on 5 November 2023.
+details:
+- label: Title
+  value:
+  - '*ଚୁରମାର ଏକ ପର୍ବତ* (ଓଡ଼ିଆ)'
+  - '*Bringing Down a Mountain* (English)'
+- label: Logline
+  value:
+  - The landfill is full, and so are the dreams
+- label: Directed by
+  value:
+  - Subhashish Panigrahi
+- label: Writer(s)
+  value:
+  - Bharat Majhi and Subhashish Panigrahi
+- label: Cast
+  value:
+  - Debadatta Pati
+  - Monalisa Moharana
+- label: Advisor
+  value:
+  - Arky AR
+- label: Country of production/origin
+  value:
+  - India, Canada
+- label: Filming location(s)
+  value:
+  - 'India: Bhubaneswar; Cuttack; Rejingtal, Rayagada district.; Koraput'
+  - 'California, US: Navarro, San Francisco'
+- label: Date(s)
+  value:
+  - Year of Production 2023
+- label: Release date(s)
+  value:
+  - 5 November 2023 (Premiere in Costa Rica)
+- label: Running time
+  value:
+  - 14 minutes (appx.)
+- label: Genre
+  value:
+  - Docu-fiction
+- label: Distribution company
+  value:
+  - O Foundation
+- label: DOI (EIDR)
+  value:
+  - 10.5240/7379-E473-22A9-DCB4-6B11-C
+- label: LCCN (Library of Congress)
+  value:
+  - '[2023347988](https://lccn.loc.gov/2023347988)'
+- label: Film website
+  value:
+  - '[https://theofdn.org/film/bringing-down-a-mountain](/film/bringing-down-a-mountain/)'
+- label: Film archive
+  value:
+  - <https://archive.org/details/bringing-down-a-mountain-2023>
+stills:
+- /assets/images/bringing-down-a-mountain-still-1.webp
+- /assets/images/bringing-down-a-mountain-still-2.webp
+- /assets/images/bringing-down-a-mountain-still-3.webp
+- /assets/images/bringing-down-a-mountain-still-4.webp
+- /assets/images/bringing-down-a-mountain-still-5.webp
+- /assets/images/bringing-down-a-mountain-still-6.webp
+- /assets/images/bringing-down-a-mountain-still-7.webp
 ---
-![8th International Folklore Film Festival 2025@INDIA ,Kerala](/assets/images/bringing-down-a-mountain-laurel-folklore-film-festival-kerala.webp) ![Laurel - Political Film Festival, Los Angeles](/assets/images/bringing-down-a-mountain-laurel-diversity-toronto.webp) ![Laurel - DIVERSITY Film Festival & Table Read Screenplays, Toronto](/assets/images/bringing-down-a-mountain-laurel-political-los-angeles.webp) ![PREMIRERE Interledger Summit 2023 Costa Rica](/assets/images/bringing-down-a-mountain-laurel-premiere-interledger.webp) ![Bringing Down A Mountain - Logo \#fde48b](/assets/images/bringing-down-a-mountain-title.webp) [ABOUT THE FILM](/#about) [PRESS](/#press) [TRAILER](/#trailer) [STILLS](/#stills) [DATASHEET](/#datasheet) [CONTACT](/#contact)
 
-premiered in Costa Rica on 5 November 2023
-
-About the film
-
- 
+## About the film
 
 A rural village never wanted to be a city’s landfill or a distant blur in Reels but rather home to new imaginations.
 
@@ -28,67 +98,3 @@ A rural village never wanted to be a city’s landfill or a distant blur in Reel
 While underlining that all digital barriers are social, the film exposes the plurality of tech innovations and challenges the extractivist and ableist tech.
 
 Made through the Future\|Money grant, *Bringing Down A Mountain* is a speculative film centred around financial inclusion with a push and pull between caste abolition and Unified Payment Interface, a mobile digital payment system in India. It was premiered in November 2023 at the Interledger Summit 2023 in Costa Rica.
-
-DOWNLOAD PRESS KIT
-
-Stills
-
-DATASHEET
-
-TITLE\
-*ଚୁରମାର ଏକ ପର୍ବତ* (ଓଡ଼ିଆ)\
-*Bringing Down a Mountain* (English)
-
-LOGLINE
-
-The landfill is full, and so are the dreams
-
-DIRECTED BY\
-Subhashish Panigrahi
-
-WRITER(S)\
-Bharat Majhi and Subhashish Panigrahi
-
-CAST\
-Debadatta Pati\
-Monalisa Moharana
-
-ADVISOR\
-Arky AR
-
-COUNTRY OF PRODUCTION/ORIGIN\
-India, Canada
-
-FILMING LOCATION(S)\
-India: Bhubaneswar; Cuttack; Rejingtal, Rayagada district.; Koraput\
-California, US: Navarro, San Francisco
-
-DATE(S)\
-Year of Production 2023\
-RELEASE DATE(S)\
-5 November 2023 (Premiere in Costa Rica)
-
-RUNNING TIME\
-14 minutes (appx.)
-
-GENRE\
-Docu-fiction
-
-DISTRIBUTION COMPANY\
-O Foundation
-
-DOI (EIDR)\
-10.5240/7379-E473-22A9-DCB4-6B11-C
-
-LCCN (Library of Congress)\
-[2023347988](https://lccn.loc.gov/2023347988)
-
-FILM WEBSITE\
-[https://theofdn.org/film/bringing-down-a-mountain](/film/bringing-down-a-mountain/)
-
-FILM ARCHIVE\
-<https://archive.org/details/bringing-down-a-mountain-2023>
-
-![QR Code to the official page for Bringing Down A Mountain](/assets/images/bringing-down-a-mountain-qr-code.webp)
-
-[SCREENINGS](/#screening)

@@ -15,23 +15,13 @@ original_url: "https://theofdn.org/blogs/conference/it-took-us-13-years-to-celeb
 ---
 Bhubaneswar celebrated its first Software Freedom Day on September 16 though it took 13 long years to bring the [Free/Libre and Open Source Software](https://www.gnu.org/philosophy/floss-and-foss.en.html) (FLOSS/FOSS) enthusiasts and contributors under one roof.
 
- 
-
 [Software Freedom Day](https://www.softwarefreedomday.org/) (often acronymed as **SFD**) is a worldwide celebration to make people around us aware of the value that FLOSS/FOSS brings to our social and community lives. Openness in general and particularly FLOSS/FOSS are breaking conventional barriers and helping more people exchange knowledge in an open and transparent manner. These are helping all of us to envision our education to scientific research to governance in a whole new way now. Celebrating SFD was a way to revisit what we have done because of open collaborations and brainstorm to address many new challenges.
-
- 
 
 12 of us from many walks of life—software developers, students, freelancers, academicians, and journalists—joined to engage with each other in an open manner. Three organisations came together to celebrate—[Odia Wikimedians User Group](https://meta.wikimedia.org/wiki/Odia_Wikimedians_User_Group), a Wikimedia affiliate that is growing the Odia-language Wikimedia projects and communities, [O Foundation](/), a Bhubaneswar-based nonprofit that is diving deep into identifying and bridging that technological gap that exists in using native languages for knowledge sharing, and [Sambad Group](http://sambad.in/), a media house that is home to the largest-circulated Odia-language daily the Sambad, a television channel, a radio, and a publications.
 
- 
-
 FLOSS/FOSS movement is getting new wings in India of late, and the Indian state of Odisha has a long way to go to adapt Openness in many levels. Many of us are long time contributors to the Odia-language Wikimedia projects—there exists three live projects a) [Odia Wikipedia](https://or.wikipedia.org/), b) [Odia Wikisource](https://or.wikisource.org/), and c) [Odia Wiktionary](https://or.wiktionary.org/). So being part of the struggle that went into building volunteer communities in the state helped us to share the state of FLOSS/FOSS with the group that gathered on this day.
 
- 
-
 [Jnanaranjan Sahu](/people/), a long term Wikimedian and trustee of the O Foundation, elucidated about SFD, usability and development of proprietary and free software, and showcased the work of the Odia Wikimedia community.
-
- 
 
 Open licenses help you use, modify and share the source code. A way forward to support the FOSS movement will be:
 
@@ -41,17 +31,11 @@ Open licenses help you use, modify and share the source code. A way forward to s
 
 – Jnanaranjan Sahu
 
- 
-
 With this short presentation we opened the room for discussion that led participants to form a tasklist for the next one year. Many of the larger questions that arose during this exercise include this—
 
 Why Google does not support Odia in many of their products like Google Translate? [Google India](https://www.google.co.in/)’s main page has interfaces in nine Indian languages and Odia is not one of them.
 
- 
-
 Hariram Pansari, a Linux contributor, suggested that Google doesn’t have a corpus of Odia words to start its search engine in Odia. “We have very few Odia Unicode users. Searching information in one’s native language in Unicode allows Google to add those keywords into its corpus, sorting it by an identity, which then removes the duplicates.” he added. One of the staffers of Sambad asked why we don’t have any standardised Unicode input tool for Odia to which, we would say that there are many—the Odia Wikimedia community-led project that has brought [many input tools](https://www.mediawiki.org/wiki/Category:Extension_creation/or) on [Mediawiki Universal Language Selector](https://www.mediawiki.org/wiki/ULS) including the [InScript](https://en.wikipedia.org/wiki/InScript_keyboard) input systems that was consensually built by the Indian government and many other Indic computing stakeholders.
-
- 
 
 We also collectively identified some of the major barriers for growing FLOSS/FOSS movement in the region:
 
@@ -62,21 +46,13 @@ We also collectively identified some of the major barriers for growing FLOSS/FOS
 - Myths around free software—many fail to understand that the *free* in Free software is merely about freedom and not necessarily the cost
 - Advocacy—there are not enough individuals/organisations for consistent lobbying with the government to persuade it to adapt FLOSS/FOSS/Open Source tools
 
- 
-
 Pansari feels that the government also plays a role for the low outreach for FLOSS/FOSS—
-
- 
 
 |  |
 |----|
 | “[BOSS Linux](https://bosslinux.in), a Linux distribution made by the support from the Indian government is available for free but how many government entities are using it themselves?; ; Secondly, existing works need more involvement. I was associated with Srujanika for translation of the Linux environment back in 1999 using a standalone software Yudit. But today, there are hardly anyone in Odisha that cares for Linux in Odisha where many use pirated Windows!”– Hariram Pansari |
 
- 
-
 [Dhanadakanta Mishra](https://twitter.com/DhanadaKanta), a known academician who has been a long time steward of FLOSS/FOSS in general and particularly, Linux, helped summarise a vision for the community—
-
- 
 
 |  |
 |----|

@@ -15,22 +15,22 @@ embeds:
   - provider: "vimeo"
     id: "539159182"
 original_url: "https://theofdn.org/film/who-owns-the-content/"
+laurels:
+- src: /assets/images/who-owns-the-content-laurel-native-spirit-2019.webp
+  alt: OFFICIAL SELECTION - 13th Native Spirit Indigenous Film Festival - 2019
+- src: /assets/images/who-owns-the-content-laurel-first-time-filmmaker.webp
+  alt: Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
 ---
+
 No community can express the pain of losing an elder, especially when she was the last fluent speaker of their language.
 
 [[embed:0]]
 
 During a panel at the Global Voices Summit 2017 in Colombo, Sri Lanka, Eddie Avila, Director of Rising Voices narrated about the dilemma that a Colombian young man went through once after discovering a bunch of cassette tapes. The tapes contained recordings of his late father who was interviewed by an European researcher but was hidden somewhere. The young man got really excited the tapes surfaced after all these years. So, he thought it might be interesting to digitise the tapes and share them online, and he did that only to realise that he has made his own siblings upset. They did not approve the fact that the recordings have gone online. The question Avila leaves everyone with is “who owns the content \[in the tape\]?”. Is it the researcher who interviewed the late father and recorded those interviews in the first place, is the the father who is no more around, or the children, or the community whose songs and stories were recorded?
 
-![OFFICIAL SELECTION - 13th Native Spirit Indigenous Film Festival - 2019](/assets/images/who-owns-the-content-laurel-native-spirit-2019.webp)
-
 “*Who Owns The Content*” [made](https://web.archive.org/web/20200715191817/https://eventsforlondon.co.uk/event/13th-native-spirit-indigenous-film-festival-north-americas/) it to the “[13th Native Spirit Indigenous Film Festival – North Americas](https://issuu.com/nativespirituk/docs/final_a5_nativespirit_12oct19)” with a [screening in London](https://en.iyil2019.org/events/13th-annual-native-spirit-indigenous-film-festival/) on October 12, 2019, hosted by Native Spirit Festival with collaboration with SOAS World Language Institute.
 
-![Official Selection at Lift-Off First-Time Filmmaker Sessions 2020](/assets/images/who-owns-the-content-laurel-first-time-filmmaker.webp)Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
-
- 
-
- 
+Official Selection at Lift-Off First-Time Filmmaker Sessions 2020
 
 #### Credits
 

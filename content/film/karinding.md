@@ -17,7 +17,10 @@ embeds:
   - provider: "file"
     id: "https://archive.org/download/karinding/Karinding%20%282020%29%20%28short%20documentary%29.mp4"
 original_url: "https://theofdn.org/film/karinding/"
+hero: /assets/images/karinding-poster-landscape.webp
+poster: /assets/images/karinding-poster-portrait.webp
 ---
+
 > *Ilham Nurwansah’s passion for archiving and even reviving Sundanese culture did not stop at carving “Karinding”, a musical instrument made of bamboo.*
 
 [[embed:0]]

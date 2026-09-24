@@ -36,6 +36,20 @@ Source of theofdn.org. Pages are Markdown files in `content/`. GitHub builds and
 - `transcript`: optional, for films and podcast episodes.
 - `ark`: ARK identifier, once the page has one.
 
+## Film page fields
+
+All optional. Paths point to files in `assets/images/`.
+
+- `hero`: large image at the top, without text.
+- `hero_portrait`: version of the hero for phones.
+- `title_image`: the film title as an image, shown over the hero.
+- `laurels`: award and selection laurels, shown over the hero. Each has `src` and `alt`.
+- `poster`: theatrical poster, shown in the details column.
+- `trailer`: video after the hero. Same form as an entry in `embeds`.
+- `details`: datasheet rows. Each has `label` and a `value` list.
+- `press_kit`: link to the press kit.
+- `stills`: list of still images, shown at the end.
+
 ## Add a page, blog post or subpage
 
 1. Create a file in the right folder, for example `content/blog/odia-ocr-2026.md`. The file name does not show on the site.

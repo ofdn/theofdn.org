@@ -17,6 +17,7 @@ embeds:
     id: "mREpNeQU6b0"
 original_url: "https://theofdn.org/marginalizedaadhaar/"
 ---
+
 Aadhaar, India’s digital identity program, has been marketed by its makers as the most reliable identification for public benefits. But human rights advocates feel the other way. And they all the reasons to do so. Several facts suggest systemic exclusions for many of India’s marginalised peoples and the aggressive push for including every person’s private data on a database to finally use the same data for mass surveillance. Aadhaar has been oversimplified as a 12-digit unique number that can be used to authenticate at a point of service — government or private. However, it is tied to a person’s biometric data like fingerprint and iris scan, and a range of personal data. The complex role that Aadhaar plays in the lives of some of the most marginalised communities is what Yoti Digital Identity Fellow [Subhashish Panigrahi](https://www.yoti.com/author/subhashishyotifellows-com/) aims to study through the project [MarginalizedAadhaar](https://yotifellows.com).
 
 **Podcasts**

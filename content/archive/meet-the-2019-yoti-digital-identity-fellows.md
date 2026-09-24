@@ -53,7 +53,6 @@ Paz will explore these groups’ lived experiences, starting with the recognitio
 
 Photo: Sebastiaan ter Burg, CC BY 2.0
 
-
 Subhashish is a digital storyteller, researcher, documentary filmmaker and activist working towards digital freedom for marginalised communities. With leading community catalyst roles spanning almost a decade for nonprofits like Wikimedia Foundation, Mozilla, Internet Society and the Centre for Internet Society, Subhashish has helped grow the reach of the open internet across the Asia-Pacific region. 
 
 A National Geographic Explorer, he has documented languages and cultural heritages that are under great threat – including the Kusunda language of Nepal that is spoken by just two individuals. He co-founded O Foundation, a nonprofit dedicated to working on marginalised issues with the objective of helping communities with open digital resources to document indigenous and endangered languages.

@@ -38,6 +38,4 @@ Subhashish also emphasised about the importance of languages and the digital pre
 
 Like languages, cultural heritage is in stake. Many art forms are dying fast taking away the nuance that people tried to embed though dance, song, and whatnot. Prateek Pattanaik shared the journey of [crowdfunding](https://pattaprateek.com/prahallada-nataka/) for the documentation of Prahallada Nataka, one of Odisha’s grandest performing art forms from the Ganjam district, and how he along with a small team managed to record 12 hours of performance of the same.
 
- 
-
 [[embed:1]]

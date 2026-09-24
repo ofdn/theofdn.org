@@ -34,8 +34,6 @@ The community that advocates for and contributes towards Openness is a really ti
 
 By Myleen Hollero for Wikimedia Foundation (CC-BY-SA 3.0)
 
- 
-
 Anasuya Sengupta is the co-founder, and current Co-Director of Whose Knowledge?. With over two decades of leadership in development sectors across global South, and worldwide, Anasuya has made significant contribution in amplifying marginalised voices in both digital and real worlds. A former Chief Grantmaking Officer at the Wikimedia Foundation and a 2017 Shuttleworth Fellow, Anasuya has been as an advisor to us since the beginning of OFDN.
 
 ![https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Siko_Bouterse_013\_-\_Wikimedia_Foundation_Oct11.jpg/320px-Siko_Bouterse_013\_-\_Wikimedia_Foundation_Oct11.jpg](/assets/images/partners-siko-bouterse.webp)

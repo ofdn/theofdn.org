@@ -138,6 +138,34 @@ def fallback_of(src):
     return None
 
 
+def picture(src, alt="", cls="", portrait=None, lazy=True):
+    """An image as WebP with its small fallback; optional portrait version for phones."""
+    if not src:
+        return ""
+    from markupsafe import Markup, escape
+    fb = fallback_of(src) or src
+    parts = ["<picture>"]
+    if portrait:
+        parts.append(f'<source media="(max-width: 700px)" srcset="{portrait}" type="image/webp">')
+    parts.append(f'<source srcset="{src}" type="image/webp">')
+    attrs = f' class="{cls}"' if cls else ""
+    load = ' loading="lazy"' if lazy else ""
+    parts.append(f'<img src="{fb}" alt="{escape(alt)}"{attrs}{load} decoding="async"></picture>')
+    return Markup("".join(parts))
+
+
+def inline_md(text):
+    """Links, bold and italics in short values such as datasheet lines."""
+    from markupsafe import Markup, escape
+    t = str(escape(str(text)))
+    t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', t)
+    t = re.sub(r"&lt;(https?://[^&]+)&gt;", r'<a href="\1">\1</a>', t)
+    t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"\*([^*]+)\*", r"<em>\1</em>", t)
+    t = t.replace("\\|", "|").replace("\\", "")
+    return Markup(t)
+
+
 def script_lang(text):
     letters = [c for c in text if c.isalpha()]
     if not letters:
@@ -295,8 +323,12 @@ def main():
     for p in pages:
         body = polish(markdown_to_html(p["body_md"]), p)
         facts = []
-        if p["section"] == "film":
+        if p.get("details"):
+            facts = [(d["label"], "<br>".join(str(inline_md(v)) for v in d["value"])) for d in p["details"]]
+        elif p["section"] == "film":
             body, facts = split_datasheet(body)
+        if p.get("trailer"):
+            p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
             p["transcript_html"] = polish(markdown_to_html(str(p["transcript"])), p)
         tpl = "home.html" if p["path"] == "/" else TEMPLATE.get(p["section"], "page.html")
@@ -304,7 +336,7 @@ def main():
         html = env.get_template(tpl).render(
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]),
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
-            current=p["path"], lists=by_section, summary=summary, **common)
+            current=p["path"], lists=by_section, summary=summary, picture=picture, **common)
         write(p["path"], html)
 
     for path, (title, sections, lede) in LISTS.items():

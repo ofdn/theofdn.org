@@ -12,7 +12,10 @@ categories:
 excerpt: "Far up on the Bonda hills, the Bondak people are met with dysfunctional governance that fails to feed or keep their language alive. Full Synopsis This film takes place in the Mudulipada village of the Malkangiri administrative district in Odisha, India. The stories of harvesting “sapung”, alcohol from the fishtail palm, and fermenting cooked rice […]"
 featured_image: "/assets/images/remosam-poster.webp"
 original_url: "https://theofdn.org/film/remosam/"
+hero: /assets/images/remosam-poster.webp
+poster: /assets/images/remosam-poster-portrait.webp
 ---
+
 > Far up on the Bonda hills, the Bondak people are met with dysfunctional governance that fails to feed or keep their language alive.
 
 ![Remosam poster](/assets/images/remosam-poster.webp)

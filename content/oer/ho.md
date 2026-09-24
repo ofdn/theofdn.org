@@ -108,19 +108,13 @@ We want to share our gratitude with Ho-language scholar and technologist Mangu P
 
 https://www.youtube.com/watch?v=Q8TGf1sVdUY&feature=youtu.be
 
- 
-
 2\. 𑢹𑣂𑣕𑣑 2: 𑢾𑣈𑣒𑣂𑣊 𑣌𑣉 𑣉𑣀𑣑𑣉𑣄 𑢱𑣂𑣞𑣘𑣚𑣈𑣈 (𑣘𑣉𑣉𑣀𑣒 𑣑𑣁𑣇𑣓𑣚𑣉𑣉𑣑)
 
 https://www.youtube.com/watch?v=PYWt5LnP8Hw&feature=youtu.be
 
- 
-
 3\. 𑢹𑣂𑣕𑣑 3: 𑢦𑣓𑣘𑣃𑣒 (𑢹𑣗𑣁𑣜𑣊 𑢯𑣂𑣕𑣂 𑣕𑣈 𑣉𑣚) 𑣉𑣀𑣑𑣉𑣄 𑢨𑣑𑣂𑣒𑣂𑣊
 
 https://www.youtube.com/watch?v=jyjaEP3Zl-g&feature=youtu.be
-
- 
 
 𑢡𑣚𑣈𑣈 𑣉𑣉 𑣖𑣂𑣈𑣑 𑣟𑣂𑣑𑣂𑣅𑣉 𑣚𑣈 𑣗𑣆 𑣚𑣈𑣑 𑣕𑣆𑣌𑣈𑣓𑣁 𑣆𑣀𑣒𑣜𑣓𑣈𑣒 𑣜𑣈 [𑢥𑣃𑣓𑣂𑣌𑣉𑣉𑣑](https://web.archive.org/web/20200401215816/https://en.wikipedia.org/wiki/Unicode) 𑣕𑣈 𑣉𑣚𑣁𑣌𑣁𑣓𑣄 𑣌𑣉 𑣏𑣂𑣚𑣂𑣌𑣈 𑣘𑣉𑣉𑣀𑣒 𑣆𑣀𑣞𑣒𑣉𑣉𑣚 𑣌𑣈𑣈 𑣕𑣈 𑣓𑣈𑣚𑣈 𑣕𑣈𑣅𑣄 𑣖𑣈𑣓𑣕𑣈.
 

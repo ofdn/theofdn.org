@@ -274,8 +274,6 @@ Most home lights, when captured in a camera, look flickering and disturbing. Whe
 
 #### a. Audio recording
 
- 
-
 Different scenarios:
 
 1.  **Home studio**: If you’re recording at home, try to create a minimal setup You need a microphone to be able to record the audio. If you can, I would suggest to record in a small home studio setup like the picture above (consists of a USB microphone, a computer, and a monitor headphone).

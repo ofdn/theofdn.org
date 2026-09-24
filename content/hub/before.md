@@ -59,8 +59,6 @@ As a part of the MozFest Trustworthy AI Working Groups program, we are piloting 
 
 We have been studying the potential impact of Distributed Ledger Technology (DLT) on indigenous language ecosystems in India if it is implemented.
 
- 
-
 [EXPLORE +](https://community.webmonetization.org/openspeaks/openspeaks-interim-grant-report-1-dan)
 
 ## OpenSpeaks Voice: Voice Data for Automatic Speech Recognition (ASR)
