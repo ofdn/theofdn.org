@@ -35,16 +35,12 @@ Listen on [Spotify](https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg), [Appl
 
 ### [Episode 6: Our Majority World](/podcast/episode6/)
 
-![Shahidul Alam (re:publica, CC BY 2.0)](/assets/images/podcast-shahidul-alam.webp)
-
 Bangladeshi photojournalist, activist and writer Shahidul Alam, recorded during the National Geographic Storytellers Summit 2023 in Washington. He talks about documenting the political landscape of Bangladesh in the 1980s and becoming a social justice activist.
 
 [[embed:0]]
 
 
 ### [Episode 5: Lesser-known Languages of North Pakistan](/podcast/episode5/)
-
-![Zubair Torwali](/assets/images/podcast-zubair-torwali.webp)
 
 Pakistani language activist Zubair Torwali is working to revitalise nearly 30 languages of Northern Pakistan, including his own language Torwali.
 
@@ -53,16 +49,12 @@ Pakistani language activist Zubair Torwali is working to revitalise nearly 30 la
 
 ### [Episode 4: Imagining a Digital Future for the Santali Language](/podcast/episode4/)
 
-![Santali language activists](/assets/images/podcast-santali.webp)
-
 Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu, language activists from India’s Santal community, on their work to help the Santali language thrive.
 
 [[embed:2]]
 
 
 ### [Episode 3: Digitally Documenting the Sundanese Language and Cultural Heritage](/podcast/episode3/)
-
-![Portrait poster of the film Karinding](/assets/images/podcast-karinding-poster-portrait.webp)
 
 Ilham Nurwansah is digitising old texts and sharing encyclopaedic information through Wikipedia in his language, Sundanese, one of Indonesia’s 800 languages.
 
@@ -71,16 +63,12 @@ Ilham Nurwansah is digitising old texts and sharing encyclopaedic information th
 
 ### [Episode 2: Knowledge Commons and the Adivasis](/podcast/episode2/)
 
-![Knowledge Commons and the Adivasis](/assets/images/podcast-alm.webp)
-
 Ankush Vengurlekar and Ashish Birulee co-founded Adivasi Lives Matter, an online platform that trains young Adivasi citizen journalists in India.
 
 [[embed:4]]
 
 
 ### [Episode 1: Indigenous Languages in the Times of a Pandemic](/podcast/episode1/)
-
-![Mandana Seyfeddinipur](/assets/images/podcast-mandana-seyfeddinipur.webp)
 
 Linguist Mandana Seyfeddinipur supports linguists and activists worldwide who document languages as audio and video, so that people who are marginalised can get critical information.
 

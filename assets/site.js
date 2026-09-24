@@ -1,3 +1,24 @@
+// Menu button: opens the full menu over the page.
+(function () {
+  var btn = document.getElementById("menu-toggle");
+  var menu = document.getElementById("site-menu");
+  if (!btn || !menu) return;
+  var behind = document.querySelectorAll("main, footer, .status-banner, .skip-link");
+  function setOpen(open) {
+    menu.hidden = !open;
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "Close menu" : "Menu");
+    btn.title = open ? "Close menu" : "Menu";
+    document.body.classList.toggle("menu-open", open);
+    behind.forEach(function (el) { el.inert = open; });
+    if (open) { var first = menu.querySelector("a"); if (first) first.focus(); }
+  }
+  btn.addEventListener("click", function () { setOpen(menu.hidden); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !menu.hidden) { setOpen(false); btn.focus(); }
+  });
+})();
+
 // Theme toggle, as on psubhashish.com. The choice is kept in this browser.
 (function () {
   var html = document.documentElement;
