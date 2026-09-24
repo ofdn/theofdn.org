@@ -18,9 +18,8 @@ embeds:
     id: "2weC0zEhaXcuDIgJUW3aJD"
   - provider: "spotify"
     id: "6bMmfPwbalwpn4S0Sq0XmO"
-  - provider: "archive"
-    id: "podcasts-episode2"
-    audio: true
+  - provider: "spotify"
+    id: "5Vz7braWTciba9OjgzhoJd"
   - provider: "archive"
     id: "mandana-seyfeddinipur"
     audio: true

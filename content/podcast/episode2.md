@@ -11,8 +11,8 @@ categories:
   - "Podcast"
 excerpt: "EPISODE 2  — Knowledge Commons and the Adivasis “If others appreciate enough, the Adivasi communities wouldn’t hesitate to tell their stories.” — ASHISH BIRULEE Adivasis are the indigenous communities in India. There are 104 million Adivasis that speak a few hundred languages but only a handful of them have access to media of their own. […]"
 embeds:
-  - provider: "archive"
-    id: "podcasts-episode2"
+  - provider: "spotify"
+    id: "5Vz7braWTciba9OjgzhoJd"
 original_url: "https://theofdn.org/podcast/episode2/"
 details:
 - label: Producer
