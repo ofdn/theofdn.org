@@ -11,8 +11,8 @@ categories:
   - "Podcast"
 excerpt: "EPISODE 5  — Imagining a Digital Future for the Santali Language “We have a collective goal — Mission Ol Chiki 2025 — 100% literacy in Santali among the Santals.” — R. ASHWANI BANJAN MURMU Would you consider the language and culture of a community of 7.6 million people in danger, especially when the language is […]"
 embeds:
-  - provider: "archive"
-    id: "ofdn-conversations-ep-4"
+  - provider: "spotify"
+    id: "2weC0zEhaXcuDIgJUW3aJD"
 original_url: "https://theofdn.org/podcast/episode4/"
 details:
 - label: Producers

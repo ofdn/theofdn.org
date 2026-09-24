@@ -18,7 +18,19 @@
     html.setAttribute("data-theme", next);
     try { localStorage.setItem("site-theme", next); } catch (e) {}
     update(next);
+    spotifyTheme();
   });
+  spotifyTheme();
+
+  // Spotify players follow the theme: theme=0 is Spotify's dark player.
+  function spotifyTheme() {
+    var dark = current() === "dark";
+    document.querySelectorAll("iframe[data-spotify]").forEach(function (f) {
+      var src = "https://open.spotify.com/embed/episode/" + f.getAttribute("data-spotify") +
+        "?utm_source=generator" + (dark ? "&theme=0" : "");
+      if (f.src !== src) f.src = src;
+    });
+  }
 })();
 
 // Click-to-play video: the YouTube player loads only when someone asks for it.

@@ -343,6 +343,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 }
 .embed-play:hover .embed-play__button, .embed-play:focus-visible .embed-play__button { background: #7A1F0E; }
 .embed-audio { width: 100%; height: 140px; }
+.embed-spotify { clear: both; padding-top: var(--space-sm); }
+.embed-spotify iframe { width: 100%; height: 152px; border: 0; border-radius: 12px; }
 /* Podcast landing: small square portrait beside each episode */
 .hub-podcast .prose > p:first-child img { width: min(22rem, 100%); height: auto; }
 .hub-podcast h3 { margin-top: 2.5em; clear: both; }

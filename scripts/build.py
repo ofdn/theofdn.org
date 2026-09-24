@@ -124,6 +124,12 @@ def embed_html(e, title, section):
         cls = "embed-audio" if section == "podcast" or e.get("audio") else "embed-video embed-video--large"
         return (f'<div class="{cls}"><iframe src="https://archive.org/embed/{i}" title="{label}" '
                 f'loading="lazy" allowfullscreen></iframe></div>')
+    if p == "spotify":
+        # Light player by default; site.js adds theme=0 (dark player) in dark mode.
+        return (f'<div class="embed-spotify"><iframe data-spotify="{i}" '
+                f'src="https://open.spotify.com/embed/episode/{i}?utm_source=generator" title="{label} (Spotify)" '
+                f'width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" '
+                f'allowfullscreen loading="lazy"></iframe></div>')
     if p == "soundcloud":
         h = 450 if i.startswith("playlists") else 166
         src = "https://w.soundcloud.com/player/?url=" + quote(f"https://api.soundcloud.com/{i}", safe="")
