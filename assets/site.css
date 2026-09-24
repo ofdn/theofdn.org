@@ -88,18 +88,19 @@ h1, h2, h3, h4, h5, h6 {
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-/* Header: blue with white logo and menu, same in both themes. White on #0B52A3: 7.6:1 */
+/* Header: bright blue, same in both themes. White logo (logos are exempt from
+   contrast rules); navy links and icons on the blue: 7.1:1 */
 .site-header {
-  --header-bg: #0B52A3; --header-text: #FFFFFF;
+  --header-bg: #1AA7F7; --header-text: #03102A;
   position: sticky; top: 0; z-index: 20;
   background-color: var(--header-bg); color: var(--header-text);
   display: flex; align-items: center; gap: var(--space-sm) var(--space-lg);
   padding: 0.75rem 2rem;
 }
 .site-header a:focus-visible, .site-header button:focus-visible,
-.site-menu a:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 3px; }
-.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: var(--header-text); text-decoration: none; margin-right: auto; }
-.site-logo:hover { color: var(--header-text); }
+.site-menu a:focus-visible { outline: 2px solid #03102A; outline-offset: 3px; }
+.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: #FFFFFF; text-decoration: none; margin-right: auto; }
+.site-logo:hover { color: #FFFFFF; }
 .site-logo__mark { display: block; height: 30px; width: auto; }
 .site-nav__list { display: flex; flex-wrap: wrap; list-style: none; gap: 0.4rem 1.5rem; }
 .site-nav__list a {
@@ -115,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 2.75rem; height: 2.75rem; padding: 0; border: 0; border-radius: 50%;
   background: none; color: var(--header-text); cursor: pointer;
 }
-.header-btn:hover { background-color: rgba(255, 255, 255, 0.16); }
+.header-btn:hover { background-color: rgba(3, 16, 42, 0.12); }
 .header-btn svg { display: block; }
 .menu-toggle { display: none; }
 .menu-toggle .menu-toggle__close { display: none; }
@@ -131,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Full menu, opened from the menu button */
 .site-menu {
   position: fixed; inset: 0; z-index: 15; overflow-y: auto;
-  background: #0B52A3; color: #FFFFFF;
+  background: #1AA7F7; color: #03102A;
   padding: calc(4.5rem + var(--space-xl)) var(--space-lg) var(--space-2xl);
 }
 .site-menu[hidden] { display: none; }
@@ -142,15 +143,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-menu__heading {
   font-family: var(--font-display); font-size: 0.85rem; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; margin-bottom: var(--space-md);
+  letter-spacing: 0.12em; text-transform: uppercase; color: #03102A; margin-bottom: var(--space-md);
 }
 .site-menu ul { list-style: none; }
 .site-menu li + li { margin-top: 0.6rem; }
 .site-menu a {
   font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
-  color: #FFFFFF; text-decoration: none;
+  color: #03102A; text-decoration: none;
 }
-.site-menu a:hover, .site-menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; color: #FFFFFF; }
+.site-menu a:hover, .site-menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; color: #03102A; }
 body.menu-open { overflow: hidden; }
 
 main { flex: 1; }
