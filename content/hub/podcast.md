@@ -20,9 +20,8 @@ embeds:
     id: "6bMmfPwbalwpn4S0Sq0XmO"
   - provider: "spotify"
     id: "5Vz7braWTciba9OjgzhoJd"
-  - provider: "archive"
-    id: "mandana-seyfeddinipur"
-    audio: true
+  - provider: "spotify"
+    id: "6vz7ZfT5RfHCmY0sgzEVKH"
 original_url: "https://theofdn.org/podcast/"
 ---
 

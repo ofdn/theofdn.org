@@ -16,8 +16,8 @@ tags:
   - "podcast"
 excerpt: "“Indigenous Languages In The Times Of A Pandemic” is the second episode of our podcast O Foundation Conversations where our host and producer Subhashish Panigrahi speaks to noted linguist Dr. Mandana Seyfeddinipur."
 embeds:
-  - provider: "link"
-    id: "https://anchor.fm/ofdn/embed/episodes/Indigenous-Languages-In-The-Times-Of-A-Pandemic-edbipi/a-a223hn1"
+  - provider: "spotify"
+    id: "6vz7ZfT5RfHCmY0sgzEVKH"
   - provider: "youtube"
     id: "OfyOQ-uZjrA"
 original_url: "https://theofdn.org/podcast/episode1/"
@@ -27,7 +27,7 @@ listen:
 - label: Apple Podcasts
   url: https://podcasts.apple.com/in/podcast/o-foundation-conversations/id1510689609
 - label: Spotify
-  url: https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg
+  url: https://open.spotify.com/episode/6vz7ZfT5RfHCmY0sgzEVKH
 - label: Internet Archive
   url: https://archive.org/details/mandana-seyfeddinipur
 ---
