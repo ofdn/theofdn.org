@@ -118,7 +118,6 @@ Nani Ma was selected for the Mozilla Festival 2023 (International Premiere), Lif
 
 - “[*Nani Ma*](https://filmthreat.com/reviews/nani-ma/)”. *Film Threat*. (by Benjamin Franz)
 - [Nani Ma: A defence of diversity.](http://odishapostepaper.com/viewmap/192691.jpg) *Orissa Post.* (by Atri Prasad Rout)
--  
 
 ## Reviews and publications
 
