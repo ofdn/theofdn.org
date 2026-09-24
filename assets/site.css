@@ -377,6 +377,52 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .film__facts dd { color: var(--color-text-muted); overflow-wrap: anywhere; }
 .film__facts a { color: var(--color-text); text-decoration-thickness: 1.5px; }
 .film__facts a:hover { color: var(--color-accent); }
+/* Sections (--- in the text). A section with an <info> block uses the film layout. */
+.prose.prose--split { max-width: none; }
+.prose--split > section + section { margin-top: var(--space-3xl); padding-top: var(--space-2xl); border-top: 1px solid var(--color-rule); }
+.split-plain { max-width: var(--max-prose); }
+.prose--split > .split-plain:first-child p { font-size: 1.3rem; line-height: 1.55; }
+.split-plain > * + *, .split .film__main > * + * { margin-top: 1.25em; }
+.split .film__main > .captioned, .split .film__main > .specimen, .split .film__main > .inuse { margin-top: var(--space-2xl); margin-bottom: var(--space-2xl); }
+.split > h2, .split > h3 { margin-top: 0; margin-bottom: 0; }
+.split__subtitle { margin: 0.35rem 0 0; font-family: var(--font-display); font-size: 1.15rem; color: var(--color-text-muted); }
+.split > .film__body { margin-top: var(--space-2xl); }
+.split .film__main > :first-child { margin-top: 0; }
+.split .film__main { max-width: 46rem; }
+.prose .split__info .infobox { display: block; padding: 0; border: 0; }
+.prose .split__info .infobox picture { margin-bottom: var(--space-lg); }
+.prose .split__info .infobox picture img { max-width: 17rem; }
+.prose .split__info .infobox dl { display: block; }
+.prose .split__info .infobox dl > div { display: block; margin-bottom: var(--space-md); }
+
+/* Type tester (<specimen> tag). */
+.specimen { margin: var(--space-xl) 0; }
+.specimen__controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm) var(--space-lg); font-family: var(--font-condensed); font-size: 1rem; }
+.specimen__controls label { display: inline-flex; align-items: center; gap: var(--space-sm); }
+.specimen__range { width: 12rem; min-height: 24px; accent-color: var(--color-accent); }
+.specimen__text {
+  margin-top: var(--space-md); padding: var(--space-md); min-height: 3em;
+  font-family: var(--specimen-font), var(--font-body); font-size: 48px; line-height: 1.5;
+  background: var(--color-surface); border: 1px solid var(--color-rule); border-radius: var(--radius-sm); overflow-wrap: anywhere;
+}
+.specimen__text:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.specimen__waterfall { list-style: none; padding: 0; margin-top: var(--space-lg); }
+.prose .specimen__waterfall li + li { margin-top: var(--space-sm); }
+.specimen__waterfall li { display: grid; grid-template-columns: 3.5rem 1fr; align-items: baseline; gap: var(--space-md); }
+.specimen__size { font-family: var(--font-condensed); font-size: 0.95rem; color: var(--color-text-muted); }
+.specimen__line { font-family: var(--specimen-font), var(--font-body); line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.specimen figcaption { margin-top: var(--space-sm); font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted); }
+@media (max-width: 560px) { .specimen__text { font-size: 32px; } }
+
+/* The font in use (<inuse> tag): simple frames, text set live in the font. */
+.inuse { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--space-lg); margin: var(--space-xl) 0; align-items: end; }
+.inuse figure { margin: 0; }
+.inuse p { font-family: var(--specimen-font), var(--font-body); margin: 0; }
+.inuse figcaption { margin-top: var(--space-sm); font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted); }
+.inuse__book p { padding: 1.5rem 1.25rem; font-size: 1.15rem; line-height: 1.7; background: #F3E9D6; color: #2A2118; border: 1px solid #D8C8AA; box-shadow: 3px 3px 0 #D8C8AA; }
+.inuse__sign p { padding: 1.25rem 1rem; font-size: 3rem; line-height: 1.2; text-align: center; background: #1F4D2E; color: #FFFFFF; border: 5px solid #FFFFFF; outline: 2px solid #1F4D2E; border-radius: 6px; }
+.inuse__screen p { width: min(100%, 12rem); margin-inline: auto; padding: 3rem 1rem; font-size: 1.6rem; line-height: 1.4; text-align: center; background: #FFFFFF; color: #1A1714; border: 10px solid #1A1714; border-radius: 1.5rem; }
+
 /* Infobox inside the text (<info> block): an optional image beside label/value rows. */
 .prose .infobox {
   display: grid; gap: var(--space-lg); align-items: start;

@@ -254,3 +254,23 @@ document.querySelectorAll("main h2[id], main h3[id]").forEach(function (h) {
     if (opener) setTimeout(function () { opener.focus(); }, 0);
   });
 })();
+
+// Type tester: the slider sets the sample size; typing updates the waterfall.
+(function () {
+  document.querySelectorAll(".specimen").forEach(function (box) {
+    var text = box.querySelector(".specimen__text");
+    var range = box.querySelector(".specimen__range");
+    var lines = box.querySelectorAll(".specimen__line");
+    range.addEventListener("input", function () { text.style.fontSize = range.value + "px"; });
+    var reset = box.querySelector(".specimen__reset");
+    if (!reset) return;  // preview font: size only
+    text.addEventListener("input", function () {
+      var t = text.textContent;
+      lines.forEach(function (l) { l.textContent = t; });
+    });
+    reset.addEventListener("click", function () {
+      text.textContent = text.dataset.original;
+      lines.forEach(function (l) { l.textContent = text.dataset.original; });
+    });
+  });
+})();

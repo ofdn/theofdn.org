@@ -88,7 +88,7 @@
       {% endif %}
     </aside>
     <div class="film__main prose">{% else %}
-    <div class="prose">{% endif %}
+    <div class="prose{% if page.split %} prose--split{% endif %}">{% endif %}
       {{ body | safe }}
       {% if page.transcript_html %}
       <section aria-labelledby="transcript">

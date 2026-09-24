@@ -9,3 +9,10 @@ status: live
 # Optional. Leave empty to use the standard wording.
 archive_message: ""
 maintenance_message: ""
+
+# Fonts not yet released. The site only carries a cut-down copy with the
+# characters used in <specimen> and <inuse> on the site, and the tester cannot
+# be typed in. Make the copy with scripts/subset_fonts.py. On release, remove
+# the font from this list and put the full .woff2 in assets/fonts/.
+preview_fonts:
+  - chapakala19

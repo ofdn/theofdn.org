@@ -85,8 +85,8 @@ def load_pages():
         if not m:
             sys.exit(f"{f}: missing the block between --- lines at the top")
         meta = yaml.safe_load(m.group(1)) or {}
-        meta["info_blocks"] = []
-        meta["body_md"] = expand_tags(m.group(2), meta["info_blocks"])
+        meta["blocks"] = []
+        meta["body_md"] = expand_tags(m.group(2), meta["blocks"])
         meta["file"] = f.relative_to(ROOT).as_posix()
         for key in ("title", "path", "section"):
             if not meta.get(key):
@@ -144,22 +144,133 @@ def info_rows(info, where):
     return out
 
 
+SPECIMEN_SIZES = (14, 18, 24, 36, 48, 72)
+
+
+def font_face(font, where, tag):
+    if not (ROOT / "assets" / "fonts" / f"{font}.woff2").exists():
+        sys.exit(f"{where}: <{tag}> font '{font}' needs assets/fonts/{font}.woff2")
+    return (f'<style>@font-face{{font-family:"specimen-{font}";src:url("/assets/fonts/{font}.woff2") format("woff2");'
+            f'font-display:swap}}</style>')
+
+
+INUSE = {"book": "Book page", "sign": "Signboard", "screen": "Phone screen"}
+
+
+def inuse_html(attrs, items, where):
+    """The font in a few settings, one frame each: book, sign, screen."""
+    from markupsafe import escape
+    font = attrs.get("font", "")
+    for k in items:
+        if k not in INUSE:
+            sys.exit(f"{where}: <inuse> knows {', '.join(INUSE)}, not '{k}'")
+    frames = "".join(
+        f'<figure class="inuse__{k}"><p lang="{script_lang(str(v)) or "und"}">{escape(str(v))}</p>'
+        f'<figcaption>{INUSE[k]}</figcaption></figure>' for k, v in items.items())
+    name = escape(attrs.get("name") or font)
+    return (f'<div class="inuse" style="--specimen-font:\'specimen-{font}\'" role="group" aria-label="{name} in use">'
+            f'{font_face(font, where, "inuse")}{frames}</div>')
+
+
+def specimen_html(attrs, text, where):
+    """A type tester: a slider sets the sample size and a waterfall shows the
+    same text at fixed sizes. Readers can type their own text, except in a
+    font listed under preview_fonts in data/site.yml."""
+    from markupsafe import escape
+    font = attrs.get("font", "")
+    face = font_face(font, where, "specimen")
+    name = escape(attrs.get("name") or font)
+    preview = font in (load_status().get("preview_fonts") or [])
+    lang = script_lang(text) or "und"
+    fam = f"specimen-{font}"
+    t = escape(text)
+    rows = "".join(f'<li><span class="specimen__size">{px} px</span>'
+                   f'<span class="specimen__line" style="font-size:{px}px" aria-hidden="true">{t}</span></li>'
+                   for px in SPECIMEN_SIZES)
+    return (f'<figure class="specimen" style="--specimen-font:\'{fam}\'">'
+            f'{face}'
+            f'<div class="specimen__controls"><label>Size <input type="range" class="specimen__range" min="16" max="120" value="48"'
+            f' aria-label="Sample text size"></label>'
+            + ("" if preview else '<button type="button" class="copy-btn specimen__reset">Reset text</button>')
+            + '</div>'
+            + (f'<p class="specimen__text" lang="{lang}">{t}</p>' if preview else
+               f'<p class="specimen__text" lang="{lang}" contenteditable="true" spellcheck="false" role="textbox"'
+               f' aria-multiline="true" aria-label="Sample text in {name}. Type to try your own." data-original="{t}">{t}</p>')
+            + f'<ol class="specimen__waterfall" lang="{lang}" aria-label="The same text at {len(SPECIMEN_SIZES)} sizes">{rows}</ol>'
+            + (f'<figcaption>{name}, preview. You can try your own text once the font is released.</figcaption>' if preview else
+               f'<figcaption>{name}. Type in the box to try your own text.</figcaption>')
+            + '</figure>')
+
+
+def split_sections(html):
+    """--- splits the body into sections. A section with an infobox gets the
+    film layout: its headings on top, the infobox beside the rest."""
+    soup = BeautifulSoup(html, "html.parser")
+    groups, cur = [], []
+    for node in list(soup.contents):
+        if getattr(node, "name", None) == "hr":
+            groups.append(cur); cur = []
+        else:
+            cur.append(node)
+    groups.append(cur)
+    def top_info(g):
+        return next((n for n in g if getattr(n, "name", None) == "div" and "infobox" in (n.get("class") or [])), None)
+    if not any(top_info(g) for g in groups):
+        return html, False
+    out = []
+    for g in groups:
+        g = [n for n in g if not (isinstance(n, str) and not n.strip())]
+        if not g:
+            continue
+        box = top_info(g)
+        if not box:
+            out.append('<section class="split-plain">' + "".join(str(n) for n in g) + "</section>")
+            continue
+        heads = []
+        while g and getattr(g[0], "name", None) in ("h2", "h3"):
+            heads.append(g.pop(0))
+        # A line in italics right under the heading is its subtitle.
+        first = g[0] if g else None
+        if heads and getattr(first, "name", None) == "p":
+            kids = [k for k in first.contents if not (isinstance(k, str) and not k.strip())]
+            if len(kids) == 1 and getattr(kids[0], "name", None) == "em":
+                sub = BeautifulSoup(f'<p class="split__subtitle">{kids[0].decode_contents()}</p>', "html.parser")
+                heads.append(sub)
+                g.pop(0)
+        g.remove(box)
+        out.append('<section class="split">' + "".join(str(h) for h in heads)
+                   + '<div class="film__body"><aside class="film__facts split__info">' + str(box) + "</aside>"
+                   + '<div class="film__main">' + "".join(str(n) for n in g) + "</div></div></section>")
+    return "".join(out), True
+
+
 def infobox_html(rows, info=None):
     dl = '<dl>' + "".join(f"<div><dt>{l}</dt><dd>{v}</dd></div>" for l, v in rows) + "</dl>"
     img = picture(info["image"], info.get("alt", "")) if info and info.get("image") else ""
     return f'<div class="infobox{" infobox--image" if img else ""}">{img}{dl}</div>'
 
 
-def expand_tags(md, info_blocks):
+def expand_tags(md, blocks):
     """Short tags for the Markdown body:
       <c>Text</c>                                   caption, on the line after an image
       <quote author="Name" source="Where">Text</quote>
       <info> field: value lines </info>             an infobox inside the text
-    A quote becomes the usual blockquote, so it looks like every other quote."""
+      <specimen font="file">Sample text</specimen>  type tester; the font is assets/fonts/<file>.woff2
+      <inuse font="file"> book/sign/screen: text </inuse>  the font in a few settings
+    A quote becomes the usual blockquote, so it looks like every other quote.
+    A line with only --- starts a new section; a section with <info> gets the film layout."""
     def info(m):
-        info_blocks.append(yaml.safe_load(m.group(1)) or {})
-        return f"\n\n[[info:{len(info_blocks) - 1}]]\n\n"
+        blocks.append(("info", yaml.safe_load(m.group(1)) or {}))
+        return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
+    def specimen(m):
+        blocks.append(("specimen", dict(re.findall(r'(\w+)="([^"]*)"', m.group(1))), m.group(2).strip()))
+        return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
     md = re.sub(r"^[ \t]*<info>[ \t]*\n(.*?)^[ \t]*</info>[ \t]*$", info, md, flags=re.S | re.M)
+    def inuse(m):
+        blocks.append(("inuse", dict(re.findall(r'(\w+)="([^"]*)"', m.group(1))), yaml.safe_load(m.group(2)) or {}))
+        return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
+    md = re.sub(r"^[ \t]*<inuse\b([^>]*)>[ \t]*\n(.*?)^[ \t]*</inuse>[ \t]*$", inuse, md, flags=re.S | re.M)
+    md = re.sub(r"^[ \t]*<specimen\b([^>]*)>(.*?)</specimen>[ \t]*$", specimen, md, flags=re.S | re.M)
     md = re.sub(r"[ \t]*<(c|caption)>(.*?)</\1>[ \t]*",
                 lambda m: f"\n\n{CAPTION_MARK} {m.group(2).strip()}\n\n", md, flags=re.S)
 
@@ -347,10 +458,15 @@ def polish(html, page):
             n = int(m.group(1))
             new = embed_html(embeds[n], page["title"], page["section"]) if n < len(embeds) else ""
             p.replace_with(BeautifulSoup(new, "html.parser"))
-        elif re.fullmatch(r"\s*\[\[info:\d+\]\]\s*", p.get_text()):
-            n = int(re.search(r"\d+", p.get_text()).group(0))
-            rows = info_rows(page["info_blocks"][n], page["file"] + " <info>")
-            p.replace_with(BeautifulSoup(infobox_html(rows, page["info_blocks"][n]), "html.parser"))
+        elif re.fullmatch(r"\s*\[\[block:\d+\]\]\s*", p.get_text()):
+            block = page["blocks"][int(re.search(r"\d+", p.get_text()).group(0))]
+            if block[0] == "info":
+                html = infobox_html(info_rows(block[1], page["file"] + " <info>"), block[1])
+            elif block[0] == "inuse":
+                html = inuse_html(block[1], block[2], page["file"])
+            else:
+                html = specimen_html(block[1], block[2], page["file"])
+            p.replace_with(BeautifulSoup(html, "html.parser"))
         elif re.fullmatch(r"\s*\[\[people\]\]\s*", p.get_text()):
             p.replace_with(BeautifulSoup(people_html(page.get("people") or []), "html.parser"))
 
@@ -558,7 +674,7 @@ def main():
         dest.write_text(with_base(html, base))
 
     for p in pages:
-        body = polish(markdown_to_html(p["body_md"]), p)
+        body, p["split"] = split_sections(polish(markdown_to_html(p["body_md"]), p))
         facts = []
         if p.get("info"):
             facts = info_rows(p["info"], p["file"])
@@ -567,7 +683,7 @@ def main():
         if p.get("trailer"):
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
-            p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["info_blocks"])), p)
+            p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["blocks"])), p)
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else "page.html"
@@ -603,7 +719,7 @@ def main():
     for p in pages:
         text = BeautifulSoup(markdown_to_html(p["body_md"]), "html.parser").get_text(" ", strip=True)
         text = re.sub(r"\[\[embed:\d+\]\]", "", text).replace(CAPTION_MARK, "")
-        text = re.sub(r"\[\[info:\d+\]\]", "", text)
+        text = re.sub(r"\[\[block:\d+\]\]", "", text)
         index.append({"t": p["title"], "u": base + p["path"], "s": EYEBROW.get(p["section"], ""),
                       "e": summary(p), "x": re.sub(r"\s+", " ", text)[:4000]})
     (out / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))

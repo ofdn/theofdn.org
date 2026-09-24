@@ -88,6 +88,41 @@ licence: SIL Open Font License 1.1
 </info>
 ```
 
+To split a page into sections, put `---` on its own line, with an empty line above it. A section with an `<info>` block gets the film layout: its heading on top, the infobox beside the rest. Other sections look as usual.
+
+A type tester shows sample text in a font. Readers can type their own text and change the size:
+
+```
+<specimen font="chapakala19" name="Chapakala 19">ଉକ୍ତ ଅଛି, “କେହି ଯେବେ ଆପଣା ସ୍ତ୍ରୀକୁ</specimen>
+```
+
+`font` is a file in `assets/fonts/`, without `.woff2`.
+
+Before a font is released, keep the full file out of this repository. List the font under `preview_fonts` in `data/site.yml`, then run:
+
+```
+python3 scripts/subset_fonts.py chapakala19 ~/path/to/Chapakala19Regular.woff2
+```
+
+This writes a small copy with only the characters used on the site. Readers can change the size but cannot type their own text. Run it again after a new export or a change to the sample text. On release, remove the font from `preview_fonts` and copy the full `.woff2` into `assets/fonts/`.
+
+To show a subtitle under a section heading, put one line in italics right below it:
+
+```
+## Chapakala 19
+*Revival of 19th-century Odia typeface*
+```
+
+To show the font in use, list up to three settings. Each shows the text in a simple frame:
+
+```
+<inuse font="chapakala19" name="Chapakala 19">
+book: ଉକ୍ତ ଅଛି, “କେହି ଯେବେ ଆପଣା ସ୍ତ୍ରୀକୁ
+sign: କଟକ
+screen: ନମସ୍କାର
+</inuse>
+```
+
 Images and video. Paths point to files in `assets/images/`:
 
 - `hero`: large image at the top, without text.
