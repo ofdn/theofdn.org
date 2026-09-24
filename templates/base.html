@@ -27,7 +27,14 @@
         {% endfor %}
       </ul>
     </nav>
+    <form class="search-form search-form--header" role="search" action="/search/" method="get">
+      <label for="header-q" class="visually-hidden">Search this site</label>
+      <input type="search" id="header-q" name="q" placeholder="Search" autocomplete="off">
+    </form>
     <div class="site-header__tools">
+      <a href="/search/" class="header-btn search-link" aria-label="Search" title="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      </a>
       <button type="button" class="header-btn theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"/></svg>
       </button>

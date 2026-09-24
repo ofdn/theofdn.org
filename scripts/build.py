@@ -24,7 +24,6 @@ NAV = [
     ("Films", "/category/film/"),
     ("Podcast", "/podcast/"),
     ("Resources", "/category/oer/"),
-    ("OpenSpeaks", "/openspeaks/"),
     ("Initiatives", "/work/"),
     ("Publications", "/category/blogs/"),
     ("About", "/people/"),
@@ -33,7 +32,7 @@ FOOTER_NAV = [
     ("About", [("People", "/people/"), ("Partners and advisors", "/partners/"), ("Core values", "/core/"),
                ("Diversity and inclusion", "/diversity-and-inclusion/"), ("Contact", "/reach-out/")]),
     ("Work", [("Films", "/category/film/"), ("Podcast", "/podcast/"), ("Resources", "/category/oer/"),
-              ("OpenSpeaks", "/openspeaks/"), ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
+              ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
     ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
                   ("Donate", "/donate/")]),
     ("Follow", [("YouTube", "https://www.youtube.com/channel/UCk4NuEPO6JbTm_8Ybod2eOQ"),
@@ -45,10 +44,12 @@ FOOTER_NAV = [
 LISTS = {
     "/category/film/": ("Films", ["film"], "Documentary films by O Foundation."),
     "/category/oer/": ("Resources", ["oer", "tool", "audio-archive"],
-                       "Open educational resources, language tools and toolkits."),
+                       "Open educational resources, language tools and toolkits, including OpenSpeaks."),
     "/category/openspeaks/language-resources/": ("Language tools", ["tool"], "Language tools and toolkits."),
     "/category/blogs/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
 }
+# Pages shown first on a list, such as OpenSpeaks on Resources.
+LIST_PINNED = {"/category/oer/": ["/openspeaks/"]}
 EYEBROW = {
     "film": "Documentary film", "podcast": "Podcast", "oer": "Open educational resource",
     "tool": "Language tool", "audio-archive": "Audio archive", "archive": "Archive", "blog": "Blog",
@@ -403,7 +404,7 @@ def citations(page):
 def with_base(html, base):
     if not base:
         return html
-    return re.sub(r'(\s(?:href|src|srcset|data-embed|action)=")/(?!/)', rf"\1{base}/", html)
+    return re.sub(r'(\s(?:href|src|srcset|data-embed|data-index|action)=")/(?!/)', rf"\1{base}/", html)
 
 
 def summary(page):
@@ -468,6 +469,7 @@ def main():
     for path, (title, sections, lede) in LISTS.items():
         items = [p for s in sections for p in by_section.get(s, [])]
         items.sort(key=lambda p: p["date"], reverse=True)
+        items = [p for p in pages if p["path"] in LIST_PINNED.get(path, [])] + items
         html = env.get_template("list.html").render(
             title=title, lede=lede, items=items, summary=summary, current=path, status=site_status, **common)
         write(path, html)
@@ -482,6 +484,16 @@ def main():
             continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(env.get_template("redirect.html").render(target=target))
+
+    # Search: an index for the search page (title, section, summary and text).
+    index = []
+    for p in pages:
+        text = BeautifulSoup(markdown_to_html(p["body_md"]), "html.parser").get_text(" ", strip=True)
+        text = re.sub(r"\[\[embed:\d+\]\]", "", text)
+        index.append({"t": p["title"], "u": base + p["path"], "s": EYEBROW.get(p["section"], ""),
+                      "e": summary(p), "x": re.sub(r"\s+", " ", text)[:4000]})
+    (out / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))
+    write("/search/", env.get_template("search.html").render(current="/search/", status=site_status, **common))
 
     (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, **common), base))
     (out / ".nojekyll").write_text("")

@@ -19,6 +19,62 @@
   });
 })();
 
+// Small header after scrolling down. Two thresholds so it does not flicker.
+(function () {
+  var header = document.querySelector(".site-header");
+  if (!header) return;
+  var compact = false, ticking = false;
+  function check() {
+    ticking = false;
+    var y = window.scrollY;
+    if (!compact && y > 160) { compact = true; header.classList.add("site-header--compact"); }
+    else if (compact && y < 40) { compact = false; header.classList.remove("site-header--compact"); }
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(check); }
+  }, { passive: true });
+  check();
+})();
+
+// Search page: filters search.json in the browser.
+(function () {
+  var list = document.getElementById("search-results");
+  if (!list) return;
+  var status = document.getElementById("search-status");
+  var input = document.getElementById("search-page-q");
+  var q = (new URLSearchParams(location.search).get("q") || "").trim();
+  input.value = q;
+  if (!q) { input.focus(); return; }
+  function norm(s) { return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+  status.textContent = "Searching…";
+  fetch(list.getAttribute("data-index")).then(function (r) { return r.json(); }).then(function (items) {
+    var terms = norm(q).split(/\s+/).filter(Boolean);
+    var hits = [];
+    items.forEach(function (it) {
+      var t = norm(it.t), e = norm(it.e), x = norm(it.x), score = 0;
+      for (var i = 0; i < terms.length; i++) {
+        var w = terms[i];
+        if (t.indexOf(w) < 0 && e.indexOf(w) < 0 && x.indexOf(w) < 0) return;
+        score += (t.indexOf(w) >= 0 ? 10 : 0) + (e.indexOf(w) >= 0 ? 3 : 0) + (x.indexOf(w) >= 0 ? 1 : 0);
+      }
+      hits.push({ it: it, score: score });
+    });
+    hits.sort(function (a, b) { return b.score - a.score; });
+    list.textContent = "";
+    hits.slice(0, 50).forEach(function (h) {
+      var li = document.createElement("li"); li.className = "card";
+      var h2 = document.createElement("h2"); h2.className = "card__title";
+      var a = document.createElement("a"); a.href = h.it.u; a.textContent = h.it.t;
+      h2.appendChild(a); li.appendChild(h2);
+      if (h.it.s) { var m = document.createElement("p"); m.className = "card__meta"; m.textContent = h.it.s; li.appendChild(m); }
+      if (h.it.e) { var p = document.createElement("p"); p.className = "card__text"; p.textContent = h.it.e; li.appendChild(p); }
+      list.appendChild(li);
+    });
+    status.textContent = hits.length === 0 ? "No results for “" + q + "”." :
+      hits.length + (hits.length === 1 ? " result" : " results") + " for “" + q + "”.";
+  }).catch(function () { status.textContent = "Search could not load. Please try again."; });
+})();
+
 // Theme toggle, as on psubhashish.com. The choice is kept in this browser.
 (function () {
   var html = document.documentElement;

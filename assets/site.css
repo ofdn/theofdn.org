@@ -88,24 +88,24 @@ h1, h2, h3, h4, h5, h6 {
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-/* Header: bright blue, same in both themes. White logo (logos are exempt from
-   contrast rules); navy links and icons on the blue: 7.1:1 */
+/* Header: the site's own colours turned around, same in both themes.
+   Off-white text on warm black: 17.3:1. Logo in 10% grey: 14.3:1. */
 .site-header {
-  --header-bg: #1AA7F7; --header-text: #03102A;
+  --header-bg: #1A1714; --header-text: #FDFBF7; --header-logo: #E6E6E6;
   position: sticky; top: 0; z-index: 20;
   background-color: var(--header-bg); color: var(--header-text);
   display: flex; align-items: center; gap: var(--space-sm) var(--space-lg);
   padding: 0.75rem 2rem;
 }
 .site-header a:focus-visible, .site-header button:focus-visible,
-.site-menu a:focus-visible { outline: 2px solid #03102A; outline-offset: 3px; }
-.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: #FFFFFF; text-decoration: none; margin-right: auto; }
-.site-logo:hover { color: #FFFFFF; }
+.site-menu a:focus-visible { outline: 2px solid #FDFBF7; outline-offset: 3px; }
+.site-logo { display: inline-flex; align-items: center; min-height: 44px; color: var(--header-logo); text-decoration: none; margin-right: auto; }
+.site-logo:hover { color: var(--header-logo); }
 .site-logo__mark { display: block; height: 30px; width: auto; }
 .site-nav__list { display: flex; flex-wrap: wrap; list-style: none; gap: 0.4rem 1.5rem; }
 .site-nav__list a {
   display: inline-block; padding: 0.2rem 0;
-  font-family: var(--font-display); font-size: 0.9rem; font-weight: 600;
+  font-family: var(--font-display); font-size: 0.9rem; font-weight: 500;
   letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
   color: var(--header-text); border-bottom: 2px solid transparent;
 }
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 2.75rem; height: 2.75rem; padding: 0; border: 0; border-radius: 50%;
   background: none; color: var(--header-text); cursor: pointer;
 }
-.header-btn:hover { background-color: rgba(3, 16, 42, 0.12); }
+.header-btn:hover { background-color: rgba(253, 251, 247, 0.14); }
 .header-btn svg { display: block; }
 .menu-toggle { display: none; }
 .menu-toggle .menu-toggle__close { display: none; }
@@ -129,10 +129,43 @@ h1, h2, h3, h4, h5, h6 {
   .site-header { flex-wrap: wrap; }
 }
 
+/* Search field in the header: only in the small header after scrolling down */
+.search-form--header { display: none; flex: 1; max-width: 26rem; margin-inline: auto; }
+.search-form input {
+  width: 100%; min-height: 2.5rem; padding: 0.4rem 0.9rem;
+  font: 1rem var(--font-display); color: #1A1714; background: #FDFBF7;
+  border: 0; border-radius: 999px;
+}
+.search-form input::placeholder { color: #5A4E46; }
+.search-form input:focus-visible { outline: 2px solid #FDFBF7; outline-offset: 2px; }
+.search-form--page input:focus-visible { outline-color: var(--color-accent); }
+.site-logo__mark { transition: height 0.2s ease; }
+
+/* Small header after scrolling down: small logo, search and menu button */
+.site-header--compact { padding-block: 0.35rem; }
+.site-header--compact .site-logo { margin-right: 0; min-height: 36px; }
+.site-header--compact .site-logo__mark { height: 18px; }
+.site-header--compact .site-nav,
+.site-header--compact .theme-toggle,
+.site-header--compact .search-link { display: none; }
+.site-header--compact .search-form--header { display: block; }
+
+/* Search page */
+.search-form--page { max-width: 40rem; margin-bottom: var(--space-lg); font-family: var(--font-display); }
+.search-form--page label { display: block; font-weight: 600; margin-bottom: var(--space-sm); }
+.search-form__row { display: flex; gap: var(--space-sm); }
+.search-form--page input { border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
+.search-form--page button {
+  font: 500 1rem var(--font-display); color: #FDFBF7; background: #1A1714;
+  border: 1px solid #1A1714; border-radius: var(--radius-sm); padding: 0.4rem 1.1rem; min-height: 2.5rem; cursor: pointer;
+}
+.search-status { font-family: var(--font-display); margin-bottom: var(--space-lg); color: var(--color-text-muted); }
+.search-results .card__meta { text-transform: none; }
+
 /* Full menu, opened from the menu button */
 .site-menu {
   position: fixed; inset: 0; z-index: 15; overflow-y: auto;
-  background: #1AA7F7; color: #03102A;
+  background: #1A1714; color: #FDFBF7;
   padding: calc(4.5rem + var(--space-xl)) var(--space-lg) var(--space-2xl);
 }
 .site-menu[hidden] { display: none; }
@@ -143,15 +176,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-menu__heading {
   font-family: var(--font-display); font-size: 0.85rem; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase; color: #03102A; margin-bottom: var(--space-md);
+  letter-spacing: 0.12em; text-transform: uppercase; color: #E6E6E6; margin-bottom: var(--space-md);
 }
 .site-menu ul { list-style: none; }
 .site-menu li + li { margin-top: 0.6rem; }
 .site-menu a {
-  font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
-  color: #03102A; text-decoration: none;
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 500;
+  color: #FDFBF7; text-decoration: none;
 }
-.site-menu a:hover, .site-menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; color: #03102A; }
+.site-menu a:hover, .site-menu a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; color: #FDFBF7; }
 body.menu-open { overflow: hidden; }
 
 main { flex: 1; }
@@ -337,7 +370,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .film__facts dl > div { margin-bottom: var(--space-md); }
 .film__facts dt { font-weight: 700; }
 .film__facts dd { color: var(--color-text-muted); overflow-wrap: anywhere; }
-.film__facts a { font-weight: 700; color: var(--color-text); text-decoration-thickness: 1.5px; }
+.film__facts a { color: var(--color-text); text-decoration-thickness: 1.5px; }
 .film__facts a:hover { color: var(--color-accent); }
 .film__links { list-style: none; margin-bottom: var(--space-xl); }
 .film__links li { margin-bottom: var(--space-sm); }
