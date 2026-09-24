@@ -81,7 +81,7 @@ OFDN thanks Mrutyunjaya Kar (strategy), Shitikantha Dash (technology) and Shreek
 
 ### Whose Knowledge?
 
-**[Whose Knowledge?](https://whoseknowledge.org/)** is a global multi-lingual campaign that is working to correct the skewed representations of knowledge on the Internet. Founded by Anasuya Sengupta and Siko Bouterse, two of our dearest friends, guides, and advisors, Whose Knowledge? has been instrumental in identifying several “knowledge gaps” that exist on the Internet.
+**[Whose Knowledge?](https://whoseknowledge.org/)** is a global multi-lingual campaign that is working to correct the skewed representations of knowledge on the Internet. Founded by Anasuya Sengupta and Siko Bouterse, Whose Knowledge? has been instrumental in identifying several “knowledge gaps” that exist on the Internet.
 
 [Twitter ](https://twitter.com/pattaprateek) [Globe ](https://pattaprateek.com/) [Youtube ](https://youtube.com/pattaprateek) [Github ](https://github.com/pattaprateek) ![Wikitongues_logo](/assets/logos/wikitongues.webp)
 
@@ -113,15 +113,8 @@ WhoseKnowledge?
 
 Anasuya Sengupta is the co-founder, and currently Co-Director of Whose Knowledge?. With over two decades of leadership in development sectors across global South, and worldwide, Anasuya has made significant contribution in amplifying marginalised voices in both digital and real worlds. A former Chief Grantmaking Officer at the Wikimedia Foundation and a 2017 Shuttleworth Fellow, Anasuya has been as an advisor to us since the beginning of OFDN.
 
-[Twitter ](https://twitter.com/Anasuyashh) [Globe ](https://whoseknowledge.org/) ![Siko Bouterse](/assets/images/people-siko-bouterse.webp)
+[Twitter ](https://twitter.com/Anasuyashh) [Globe ](https://whoseknowledge.org/)
 
-### Siko Bouterse
-
-WhoseKnowledge?
-
-Siko Bouterse is the co-founder and current Co-Director of Whose Knowledge? In the last 10 years, Siko has led numerous global activities supporting communities including their role as the Director of Community Resources at the Wikimedia Foundation. Before their work in the nonprofit world, Siko had worked at Phoebe Hearst Museum, hi5.com and Meedan.org. Siko’s educational and research background are in Middle East History and Anthropology. Like Anasuya, OFDN has been honoured to have Siko as an advisor since its beginning.
-
-[Twitter ](https://twitter.com/sikob)
 
 -  Sitemap
 
@@ -136,5 +129,5 @@ Siko Bouterse is the co-founder and current Co-Director of Whose Knowledge? In t
 - [Activities](/activities/) and [publications](/category/blogs/)
 - [Media mentions](/news/)
 - [Reach out to us](/reach-out/)
-- [Core values](/core/) (*legacy*)
+- [About us](/about/)
 - [Licensing](/licensing/)

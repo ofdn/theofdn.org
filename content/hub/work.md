@@ -57,5 +57,5 @@ This project is aimed at creating resources for the Santali-language including a
 - [Activities](/activities/) and [publications](/category/blogs/)
 - [Media mentions](/news/)
 - [Reach out to us](/reach-out/)
-- [Core values](/core/) (*legacy*)
+- [About us](/about/)
 - [Licensing](/licensing/)

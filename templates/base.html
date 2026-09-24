@@ -46,7 +46,15 @@
   </header>
   <div class="site-menu" id="site-menu" hidden>
     <div class="site-menu__inner">
-      {% for heading, links in footer_nav %}
+      <nav class="site-menu__group site-menu__group--main" aria-label="Main">
+        <h2 class="site-menu__heading">Explore</h2>
+        <ul role="list">
+          {% for label, href in nav %}<li><a href="{{ href }}"{% if current == href %} aria-current="page"{% endif %}>{{ label }}</a></li>
+          {% endfor %}
+          <li><a href="/search/">Search</a></li>
+        </ul>
+      </nav>
+      {% for heading, links in footer_nav if heading != "Work" %}
       <nav class="site-menu__group" aria-label="{{ heading }}">
         <h2 class="site-menu__heading">{{ heading }}</h2>
         <ul role="list">
