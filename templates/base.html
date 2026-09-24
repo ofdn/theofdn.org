@@ -14,7 +14,7 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <a href="/" class="site-logo">{% include "logo.svg" %}</a>
+    <a href="/" class="site-logo">{% with lid = "h" %}{% include "logo.svg" %}{% endwith %}</a>
     <nav class="site-nav" aria-label="Site">
       <ul class="site-nav__list" role="list">
         {% for label, href in nav %}<li><a href="{{ href }}"{% if current == href %} aria-current="page"{% endif %}>{{ label }}</a></li>
@@ -26,14 +26,22 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <div class="site-wrapper site-footer__inner">
-      <p>© {{ year }} O Foundation. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless marked otherwise.</p>
-      <nav aria-label="Footer">
-        <ul class="site-footer__list" role="list">
-          {% for label, href in footer_nav %}<li><a href="{{ href }}">{{ label }}</a></li>
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="/" class="site-footer__logo">{% with lid = "f" %}{% include "logo.svg" %}{% endwith %}</a>
+        <p>O Foundation (OFDN) works at the intersections of openness, digital rights, access to knowledge and media freedom.</p>
+        <p><a href="https://github.com/ofdn/theofdn.org">View source code</a></p>
+      </div>
+      {% for heading, links in footer_nav %}
+      <nav class="site-footer__col" aria-label="{{ heading }}">
+        <h2 class="site-footer__heading">{{ heading }}</h2>
+        <ul role="list">
+          {% for label, href in links %}<li><a href="{{ href }}">{{ label }}</a></li>
           {% endfor %}
         </ul>
       </nav>
+      {% endfor %}
+      <p class="site-footer__legal">© {{ year }} O Foundation. Content under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless noted otherwise.</p>
     </div>
   </footer>
   <script src="/assets/site.js" defer></script>

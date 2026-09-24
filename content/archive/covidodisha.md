@@ -31,11 +31,11 @@ original_url: "https://theofdn.org/covidodisha/"
 |----|
 | *This is an archived project and is kept here for historical purposes. Last updated on August 09, 2021.* |
 
-This page displays COVID-19 emergency information (testing facilities, availability hospitals and oxygen cylinders, district-wise helpline numbers and free food) for Odisha, India. This portal is volunteer-led effort. See “[Disclaimer](/#disclaimer)” section for more. *Please go to [this spreadsheet](https://docs.google.com/spreadsheets/d/1drw6CE5G0qqsFA1hIy_jfoHNukXPqRyprYLcXSg8IdI/edit#gid=0) to contribute information that might be missing (Right click ⨠ Comment).*
+This page displays COVID-19 emergency information (testing facilities, availability hospitals and oxygen cylinders, district-wise helpline numbers and free food) for Odisha, India. This portal is volunteer-led effort. See “[Disclaimer](#disclaimer)” section for more. *Please go to [this spreadsheet](https://docs.google.com/spreadsheets/d/1drw6CE5G0qqsFA1hIy_jfoHNukXPqRyprYLcXSg8IdI/edit#gid=0) to contribute information that might be missing (Right click ⨠ Comment).*
 
-ଏହି ପୃଷ୍ଠାରେ ଓଡ଼ିଶା ପାଇଁ କୋଭିଡ଼-19 (କରୋନାଭାଇରସ) ପାଇଁ ଜରୁରୀକାଳୀନ ସୂଚନା (ପରୀକ୍ଷା, ଡାକ୍ତରଖାନା ଏବଂ ଅକ୍ସିଜେନ ସିଲିଣ୍ଡର, ପ୍ରତି ଜିଲ୍ଲାର ହେଲ୍ପଲାଇନ ନମ୍ବର ଏବଂ ମାଗଣା ଖାଦ୍ୟ) ରହିଛି । ଏ ପୋର୍ଟାଲଟି ସ୍ୱେଚ୍ଛାସେବୀଙ୍କ ପରିଚାଳିତ । ଅଧିକ ସୂଚନା ପାଇଁ [ଏହି ବିଭାଗ](/#disclaimer) ଦେଖନ୍ତୁ। ଅଧିକ ତଥ୍ୟ ଯୋଡ଼ିବା/ଭୁଲ ଥିଲେ ସୁଧାରିବା ପାଇଁ ଦୟାକରି [ଏହି ସ୍ପ୍ରେଡସିଟକୁ](https://docs.google.com/spreadsheets/d/1drw6CE5G0qqsFA1hIy_jfoHNukXPqRyprYLcXSg8IdI/edit#gid=0) ଯାଇ ସୂଚନା ଜଣାନ୍ତୁ ।
+ଏହି ପୃଷ୍ଠାରେ ଓଡ଼ିଶା ପାଇଁ କୋଭିଡ଼-19 (କରୋନାଭାଇରସ) ପାଇଁ ଜରୁରୀକାଳୀନ ସୂଚନା (ପରୀକ୍ଷା, ଡାକ୍ତରଖାନା ଏବଂ ଅକ୍ସିଜେନ ସିଲିଣ୍ଡର, ପ୍ରତି ଜିଲ୍ଲାର ହେଲ୍ପଲାଇନ ନମ୍ବର ଏବଂ ମାଗଣା ଖାଦ୍ୟ) ରହିଛି । ଏ ପୋର୍ଟାଲଟି ସ୍ୱେଚ୍ଛାସେବୀଙ୍କ ପରିଚାଳିତ । ଅଧିକ ସୂଚନା ପାଇଁ [ଏହି ବିଭାଗ](#disclaimer) ଦେଖନ୍ତୁ। ଅଧିକ ତଥ୍ୟ ଯୋଡ଼ିବା/ଭୁଲ ଥିଲେ ସୁଧାରିବା ପାଇଁ ଦୟାକରି [ଏହି ସ୍ପ୍ରେଡସିଟକୁ](https://docs.google.com/spreadsheets/d/1drw6CE5G0qqsFA1hIy_jfoHNukXPqRyprYLcXSg8IdI/edit#gid=0) ଯାଇ ସୂଚନା ଜଣାନ୍ତୁ ।
 
-[କରୋନାଭାଇରସ ପାଇଁ ସତର୍କତା](/#or) [ᱠᱚᱨᱚᱱᱟ ᱵᱷᱟᱭᱨᱚᱥ ᱟᱡᱟᱨ ᱠᱷᱚᱱ ᱪᱮᱠᱟᱛᱮ ᱥᱟᱦᱟᱨᱮᱵᱚᱱ ᱛᱟᱦᱮᱸᱱᱟ ?](/#sat)\
+[କରୋନାଭାଇରସ ପାଇଁ ସତର୍କତା](#or) [ᱠᱚᱨᱚᱱᱟ ᱵᱷᱟᱭᱨᱚᱥ ᱟᱡᱟᱨ ᱠᱷᱚᱱ ᱪᱮᱠᱟᱛᱮ ᱥᱟᱦᱟᱨᱮᱵᱚᱱ ᱛᱟᱦᱮᱸᱱᱟ ?](#sat)
 
 ### District-wise helpline numbers
 
@@ -95,7 +95,7 @@ This page displays COVID-19 emergency information (testing facilities, availabil
 >
 > — CMC,Cuttack (@CMCCuttack) [April 22, 2021](https://twitter.com/CMCCuttack/status/1385217008749273091?ref_src=twsrc%5Etfw)
 
-> Bhubaneswar Helpline number is active.\
+> Bhubaneswar Helpline number is active.
 > Reach out to us for queries related to [\#COVID19](https://twitter.com/hashtag/COVID19?src=hash&ref_src=twsrc%5Etfw), no need to Panic we are here to help you.[\#StaySafeStayHealthy](https://twitter.com/hashtag/StaySafeStayHealthy?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/UdemGsKGLE](https://t.co/UdemGsKGLE)
 >
 > — BMC (@bmcbbsr) [April 19, 2021](https://twitter.com/bmcbbsr/status/1384089466273353731?ref_src=twsrc%5Etfw)
@@ -104,12 +104,12 @@ This page displays COVID-19 emergency information (testing facilities, availabil
 >
 > — BMC (@bmcbbsr) [April 22, 2021](https://twitter.com/bmcbbsr/status/1385149768763011074?ref_src=twsrc%5Etfw)
 
-> The Helpline numbers of the Dedicated COVID Hospitals in Bhubaneswar are shared below.\
+> The Helpline numbers of the Dedicated COVID Hospitals in Bhubaneswar are shared below.
 > Family members can contact the below numbers to check the conditions of the patients.[\#BbsrFightsCOVID](https://twitter.com/hashtag/BbsrFightsCOVID?src=hash&ref_src=twsrc%5Etfw) [\#StaySafeStayHealthy](https://twitter.com/hashtag/StaySafeStayHealthy?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/hJAmZx6UJ9](https://t.co/hJAmZx6UJ9)
 >
 > — BMC (@bmcbbsr) [April 22, 2021](https://twitter.com/bmcbbsr/status/1385120366784180226?ref_src=twsrc%5Etfw)
 
-> The Updated list of Testing Centres is shared below.\
+> The Updated list of Testing Centres is shared below.
 > Citizens can get themselves tested at the below mentioned centres.[\#UpdatedTestingCentres](https://twitter.com/hashtag/UpdatedTestingCentres?src=hash&ref_src=twsrc%5Etfw) in [\#Bhubaneswar](https://twitter.com/hashtag/Bhubaneswar?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/9BOdSnKSYT](https://t.co/9BOdSnKSYT)
 >
 > — BMC (@bmcbbsr) [April 21, 2021](https://twitter.com/bmcbbsr/status/1384735479338127362?ref_src=twsrc%5Etfw)
@@ -132,6 +132,3 @@ This page displays COVID-19 emergency information (testing facilities, availabil
 - This page might contain personal information such as names and phone numbers as they are key to emergency response. OFDN would not be responsible for consent and privacy related issues. This page is an exempt from the site-wide [Privacy Policy](/policies/).
 - The databases displayed in this page are hosted outside the OFDN servers and they are embedded in this page. That might cause accessibility issues during display in different devices.
 
-\
-
-\

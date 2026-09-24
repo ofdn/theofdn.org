@@ -30,14 +30,14 @@ Our Subhashish Panigrahi participated in this two-day forum in Taipei city, Taiw
 >
 > — EngageMedia (@EngageMedia) [June 2, 2019](https://twitter.com/EngageMedia/status/1135022415929532416?ref_src=twsrc%5Etfw)
 
-> Subhashish Panigrahi: Internet Society Asia-Pacific Regional Bureau (India) speaking on rise of digital authoritarianism\
-> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)\
+> Subhashish Panigrahi: Internet Society Asia-Pacific Regional Bureau (India) speaking on rise of digital authoritarianism
+> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)
 > [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw)
 >
 > — Global Voices (@globalvoices) [June 2, 2019](https://twitter.com/globalvoices/status/1135021608114970624?ref_src=twsrc%5Etfw)
 
-> Subhashish Panigrahi: Participation and rights of speakers of minority languages, spoken by millions, overlooked\
-> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)\
+> Subhashish Panigrahi: Participation and rights of speakers of minority languages, spoken by millions, overlooked
+> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)
 > [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw)
 >
 > — Global Voices (@globalvoices) [June 2, 2019](https://twitter.com/globalvoices/status/1135022135749988354?ref_src=twsrc%5Etfw)
@@ -46,8 +46,8 @@ Our Subhashish Panigrahi participated in this two-day forum in Taipei city, Taiw
 >
 > — Viet Tan (@viettan) [June 2, 2019](https://twitter.com/viettan/status/1135022244961218560?ref_src=twsrc%5Etfw)
 
-> Subhashish Panigrahi: Digital accessibility major issue in India\
-> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)\
+> Subhashish Panigrahi: Digital accessibility major issue in India
+> [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)
 > [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw)
 >
 > — Global Voices (@globalvoices) [June 2, 2019](https://twitter.com/globalvoices/status/1135022812026925058?ref_src=twsrc%5Etfw)

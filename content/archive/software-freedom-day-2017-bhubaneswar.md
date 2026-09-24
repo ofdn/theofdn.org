@@ -53,7 +53,7 @@ We also collectively identified some of the major barriers for growing FLOSS/FOS
 - Myths around free software—many fail to understand that the free in Free software is merely about freedom and not necessarily the cost
 - Advocacy—there are not enough individuals/organisations for consistent lobbying with the government to persuade it to adapt FLOSS/FOSS/Open Source tools
 
-Pansari feels that the government also plays a role for the low outreach for FLOSS/FOSS—\
+Pansari feels that the government also plays a role for the low outreach for FLOSS/FOSS—
 
 *“[BOSS Linux](https://www.google.com/url?q=https://bosslinux.in&sa=D&ust=1506789809927000&usg=AFQjCNHeBdfDek5NP-xvhcwxLiwbEizPXQ), a Linux distribution made by the support from the Indian government is available for free but how many government entities are using it themselves?*
 

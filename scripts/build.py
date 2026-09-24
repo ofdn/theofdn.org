@@ -30,8 +30,15 @@ NAV = [
     ("About", "/people/"),
 ]
 FOOTER_NAV = [
-    ("Contact", "/reach-out/"), ("Donate", "/donate/"), ("Site policies", "/policies/"),
-    ("Licensing", "/licensing/"), ("Issues", "/issues/"),
+    ("About", [("People", "/people/"), ("Partners and advisors", "/partners/"), ("Core values", "/core/"),
+               ("Diversity and inclusion", "/diversity-and-inclusion/"), ("Contact", "/reach-out/")]),
+    ("Work", [("Films", "/category/film/"), ("Podcast", "/podcast/"), ("Resources", "/category/oer/"),
+              ("OpenSpeaks", "/openspeaks/"), ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
+    ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
+                  ("Donate", "/donate/")]),
+    ("Follow", [("YouTube", "https://www.youtube.com/channel/UCk4NuEPO6JbTm_8Ybod2eOQ"),
+                ("Instagram", "https://instagram.com/ofdnorg/"), ("Facebook", "https://facebook.com/theofdn/"),
+                ("X (Twitter)", "https://twitter.com/ofdnorg/"), ("GitHub", "https://github.com/ofdn")]),
 ]
 
 # Listing pages, kept at the old WordPress category addresses.
@@ -211,6 +218,44 @@ def polish(html, page):
         h.name = f"h{remap[int(h.name[1])]}"
         if not h.get_text(strip=True) and not h.find("img"):
             h.unwrap()
+
+    # Quotes: every blockquote gets the same look. The last paragraph that
+    # starts with a dash is the attribution. Runs of quotes form a grid.
+    for bq in soup.find_all("blockquote"):
+        paras = bq.find_all("p", recursive=False)
+        fig = soup.new_tag("figure", attrs={"class": "quote"})
+        bq.wrap(fig)
+        if paras and re.match(r"^\s*[—–]", paras[-1].get_text()):
+            cap = soup.new_tag("figcaption")
+            last = paras[-1]
+            first = last.contents[0] if last.contents else None
+            if isinstance(first, str):
+                first.replace_with(re.sub(r"^\s*[—–]\s*", "", first))
+            cap.extend(list(last.contents))
+            last.decompose()
+            fig.append(cap)
+        for p_ in bq.find_all("p", recursive=False):
+            if re.match(r"^[★☆]", p_.get_text()):
+                p_["class"] = "quote__rating"
+    for fig in soup.find_all("figure", class_="quote"):
+        if fig.find_parent("div", class_="quotes"):
+            continue
+        run = [fig]
+        nxt = fig.find_next_sibling()
+        while nxt is not None and nxt.name == "figure" and "quote" in (nxt.get("class") or []):
+            run.append(nxt)
+            nxt = nxt.find_next_sibling()
+        if len(run) > 1:
+            box = soup.new_tag("div", attrs={"class": "quotes"})
+            fig.insert_before(box)
+            for f in run:
+                box.append(f.extract())
+
+    # Jump links to a part of the same page that no longer exists become text.
+    ids = {t.get("id") for t in soup.find_all(id=True)}
+    for a in soup.find_all("a", href=True):
+        if a["href"].startswith("#") and len(a["href"]) > 1 and a["href"][1:] not in ids:
+            a.unwrap()
 
     # Wide tables scroll inside their own box.
     for t in soup.find_all("table"):

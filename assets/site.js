@@ -51,3 +51,29 @@ document.querySelectorAll(".citation-block").forEach(function (block) {
     URL.revokeObjectURL(url);
   });
 });
+
+// Section links: a "#" after each heading copies a link to that section.
+document.querySelectorAll("main h2[id], main h3[id]").forEach(function (h) {
+  if (h.querySelector(".heading-anchor") || h.closest(".film-hero")) return;
+  var a = document.createElement("a");
+  a.href = "#" + h.id;
+  a.className = "heading-anchor";
+  a.setAttribute("aria-label", "Copy link to this section: " + h.textContent.trim());
+  a.title = "Copy link";
+  a.appendChild(document.createTextNode("#"));
+  var copied = document.createElement("span");
+  copied.className = "anchor-copied";
+  copied.textContent = "Copied";
+  a.appendChild(copied);
+  h.appendChild(a);
+  a.addEventListener("click", function (e) {
+    var url = location.origin + location.pathname + "#" + h.id;
+    if (!navigator.clipboard) return;
+    e.preventDefault();
+    history.replaceState(null, "", "#" + h.id);
+    navigator.clipboard.writeText(url).then(function () {
+      a.classList.add("just-copied");
+      setTimeout(function () { a.classList.remove("just-copied"); }, 1500);
+    });
+  });
+});

@@ -164,9 +164,9 @@ You can watch the film [online on the Internet Archive](https://archive.org/deta
 
 ## Further resources
 
-- “[Digitally-Documenting the Sundanese Language and Cultural Heritage](/podcast/#episode3)“. O Foundation Conversations (podcast). 24 July 2020.
+- “[Digitally-Documenting the Sundanese Language and Cultural Heritage](/podcast/#episode3)”. O Foundation Conversations (podcast). 24 July 2020.
 - Le Guen, Laila. [Q&A: Meet Ilham Nurwansah, Sundanese language activist](https://rising.globalvoices.org/blog/2020/06/23/qa-meet-ilham-nurwansah-sundanese-language-activist/). Rising Voices. (23 June 2020)
-- Nurwansah, Ilham. “[Playing Karinding in Stockholm](https://inurwansah.my.id/2020/12/08/playing-karinding-in-stockholm/)“. iNurwansah. 8 December 2020.
+- Nurwansah, Ilham. “[Playing Karinding in Stockholm](https://inurwansah.my.id/2020/12/08/playing-karinding-in-stockholm/)”. iNurwansah. 8 December 2020.
 
 ## Promotional posters
 

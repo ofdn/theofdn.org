@@ -49,6 +49,7 @@ All optional. Paths point to files in `assets/images/`.
 - `details`: datasheet rows. Each has `label` and a `value` list.
 - `press_kit`: link to the press kit.
 - `stills`: list of still images, shown at the end.
+- `listen`: podcast links. Each has `label` and `url`.
 
 ## Add a page, blog post or subpage
 
@@ -72,6 +73,22 @@ excerpt: "One or two sentences."
 The `path` sets the address, so a title in any script can have a plain Latin address. For a subpage, put it under the parent's address: `/openspeaks/new-toolkit/` sits under `/openspeaks/`.
 
 The build stops with a message if a `path` has other characters or two pages share one.
+
+## Quotes
+
+Write every quote the same way. The site gives them all one look.
+
+```
+> “Loving homage to family and culture.”
+>
+> — **Rebecca Cherry**, *Film Carnage*
+```
+
+The last line starts with a dash. Put the name in bold and the source in italics. Quotes one after another show as a grid.
+
+## Section links
+
+Every heading gets a link that copies its address. No extra step needed.
 
 ## Add a video or audio
 

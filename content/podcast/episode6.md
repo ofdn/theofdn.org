@@ -14,22 +14,24 @@ embeds:
   - provider: "archive"
     id: "podcasts-episode5"
 original_url: "https://theofdn.org/podcast/episode6/"
+listen:
+- label: Internet Archive
+  url: https://archive.org/details/podcasts-episode5
+- label: Spotify
+  url: https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg
+- label: Apple Podcasts
+  url: https://podcasts.apple.com/in/podcast/our-majority-world-shahidul-alam/id1510689609?i=1000604834450
 ---
-![OFDN Conversations logo](/assets/logos/ofdn-conversations-white.svg)
 
-# **EPISODE 6  — Our Majority World**
-
-“‘Third world’ and ‘developing world’ are not our chosen identity!”
-
-— DR SHAHIDUL ALAM
+> “‘Third world’ and ‘developing world’ are not our chosen identity!”
+>
+> — **Dr Shahidul Alam**
 
 [[embed:0]]
 
-[![Internet Archive logo and watermark](/assets/logos/internet-archive-wordmark.svg)](https://archive.org/details/podcasts-episode5) [![Spotify logo without text](/assets/logos/spotify-white.webp)](https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg) [![Listen on Apple Podcasts](/assets/logos/apple-podcasts-badge.svg)](https://podcasts.apple.com/in/podcast/our-majority-world-shahidul-alam/id1510689609?i=1000604834450) [![Listen on Google Podcasts](/assets/logos/google-podcasts-badge.svg)](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xZWM5MDY5NC9wb2RjYXN0L3Jzcw/episode/MGQwY2U4ODQtOTM2Mi00NWQxLWEwOWUtY2IzYWRjNmIwYzQw?sa=X&ved=0CAUQkfYCahcKEwiAg6HHs-j9AhUAAAAAHQAAAAAQAQ)
-
 This episode features a conversation with noted Bangladeshi photojournalist, activist and writer [Shahidul Alam](https://drik.net/). Recorded and edited by Subhashish Panigrahi during the National Geographic Storytellers Summit 2023 in Washington, D.C., in January and published in March 2023, highlighting Alam’s journey as a photojournalist who documented the post-liberation political landscape of Bangladesh in the 1980s. He later became a social justice activist. His contribution to a larger movement would eventually end the nine-year dictatorship of General Hussain Muhammad Ershad. He spent the following decades building spaces for independent journalism and media, and activism to hold the polity accountable. An abridged version of the interview was published online on [Global Voices](https://globalvoices.org/2023/03/12/third-world-and-developing-world-not-our-chosen-identity-interview-with-photojournalist-shahidul-alam/) by the author. The full interview was published here as the sixth episode of OFDN Conversations, a conversation series hosted at the O Foundation.
 
-# Transcription
+## Transcript
 
 (SHAHIDUL): I am a photographer and writer. I was born in 1955 in Dhaka, and I live and work in Dhaka.
 
@@ -81,7 +83,7 @@ With that, our conversation came to an end as Shahidul had a long flight to catc
 
 I am Subhashish, and I’ll be back soon with another episode of O Foundation Conversations.
 
-# Attribution
+## Attribution
 
 - Warm guitar rhythm Intro (quetzalcontla / CC BY 4.0)
 - Bass Bongo Riddim 90bps.mp3 (InspiredFunk / CC Sampling Plus 1.0)

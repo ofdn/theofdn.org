@@ -32,7 +32,6 @@ Thanks to Rising Voices, a project at Global Voices—we were fortunate to be in
 
 [[embed:1]]
 
-\
 The whole year of 2019 is going to be eventful—with local communities organising campaigns, projects and other initiatives, to UNESCO and other partners organising many global initiatives for the same singular goal of helping grow indigenous languages.
 
 - UNESCO has listed a [range of activities](https://en.iyil2019.org/partnership/) in their official IYIL portal.
@@ -43,7 +42,7 @@ The whole year of 2019 is going to be eventful—with local communities organisi
 
 - We recently started the [Marginalized Community Council](/activities/marginalized-community-council/), an online working group consisting of activists and other key stakeholders who are working on marginalised issues. The first meeting will commence on August 9 to celebrate the International Day of the World’s Indigenous Peoples, a United Nations event to raise awareness about indigenous groups around the world.
 
-- Rising Voices, Digital Empowerment Foundation and ourselves have recently joined hands to start a Twitter-based weekly curation called @[AsiaLangsOnline](https://twitter.com/AsiaLangsOnline) where we will invite activists who are working towards digital activism on indigenous languages to tell their stories to the rest of the world. The campaign will start officially on Aug 6 and our Subhashish Panigrahi will be the maiden host.\
+- Rising Voices, Digital Empowerment Foundation and ourselves have recently joined hands to start a Twitter-based weekly curation called @[AsiaLangsOnline](https://twitter.com/AsiaLangsOnline) where we will invite activists who are working towards digital activism on indigenous languages to tell their stories to the rest of the world. The campaign will start officially on Aug 6 and our Subhashish Panigrahi will be the maiden host.
 
   ## What it really means for your language if you speak any of the indigenous languages?
 

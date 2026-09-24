@@ -134,4 +134,4 @@ To upload all the ogg files to Wikimedia Commons This will record the sounds in 
 - “[Kathabhidhana, open source toolkit to record pronunciations of any world language](https://wikimedia.org.uk/wiki/Celtic_Knot_Conference_2017/Programme/CK129)“. Celtic Knot Conference 2017, University of Edinburgh. (*Selected, Workshop on July 6*)
 
 ### Some social media shout-outs:\
-[Kathabhidhana](https://twitter.com/i/moments/898061810217213956)\
+[Kathabhidhana](https://twitter.com/i/moments/898061810217213956)

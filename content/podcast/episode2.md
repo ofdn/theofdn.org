@@ -14,28 +14,29 @@ embeds:
   - provider: "archive"
     id: "podcasts-episode2"
 original_url: "https://theofdn.org/podcast/episode2/"
+details:
+- label: Producer
+  value:
+  - Subhashish Panigrahi
+- label: Guests
+  value:
+  - Ankush Vengurlekar and Ashish Birulee
+listen:
+- label: Internet Archive
+  url: https://archive.org/details/podcasts-episode2
+- label: Spotify
+  url: https://open.spotify.com/episode/5Vz7braWTciba9OjgzhoJd?si=hFMu5SGkRyaOJjubWYUbIg
+- label: Apple Podcasts
+  url: https://podcasts.apple.com/in/podcast/knowledge-commons-and-the-adivasis/id1510689609?i=1000485540083
 ---
-![OFDN Conversations logo](/assets/logos/ofdn-conversations-white.svg)
 
-# **EPISODE 2  — Knowledge Commons and the Adivasis**
-
-“If others appreciate enough, the Adivasi communities wouldn’t hesitate to tell their stories.”
-
-— ASHISH BIRULEE
+> “If others appreciate enough, the Adivasi communities wouldn’t hesitate to tell their stories.”
+>
+> — **Ashish Birulee**
 
 [[embed:0]]
 
-[![Internet Archive logo and watermark](/assets/logos/internet-archive-wordmark.svg)](https://archive.org/details/podcasts-episode2) [![Spotify logo without text](/assets/logos/spotify-white.webp)](https://open.spotify.com/episode/5Vz7braWTciba9OjgzhoJd?si=hFMu5SGkRyaOJjubWYUbIg) [![Listen on Apple Podcasts](/assets/logos/apple-podcasts-badge.svg)](https://podcasts.apple.com/in/podcast/knowledge-commons-and-the-adivasis/id1510689609?i=1000485540083) [![Listen on Google Podcasts](/assets/logos/google-podcasts-badge.svg)](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xZWM5MDY5NC9wb2RjYXN0L3Jzcw/episode/OGY1MWU0ZmMtZWMwNy00Nzc5LWIzMmEtZmQxZTkxNDI2ZmIz?sa=X&ved=0CAUQkfYCahcKEwiQhvOE8aOBAxUAAAAAHQAAAAAQCg)
-
 Adivasis are the indigenous communities in India. There are 104 million Adivasis that speak a few hundred languages but only a handful of them have access to media of their own. In this episode of O Foundation Conversations, our host Subhashish Panigrahi talks to Ankush Vengurlekar and Ashish Birulee of Adivasi Lives Matter, a platform dedicated to giving a voice to Advisi content producers. Shaped with inspirations from the Black Lives Matter movement, Adivasi Lives Matter provides training to many Adivasi youths on a regular basis who then create stories — text, audio and video. Even the hardship of the COVID-19 lockdown has not stopped these content creators who are on a mission to promote their people, languages and cultures online. This episode is only a glimpse of the myriad of activities that Adivasi Lives Matter has been leading.
-
-## Producer
-
-Subhashish Panigrahi
-
-## Guests
-
-Ankush Vengurlekar and Ashish Birulee
 
 ## Music
 

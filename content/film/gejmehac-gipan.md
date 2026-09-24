@@ -76,9 +76,7 @@ stills:
 
 ## About the film
 
-***Gejmehac Gipan*** (original title: ***गेम्येहाक़ गिपन***) is a 2024 short film by Subhashish Panigrahi. The film, part of the OpenSpeaks Archives, uses archival footage from Panigrahi’s 2019 documentary *Gyani Maiya* production. The film has four chapters—all conversations between the late Gyani Maiya Sen-Kusunda (1937–2020) and Uday Raj Aaley. Sen-Kusunda was a community elder known for keeping the Kusunda language alive. She was one of the two fluent speakers, the other being her younger sister, Kamala Sen. Aaley, who worked closely with Gyani Maiya and Kamala to teach the language to young children and revive it. Panigrahi recorded interviews at Sen-Kusunda’s house in Kulmor in Nepal’s Dang district.\
-\
-
+***Gejmehac Gipan*** (original title: ***गेम्येहाक़ गिपन***) is a 2024 short film by Subhashish Panigrahi. The film, part of the OpenSpeaks Archives, uses archival footage from Panigrahi’s 2019 documentary *Gyani Maiya* production. The film has four chapters—all conversations between the late Gyani Maiya Sen-Kusunda (1937–2020) and Uday Raj Aaley. Sen-Kusunda was a community elder known for keeping the Kusunda language alive. She was one of the two fluent speakers, the other being her younger sister, Kamala Sen. Aaley, who worked closely with Gyani Maiya and Kamala to teach the language to young children and revive it. Panigrahi recorded interviews at Sen-Kusunda’s house in Kulmor in Nepal’s Dang district.
 ## Chapters
 
 a\. Body Parts (गिजाङ गिजि, शरीरका अङ्गहरू)  

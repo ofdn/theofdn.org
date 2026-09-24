@@ -39,9 +39,9 @@ re:publica / CC-BY-2.0
 
 Episode 6: Our Majority World
 
-“Third World” and “Developing World” are not our chosen identity!
-
-— DR. SHAHIDUL ALAM
+> “‘Third World’ and ‘Developing World’ are not our chosen identity!”
+>
+> — **Dr. Shahidul Alam**
 
 This episode of OFDN Conversations features an interview with noted Bangladeshi photojournalist, activist and writer Shahidul Alam. Recorded during the National Geographic Storytellers Summit 2023 in Washington, it highlights Alam’s journey as a photojournalist who documented the post-liberation political landscape of Bangladesh in the 1980s and eventually became a social justice activist.
 

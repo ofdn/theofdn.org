@@ -41,7 +41,7 @@ embeds:
     id: "tracks/327847923"
 original_url: "https://theofdn.org/openspeaks/karbi/"
 ---
-*We spoke to Karbi community elder Mr. D.S. Teron who has been self-sponsoring research on the Karbi language and the culture.The audio recording and additional research were made by Subhashish Panigrahi and all the content and [metadata](/#metadata) are released under multiple Creative Commons licenses which requires proper attribution though the access and use/reuse are allowed based on the license type. Check individual file description for the licenses.\*
+*We spoke to Karbi community elder Mr. D.S. Teron who has been self-sponsoring research on the Karbi language and the culture.The audio recording and additional research were made by Subhashish Panigrahi and all the content and [metadata](#metadata) are released under multiple Creative Commons licenses which requires proper attribution though the access and use/reuse are allowed based on the license type. Check individual file description for the licenses.\*
 
 ***Karbi*** listen (*Arleng* or *Mikir*) language is spoken by [420,000](https://www.omniglot.com/writing/karbi.htm) [speakers](http://en.wikipedia.org/wiki/Karbi_people) spread across North-East Indian states of Assam, Arunachal Pradesh, Meghalaya and Nagaland and is one of the vulnerable languages of South Asia as identified by [UNESCO](http://www.unesco.org/culture/languages-atlas/en/atlasmap.html). Karbi is grouped under the “*Mikir languages”* which itself is part of the 50-odd-languages that are known as the *Kuki-Chin* language grouplisten or simply known as [*Kukish*](https://en.wikipedia.org/wiki/Kukish_languages) languages. The last known census was in [2001](http://www.censusindia.gov.in/Census_Data_2001/Census_Data_Online/Language/Statement1.aspx) and the number of speakers might have increased by now but there are only a handful of people that are working for reviving the language. D.S. Teron is one of them—he is a veteran and is a full time self-sponsored researcher based in the [Karbi Anglong district](https://en.wikipedia.org/wiki/Karbi_Anglong_district) of Assam. He belongs to the [*Kur*](https://karbi.wordpress.com/about-karbis/) clan of the Karbi people which is one of the five Karbi clans*—Terang*, *Teron*, *Enghee*. *Ingti* and *Timung*. We had a candid conversation with Mr. Teron to learn about the folklore, folk songs, local festivals and traditional games from him. The Karbi elders have been historically great storytellers, be it while recounting the past of deceased family members through *Mosera Kihir*, or the wailing songs of [*Kecharhe*](http://shodhganga.inflibnet.ac.in/bitstream/10603/152822/10/10_chapter%205.pdf) remembering the dead.
 
@@ -53,7 +53,7 @@ original_url: "https://theofdn.org/openspeaks/karbi/"
 
 [Subhashish Panigrahi](https://soundcloud.com/psubhashish "Subhashish Panigrahi") · [Karbi](https://soundcloud.com/psubhashish/sets/karbi "Karbi")
 
-The entire conversation can be listened above you can also listen to each topic in the [next segment](/#individual).
+The entire conversation can be listened above you can also listen to each topic in the [next segment](#individual).
 
 1.  Licensing, interviewee’s name: 00:00 – 01:48 (*MM:SS format*)
 2.  Meaning of Karbi and the Karbi people: 01:48 – 03:27

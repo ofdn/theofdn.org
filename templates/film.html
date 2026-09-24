@@ -37,14 +37,19 @@
   {% endif %}
   <div class="film__body">
     <aside class="film__facts" aria-labelledby="details">
-      {% if page.poster %}<div class="film__poster">{{ picture(page.poster, "Poster of " ~ page.title) }}</div>{% endif %}
       <h2 class="label" id="details">{% if page.section == "podcast" %}Episode details{% else %}Film details{% endif %}</h2>
       <dl>
         {% for key, value in facts %}<div><dt>{{ key }}</dt><dd>{{ value | safe }}</dd></div>
         {% endfor %}
         {% if not facts %}<div><dt>Published</dt><dd>{{ page.date }}</dd></div>{% endif %}
       </dl>
-      {% if page.embeds or page.press_kit %}
+      {% if page.listen %}
+      <h2 class="label">Listen on</h2>
+      <ul class="film__links" role="list">
+        {% for l in page.listen %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>
+        {% endfor %}
+      </ul>
+      {% elif page.embeds or page.press_kit %}
       <h2 class="label">Watch and download</h2>
       <ul class="film__links" role="list">
         {% for e in page.embeds or [] %}
@@ -67,6 +72,15 @@
       {% endif %}
     </div>
   </div>
+  {% if page.poster or page.posters %}
+  <section class="film__posters" aria-labelledby="posters">
+    <h2 class="label" id="posters">Posters</h2>
+    <ul class="posters" role="list">
+      {% for s in ([page.poster] if page.poster else []) + (page.posters or []) %}<li><a href="{{ s }}">{{ picture(s, "Poster of " ~ page.title) }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
   {% if page.stills %}
   <section class="film__stills" aria-labelledby="stills">
     <h2 class="label" id="stills">Stills</h2>

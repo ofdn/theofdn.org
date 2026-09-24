@@ -31,7 +31,7 @@ embeds:
     id: "jyjaEP3Zl-g"
 original_url: "https://theofdn.org/oer/ho-1/"
 ---
-[English](/#english) \| [Ho](/#warangciti)\*
+[English](#english) \| [Ho](#warangciti)\*
 
 *\*The Ho version in Warang Citi alphabet. If you don’t have the font, download a freely-licensed font from* [*here*](https://drive.google.com/file/d/0B5__qJoEj3L8Mk50bEJEX0ZHRm8/view). *This write-up first appeared on [OpenSpeaks](http://openspeaks.com/languages/ho/), one of our flagship projects.*
 
@@ -85,7 +85,7 @@ https://www.youtube.com/watch?v=QRfKy8SfL2M&list=PLIglc3FBUWUxVYNK9QQgRAZ1nQdjpq
 
 # 
 
-, , 10 . , , , , . . .\
+, , 10 . , , , , . . .
 
 , , . . .
 

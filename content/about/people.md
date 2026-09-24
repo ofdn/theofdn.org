@@ -19,7 +19,7 @@ original_url: "https://theofdn.org/people/"
 
 diversity and inclusion
 
-Chinmayee is a masters in Computer Science. As a long standing  Wikimedian, she brings to the table a wider range of community leadership particularly in the areas of diversity and inclusion. Chinmayee is also passionate about multimedia documentation and community storytelling.\
+Chinmayee is a masters in Computer Science. As a long standing  Wikimedian, she brings to the table a wider range of community leadership particularly in the areas of diversity and inclusion. Chinmayee is also passionate about multimedia documentation and community storytelling.
 
 [Twitter ](https://twitter.com/chinumishra007) [Github ](https://github.com/chinmayee17) [![Jnanaranjan Sahu](/assets/images/people-jnanaranjan-sahu.webp)](https://jsahu.me/)
 
@@ -27,7 +27,7 @@ Chinmayee is a masters in Computer Science. As a long standing  Wikimedian, she
 
 Technology
 
-Jnanaranjan leads all things technology at OFDN. A technology consultant by profession and a Wikipedian as a volunteer, he has led the development of numerous Open Source tools—including input tools and encoding converters in Ho, Odia and Santali languages.\
+Jnanaranjan leads all things technology at OFDN. A technology consultant by profession and a Wikipedian as a volunteer, he has led the development of numerous Open Source tools—including input tools and encoding converters in Ho, Odia and Santali languages.
 
 [Twitter ](https://twitter.com/gyana111) [Github ](https://github.com/gyan111) ![Nasim Ali](/assets/images/people-nasim-ali.webp)
 
@@ -71,7 +71,7 @@ Subhashish is an open culture advocate, documentary filmmaker and a community ca
 
 ### Alumni
 
-OFDN thanks Mrutyunjaya Kar (strategy), Shitikantha Dash (technology) and Shreekant Kedia (finance) for their support from the beginning of the organisation.\
+OFDN thanks Mrutyunjaya Kar (strategy), Shitikantha Dash (technology) and Shreekant Kedia (finance) for their support from the beginning of the organisation.
 
 [WordPress ](https://twitter.com/nesss16)
 

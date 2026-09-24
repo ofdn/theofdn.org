@@ -99,14 +99,13 @@ stills:
 - /assets/images/mage-porob-still-7.webp
 - /assets/images/mage-porob-still-8.webp
 ---
+> “A great source of information.”
+>
+> — **Mangu Purty**
 
-*A great source of information.*
-
-—**Mangu Purty**
-
-**“***Tremendous effort to embellish our identity. This is the beginning of a digital revolution in our Ho community.**“***
-
-—**Sitaram Pingua**
+> “Tremendous effort to embellish our identity. This is the beginning of a digital revolution in our Ho community.”
+>
+> — **Sitaram Pingua**
 
 ## About the film
 
@@ -116,6 +115,4 @@ Mining has destroyed the indigenous Ho land while bringing grave disrespect to t
 
 - [*Edex Live*](https://www.edexlive.com/happening/2018/aug/25/o-foundation-and-national-geographic-set-out-to-document-endangered-languages-before-they-are-lost-f-3728.html), *The New Indian Express* \[by Seema Rajpal\]
 
-FOR SCREENINGS, REVIEWS, INTERVIEWS & OTHER QUERIES, CONTACT:
-
-[Subhashish Panigrahi](https://psubhashish.com/contact)
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).

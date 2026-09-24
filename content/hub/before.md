@@ -132,8 +132,6 @@ We organised a panel to discuss language digital activism, volunteer-led movemen
 *Subhashish Panigrahi* \| *1 May 2023*
 
 As a part of its work around trustworthy AI, Mozilla started the MozFest Trustworthy AI Working Group. As members of the 2021 working group cohort, we at the O Foundation piloted an experimental framework called OpenSpeaks Before AI.\
-\
-
 [**\[read more…\]**](https://dl.acm.org/doi/10.1145/3591211) [**\[full text\]**](https://interactions.acm.org/blog/view/openspeaks-before-ai-frameworks-for-creating-the-ai-ml-building-blocks-for-low-resource-languages)
 
 ![ACM Digital Library](/assets/logos/acm.webp)

@@ -14,38 +14,38 @@ embeds:
   - provider: "archive"
     id: "ofdn-conversations-ep-4"
 original_url: "https://theofdn.org/podcast/episode4/"
+details:
+- label: Producers
+  value:
+  - Subhashish Panigrahi and Ramjit Tudu
+- label: Guests
+  value:
+  - Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu
+- label: Additional recording
+  value:
+  - 'Noam Chomsky ([The minimalist program and language acquisition](https://www.youtube.com/watch?v=Oq5lMTKJiqE). VideoLecturesChannel. CC-BY 3.0, license in video description: CC BY-NC-ND 3.0)'
+listen:
+- label: Internet Archive
+  url: https://archive.org/details/ofdn-conversations-ep-4
+- label: Spotify
+  url: https://open.spotify.com/episode/2weC0zEhaXcuDIgJUW3aJD?si=WYABni3wRyefA26EvoI_Eg
+- label: Apple Podcasts
+  url: https://podcasts.apple.com/in/podcast/imagining-a-digital-future-for-the-santali-language/id1510689609?i=1000486877414
 ---
-![OFDN Conversations logo](/assets/logos/ofdn-conversations-white.svg)
 
-# **EPISODE 5  — Imagining a Digital Future for the Santali Language**
-
-“We have a collective goal — Mission Ol Chiki 2025 — 100% literacy in Santali among the Santals.”
-
-— R. ASHWANI BANJAN MURMU
+> “We have a collective goal — Mission Ol Chiki 2025 — 100% literacy in Santali among the Santals.”
+>
+> — **R. Ashwani Banjan Murmu**
 
 [[embed:0]]
-
-[![Internet Archive logo and watermark](/assets/logos/internet-archive-wordmark.svg)](https://archive.org/details/ofdn-conversations-ep-4) [![Spotify logo without text](/assets/logos/spotify-white.webp)](https://open.spotify.com/episode/2weC0zEhaXcuDIgJUW3aJD?si=WYABni3wRyefA26EvoI_Eg) [![Listen on Apple Podcasts](/assets/logos/apple-podcasts-badge.svg)](https://podcasts.apple.com/in/podcast/imagining-a-digital-future-for-the-santali-language/id1510689609?i=1000486877414) [![Listen on Google Podcasts](/assets/logos/google-podcasts-badge.svg)](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xZWM5MDY5NC9wb2RjYXN0L3Jzcw/episode/NmY5NTdkN2UtYzUyMC00ZjkzLWE0ODUtYTI3NjY1ZDkyZmE2?sa=X&ved=0CAUQkfYCahcKEwjw3daD2aOBAxUAAAAAHQAAAAAQAQ)
 
 Would you consider the language and culture of a community of 7.6 million people in danger, especially when the language is recognised as one of the 22 provincial official languages in the world’s largest democracy? It is, and it is much more than that, when you look at it from the geopolitical, socioeconomic and technical standpoints.
 
 In this episode of our podcast — O Foundation Conversations — we bring you some intimate conversations with Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu who are all Santali-language Wikipedia editors. Talking about Santali Wikipedia — it is turning two on August 2. Santali Wikipedia is one of the few online resources in the Santali language which is spoken mostly in the eastern India along with Bangladesh, Nepal and Bhutan. The Santali Wikipedia community has participation from Bangladesh, India and Nepal. Maina, Ashwani, Manik, Fagu and Ramjit are young community leaders who are using digital activism to promote the Santali language and culture in the digital domain, specifically on the internet. This episode was a remote collaboration between O Foundation and the Santali Wikipedia community during the ongoing COVID pandemic. This episode covers the social, political, linguistic and educational landscape through a lens of technology. The ambitions and dreams of the Santali community that our guests amplify will be worth revisiting when India’s new National Education Policy (NEP) 2020 is implemented.
 
-## Producers
-
-Subhashish Panigrahi and Ramjit Tudu 
-
-## Guests
-
-Maina Tudu, R. Ashwani Banjan Murmu, Manik Soren, Fagu Baskey and Ramjit Tudu 
-
-## Additional Recording
-
-Noam Chomsky ([The minimalist program and language acquisition](https://www.youtube.com/watch?v=Oq5lMTKJiqE). VideoLecturesChannel. CC-BY 3.0, license in video description: CC BY-NC-ND 3.0) 
-
 ## Reading
 
-Department of Higher Education. “Provisions of the Constitution of India having a bearing on Education”. Retrieved 1 April 2010. 
+Department of Higher Education. “Provisions of the Constitution of India having a bearing on Education”. Retrieved 1 April 2010.
 
 ## Music
 

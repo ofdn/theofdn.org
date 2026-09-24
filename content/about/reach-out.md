@@ -19,5 +19,4 @@ original_url: "https://theofdn.org/reach-out/"
 
 [[embed:0]]
 
-Subscribe to our monthly newsletter\
-\
+Subscribe to our monthly newsletter

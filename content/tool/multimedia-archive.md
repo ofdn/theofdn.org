@@ -46,7 +46,7 @@ Odia: ବାପଘର ଛାଡ଼ି ଶାଶୂଘରକୁ ଗଲାବେ�
 - Age: 95
   \
 - Gender: Female
-  \
+  
 
 <!-- -->
 
@@ -54,7 +54,7 @@ Odia: ବାପଘର ଛାଡ଼ି ଶାଶୂଘରକୁ ଗଲାବେ�
 - Recording date: 12 January 2014
   \
 - Devices used: Nikon D5100, Takstar SGH-598 Shotgun mic, and a generic lavalier mic
-  \
+  
 
 [[embed:1]]
 
@@ -66,7 +66,7 @@ Doteli: डोटेली: नेपालबठे एक अछामै म�
 - Age: 30
   \
 - Gender: Female
-  \
+  
 
 <!-- -->
 
@@ -74,19 +74,18 @@ Doteli: डोटेली: नेपालबठे एक अछामै म�
 - Recording date: 13 February 2015
   \
 - Devices used: Nikon D5100, Takstar SGH-598 Shotgun mic, and a generic lavalier mic
-  \
+  
 
 [[embed:2]]
 
 Group of local musicians performing Assamese (Ahomiya) language "Bhakti bhojono" in this video was captured in the Kamakhya temple premises at Guwahati, Assam, India.\
-\
 ([Audio file](https://commons.wikimedia.org/wiki/File:Local_musicians_singing_bhajan_at_Kamakhya_temple,_Guwahati,_Assam,_India.ogg))
 
 - \
 - Age: 30–50
   \
 - Gender: Male
-  \
+  
 
 <!-- -->
 
@@ -94,7 +93,7 @@ Group of local musicians performing Assamese (Ahomiya) language "Bhakti bhojono"
 - Recording date: 21 March 2013
   \
 - Devices used: iPhone 4S
-  \
+  
 
 [[embed:3]]
 
@@ -106,7 +105,7 @@ Hindi: हौज खास, नई दिल्ली में सड़क क
 - Age: Unknown
   \
 - Gender: Male
-  \
+  
 
 <!-- -->
 
@@ -114,7 +113,7 @@ Hindi: हौज खास, नई दिल्ली में सड़क क
 - Recording date: 13 February 2013
   \
 - Devices used: iPhone 4S
-  \
+  
 
 [[embed:4]]
 
@@ -126,7 +125,7 @@ Storytelling in Baleswari dialect of the Odia language by an elderly woman.
 - Age: 95
   \
 - Gender: Female
-  \
+  
 
 <!-- -->
 
@@ -134,4 +133,4 @@ Storytelling in Baleswari dialect of the Odia language by an elderly woman.
 - Recording date: 12 January 2014
   \
 - Devices used: Nikon D5100, Takstar SGH-598 Shotgun mic, and a generic lavalier mic
-  \
+  

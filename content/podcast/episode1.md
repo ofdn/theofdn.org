@@ -21,7 +21,17 @@ embeds:
   - provider: "youtube"
     id: "OfyOQ-uZjrA"
 original_url: "https://theofdn.org/podcast/episode1/"
+listen:
+- label: Anchor
+  url: https://anchor.fm/ofdn/
+- label: Apple Podcasts
+  url: https://podcasts.apple.com/in/podcast/o-foundation-conversations/id1510689609
+- label: Spotify
+  url: https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg
+- label: Internet Archive
+  url: https://archive.org/details/mandana-seyfeddinipur
 ---
+
 ![File:Decolonizing-the-Internet's-Languages-Confererence-060.jpg](/assets/images/episode1-decolonizing-the-internet-2018.webp)
 
 This is at the Decolonizing the Internet’s Language Conference 2020 where I met Dr. Mandana Seyfeddinipur (WhoseKnowledge?, CC-BY-SA-4.0)
@@ -30,15 +40,13 @@ How can the speakers of indigenous languages be educated during a pandemic like 
 
 [[embed:0]]
 
-[![Link to the podcast on Anchor.fm](/assets/logos/anchor.webp)](https://anchor.fm/ofdn/) [![Link to this podcast on Apple Podcasts](/assets/logos/apple-podcasts.webp)](https://podcasts.apple.com/in/podcast/o-foundation-conversations/id1510689609) [![Link to this podcast on Google Podcasts](/assets/logos/google-podcasts.webp)](https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xZWM5MDY5NC9wb2RjYXN0L3Jzcw==)[![Link to this podcast on Spotify](/assets/logos/spotify.webp)](https://open.spotify.com/show/3oN6B0UZHT2bBgzN5BAplg) [![Link to this podcast on Stitcher](/assets/logos/stitcher.webp)](https://www.stitcher.com/podcast/o-foundation-conversations) [![Downloadable file with transcript on Internet Archive](/assets/logos/internet-archive.webp)](https://archive.org/details/mandana-seyfeddinipur)
-
 Dr. Seyfeddinipur shares how indigenous and endangered language speakers need to document their language, and recommendations for the government and other authorities to ensure that such speakers get access to critical information (like health advice during COVID-19) in their own language(s). Recorded during the Decolonizing the Internet’s Languages Conference 2019 that was organised by Whose Knowledge? October 2019 in London at the Mozilla Festival 2019.
 
 **PRODUCER**: SUBHASHISH PANIGRAHI
 
 **MUSIC/SOUND EFFECTS:** Flight announcement by Subhashish Panigrahi, CC-BY-SA 4.0 [YVONNE GuitarArpeggiation.wav](https://freesound.org/people/gutiyvon/sounds/465583/#) by [gutiyvon](https://freesound.org/people/gutiyvon/), CC0 1.0 [bingBong.wav](https://freesound.org/people/stib/sounds/493696/#) by [stib](https://freesound.org/people/stib/), CC0 1.0 [Warm guitar rhythm Intro](https://freesound.org/people/quetzalcontla/sounds/458425/#) by [quetzalcontla](https://freesound.org/people/quetzalcontla/), CC-BY 3.0 [hospital_lobby.flac](https://freesound.org/people/tim.kahn/sounds/50858/#) by [tim.kahn](https://freesound.org/people/tim.kahn/) (CC-BY 3.0)
 
-# Transcription
+## Transcript
 
 This is a non-verbatim transcription that is created for people with hearing impairment or those who would like to read instead of listening to this episode of O Foundation Conversations. with time-code in curly brackets “{ }” and speaker names in square brackets “\[ \]”. Full names of the speakers are used in the first occurrence whereas first names are used in the second time onward. Links to external resources, wherever appropriate, are provided inline. There is also a “Citations” section for specific references.
 
@@ -228,11 +236,11 @@ Recently, Dr. Seyfeddinipur’s own institution the SOAS World’s Languages Ins
 
 \[END\]
 
-# Reference
+## References
 
 Himmelmann, Nikolaus P. (2006). Empirical Linguistics and Language Documentation (ELLDo) – MA program at the Faculty of Modern Languages and Literatures, Adam Mickiewicz University in Poznan. <https://elldo.amu.edu.pl/wp-content/uploads/2016/10/Himmelmann2006.pdf> “An initial, preliminary answer to this question is:a language documentation is a lasting, multipurpose record of a language.”
 
-# Preferred citation
+## Preferred citation
 
 Panigrahi, S. (2020, April 28). Episode 1: Indigenous Languages in the Times of a Pandemic. *O Foundation Conversations* \[Audio podcast episode\]. https://theofdn.org/podcasts/episode1/. DOI: [10.13140/RG.2.2.23945.67686](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.13140%2FRG.2.2.23945.67686?_sg%5B0%5D=ZBZGydrSzQCd1EROWH2f9BVjL-Vkg4TNLvY9fS93vwbwx1UEDo9PblRFFGb_yCTbm3NG6FpoqnI5vy5SoqGVRZGzfA.qpfeUiyy0Q2Bgn5t0ia6h3P5JH3sCLJ7IEZfcZMmoqXwXaUubx4fdH8cSRlsu7vrX4DrHfaYaPPCFFWOCzqtPw)
 

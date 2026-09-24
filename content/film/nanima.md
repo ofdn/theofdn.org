@@ -26,7 +26,8 @@ details:
 - label: Logline
   value:
   - A 95-year-old woman who must share her songs and stories before they are lost forever or she is gone.
-  - SCREENWRITER, CAMERAPERSON, RECORDIST, DIRECTOR AND PRODUCER
+- label: Screenwriter, cameraperson, recordist, director and producer
+  value:
   - Subhashish Panigrahi
 - label: Cast
   value:
@@ -71,41 +72,41 @@ stills:
 - /assets/images/nanima-still-5.webp
 - /assets/images/nanima-still-6.webp
 ---
+> ★★★★☆ (4 out of 5)
+>
+> “Quite a visual treat.”
+>
+> — **Benjamin Franz**, *Film Threat*
 
-**★★★★☆\
-“***quite a visual treat.***“**
+> “Refulgent colours of life.”
+>
+> — **Anindita Sahoo**, *IIT Madras, India*
 
-—**Benjamin Franz**, *Film Threat*
+> “Loving homage to family and culture.”
+>
+> — **Rebecca Cherry**, *Film Carnage*
 
-**“***Refulgent colours of life.”*
+> “Impending loss captured with tenderness and compassion.”
+>
+> — **Atri Prasad Rout**, *Orissa Post*
 
-—**Anindita Sahoo**, *IIT Madras, India*
+> ★★★★☆ (4 out of 5)
+>
+> “Nani Ma brilliantly showcases the dialect through Masamoni Panigrahi’s sing-song poems, stories, bridal songs, and death songs. It’s quite the cultural showcase.”
+>
+> — **Benjamin Franz**, *Film Threat*
 
-**“***Loving homage to family and culture.**”***
+> “Though issues of language and culture are politically polarising, Panigrahi’s choice of human subject, his grandmother, seems more personal than political.”
+>
+> — **Atri Prasad Rout**, *Orissa Post*
 
-—**Rebecca Cherry,** *Film Carnage*
+> “Nanima’s narrative creatively portrayed.”
+>
+> — **Dr. Bhagban Prakash**, *Author*
 
-**“I***mpending loss captured with tenderness and compassion.***“**
-
-—**ATRI PRASAD ROUT**, *Orissa Post*
-
-**★★★★☆**
-
-**“***Nani Ma brilliantly showcases the dialect through Masamoni Panigrahi’s sing-song poems, stories, bridal songs, and death songs. It’s quite the cultural showcase.***“**
-
-—**Benjamin Franz**, *Film Threat*
-
-**“***Though issues of language and culture are politically polarising, Panigrahi’s choice of human subject, his grandmother, seems more personal than political.***“**
-
-—**Atri Prasad Rout**, *Orissa Post*
-
-**“***Nanima’s narrative creatively portrayed.***“**
-
-—**Dr. Bhagban Prakash**, *Author*
-
-**“***First-ever documentary film in the spoken tongue of northern region of Odisha—Baleswari.***“**
-
-—**Sambad**, *Odia Newspaper*
+> “First-ever documentary film in the spoken tongue of northern region of Odisha—Baleswari.”
+>
+> — **Sambad**, *Odia Newspaper*
 
 ## About the film
 
@@ -115,7 +116,7 @@ Nani Ma was selected for the Mozilla Festival 2023 (International Premiere), Lif
 
 ## Reviews and publications
 
-- “[*Nani Ma*](https://filmthreat.com/reviews/nani-ma/)“. *Film Threat*. (by Benjamin Franz)
+- “[*Nani Ma*](https://filmthreat.com/reviews/nani-ma/)”. *Film Threat*. (by Benjamin Franz)
 - [Nani Ma: A defence of diversity.](http://odishapostepaper.com/viewmap/192691.jpg) *Orissa Post.* (by Atri Prasad Rout)
 -  
 
@@ -129,9 +130,7 @@ Nani Ma was selected for the Mozilla Festival 2023 (International Premiere), Lif
 - [UK Film Reviews](https://www.ukfilmreview.co.uk/reviews/nani-ma) (by Swati Verma)
 - [ETV Bharat Odia](https://www.etvbharat.com/oriya/odisha/videos/entertainment/two-documentary-film-nani-maa-and-the-voulnter-archivists-released/or20230510201157712712834) (by Debasmita Rout)
 
-FOR SCREENINGS, REVIEWS, INTERVIEWS & OTHER QUERIES, CONTACT:
-
-[Subhashish Panigrahi](https://psubhashish.com/contact)
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
 
 ## Screenings
 

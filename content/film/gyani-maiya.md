@@ -103,25 +103,23 @@ stills:
 - /assets/images/gyani-maiya-still-3.webp
 - /assets/images/gyani-maiya-still-4.webp
 ---
+> “Sensitive and heart-touching!
+>
+> Save your language to save your soul.”
+>
+> — **Anvita Abbi**, *Linguist*
 
-**“*Sensitive and heart-touching!***
+> “Scholars have played an important role in preserving the Kusunda language.”
+>
+> — **Himal Khabar**
 
-*Save your language to save your soul.***“**
+> “Preserves and immortalizes a language on the brink of extinction.”
+>
+> — **Ramil Mercado**, *Asia Matters For America*
 
-—**ANVITA ABBI**, Linguist
-
-**“***Scholars have played an important role in preserving the Kusunda language.***“**
-
-—**Himal Khabar**
-
-**“***Preserves and immortalizes a language on the brink of extinction.***“**
-
-—**Ramil Mercado**, Asia Matters For America
-
-**“Ms. Gyani Maiya Sen talked about the\
-heartbreaking situation: No one speaks Kusunda.”**
-
-—PHAN BẢO, Tuổi Trẻ
+> “Ms. Gyani Maiya Sen talked about the heartbreaking situation: No one speaks Kusunda.”
+>
+> — **Phan Bảo**, *Tuổi Trẻ*
 
 ## About the film
 
@@ -139,9 +137,7 @@ Gyani Maiya was awarded Best Screenplay at the International Film & Entertainmen
   [*Himal Khabar*](https://www.himalkhabar.com/news/116158/) \[in Nepali\]\
   [*Tuoitre Cuoituan*](https://cuoituan.tuoitre.vn/o-noi-nguoi-ta-khong-biet-noi-khong-20220825110641026.htm) \[in Viet by Phan Bao\]
 
-FOR SCREENINGS, REVIEWS, INTERVIEWS & OTHER QUERIES, CONTACT:
-
-[Subhashish Panigrahi](https://psubhashish.com/contact)
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
 
 ## Screenings
 

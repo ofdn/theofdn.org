@@ -23,7 +23,7 @@ Prateek Pattanaik
 
 ![Drums](/assets/images/pothi-drums.webp)
 
-We collaborate with communities to digitally-document [intangible cultural heritage](https://ich.unesco.org/en/home) like performing arts, musical traditions, palm leaf manuscripts and  monuments—this is helping bring free and accessible resources online for the first time.\
+We collaborate with communities to digitally-document [intangible cultural heritage](https://ich.unesco.org/en/home) like performing arts, musical traditions, palm leaf manuscripts and  monuments—this is helping bring free and accessible resources online for the first time.
 
 *Open Educational Resources and toolkit are under development to enable & assist active participation and contribution in the project.*
 

@@ -38,11 +38,11 @@ Sailesh, Jnanaranjan and Subhashish divided their time to participate and speak 
 
 [[embed:0]]
 
-Jnanaranjan shared his experience as an Odia Wikipedian about the implementation of the [Project Tiger](https://meta.wikimedia.org/wiki/Project_Tiger_Editathon_2018) editathon under the ambit of [“Working towards Growing Local Language Content on Wikipedia (GLOW)”](https://wikimania2018.wikimedia.org/wiki/Program/Working_towards_Growing_Local_Language_Content_on_Wikipedia_(GLOW)) that supported Wikimedians with laptops and Internet connectivity was live-broadcast on Facebook Live from the [Odia Wikipedia channel.](https://www.facebook.com/OdiaWiki/videos/1978121805572175/)\
+Jnanaranjan shared his experience as an Odia Wikipedian about the implementation of the [Project Tiger](https://meta.wikimedia.org/wiki/Project_Tiger_Editathon_2018) editathon under the ambit of [“Working towards Growing Local Language Content on Wikipedia (GLOW)”](https://wikimania2018.wikimedia.org/wiki/Program/Working_towards_Growing_Local_Language_Content_on_Wikipedia_(GLOW)) that supported Wikimedians with laptops and Internet connectivity was live-broadcast on Facebook Live from the [Odia Wikipedia channel.](https://www.facebook.com/OdiaWiki/videos/1978121805572175/)
 
 [[embed:1]]
 
-We met Daniel Bogre Udell and Freddie Andrade, our friends from Wikitongues and took our collaboration to a new level by recording interviews with many native language speakers both for [OpenSpeaks](http://openspeaks.com/) and [Wikitongues](http://wikitongues.org/).  We [broadcast](https://www.facebook.com/ofdnorg/videos/517305942056074/) live Daniel’s presentation on Wikitongue’s work on documenting languages.\
+We met Daniel Bogre Udell and Freddie Andrade, our friends from Wikitongues and took our collaboration to a new level by recording interviews with many native language speakers both for [OpenSpeaks](http://openspeaks.com/) and [Wikitongues](http://wikitongues.org/).  We [broadcast](https://www.facebook.com/ofdnorg/videos/517305942056074/) live Daniel’s presentation on Wikitongue’s work on documenting languages.
 
 [[embed:2]]
 

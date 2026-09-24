@@ -18,15 +18,15 @@ Just like the participation of underrepresented communities on the Internet, the
 
 #### BUILD Open Resources ⚙
 
-People are the power! We work closely with communities, engage with them through consensus, to co-create open resources (Open Source tools, Open Educational Resources, Open data) after identifying the areas need the most attention and intervention.\
+People are the power! We work closely with communities, engage with them through consensus, to co-create open resources (Open Source tools, Open Educational Resources, Open data) after identifying the areas need the most attention and intervention.
 
 #### Community Capacity building 👥
 
-Based on our assessment of a community’s need, we provide trainings using open curriculum design, open methodologies and other open resources.\
+Based on our assessment of a community’s need, we provide trainings using open curriculum design, open methodologies and other open resources.
 
 #### Media development 🎥
 
-Media development is a key part of our work which cuts across all our activities. We also have been developing  toolkit (*see [OpenSpeaks](https://openspeaks.com), our indigenous language toolkit*) for remote trainings.\
+Media development is a key part of our work which cuts across all our activities. We also have been developing  toolkit (*see [OpenSpeaks](https://openspeaks.com), our indigenous language toolkit*) for remote trainings.
 
 #### [Check out the issues we're addressing](/issues/)
 

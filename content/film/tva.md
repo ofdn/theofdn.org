@@ -89,23 +89,23 @@ stills:
 - /assets/images/tva-still-9.webp
 - /assets/images/tva-still-10.webp
 ---
+> “A wonderful testament to the power of citizen archivists.”
+>
+> — **Carl Malamud**, *Public Resource*
 
-**“***A wonderful testament to the power of citizen archivists.***“**
+> “The work being done by Srujanika and Subhashish may be critical in preventing history from being mutilated.”
+>
+> — **Dhanada K. Mishra**, *Academic*
 
-— **Carl Malamud**, *Public Resource*
+> “A moving film by Subhashish Panigrahi.”
+>
+> — **Rahul Sagar**, *NYU Abu Dhabi*
 
-**“**The work being done by Srujanika and Subhashish may be critical in preventing history from being mutilated.**“**
-
-— **Dhanada K. Mishra**,* Academic*
-
-**“**A moving film by Subhashish Panigrahi.**“**\
-— **Rahul Sagar**,* NYU Abu Dhabi*  [ABOUT THE FILM](/#about) [PRESS](/#press) [TRAILER](/#trailer) [STILLS](/#stills) [DATASHEET](/#datasheet) [CONTACT](/#contact)
-
-**“***The film contains an implicit warning: advances in technology are always more likely to assist the established, the powerful, and the commercial.*
-
-*Minority cultures and concerns are always likely to have to run to catch up, to be entrepreneurial, inventive, almost absurdly dedicated and hardworking*.**“**
-
-—**TIM BROOKES**, *Endangered Alphabets*
+> “The film contains an implicit warning: advances in technology are always more likely to assist the established, the powerful, and the commercial.
+>
+> Minority cultures and concerns are always likely to have to run to catch up, to be entrepreneurial, inventive, almost absurdly dedicated and hardworking.”
+>
+> — **Tim Brookes**, *Endangered Alphabets*
 
 ## About the film
 
@@ -115,12 +115,10 @@ Srujanika was founded as a volunteer-led collective by scientist couple Nikhil M
 
 ## Reviews and publications
 
-- “*[The Volunteer Odia Archivists](https://www.endangeredalphabets.com/2022/11/16/the-volunteer-odia-archivists/)*“. Endangered Alphabets. (by Tim Brookes)
-- “*[The Volunteer Archivist](http://odishapostepaper.com/m/200324/643703bba60b2)*“. Orissa Post. (by Dhanada K. Mishra, PhD)
+- “*[The Volunteer Odia Archivists](https://www.endangeredalphabets.com/2022/11/16/the-volunteer-odia-archivists/)*”. Endangered Alphabets. (by Tim Brookes)
+- “*[The Volunteer Archivist](http://odishapostepaper.com/m/200324/643703bba60b2)*”. Orissa Post. (by Dhanada K. Mishra, PhD)
 
-FOR SCREENINGS, REVIEWS, INTERVIEWS & OTHER QUERIES, CONTACT:
-
-[Subhashish Panigrahi](https://psubhashish.com/contact)
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
 
 ## Screenings
 
