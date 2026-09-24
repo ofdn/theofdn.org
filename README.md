@@ -30,6 +30,7 @@ Source of theofdn.org. Pages are Markdown files in `content/`. GitHub builds and
 - `tier`: `live` or `archive`.
 - `date`: `2026-09-24`.
 - `excerpt`: one or two sentences for lists and search engines.
+- `lede`: optional short line under the title on film and podcast pages.
 - `authors`: list of names. Adds the "Cite this page" box on module pages.
 - `embeds`: video and audio. `[[embed:0]]` in the text places the first one.
 - `transcript`: optional, for films and podcast episodes.

@@ -5,9 +5,9 @@
 {% block content %}
 <div class="film__wrap">
   <header class="film__header">
-    <p class="eyebrow">{{ eyebrow }} · {{ page.date[:4] }}</p>
+    <p class="eyebrow">{{ eyebrow }}</p>
     <h1 class="film__title">{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="film__lede">{{ summary(page) }}</p>{% endif %}
+    {% if page.lede %}<p class="film__lede">{{ page.lede }}</p>{% endif %}
   </header>
   <div class="film__body">
     <aside class="film__facts" aria-labelledby="details">
