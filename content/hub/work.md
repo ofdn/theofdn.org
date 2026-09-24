@@ -53,7 +53,7 @@ This project is aimed at creating resources for the Santali-language including a
 - [Our focus areas and initiatives](/work/)
   - [OpenSpeaks](https://openspeaks.com)—underrepresented language documentation
   - Pothi—Cultural heritage documentation
-- [People behind OFDN](/people/)
+- [People behind OFDN](/about/#people)
 - [Activities](/activities/) and [publications](/category/blogs/)
 - [Media mentions](/news/)
 - [Reach out to us](/reach-out/)

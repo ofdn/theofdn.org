@@ -19,4 +19,4 @@ Everything costs money — from maintaining infrastructures, to visiting communi
 You can choose to be anonymous or have your name listed as a donor when you donate. We will try to attribute for your kind support appropriately.
 
 Thanks!\
-[Core team](/people/), OFDN
+[Core team](/about/#people), OFDN

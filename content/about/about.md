@@ -4,23 +4,59 @@ path: "/about/"
 tier: "live"
 section: "about"
 date: "2026-09-24"
-excerpt: "O Foundation (OFDN) works at the intersections of openness, digital rights, access to knowledge and media freedom. Our core values and collaborators."
+excerpt: "O Foundation (OFDN) works on openness, digital rights, access to knowledge and media freedom."
+# People shown in the grid at [[people]]. photo is a file in assets/images;
+# role is a few words; url is optional.
+people:
+  - group: "Core team"
+    members:
+      - name: "Chinmayee Mishra"
+        photo: "/assets/images/people-chinmayee-mishra.webp"
+        role: "Diversity and inclusion"
+      - name: "Jnanaranjan Sahu"
+        photo: "/assets/images/people-jnanaranjan-sahu.webp"
+        role: "Technology"
+        url: "https://jsahu.me/"
+      - name: "Nasim Ali"
+        photo: "/assets/images/people-nasim-ali.webp"
+        role: "Technology"
+      - name: "Prateek Pattanaik"
+        photo: "/assets/images/people-prateek-pattanaik.webp"
+        role: "Research and media"
+        url: "https://pattaprateek.com/"
+      - name: "Ramjit Tudu"
+        photo: "/assets/images/people-ramjit-tudu.webp"
+        role: "Community technology"
+      - name: "Sailesh Patnaik"
+        photo: "/assets/images/people-sailesh-patnaik.webp"
+        role: "Outreach and communications"
+      - name: "Subhashish Panigrahi"
+        photo: "/assets/images/people-subhashish-panigrahi.webp"
+        role: "Innovation"
+        url: "https://psubhashish.com/"
+  - group: "Advisor"
+    members:
+      - name: "Anasuya Sengupta"
+        photo: "/assets/images/people-anasuya-sengupta.webp"
+        role: "Whose Knowledge?"
+        url: "https://whoseknowledge.org/"
 ---
 
-O Foundation (OFDN) works at the intersections of openness, digital rights, access to knowledge and media freedom. We study community media and build open, community-led technology. We look at both through race, caste, gender and disability. Meet the team on the [People](/people/) page.
+O Foundation (OFDN) works on openness, digital rights, access to knowledge and media freedom. We look at all four through race, caste, gender and disability.
+
+## People
+
+[[people]]
 
 ## Core values
 
-- **People and community.** Building community comes first.
-- **Openness.** Open standards for software, open access for documentation, open data for datasets.
-- **Native languages.** Resources in languages other than English, on an English-centric internet.
-- **STEM.** Science, technology, engineering and mathematics, connected through the open internet.
-
-We research languages and communities, make open educational resources, document cultural heritage, and advocate for an open web, digital security and privacy. We publish our work and methods openly.
+- People and community
+- Openness
+- Native languages
 
 ## Present and past collaborators
 
-- [Whose Knowledge?](https://whoseknowledge.org/), global campaign to centre the knowledge of marginalised communities on the internet
-- [Wikitongues](https://wikitongues.org), non-profit recording oral histories in every language
-- [OpenWords](http://openwords.com/), open-source language lessons and tools for teachers
-- [Council of Analytical Tribal Studies](https://coatskoraput.org/), research institute on Indigenous communities in Koraput, Odisha
+- [Whose Knowledge?](https://whoseknowledge.org/)
+- [Wikitongues](https://wikitongues.org)
+- [OpenWords](http://openwords.com/)
+- [Council of Analytical Tribal Studies](https://coatskoraput.org/), Koraput

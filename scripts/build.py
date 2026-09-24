@@ -29,7 +29,7 @@ NAV = [
     ("About", "/about/"),
 ]
 FOOTER_NAV = [
-    ("About", [("About us", "/about/"), ("People", "/people/"), ("Core values", "/about/#core-values"),
+    ("About", [("About us", "/about/"), ("People", "/about/#people"), ("Core values", "/about/#core-values"),
                ("Collaborators", "/about/#present-and-past-collaborators"), ("Contact", "/reach-out/")]),
     ("Work", [("Films", "/category/film/"), ("Podcast", "/podcast/"), ("Resources", "/category/oer/"),
               ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
@@ -151,6 +151,24 @@ def embed_html(e, title, section):
     return f'<p class="embed-link"><a href="{i}">{e.get("title") or "Open the embedded content"}</a> ({host})</p>'
 
 
+def people_html(groups):
+    """Faces, names and a few words, one grid per group (front matter 'people')."""
+    from markupsafe import escape
+    out = []
+    for g in groups:
+        cards = []
+        for m in g.get("members") or []:
+            name = escape(m["name"])
+            if m.get("url"):
+                name = f'<a href="{escape(m["url"])}">{name}</a>'
+            cards.append(f'<li class="person">{picture(m.get("photo"), cls="person__photo")}'
+                         f'<p class="person__name">{name}</p>'
+                         f'<p class="person__role">{escape(m.get("role", ""))}</p></li>')
+        head = f'<h3>{escape(g["group"])}</h3>' if g.get("group") else ""
+        out.append(f'{head}<ul class="people" role="list">{"".join(cards)}</ul>')
+    return "".join(out)
+
+
 def media_tag(url, page, name):
     ext = name.rsplit(".", 1)[-1].lower()
     if ext in ("wav", "ogg", "oga", "mp3", "flac", "opus", "m4a"):
@@ -259,6 +277,8 @@ def polish(html, page):
             n = int(m.group(1))
             new = embed_html(embeds[n], page["title"], page["section"]) if n < len(embeds) else ""
             p.replace_with(BeautifulSoup(new, "html.parser"))
+        elif re.fullmatch(r"\s*\[\[people\]\]\s*", p.get_text()):
+            p.replace_with(BeautifulSoup(people_html(page.get("people") or []), "html.parser"))
 
     # WebP with a small fallback for browsers that cannot show WebP.
     for img in soup.find_all("img"):

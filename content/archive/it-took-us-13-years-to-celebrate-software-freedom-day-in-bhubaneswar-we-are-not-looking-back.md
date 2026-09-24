@@ -21,7 +21,7 @@ Bhubaneswar celebrated its first Software Freedom Day on September 16 though it 
 
 FLOSS/FOSS movement is getting new wings in India of late, and the Indian state of Odisha has a long way to go to adapt Openness in many levels. Many of us are long time contributors to the Odia-language Wikimedia projects—there exists three live projects a) [Odia Wikipedia](https://or.wikipedia.org/), b) [Odia Wikisource](https://or.wikisource.org/), and c) [Odia Wiktionary](https://or.wiktionary.org/). So being part of the struggle that went into building volunteer communities in the state helped us to share the state of FLOSS/FOSS with the group that gathered on this day.
 
-[Jnanaranjan Sahu](/people/), a long term Wikimedian and trustee of the O Foundation, elucidated about SFD, usability and development of proprietary and free software, and showcased the work of the Odia Wikimedia community.
+[Jnanaranjan Sahu](/about/#people), a long term Wikimedian and trustee of the O Foundation, elucidated about SFD, usability and development of proprietary and free software, and showcased the work of the Odia Wikimedia community.
 
 Open licenses help you use, modify and share the source code. A way forward to support the FOSS movement will be:
 
