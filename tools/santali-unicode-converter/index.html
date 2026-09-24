@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Santali Unicode Converter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="version" content="1.0" />
+	<meta name="author" content="Jnanaranjan Sahu (jsahu.me)">
+	<meta name="description" content="Santali Unicode Font Converter">
+	<meta name="keywords" content="Santali Unicode Converter, Santali Font converter, Santali, Shantali,Font Converter, Unicode">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="text-center col-sm-12">
+				<h2><strong>Santali Unicode Converter</strong></h2>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-sm">
+				<button type="button" class="btn btn-primary btn-lg btn-block" id="left_button">Paste your text in the below box</button>
+				<div class="form-group"></div>
+				<div class="form-group">
+					<textarea class="form-control" rows="15" id="input_text" placeholder="Paste your copied text here.."></textarea>
+				</div>
+			</div>
+			<div class="col-sm">
+				<button type="button" id="unicode_text_button" class="btn btn-primary btn-lg btn-block">Click to select all and copy</button>
+				<div class="form-group"></div>
+				<div class="form-group">
+					<textarea class="form-control" rows="15" id="unicode_text" placeholder="Unicode text"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-3 mb-3">
+			<div class="col-sm-12">
+				<p class="text-center">
+					<a class="btn btn-success" data-toggle="collapse" href="#info" role="button" aria-expanded="false" aria-controls="info">
+			    		How to use?
+			  		</a>
+				</p>
+				<div class="collapse" id="info">
+				  	<div class="card card-body">
+				  		This tool converts Santali language ASCII/Legacy character encoding to Unicode Encoding. </br>
+				  		Copy the text from the source file and paste it in the left side box, Unicode text will be shown on the right side box</br>
+				  		You can copy the whole Unicode text by clicking on the right side button.</br>
+				  		You can clear text by clicking on the clear text button which will appear after successful conversion.</br>
+				  		For any help or issue please contact me at @gyana111 or you can find more contact way if you click on my name below.</br>
+				  		Thank you!  
+				  	</div>
+				</div>
+				<div class="text-center col-sm-12 mt-3">
+					Developed by <a href="https://jsahu.me" target="_blank">Gyana</a> at <a href="https://theofdn.org" target="_blank">O Foundation</a></br>
+					<a href="http://shuttleworthfoundation.org" target="_blank"><img src="Shuttleworth Funded.jpg" width="200" alt="Shuttleworth Funded"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>

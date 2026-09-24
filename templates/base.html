@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
+  {% block meta %}{% endblock %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Urbanist:wght@400..800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="icon" href="/assets/logos/ofdn-conversations.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a href="/" class="site-logo">O Foundation</a>
+    <nav class="site-nav" aria-label="Site">
+      <ul class="site-nav__list" role="list">
+        {% for label, href in nav %}<li><a href="{{ href }}"{% if current == href %} aria-current="page"{% endif %}>{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="{% block main_class %}page{% endblock %}">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <div class="site-wrapper site-footer__inner">
+      <p>© {{ year }} O Foundation. Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless marked otherwise.</p>
+      <nav aria-label="Footer">
+        <ul class="site-footer__list" role="list">
+          {% for label, href in footer_nav %}<li><a href="{{ href }}">{{ label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>

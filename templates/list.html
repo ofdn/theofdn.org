@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} | {{ site_name }}{% endblock %}
+{% block content %}
+<div class="page__wrap">
+  <header class="page__header">
+    <h1 class="page__title">{{ title }}</h1>
+    <p class="page__lede">{{ lede }}</p>
+  </header>
+  <ul class="card-list" role="list">
+    {% for p in items %}
+    <li class="card">
+      <h2 class="card__title"><a href="{{ p.path }}">{{ p.title }}</a></h2>
+      <p class="card__meta">{{ p.date }}</p>
+      {% if p.excerpt %}<p class="card__text">{{ summary(p) }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

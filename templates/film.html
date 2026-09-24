@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site_name }}{% endblock %}
+{% block meta %}{% if page.excerpt %}<meta name="description" content="{{ summary(page) }}">{% endif %}{% endblock %}
+{% block main_class %}film{% endblock %}
+{% block content %}
+<div class="film__wrap">
+  <header class="film__header">
+    <p class="eyebrow">{{ eyebrow }} · {{ page.date[:4] }}</p>
+    <h1 class="film__title">{{ page.title }}</h1>
+    {% if page.excerpt %}<p class="film__lede">{{ summary(page) }}</p>{% endif %}
+  </header>
+  <div class="film__body">
+    <aside class="film__facts" aria-labelledby="details">
+      <h2 class="label" id="details">{% if page.section == "podcast" %}Episode details{% else %}Film details{% endif %}</h2>
+      <dl>
+        {% for key, value in facts %}<div><dt>{{ key }}</dt><dd>{{ value | safe }}</dd></div>
+        {% endfor %}
+        {% if not facts %}<div><dt>Published</dt><dd>{{ page.date }}</dd></div>{% endif %}
+      </dl>
+      {% if page.embeds %}
+      <h2 class="label">Watch and listen</h2>
+      <ul class="film__links" role="list">
+        {% for e in page.embeds %}
+        {% if e.provider == "youtube" %}<li><a href="https://www.youtube.com/watch?v={{ e.id }}">YouTube</a></li>
+        {% elif e.provider == "archive" %}<li><a href="https://archive.org/details/{{ e.id }}">Internet Archive</a></li>
+        {% elif e.provider == "vimeo" %}<li><a href="https://vimeo.com/{{ e.id }}">Vimeo</a></li>
+        {% elif e.provider == "file" and e.id.startswith("http") %}<li><a href="{{ e.id }}">Download</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
+    <div class="film__main prose">
+      {{ body | safe }}
+      {% if page.transcript_html %}
+      <section aria-labelledby="transcript">
+        <h2 id="transcript">Transcript</h2>
+        {{ page.transcript_html | safe }}
+      </section>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

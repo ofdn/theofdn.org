@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ site_name }}{% endblock %}
+{% block meta %}<meta name="description" content="O Foundation works on community media, open tech, and media and tech through structures of race, caste, gender and disability.">{% endblock %}
+{% block main_class %}home{% endblock %}
+{% block content %}
+<div class="page__wrap">
+  <header class="page__header">
+    <h1 class="page__title">O Foundation</h1>
+  </header>
+  <div class="prose home__intro">
+    {{ body | safe }}
+  </div>
+  {% for key, heading, href in [("film", "Films", "/category/film/"), ("podcast", "Podcast", "/podcast/"), ("oer", "Resources", "/category/oer/")] %}
+  <section class="home__section" aria-labelledby="h-{{ key }}">
+    <h2 id="h-{{ key }}"><a href="{{ href }}">{{ heading }}</a></h2>
+    <ul class="card-list card-list--grid" role="list">
+      {% for p in lists.get(key, [])[:3] %}
+      <li class="card">
+        <h3 class="card__title"><a href="{{ p.path }}">{{ p.title }}</a></h3>
+        <p class="card__meta">{{ p.date[:4] }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

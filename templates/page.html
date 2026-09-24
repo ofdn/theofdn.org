@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ site_name }}{% endblock %}
+{% block meta %}{% if page.excerpt %}<meta name="description" content="{{ summary(page) }}">{% endif %}{% endblock %}
+{% block content %}
+<div class="page__wrap">
+  <header class="page__header">
+    {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}{% if page.date %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
+    <h1 class="page__title">{{ page.title }}</h1>
+  </header>
+  {% if page.tier == "archive" %}
+  <p class="notice">Archived. First published on {{ page.date }}.</p>
+  {% endif %}
+  <div class="prose">
+    {{ body | safe }}
+  </div>
+</div>
+{% endblock %}

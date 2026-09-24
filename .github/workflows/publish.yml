@@ -1,0 +1,45 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pandoc and Python packages
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq pandoc
+          pip install pyyaml jinja2 beautifulsoup4
+      - name: Build
+        # BASE_PATH is a repository variable: "/theofdn.org" while testing on
+        # ofdn.github.io/theofdn.org, empty once theofdn.org points here.
+        run: python scripts/build.py --base "${{ vars.BASE_PATH }}"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
