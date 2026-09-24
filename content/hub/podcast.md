@@ -12,9 +12,8 @@ featured_image: "/assets/images/podcast-mage-porob-still.webp"
 embeds:
   - provider: "spotify"
     id: "4C6iCuGHdkgvu2B24iJ6cy"
-  - provider: "archive"
-    id: "ofdn-conversations-ep-5"
-    audio: true
+  - provider: "spotify"
+    id: "3IIKgu90x4z7kLc9EyFFDg"
   - provider: "spotify"
     id: "2weC0zEhaXcuDIgJUW3aJD"
   - provider: "archive"

@@ -11,8 +11,8 @@ categories:
   - "Podcast"
 excerpt: "EPISODE 5  — Lesser-known Languages of North Pakistan “The Pakistani state puts on the people the responsibility of promoting, revitalising and saving languages, it doesn’t do anything itself.” — ZUBAIR TORWALI Pakistani language activist Zubair Torwali is working to revitalise nearly 30 languages of Northern Pakistan, including his own language Torwali. This episode of “O Foundation […]"
 embeds:
-  - provider: "archive"
-    id: "ofdn-conversations-ep-5"
+  - provider: "spotify"
+    id: "3IIKgu90x4z7kLc9EyFFDg"
 original_url: "https://theofdn.org/podcast/episode5/"
 details:
 - label: Producer
