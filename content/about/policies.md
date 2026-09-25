@@ -62,7 +62,7 @@ This policy is to ensure that individuals and groups that participate in our onl
 
 ### Content
 
-Content licensed under a [Creative Commons Attribution- International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license unless otherwise mentioned. [![File:Cc-by-icon.png](/assets/logos/cc-by.webp)](https://creativecommons.org/licenses/by/4.0/)\
+Original content on this site is under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence unless otherwise mentioned. We may use some copyright material under fair use; if we do, we say so clearly on that page. The source code of this site is under the [Anti-Capitalist Software License (v 1.4)](https://github.com/ofdn/theofdn.org/blob/main/LICENSE).\
 All scholarly work with [Open Access](https://www.plos.org/open-access/). [![Open Access logo](/assets/logos/open-access-badge.webp)](https://www.plos.org/open-access/)\
 ![Open_Access_logo_PLoS](/assets/logos/open-access.webp)Open Access icons/logos that you might come across while browsing through our content or in references all refer to content that is available under Open Access.
 

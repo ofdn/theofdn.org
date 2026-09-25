@@ -356,6 +356,14 @@ Add words that are correct, such as language terms, to `qa/spelling-ignore.txt`.
 
 Needs pandoc and the Python packages `pyyaml`, `jinja2` and `beautifulsoup4`.
 
+## Licences
+
+- Original content: CC BY-SA 4.0, unless a page says otherwise.
+- Copyright material used under fair use: say so clearly on that page.
+- Site code: Anti-Capitalist Software License (v 1.4), in `LICENSE`.
+- `tools/santali-unicode-converter/`: MIT, by Jnanaranjan Sahu.
+- Fonts: their own licence, shown on the font's page.
+
 ## Publishing
 
 GitHub builds the site on every commit to `main` (`.github/workflows/publish.yml`).

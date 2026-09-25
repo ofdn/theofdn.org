@@ -57,3 +57,7 @@ Founding members: Mrutyunjaya Kar, Shitikantha Dash, Shreekant Kedia, Prateek Pa
 - [Wikitongues](https://wikitongues.org)
 - [OpenWords](http://openwords.com/)
 - [Council of Analytical Tribal Studies](https://coatskoraput.org/), Koraput
+
+## Rights and licences
+
+Our original content on this site is under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence. We may use some copyright material under fair use. If we do, we say so clearly on that page. The source code of this site is under the [Anti-Capitalist Software License (v 1.4)](https://github.com/ofdn/theofdn.org/blob/main/LICENSE). More on our [licensing](/licensing/) page.
