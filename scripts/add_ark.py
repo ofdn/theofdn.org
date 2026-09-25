@@ -2,14 +2,16 @@
 
     python3 scripts/add_ark.py content/archive/dti2018.md resource
 
-Kinds: film, audio, resource, tool, document. Works on any page, live or
+Kinds are listed under ark_kinds in data/site.yml. Works on any page, live or
 archived, blog posts included. Refuses a page that already has an id.
 """
 import re, sys
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parent.parent
-KINDS = {"film": "f", "video": "f", "audio": "a", "resource": "r", "tool": "t", "document": "d"}
+KINDS = yaml.safe_load((ROOT / "data" / "site.yml").read_text())["ark_kinds"]
 
 
 def main():

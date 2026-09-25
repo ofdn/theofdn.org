@@ -21,7 +21,6 @@ SITE_URL = "https://theofdn.org"
 # ARK: NAAN 15056 (registered 24 Sep 2026). N2T and arks.org forward
 # ark:15056/<id> to https://theofdn.org/ark:15056/<id>, hyphens kept.
 ARK_NAAN = "15056"
-ARK_ID = re.compile(r"^ofdn-[fartd]-\d{6}$")
 # Qualifiers after the id, as UNESCO does: ark:15056/ofdn-d-000001/pdf is the
 # file, ark:15056/ofdn-d-000001 the page. A second part names a version,
 # e.g. subtitles/en or pdf/or.
@@ -619,8 +618,13 @@ def split_datasheet(html):
     return str(soup), facts
 
 
-def check_arks(pages):
-    """ARK ids: one per page, never reused, in the ofdn-<letter>-000000 form."""
+def check_arks(pages, conf):
+    """ARK ids: one per page, never reused, in the ofdn-<letter>-000000 form.
+    The letters come from ark_kinds in data/site.yml."""
+    letters = "".join(sorted(set((conf.get("ark_kinds") or {}).values())))
+    if not re.fullmatch(r"[a-z]+", letters):
+        sys.exit("data/site.yml: ark_kinds letters must be single lowercase letters")
+    ARK_ID = re.compile(rf"^ofdn-[{letters}]-\d{{6}}$")
     seen = {}
     for p in pages:
         a = p.get("ark")
@@ -628,7 +632,7 @@ def check_arks(pages):
             continue
         a = str(a).strip()
         if not ARK_ID.match(a):
-            sys.exit(f"{p['file']}: ark must look like ofdn-f-000001, not {a}")
+            sys.exit(f"{p['file']}: ark must look like ofdn-f-000001, with a letter from ark_kinds in data/site.yml, not {a}")
         if a in seen:
             sys.exit(f"{p['file']}: ark {a} is already used by {seen[a]}")
         seen[a] = p["file"]
@@ -702,13 +706,13 @@ def main():
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
     pages = load_pages()
-    check_arks(pages)
     by_section = {}
     for p in pages:
         by_section.setdefault(p["section"], []).append(p)
     for items in by_section.values():
         items.sort(key=lambda p: p["date"], reverse=True)
     conf = load_status()
+    check_arks(pages, conf)
     site_status = page_status(None, conf)
     import hashlib
     asset_v = hashlib.sha1((ROOT / "assets/site.css").read_bytes() + (ROOT / "assets/site.js").read_bytes()).hexdigest()[:8]

@@ -151,7 +151,9 @@ To add one, choose the kind and run:
 python3 scripts/add_ark.py content/archive/dti2018.md resource
 ```
 
-The kinds are `film`, `audio`, `resource`, `tool` and `document`. The script adds the next free id to the page. Build to check it. The build stops if an id is used twice.
+The kinds are listed under `ark_kinds` in `data/site.yml`. To add a kind, add a line there with an unused letter, such as `dataset: x`. Never change or remove a letter once an id with it is published.
+
+The script adds the next free id to the page. Build to check it. The build stops if an id is used twice.
 
 Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path`; the ARK follows it.
 
