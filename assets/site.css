@@ -591,7 +591,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 }
 .home-hero__body { flex: 1; width: 100%; display: flex; flex-direction: column; justify-content: center; }
 @media (max-width: 999px) { :root { --home-header-h: 60px; } }
-.home-hero__kicker { margin: 0 0 clamp(1.5rem, 4vh, 3rem); }
+.home-hero__kicker { font-family: var(--font-body); font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.4; margin: 0 0 var(--space-sm); }
 .home-hero__title { width: 100%; font-weight: 800; font-size: clamp(2.25rem, 6vw, 4.25rem); line-height: 1.04; letter-spacing: -0.02em; max-width: 22ch; margin: 0 auto; }
 .home-pillars { list-style: none; padding: 0; margin: clamp(3rem, 10vh, 6rem) auto 0; width: 100%; max-width: 1000px; display: grid; gap: var(--space-xl); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); text-align: left; }
 .home-pillars__name { font-size: 1.4rem; margin: 0 0 var(--space-sm); }
