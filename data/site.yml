@@ -17,8 +17,9 @@ maintenance_message: ""
 preview_fonts:
   - chapakala19
 
-# ARK kinds: the word used with scripts/add_ark.py, and the letter in the id
-# (ofdn-<letter>-000001). To add a kind, add a line with an unused letter.
+# ARK kinds: the word written as "ark: <kind>" on a page, and the letter in the
+# id it gets (ofdn-<letter>-000001). To add a kind, add a line with an unused
+# letter.
 # Never change or remove a letter once an id with it is published.
 ark_kinds:
   film: f
@@ -26,4 +27,6 @@ ark_kinds:
   audio: a
   resource: r
   tool: t
+  typeface: y
+  dataset: x
   document: d

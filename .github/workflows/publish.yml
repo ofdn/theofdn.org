@@ -10,15 +10,44 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  build:
+  # Pages that say "ark: <kind>" get the next free id, committed back to main.
+  # One mint at a time and never cancelled, so no number is handed out twice.
+  mint:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ark-mint
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Mint ARK ids
+        run: |
+          python scripts/add_ark.py --pending
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -qam "mint ark ids"
+            git push || (git pull --rebase -q && git push)
+          fi
+
+  build:
+    needs: mint
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main  # includes ids minted above
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -37,6 +66,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

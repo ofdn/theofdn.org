@@ -142,18 +142,22 @@ Ids take the form `ofdn-<letter>-<six digits>`. The letter is the kind of page:
 - `f` film or video
 - `a` audio: podcast episodes and audio archives
 - `r` resource: an OER, guide or tutorial
-- `t` tool or typeface
+- `t` tool
+- `y` typeface
+- `x` dataset
 - `d` report or document
 
-To add one, choose the kind and run:
+To ask for an ARK, write the kind at the top of the page and commit:
 
+```yaml
+ark: resource
 ```
-python3 scripts/add_ark.py content/archive/dti2018.md resource
-```
 
-The kinds are listed under `ark_kinds` in `data/site.yml`. To add a kind, add a line there with an unused letter, such as `dataset: x`. Never change or remove a letter once an id with it is published.
+GitHub gives the page the next free id and commits it back, for example `ark: ofdn-r-000008`. Pull before your next edit. If a page cannot get an id, the Actions run shows a warning. That page waits, and the rest of the site still publishes.
 
-The script adds the next free id to the page. Build to check it. The build stops if an id is used twice.
+To do the same on your computer: `python3 scripts/add_ark.py --pending`.
+
+The kinds are listed under `ark_kinds` in `data/site.yml`. To add a kind, add a line there with an unused letter. Never change or remove a letter once an id with it is published.
 
 Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path`; the ARK follows it.
 
@@ -164,12 +168,12 @@ The ARK itself always points to the page. A file that belongs to the page gets t
 - `ark:15056/ofdn-d-000001` is the page.
 - `ark:15056/ofdn-d-000001/pdf` is the PDF.
 
-This holds whether the page embeds the PDF or only links to it. Add the files under `ark_parts`:
+This holds whether the page embeds the PDF or only links to it. Add the files under `ark_parts`. Leave `pdf:` empty to use the one PDF in `/assets/docs/` that the page links to; GitHub fills in the path.
 
 ```yaml
-ark: ofdn-d-000001
+ark: document
 ark_parts:
-  pdf: /assets/docs/unicode-handbook-2019.pdf
+  pdf:
   video: https://archive.org/details/example
   subtitles/en: /assets/docs/example-en.srt
 ```

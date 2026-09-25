@@ -621,7 +621,8 @@ def split_datasheet(html):
 def check_arks(pages, conf):
     """ARK ids: one per page, never reused, in the ofdn-<letter>-000000 form.
     The letters come from ark_kinds in data/site.yml."""
-    letters = "".join(sorted(set((conf.get("ark_kinds") or {}).values())))
+    kinds = conf.get("ark_kinds") or {}
+    letters = "".join(sorted(set(kinds.values())))
     if not re.fullmatch(r"[a-z]+", letters):
         sys.exit("data/site.yml: ark_kinds letters must be single lowercase letters")
     ARK_ID = re.compile(rf"^ofdn-[{letters}]-\d{{6}}$")
@@ -631,6 +632,10 @@ def check_arks(pages, conf):
         if not a:
             continue
         a = str(a).strip()
+        if a in kinds:  # asked for, not minted yet: GitHub mints it on push
+            print(f"{p['file']}: ark {a} waits for an id (scripts/add_ark.py --pending)", file=sys.stderr)
+            p["ark"], p["ark_pending"] = None, True
+            continue
         if not ARK_ID.match(a):
             sys.exit(f"{p['file']}: ark must look like ofdn-f-000001, with a letter from ark_kinds in data/site.yml, not {a}")
         if a in seen:
@@ -640,6 +645,8 @@ def check_arks(pages, conf):
         p["ark_url"] = f"https://n2t.net/ark:{ARK_NAAN}/{a}"
         p["ark_part_list"] = []
         for q, target in (p.get("ark_parts") or {}).items():
+            if not target:
+                sys.exit(f"{p['file']}: ark_parts: {q} is empty; run scripts/add_ark.py --pending")
             if not ARK_PART.match(str(q)):
                 sys.exit(f"{p['file']}: ark_parts: {q} is not one of {', '.join(ARK_PART_LABEL)}")
             first, _, rest = str(q).partition("/")
@@ -647,7 +654,7 @@ def check_arks(pages, conf):
             p["ark_part_list"].append({"q": q, "target": str(target), "label": label,
                                        "url": f"{p['ark_url']}/{q}"})
     for p in pages:
-        if p.get("ark_parts") and not p.get("ark"):
+        if p.get("ark_parts") and not p.get("ark") and not p.get("ark_pending"):
             sys.exit(f"{p['file']}: ark_parts needs an ark")
 
 
