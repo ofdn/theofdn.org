@@ -49,7 +49,7 @@ embeds:
     id: "File:KOSO.wav"
 original_url: "https://theofdn.org/openspeaks/text-to-speech/"
 ---
-![OpenSpeaks logo (black)](/assets/logos/openspeaks.webp)
+![OpenSpeaks logo](/assets/logos/openspeaks.svg)
 
 ### This was a part of OpenSpeaks toolkits library and is kept here for archival purposes. See all the [toolkits](/resources/)…
 

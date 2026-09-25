@@ -36,8 +36,9 @@ numbers:
 # card: archives, stats or specimen.
 initiatives:
   - kicker: Initiative
+    kicker_link: /work/
     name: OpenSpeaks
-    logo: /assets/logos/openspeaks.webp
+    logo: /assets/logos/openspeaks.svg
     text: Community collective building capacity, co-documenting audio-visual media, free and open-source software, frameworks and workflows.
     link: /openspeaks/
     link_text: Explore OpenSpeaks
@@ -60,6 +61,7 @@ initiatives:
       note: Wiki Workshop, The Web Conference 2022
       link: https://doi.org/10.1145/3487553.3524931
   - kicker: Initiative
+    kicker_link: /work/
     name: Archiving the Present
     logo: /assets/logos/archiving-the-present.webp
     logo_dark: /assets/logos/archiving-the-present-light.webp

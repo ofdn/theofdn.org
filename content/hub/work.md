@@ -32,7 +32,7 @@ Media development is a key part of our work which cuts across all our activities
 
 -  Initiatives
 
-![OpenSpeaks logo](/assets/logos/openspeaks-white.webp) **OpenSpeaks** is our multimedia open resource toolkit for language documentation. (*[more](https://openspeaks.com)*)
+![OpenSpeaks logo](/assets/logos/openspeaks.svg) **OpenSpeaks** is our multimedia open resource toolkit for language documentation. (*[more](https://openspeaks.com)*)
 
 ![Pothi WikiProject logo](/assets/logos/pothi-wikiproject.webp)**Pothi** is a multimedia resource project for documenting intangible cultural heritage like performance arts. *([more](/openspeaks/)*)
 

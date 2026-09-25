@@ -31,7 +31,7 @@
 <section class="home-row" aria-labelledby="h-{{ loop.index }}">
   <div class="home__inner home-row__grid">
     <div class="home-row__text">
-      <p class="eyebrow">{{ i.kicker }}</p>
+      <p class="eyebrow">{% if i.kicker_link %}<a href="{{ i.kicker_link }}">{{ i.kicker }}</a>{% else %}{{ i.kicker }}{% endif %}</p>
       {% if i.logo %}
       <h2 id="h-{{ loop.index }}" class="home-row__logo">{% if i.logo_dark %}<span class="theme-light-only">{{ picture(i.logo, i.name) }}</span><span class="theme-dark-only">{{ picture(i.logo_dark, i.name) }}</span>{% else %}{{ picture(i.logo, i.name) }}{% endif %}</h2>
       {% else %}

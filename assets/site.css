@@ -666,3 +666,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
   .home-row__grid { grid-template-columns: 1fr; }
   .home-numbers__list li + li { border-left: 0; border-top: 1px solid var(--color-rule); }
 }
+
+/* OpenSpeaks logo: black paths, turned white in dark mode. */
+:root[data-theme="dark"] img[src$="/logos/openspeaks.svg"] { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img[src$="/logos/openspeaks.svg"] { filter: invert(1); } }
+.eyebrow a { color: inherit; }

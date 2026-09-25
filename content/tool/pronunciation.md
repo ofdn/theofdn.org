@@ -24,7 +24,7 @@ embeds:
     id: "UGMxwPtqDJY"
 original_url: "https://theofdn.org/openspeaks/pronunciation/"
 ---
-![OpenSpeaks logo (black)](/assets/logos/openspeaks.webp)
+![OpenSpeaks logo](/assets/logos/openspeaks.svg)
 
 ### This is a part of OpenSpeaks toolkits library. See all the [toolkits](/resources/)…
 
