@@ -188,7 +188,6 @@ h1, h2, h3, h4, h5, h6 {
 body.menu-open { overflow: hidden; }
 /* With the full menu open, the header keeps only the logo and buttons. */
 body.menu-open .site-nav, body.menu-open .search-form--header, body.menu-open .search-link { display: none; }
-.site-menu__group--main a { font-size: 1.5rem; }
 
 main { flex: 1; }
 /* Section links land below the sticky header. */
