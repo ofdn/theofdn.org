@@ -686,6 +686,17 @@ def citations(page):
     }
 
 
+def film_name(page):
+    """A film's English title, from info.title if it has one."""
+    titles = (page.get("info") or {}).get("title")
+    if isinstance(titles, str):
+        return titles
+    if titles:
+        name = next((x for x in titles if "(English)" in x), titles[0])
+        return name.replace(" (English)", "").replace("*", "").strip()
+    return page["title"].split("—")[0]
+
+
 def with_base(html, base):
     if not base:
         return html
@@ -712,6 +723,7 @@ def main():
     shutil.copytree(ROOT / "tools", out / "tools")
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
+    env.globals["film_name"] = film_name
     pages = load_pages()
     by_section = {}
     for p in pages:

@@ -1,27 +1,126 @@
 {% extends "base.html" %}
 {% block title %}{{ site_name }}{% endblock %}
-{% block meta %}<meta name="description" content="O Foundation works on community media, open tech, and media and tech through structures of race, caste, gender and disability.">{% endblock %}
+{% block meta %}<meta name="description" content="{{ page.excerpt }}">{% endblock %}
 {% block main_class %}home{% endblock %}
 {% block content %}
-<div class="page__wrap">
-  <header class="page__header">
-    <h1 class="page__title">O Foundation</h1>
-  </header>
-  <div class="prose home__intro">
-    {{ body | safe }}
-  </div>
-  {% for key, heading, href in [("film", "Films", "/film/"), ("podcast", "Podcast", "/podcast/"), ("oer", "Resources", "/resources/")] %}
-  <section class="home__section" aria-labelledby="h-{{ key }}">
-    <h2 id="h-{{ key }}"><a href="{{ href }}">{{ heading }}</a></h2>
-    <ul class="card-list card-list--grid" role="list">
-      {% for p in lists.get(key, [])[:3] %}
-      <li class="card">
-        <h3 class="card__title"><a href="{{ p.path }}">{{ p.title }}</a></h3>
-        <p class="card__meta">{{ p.date[:4] }}</p>
-      </li>
+{# Home page: short lines only. The fields live in content/hub/index.md. #}
+<section class="home-hero" aria-labelledby="home-title">
+  <div class="home__inner home-hero__body">
+    <p class="eyebrow home-hero__kicker">{{ page.kicker }}</p>
+    <h1 id="home-title" class="home-hero__title">{{ page.tagline }}</h1>
+    <ul class="home-pillars" role="list">
+      {% for p in page.pillars %}
+      <li><h2 class="home-pillars__name">{{ p.name }}</h2><p>{{ p.text }}</p></li>
       {% endfor %}
     </ul>
-  </section>
-  {% endfor %}
-</div>
+  </div>
+  <p class="home-hero__scroll"><a href="#home-numbers">{{ page.scroll_text }}<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></a></p>
+</section>
+
+<section class="home-numbers" id="home-numbers" aria-label="O Foundation in numbers">
+  <ul class="home__inner home-numbers__list" role="list">
+    {% for n in page.numbers %}
+    <li><a href="{{ n.link }}"><span class="home-numbers__value">{{ lists.get(n.count, []) | length if n.count else n.value }}</span>
+      <span class="home-numbers__label">{{ n.label }}</span></a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% for i in page.initiatives %}
+<hr class="home-rule">
+<section class="home-row" aria-labelledby="h-{{ loop.index }}">
+  <div class="home__inner home-row__grid">
+    <div class="home-row__text">
+      <p class="eyebrow">{{ i.kicker }}</p>
+      {% if i.logo %}
+      <h2 id="h-{{ loop.index }}" class="home-row__logo">{% if i.logo_dark %}<span class="theme-light-only">{{ picture(i.logo, i.name) }}</span><span class="theme-dark-only">{{ picture(i.logo_dark, i.name) }}</span>{% else %}{{ picture(i.logo, i.name) }}{% endif %}</h2>
+      {% else %}
+      <h2 id="h-{{ loop.index }}" class="home-row__title">{{ i.name }}</h2>
+      {% endif %}
+      <p>{{ i.text }}</p>
+      <p class="home-more"><a href="{{ i.link }}">{{ i.link_text }} <span aria-hidden="true">→</span></a></p>
+    </div>
+
+    {% if i.card == "archives" %}
+    <div class="home-card home-card--dark">
+      <p class="home-card__label">Archived at</p>
+      <ul class="home-card__rows" role="list">
+        {% for a in i.archives %}
+        <li><span class="home-card__name">{% if a.link %}<a href="{{ a.link }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}</span>
+          {% if a.bundles %}<span class="home-card__meta">{% for b in a.bundles %}<a href="{{ b.link }}">{{ b.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% if i.paper %}
+      <p class="home-card__label home-card__label--gap">Paper</p>
+      <p class="home-card__paper"><a href="{{ i.paper.link }}">{{ i.paper.title }}</a><br><span>{{ i.paper.note }}</span></p>
+      {% endif %}
+    </div>
+
+    {% elif i.card == "stats" %}
+    <div class="home-card home-card--dark">
+      <p class="home-card__label">{{ i.stats_title }}</p>
+      <ul class="home-card__stats" role="list">
+        {% for s in i.stats %}<li><span class="home-card__stat-label">{{ s.label }}</span><span class="home-card__value">{{ s.value }}</span></li>
+        {% endfor %}
+      </ul>
+      {% if i.rows %}
+      <ul class="home-card__rows" role="list">
+        {% for r in i.rows %}<li><span class="home-card__name"><a href="{{ r.link }}">{{ r.name }}</a></span>{% if r.note %}<span class="home-card__meta">{{ r.note }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+
+    {% elif i.card == "specimen" %}
+    <div class="home-card home-card--light">
+      <div class="home-card__head"><p class="home-card__label">Specimen</p><p class="home-chip">{{ i.sample_script }}</p></div>
+      <img class="home-card__image" src="{{ i.image }}" alt="{{ i.image_alt }}" loading="lazy" decoding="async">
+      <div class="home-card__foot"><span>{{ i.licence }}</span><a href="{{ i.repository }}">Repository</a></div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
+
+{% set films = lists.get("film", []) %}
+{% set film = films | selectattr("path", "equalto", page.film) | first %}
+<hr class="home-rule">
+<section class="home-row" aria-labelledby="h-films">
+  <div class="home__inner">
+    <div class="home-row__head">
+      <div>
+        <h2 id="h-films" class="home-row__title"><a href="/film/">Documentary films</a></h2>
+        <p>{{ page.films_text }}</p>
+      </div>
+      <p class="home-more"><a href="/film/">All films <span aria-hidden="true">→</span></a></p>
+    </div>
+    {% if film %}
+    <figure class="captioned home-films__still">
+      {{ picture(film.hero, "", "", film.hero_portrait) }}
+      <figcaption>{{ page.film_caption }}</figcaption>
+    </figure>
+    {% endif %}
+    <ul class="home-films__list" role="list">
+      {% for f in films %}
+      <li><a href="{{ f.path }}">{{ film_name(f) }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% if page.quotes %}
+<hr class="home-rule">
+<section class="home-row" aria-labelledby="h-quotes">
+  <div class="home__inner">
+    <h2 id="h-quotes" class="home-row__title">On our films</h2>
+    <div class="quotes home-quotes">
+      {% for q in page.quotes %}
+      {% set qf = films | selectattr("path", "equalto", q.film) | first %}
+      <figure class="quote"><blockquote><p>“{{ q.text }}”</p></blockquote>
+        <figcaption><strong>{{ q.author }}</strong>{% if q.source %}, <em>{{ q.source }}</em>{% endif %}{% if qf %}, on <a href="{{ qf.path }}"><cite>{{ film_name(qf) }}</cite></a>{% endif %}</figcaption></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 {% endblock %}
