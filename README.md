@@ -293,8 +293,9 @@ Needs pandoc and the Python packages `pyyaml`, `jinja2` and `beautifulsoup4`.
 
 GitHub builds the site on every commit to `main` (`.github/workflows/publish.yml`).
 
-- Test address: `ofdn.github.io/theofdn.org`. The repository variable `BASE_PATH` is `/theofdn.org`.
+- Test address: `new.theofdn.org` (Cloudflare DNS, custom domain under Settings, Pages). `ofdn.github.io/theofdn.org` redirects there.
+- To serve the site under a path instead, such as `/theofdn.org`, set the repository variable `BASE_PATH` to that path. Leave it unset for a domain. GitHub does not accept an empty variable; delete it instead.
 - To move to theofdn.org:
-  1. Set `BASE_PATH` to empty.
-  2. Add the domain under Settings, Pages.
-  3. Point the DNS to GitHub.
+  1. Change the custom domain under Settings, Pages to `theofdn.org`.
+  2. In Cloudflare, point `theofdn.org` to GitHub.
+  3. Check the ARK links (see "ARK identifiers").

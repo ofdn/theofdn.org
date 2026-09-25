@@ -26,7 +26,7 @@ original_url: "https://theofdn.org/openspeaks/pronunciation/"
 ---
 ![OpenSpeaks logo (black)](/assets/logos/openspeaks.webp)
 
-### This is a part of OpenSpeaks toolkits library. See all the [toolkits](/category/openspeaks/toolkit/)…
+### This is a part of OpenSpeaks toolkits library. See all the [toolkits](/resources/)…
 
 Our pronunciation toolkit, **Kathabhidhana** is an open toolkit to record a large number of words. It consists of a few free/libre and open source software, open datasets, methodologies and documentations. It can be used to record pronunciations of words to make a talking dictionary to record phonemes to create a text-to-speech software.
 

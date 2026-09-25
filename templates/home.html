@@ -10,7 +10,7 @@
   <div class="prose home__intro">
     {{ body | safe }}
   </div>
-  {% for key, heading, href in [("film", "Films", "/category/film/"), ("podcast", "Podcast", "/podcast/"), ("oer", "Resources", "/category/oer/")] %}
+  {% for key, heading, href in [("film", "Films", "/film/"), ("podcast", "Podcast", "/podcast/"), ("oer", "Resources", "/resources/")] %}
   <section class="home__section" aria-labelledby="h-{{ key }}">
     <h2 id="h-{{ key }}"><a href="{{ href }}">{{ heading }}</a></h2>
     <ul class="card-list card-list--grid" role="list">

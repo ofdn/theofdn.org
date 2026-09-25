@@ -20,7 +20,7 @@ Hosted at O Foundation (OFDN), the group meets online on a regular basis. Discus
 
 The members are selected on a periodic basis based on an [open call](/blogs/marginalized-community-council/) and the first meeting was conducted on Aug. 9, 2019 to celebrate the [International Day of the World’s Indigenous Peoples](https://www.un.org/development/desa/indigenouspeoples/international-day-of-the-worlds-indigenous-peoples/international-day-2019.html).
 
-- [ Publications & announcements](/category/initiatives/mcc/)
+- [ Publications & announcements](/activities/marginalized-community-council/)
 - [ Members](#members)
 - [ Meeting notes](#meeting-notes)
 
@@ -178,11 +178,11 @@ Native speaker of Doteli and active contributor to [Doteli-language Wikipedia](h
 
 ###### Language Open Educational Resources
 
-## [OER](/category/oer/)
+## [OER](/resources/)
 
 ###### Technical resources
 
-## [Linguistic tools](/category/openspeaks/language-resources/)
+## [Linguistic tools](/openspeaks/language-resources/)
 
 ##### 
 

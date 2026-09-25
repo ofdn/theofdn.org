@@ -56,8 +56,8 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq pandoc
           pip install pyyaml jinja2 beautifulsoup4
       - name: Build
-        # BASE_PATH is a repository variable: "/theofdn.org" while testing on
-        # ofdn.github.io/theofdn.org, empty once theofdn.org points here.
+        # BASE_PATH is an optional repository variable for serving under a path
+        # (e.g. "/theofdn.org"). Unset for a custom domain such as new.theofdn.org.
         run: python scripts/build.py --base "${{ vars.BASE_PATH }}"
       - uses: actions/upload-pages-artifact@v5
         with:

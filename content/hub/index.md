@@ -27,7 +27,7 @@ We analyse media and tech through prior power structures of race, caste, gender 
 
 ## New films
 
-Our recent documentary films *The Volunteer Archivists*, *Nani Ma* and *Gyani Maiya* capture resilience of communities and collectives. [More films](/category/film/)
+Our recent documentary films *The Volunteer Archivists*, *Nani Ma* and *Gyani Maiya* capture resilience of communities and collectives. [More films](/film/)
 
 ## Research
 

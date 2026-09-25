@@ -30,18 +30,18 @@ ARK_PART_LABEL = {"video": "Video", "audio": "Audio", "pdf": "PDF", "transcript"
 
 # Header navigation. Contact, donate and policies sit in the footer.
 NAV = [
-    ("Films", "/category/film/"),
+    ("Films", "/film/"),
     ("Podcast", "/podcast/"),
-    ("Resources", "/category/oer/"),
+    ("Resources", "/resources/"),
     ("Initiatives", "/work/"),
-    ("Publications", "/category/blogs/"),
+    ("Publications", "/publications/"),
     ("About", "/about/"),
 ]
 FOOTER_NAV = [
     ("About", [("About us", "/about/"), ("People", "/about/#people"), ("Core values", "/about/#core-values"),
                ("Collaborators", "/about/#present-and-past-collaborators"), ("Contact", "/reach-out/")]),
-    ("Work", [("Films", "/category/film/"), ("Podcast", "/podcast/"), ("Resources", "/category/oer/"),
-              ("Initiatives", "/work/"), ("Publications", "/category/blogs/")]),
+    ("Work", [("Films", "/film/"), ("Podcast", "/podcast/"), ("Resources", "/resources/"),
+              ("Initiatives", "/work/"), ("Publications", "/publications/")]),
     ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
                   ("Donate", "/donate/")]),
     ("Follow", [("YouTube", "https://www.youtube.com/channel/UCk4NuEPO6JbTm_8Ybod2eOQ"),
@@ -49,16 +49,16 @@ FOOTER_NAV = [
                 ("X (Twitter)", "https://twitter.com/ofdnorg/"), ("GitHub", "https://github.com/ofdn")]),
 ]
 
-# Listing pages, kept at the old WordPress category addresses.
+# Listing pages. The old WordPress category addresses redirect here.
 LISTS = {
-    "/category/film/": ("Films", ["film"], "Documentary films by O Foundation."),
-    "/category/oer/": ("Resources", ["oer", "tool", "audio-archive"],
+    "/film/": ("Films", ["film"], "Documentary films by O Foundation."),
+    "/resources/": ("Resources", ["oer", "tool", "audio-archive"],
                        "Open educational resources, language tools and toolkits, including OpenSpeaks."),
-    "/category/openspeaks/language-resources/": ("Language tools", ["tool"], "Language tools and toolkits."),
-    "/category/blogs/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
+    "/openspeaks/language-resources/": ("Language tools", ["tool"], "Language tools and toolkits."),
+    "/publications/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
 }
 # Pages shown first on a list, such as OpenSpeaks on Resources.
-LIST_PINNED = {"/category/oer/": ["/openspeaks/"]}
+LIST_PINNED = {"/resources/": ["/openspeaks/"]}
 EYEBROW = {
     "film": "Documentary film", "podcast": "Podcast", "oer": "Open educational resource",
     "tool": "Language tool", "audio-archive": "Audio archive", "archive": "Archive", "blog": "Blog",
@@ -813,14 +813,14 @@ def main():
 def legacy_target(path):
     """Old WordPress category and tag pages go to the closest list."""
     if path.startswith("/category/film"):
-        return "/category/film/"
+        return "/film/"
     if path.startswith("/category/podcast"):
         return "/podcast/"
     if path.startswith("/category/openspeaks/language-resources"):
-        return "/category/openspeaks/language-resources/"
+        return "/openspeaks/language-resources/"
     if path.startswith(("/category/oer", "/category/openspeaks")):
-        return "/category/oer/"
-    return "/category/blogs/"
+        return "/resources/"
+    return "/publications/"
 
 
 if __name__ == "__main__":

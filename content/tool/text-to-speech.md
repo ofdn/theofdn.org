@@ -51,7 +51,7 @@ original_url: "https://theofdn.org/openspeaks/text-to-speech/"
 ---
 ![OpenSpeaks logo (black)](/assets/logos/openspeaks.webp)
 
-### This was a part of OpenSpeaks toolkits library and is kept here for archival purposes. See all the [toolkits](/category/openspeaks/toolkit/)…
+### This was a part of OpenSpeaks toolkits library and is kept here for archival purposes. See all the [toolkits](/resources/)…
 
 **Lekatha** is a text-to-speech (TTS) project which is in its infancy at the moment. The word *lekatha* does not mean anything but it is constructed from two [Odia-language](https://en.wikipedia.org/wiki/Odia_language "w:Odia language") words *ଲେଖା* (*lekha*, meaning text) and *କଥା* (*katha*, meaning voice) which refers to constructed voice from text by using a TTS engine.
 
