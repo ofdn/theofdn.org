@@ -144,7 +144,7 @@ Ids take the form `ofdn-<letter>-<six digits>`. The letter is the kind of page:
 - `r` resource: an OER, guide, tutorial, toolkit, handbook, report or white paper
 - `t` tool
 - `y` typeface
-- `x` dataset
+- `d` dataset
 
 To ask for an ARK, write the kind at the top of the page and commit:
 

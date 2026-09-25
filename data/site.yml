@@ -28,5 +28,5 @@ ark_kinds:
   resource: r
   tool: t
   typeface: y
-  dataset: x
+  dataset: d
   document: r
