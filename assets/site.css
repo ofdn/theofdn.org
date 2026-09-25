@@ -307,6 +307,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
   max-width: none; margin-bottom: var(--space-2xl);
 }
 .page__header > * { max-width: 52rem; }
+/* Pages with only a text column: the frame is as wide as the text, so the column sits in the centre. */
+.page__wrap--text { max-width: calc(var(--max-prose) + 2 * var(--space-lg)); }
 .eyebrow {
   font-family: var(--font-display); font-size: 1rem; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);

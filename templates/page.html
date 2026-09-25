@@ -29,7 +29,7 @@
   {% endif %}
 </section>
 {% endif %}
-<div class="{% if infobox %}film__wrap{% else %}page__wrap{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}"{% if page.lang != "en" %} lang="{{ page.lang }}"{% endif %}>
+<div class="{% if infobox %}film__wrap{% else %}page__wrap{% if not page.split %} page__wrap--text{% endif %}{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}"{% if page.lang != "en" %} lang="{{ page.lang }}"{% endif %}>
   <header class="{% if infobox %}film__header{% else %}page__header{% endif %}">
     {% if eyebrow %}<p class="eyebrow" lang="en">{{ eyebrow }}{% if page.date and not kind %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
     {% if not (page.hero and page.title_image) %}<h1 class="{% if infobox %}film__title{% else %}page__title{% endif %}">{{ page.title }}</h1>{% endif %}
