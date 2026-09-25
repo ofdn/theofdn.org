@@ -1,6 +1,7 @@
 ---
 title: "Multimedia archive"
 path: "/openspeaks/multimedia-archive/"
+ark: ofdn-r-000005
 tier: "live"
 section: "tool"
 wp_type: "post"

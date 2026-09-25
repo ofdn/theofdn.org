@@ -1,6 +1,7 @@
 ---
 title: "OpenSpeaks Multimedia Toolkit"
 path: "/openspeaks/multimedia-toolkit/"
+ark: ofdn-r-000004
 tier: "live"
 section: "tool"
 wp_type: "post"

@@ -51,7 +51,7 @@ Optional, on any page:
 
 - `lede`: short line under the title.
 - `authors`: list of names. Adds the names and date under the title, and "Cite this page" at the end.
-- `ark`: ARK identifier, once the page has one. Shows a permanent link under the title.
+- `ark`: ARK id, such as `ofdn-f-000001`. Shows a permanent link under the title. See "ARK identifiers".
 - `embeds`: video and audio. `[[embed:0]]` in the text places the first one.
 - `transcript`: shown after the text.
 - `status`: `archive` or `maintenance` for this page only. See "Site status".
@@ -132,6 +132,47 @@ Images and video. Paths point to files in `assets/images/`:
 - `trailer`: video under the title. Same form as an entry in `embeds`.
 - `poster`, `posters`: shown in a Posters section at the end. `poster_credit` is the caption.
 - `stills`: list of still images, shown at the end. A click opens the still in a large view on the same page.
+
+## ARK identifiers
+
+O Foundation's ARK NAAN is 15056. Films, audio, resources, tools, typefaces and reports get an ARK. Blog posts, news and archived pages do not.
+
+Ids take the form `ofdn-<letter>-<six digits>`:
+
+- `f` films
+- `a` audio: podcast episodes and audio archives
+- `r` resources and toolkits
+- `t` tools and typefaces
+- `d` reports and documents
+
+1. Find the highest number in use for that letter: `grep -rh "^ark: ofdn-f" content | sort | tail -1`.
+2. Add the next number to the page: `ark: ofdn-f-000010`.
+3. Build. The build stops if an id is used twice.
+
+Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path`; the ARK follows it.
+
+### Files: PDF, video, audio, subtitles
+
+The ARK itself always points to the page. A file that belongs to the page gets the same ARK with a word after it, as UNESCO does:
+
+- `ark:15056/ofdn-d-000001` is the page.
+- `ark:15056/ofdn-d-000001/pdf` is the PDF.
+
+This holds whether the page embeds the PDF or only links to it. Add the files under `ark_parts`:
+
+```yaml
+ark: ofdn-d-000001
+ark_parts:
+  pdf: /assets/docs/unicode-handbook-2019.pdf
+  video: https://archive.org/details/example
+  subtitles/en: /assets/docs/example-en.srt
+```
+
+The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Add a second word for a version, such as `subtitles/en` or `pdf/or`. Each one is shown under the page's permanent link. Give ARKs only to files O Foundation made, not to PDFs by others that a page links to.
+
+### How the links work
+
+`https://n2t.net/ark:15056/<id>` sends readers to `theofdn.org/ark:15056/<id>`, which the build points to the page. This works only once theofdn.org serves this site.
 
 ## Add a page, blog post or subpage
 

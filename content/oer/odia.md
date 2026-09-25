@@ -1,6 +1,7 @@
 ---
 title: "Media and information literacy resources in Odia"
 path: "/oer/odia/"
+ark: ofdn-r-000002
 tier: "live"
 section: "oer"
 wp_type: "post"

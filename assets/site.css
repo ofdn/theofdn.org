@@ -539,6 +539,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 /* ARK and citation */
 .ark-permalink { font-family: var(--font-display); font-size: 0.95rem; margin-top: var(--space-md); display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
 .ark-permalink code { font-family: var(--font-mono); word-break: break-all; }
+.ark-permalink + .ark-permalink { margin-top: 0.25rem; }
 .copy-btn {
   font-family: var(--font-display); font-weight: 600; font-size: 0.9rem;
   color: var(--color-text); background: transparent;

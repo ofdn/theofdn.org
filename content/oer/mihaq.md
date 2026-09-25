@@ -1,6 +1,7 @@
 ---
 title: "Media and information literacy resources in Mihaq (Kusunda) language"
 path: "/oer/mihaq/"
+ark: ofdn-r-000007
 tier: "live"
 section: "oer"
 wp_type: "post"

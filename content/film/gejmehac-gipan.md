@@ -1,6 +1,7 @@
 ---
 title: "गेम्येहाक़ गिपन (Gejmehac Gipan)"
 path: "/film/gejmehac-gipan/"
+ark: ofdn-f-000010
 tier: "live"
 section: "film"
 wp_type: "post"

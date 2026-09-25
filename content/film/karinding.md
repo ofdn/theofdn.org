@@ -1,6 +1,7 @@
 ---
 title: "Karinding—2020 Documentary"
 path: "/film/karinding/"
+ark: ofdn-f-000004
 tier: "live"
 section: "film"
 wp_type: "post"

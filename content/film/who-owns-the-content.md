@@ -1,6 +1,7 @@
 ---
 title: "Who Owns The Content"
 path: "/film/who-owns-the-content/"
+ark: ofdn-f-000001
 tier: "live"
 section: "film"
 wp_type: "post"

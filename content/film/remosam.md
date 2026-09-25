@@ -1,6 +1,7 @@
 ---
 title: "Remosam—2019 Documentary"
 path: "/film/remosam/"
+ark: ofdn-f-000006
 tier: "live"
 section: "film"
 wp_type: "post"

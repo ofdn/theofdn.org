@@ -1,6 +1,7 @@
 ---
 title: "Media and information literacy resources in Ho"
 path: "/oer/ho/"
+ark: ofdn-r-000006
 tier: "live"
 section: "oer"
 wp_type: "post"

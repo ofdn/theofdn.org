@@ -34,8 +34,12 @@
     {% if page.lede %}<p class="film__lede">{{ page.lede }}</p>{% endif %}
     {% if page.authors %}<p class="byline">{{ page.authors | join(", ") }}{% if page.date %} · <time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}</p>{% endif %}
     {% if page.ark %}
-    <p class="ark-permalink">Permanent link: <code>{{ page.ark }}</code>
-      <button type="button" class="copy-btn" data-copy="{{ page.ark }}" aria-label="Copy permanent link">Copy</button></p>
+    <p class="ark-permalink">Permanent link: <code>{{ page.ark_url }}</code>
+      <button type="button" class="copy-btn" data-copy="{{ page.ark_url }}" aria-label="Copy permanent link">Copy</button></p>
+    {% for part in page.ark_part_list %}
+    <p class="ark-permalink">{{ part.label }}: <code>{{ part.url }}</code>
+      <button type="button" class="copy-btn" data-copy="{{ part.url }}" aria-label="Copy permanent link to the {{ part.label }}">Copy</button></p>
+    {% endfor %}
     {% endif %}
     {% if page.laurels and not page.hero %}
     <ul class="film__laurels" role="list">

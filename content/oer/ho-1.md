@@ -1,6 +1,7 @@
 ---
 title: "Digital resources in Ho language"
 path: "/oer/ho-1/"
+ark: ofdn-r-000003
 tier: "live"
 section: "oer"
 wp_type: "post"

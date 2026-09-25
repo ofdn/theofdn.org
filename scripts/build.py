@@ -18,6 +18,16 @@ from jinja2 import Environment, FileSystemLoader
 ROOT = Path(__file__).resolve().parent.parent
 SITE_NAME = "O Foundation"
 SITE_URL = "https://theofdn.org"
+# ARK: NAAN 15056 (registered 24 Sep 2026). N2T and arks.org forward
+# ark:15056/<id> to https://theofdn.org/ark:15056/<id>, hyphens kept.
+ARK_NAAN = "15056"
+ARK_ID = re.compile(r"^ofdn-[fartd]-\d{6}$")
+# Qualifiers after the id, as UNESCO does: ark:15056/ofdn-d-000001/pdf is the
+# file, ark:15056/ofdn-d-000001 the page. A second part names a version,
+# e.g. subtitles/en or pdf/or.
+ARK_PART = re.compile(r"^(video|audio|pdf|transcript|subtitles|files)(/[a-z0-9-]+)?$")
+ARK_PART_LABEL = {"video": "Video", "audio": "Audio", "pdf": "PDF", "transcript": "Transcript",
+                  "subtitles": "Subtitles", "files": "Files"}
 
 # Header navigation. Contact, donate and policies sit in the footer.
 NAV = [
@@ -609,6 +619,41 @@ def split_datasheet(html):
     return str(soup), facts
 
 
+def check_arks(pages):
+    """ARK ids: one per page, never reused, in the ofdn-<letter>-000000 form."""
+    seen = {}
+    for p in pages:
+        a = p.get("ark")
+        if not a:
+            continue
+        a = str(a).strip()
+        if not ARK_ID.match(a):
+            sys.exit(f"{p['file']}: ark must look like ofdn-f-000001, not {a}")
+        if a in seen:
+            sys.exit(f"{p['file']}: ark {a} is already used by {seen[a]}")
+        seen[a] = p["file"]
+        p["ark"] = a
+        p["ark_url"] = f"https://n2t.net/ark:{ARK_NAAN}/{a}"
+        p["ark_part_list"] = []
+        for q, target in (p.get("ark_parts") or {}).items():
+            if not ARK_PART.match(str(q)):
+                sys.exit(f"{p['file']}: ark_parts: {q} is not one of {', '.join(ARK_PART_LABEL)}")
+            first, _, rest = str(q).partition("/")
+            label = ARK_PART_LABEL[first] + (f" ({rest})" if rest else "")
+            p["ark_part_list"].append({"q": q, "target": str(target), "label": label,
+                                       "url": f"{p['ark_url']}/{q}"})
+    for p in pages:
+        if p.get("ark_parts") and not p.get("ark"):
+            sys.exit(f"{p['file']}: ark_parts needs an ark")
+
+
+def ark_paths(ark_id):
+    """Every form a resolver may forward to: with or without the slash after
+    'ark:', with or without hyphens (hyphens do not count in ARKs)."""
+    ids = {ark_id, ark_id.replace("-", "")}
+    return [f"ark:{ARK_NAAN}/{i}" for i in ids] + [f"ark:/{ARK_NAAN}/{i}" for i in ids]
+
+
 def citations(page):
     authors = page.get("authors")
     if not authors:
@@ -617,7 +662,7 @@ def citations(page):
     year = page["date"][:4]
     url = SITE_URL + page["path"]
     title = page["title"]
-    ark = f" ARK: {page['ark']}" if page.get("ark") else ""
+    ark = f" ARK: {page['ark_url']}" if page.get("ark") else ""
     key = re.sub(r"[^a-z0-9]+", "", page["path"].lower())[:30] or "ofdn"
     return {
         "apa": f"{names} ({year}). {title}. O Foundation. {url}",
@@ -657,6 +702,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
     pages = load_pages()
+    check_arks(pages)
     by_section = {}
     for p in pages:
         by_section.setdefault(p["section"], []).append(p)
@@ -713,6 +759,25 @@ def main():
             continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(env.get_template("redirect.html").render(target=target))
+
+    # ARK: a redirect page at each form of each ARK, plus the resolver's test id.
+    for p in pages:
+        if p.get("ark"):
+            for a in ark_paths(p["ark"]):
+                dest = out / a / "index.html"
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_text(env.get_template("redirect.html").render(target=base + p["path"]))
+                for part in p["ark_part_list"]:
+                    t = part["target"]
+                    dest = out / a / part["q"] / "index.html"
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    dest.write_text(env.get_template("redirect.html").render(
+                        target=t if t.startswith("http") else base + t))
+    for a in (f"ark:{ARK_NAAN}/servicestatus", f"ark:/{ARK_NAAN}/servicestatus"):
+        (out / a).mkdir(parents=True, exist_ok=True)
+        (out / a / "index.html").write_text("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\">"
+                                           "<title>ARK service status</title><meta name=\"robots\" content=\"noindex\">"
+                                           "</head><body><p>OK</p></body></html>\n")
 
     # Search: an index for the search page (title, section, summary and text).
     index = []

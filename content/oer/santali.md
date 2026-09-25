@@ -1,6 +1,7 @@
 ---
 title: "Media and information literacy resources in Santali"
 path: "/oer/santali/"
+ark: ofdn-r-000001
 tier: "live"
 section: "oer"
 wp_type: "post"

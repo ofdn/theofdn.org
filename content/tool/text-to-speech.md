@@ -1,6 +1,7 @@
 ---
 title: "Lekatha: Text-to-speech toolkit"
 path: "/openspeaks/text-to-speech/"
+ark: ofdn-t-000003
 tier: "live"
 section: "tool"
 wp_type: "post"
