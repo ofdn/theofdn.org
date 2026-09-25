@@ -21,8 +21,8 @@ SITE_URL = "https://theofdn.org"
 # ARK: NAAN 15056 (registered 24 Sep 2026). N2T and arks.org forward
 # ark:15056/<id> to https://theofdn.org/ark:15056/<id>, hyphens kept.
 ARK_NAAN = "15056"
-# Qualifiers after the id, as UNESCO does: ark:15056/ofdn-d-000001/pdf is the
-# file, ark:15056/ofdn-d-000001 the page. A second part names a version,
+# Qualifiers after the id, as UNESCO does: ark:15056/ofdn-r-000008/pdf is the
+# file, ark:15056/ofdn-r-000008 the page. A second part names a version,
 # e.g. subtitles/en or pdf/or.
 ARK_PART = re.compile(r"^(video|audio|pdf|transcript|subtitles|files)(/[a-z0-9-]+)?$")
 ARK_PART_LABEL = {"video": "Video", "audio": "Audio", "pdf": "PDF", "transcript": "Transcript",

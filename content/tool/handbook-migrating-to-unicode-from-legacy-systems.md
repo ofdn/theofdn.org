@@ -1,7 +1,7 @@
 ---
 title: "Handbook: Migrating to Unicode from Legacy Systems"
 path: "/blogs/handbook-migrating-to-unicode-from-legacy-systems/"
-ark: ofdn-d-000001
+ark: ofdn-r-000008
 ark_parts:
   pdf: /assets/docs/unicode-handbook-2019.pdf
 tier: "live"

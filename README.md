@@ -141,11 +141,10 @@ Ids take the form `ofdn-<letter>-<six digits>`. The letter is the kind of page:
 
 - `f` film or video
 - `a` audio: podcast episodes and audio archives
-- `r` resource: an OER, guide or tutorial
+- `r` resource: an OER, guide, tutorial, toolkit, handbook, report or white paper
 - `t` tool
 - `y` typeface
 - `x` dataset
-- `d` report or document
 
 To ask for an ARK, write the kind at the top of the page and commit:
 
@@ -165,13 +164,13 @@ Never change or reuse an id once it is published. Do not delete a page that has 
 
 The ARK itself always points to the page. A file that belongs to the page gets the same ARK with a word after it, as UNESCO does:
 
-- `ark:15056/ofdn-d-000001` is the page.
-- `ark:15056/ofdn-d-000001/pdf` is the PDF.
+- `ark:15056/ofdn-r-000008` is the page.
+- `ark:15056/ofdn-r-000008/pdf` is the PDF.
 
 This holds whether the page embeds the PDF or only links to it. Add the files under `ark_parts`. Leave `pdf:` empty to use the one PDF in `/assets/docs/` that the page links to; GitHub fills in the path.
 
 ```yaml
-ark: document
+ark: resource
 ark_parts:
   pdf:
   video: https://archive.org/details/example
