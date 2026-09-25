@@ -41,7 +41,7 @@ Every page uses one template. A part of the page shows only when its field is fi
 Always needed:
 
 - `title`: page title. Any script.
-- `path`: the page address. Lowercase a–z, 0–9 and hyphens, starting and ending with `/`. Do not change it once the page is live.
+- `path`: the page address. Lowercase a–z, 0–9 and hyphens, starting and ending with `/`. Follow the pattern under Addresses. Do not change it once the page is live; if you must, see Move a page.
 - `section`: one of the folders above.
 - `tier`: `live` or `archive`.
 - `date`: `2026-09-24`.
@@ -158,7 +158,7 @@ To do the same on your computer: `python3 scripts/add_ark.py --pending`.
 
 The kinds are listed under `ark_kinds` in `data/site.yml`. To add a kind, add a line there with an unused letter. Never change or remove a letter once an id with it is published.
 
-Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path`; the ARK follows it.
+Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path` and add a redirect (see Move a page); the ARK follows it. A language version gets `/<lang>` after the ARK on its own.
 
 ### Files: PDF, video, audio, subtitles
 
@@ -183,6 +183,73 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 
 `https://n2t.net/ark:15056/<id>` sends readers to `theofdn.org/ark:15056/<id>`, which the build points to the page. This works only once theofdn.org serves this site.
 
+## Addresses
+
+| Page | Address |
+|---|---|
+| Resource: OER, tool, toolkit, handbook, audio archive | `/resources/<slug>/` |
+| Language version of a resource | `/resources/<slug>/<lang>/` |
+| The running tool itself | `/tools/<slug>/` |
+| Blog post, announcement, meeting notes | `/blogs/<slug>/` |
+| Language version of a blog post | `/blogs/<slug>/<lang>/` |
+| Film, podcast episode | `/film/<slug>/`, `/podcast/<slug>/` |
+| ARK of a page | `ark:15056/<id>` |
+| ARK of a language version | `ark:15056/<id>/<lang>` |
+
+- One resource has one page. It carries the ARK.
+- An announcement is a blog post. It links to the resource page. It does not repeat the tool.
+- A blog post has no category in its address: `/blogs/wikimania2019/`, not `/blogs/conference/wikimania2019/`.
+- `<slug>` is short, lowercase and in Latin letters. Use the name people know the resource by.
+
+Example:
+
+- Resource: `/resources/santali-unicode-converter/`
+- Santali version: `/resources/santali-unicode-converter/sat/`
+- The converter: `/tools/santali-unicode-converter/`
+- Announcement: `/blogs/santali-unicode-converter-release/`
+- ARK: `ark:15056/ofdn-t-000001`, and `ark:15056/ofdn-t-000001/sat` for the Santali version
+
+## Move a page
+
+1. Change `path` at the top of the page.
+2. Add a line to `data/redirects.json`: `"/old/address/": "/new/address/"`. The old address then forwards to the new one.
+3. If other redirects point to the old address, point them to the new one.
+4. Search `content/` for links to the old address and change them. Leave `original_url` as it is.
+
+The ARK follows the page. Never remove a line from `data/redirects.json`.
+
+## Language versions
+
+A language version is the same page in another language. It is not a new page.
+
+1. Copy the page file and add the language code before `.md`: `santali-unicode-converter.md` becomes `santali-unicode-converter.sat.md`. Use the ISO 639 code.
+2. Keep the file in the same folder.
+3. At the top, set `lang` to the code and `path` to the original address plus the code:
+
+```
+---
+title: "ᱥᱟᱱᱛᱟᱲᱤ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ ᱥᱚᱫᱚᱨᱮᱱᱟ"
+path: "/resources/santali-unicode-converter/sat/"
+lang: sat
+section: "tool"
+translators:
+  - Full Name
+tier: "live"
+date: "2019-07-14"
+excerpt: "One or two sentences in the language."
+---
+```
+
+4. Translate the title, excerpt and text.
+5. New language? Add it under `languages` in `data/site.yml`, with its own name and its English name.
+6. Commit.
+
+The original keeps the short address, in whatever language it was first written. A page first written in Santali has its English version at `/<slug>/en/`.
+
+Each version shows "Also in" links to the others, and lists show one card per page with its languages. A version shares the ARK of the original, with the code after it. Do not give a version its own `ark`.
+
+Name every translator in `translators`. The names show on the page.
+
 ## Add a page, blog post or subpage
 
 1. Create a file in the right folder, for example `content/blog/odia-ocr-2026.md`. The file name does not show on the site.
@@ -191,7 +258,7 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 ```
 ---
 title: "ଓଡ଼ିଆ OCR: what we learnt"
-path: "/blog/odia-ocr-2026/"
+path: "/blogs/odia-ocr-2026/"
 section: "blog"
 tier: "live"
 date: "2026-09-24"
@@ -202,7 +269,7 @@ excerpt: "One or two sentences."
 3. Write the text below the block in Markdown.
 4. Commit.
 
-The `path` sets the address, so a title in any script can have a plain Latin address. For a subpage, put it under the parent's address: `/openspeaks/new-toolkit/` sits under `/openspeaks/`.
+The `path` sets the address, so a title in any script can have a plain Latin address. Use the patterns under Addresses.
 
 The build stops with a message if a `path` has other characters or two pages share one.
 

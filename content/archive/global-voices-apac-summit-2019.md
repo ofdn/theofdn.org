@@ -1,6 +1,6 @@
 ---
 title: "Reflecting from Global Voices Asia-Pacific Summit 2019, Taipei, Taiwan"
-path: "/blogs/conference/global-voices-apac-summit-2019/"
+path: "/blogs/global-voices-apac-summit-2019/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

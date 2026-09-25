@@ -1,8 +1,8 @@
 ---
 title: "Converting Santali text typed in ASCII to Unicode"
-path: "/openspeaks/language-resources/santali-unicode-converter-release/"
+path: "/blogs/santali-unicode-converter-release/"
 tier: "live"
-section: "tool"
+section: "blog"
 wp_type: "post"
 wp_id: 477
 date: "2018-09-12"
@@ -32,7 +32,7 @@ But why a common user should bother? Most non-standard character encoding used i
 
 Unicode in a way unifies different fonts — the way characters look because of varied styles and aesthetic looks. In the case of Santali, many publications like the Fagun magazine have been using a non-standard and modified ASCII character encoding since long. But one cannot find their content by a simple Google search as it is not in Unicode.
 
-I’m really excited to announce that with support from community leaders like [Ramjit Tudu](https://twitter.com/Ramjit_Tudu) who supported a lot with the character mapping, we have [built](/openspeaks/language-resources/santali-unicode-encoding-converter/) a converter to convert from Santali text in Latin into text in Ol chiki.
+I’m really excited to announce that with support from community leaders like [Ramjit Tudu](https://twitter.com/Ramjit_Tudu) who supported a lot with the character mapping, we have [built](/resources/santali-unicode-converter/) a converter to convert from Santali text in Latin into text in Ol chiki.
 
 [[embed:0]]
 
@@ -40,7 +40,7 @@ The code is released under an MIT licence and is available in our [GitHub](https
 
 #### **How to use the converter? See the tutorial below:\**
 
-[![https://theofdn.org/wp-content/uploads/2018/09/Santali-Unicode-Converter.gif](/assets/images/santali-unicode-converter-screenshot.webp)](/openspeaks/language-resources/santali-unicode-encoding-converter/)
+[![https://theofdn.org/wp-content/uploads/2018/09/Santali-Unicode-Converter.gif](/assets/images/santali-unicode-converter-screenshot.webp)](/resources/santali-unicode-converter/)
 
 More related
 

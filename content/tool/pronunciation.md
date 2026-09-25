@@ -1,6 +1,6 @@
 ---
 title: "Kathabhidhana: Pronunciation Toolkit"
-path: "/openspeaks/pronunciation/"
+path: "/resources/pronunciation/"
 ark: ofdn-t-000002
 tier: "live"
 section: "tool"

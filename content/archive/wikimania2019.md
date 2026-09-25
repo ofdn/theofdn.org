@@ -1,6 +1,6 @@
 ---
 title: "Wikimania2019: From Sustainable Development Goals to Indigenous Languages"
-path: "/blogs/conference/wikimania2019/"
+path: "/blogs/wikimania2019/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

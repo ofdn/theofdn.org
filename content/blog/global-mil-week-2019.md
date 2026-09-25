@@ -1,8 +1,8 @@
 ---
 title: "Language Resources Release during Global Media and Information Literacy Week 2019"
-path: "/oer/global-mil-week-2019/"
+path: "/blogs/global-mil-week-2019/"
 tier: "live"
-section: "oer"
+section: "blog"
 wp_type: "post"
 wp_id: 1923
 date: "2019-10-07"

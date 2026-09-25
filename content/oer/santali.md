@@ -1,6 +1,6 @@
 ---
 title: "Media and information literacy resources in Santali"
-path: "/oer/santali/"
+path: "/resources/santali/"
 ark: ofdn-r-000001
 tier: "live"
 section: "oer"
@@ -21,7 +21,7 @@ tags:
 excerpt: "Digital resources like input tools for Android and desktop/PC, fonts, and other resources for Santali (Santhali) and Ol chiki."
 original_url: "https://theofdn.org/oer/santali/"
 ---
-[![Localization icon Santali](/assets/images/ho-mil-santali.webp)](/oer/global-mil-week-2019/)
+[![Localization icon Santali](/assets/images/ho-mil-santali.webp)](/blogs/global-mil-week-2019/)
 
 UNESCO considers Media and Information Literacy (MIL) as “*an important prerequisite for fostering equitable access to information and knowledge and promoting free, independent and pluralistic media and information systems*“. MIL is broadly based on the “*information and media in our everyday lives*“ and this page lists links to such resources in the ****Santali** (ᱥᱟᱱᱛᱟᱲᱤ),** and its writing system ****Ol Chiki** (ᱚᱞ ᱪᱤᱠᱤ)**. Such resources are intended to be used by both Ho users and others alike. Generally, input tools, mobile apps, character encoding converters, Wikipedia and other Wikimedia projects, typefaces/fonts are the common resources included in such a directory.
 
@@ -61,7 +61,7 @@ Input tools used to type in the Ol chiki writing system using a computer or a mo
 
 #### Other technical resources
 
-- [Ol chiki converter](/openspeaks/language-resources/sat-santali-olchiki-converter/), a web-based encoding converter to convert text typed in some of the most used legacy encoding systems into Unicode (*read in [English](/openspeaks/language-resources/santali-unicode-converter-release/)*)
+- [Ol chiki converter](/resources/santali-unicode-converter/sat/), a web-based encoding converter to convert text typed in some of the most used legacy encoding systems into Unicode (*read in [English](/blogs/santali-unicode-converter-release/)*)
 - [Ol Chiki Tech](https://olchikidr.blogspot.com/), a blog posting updates on technological development for Santali
 
 ### **Content**

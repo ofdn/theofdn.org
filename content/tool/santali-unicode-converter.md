@@ -1,6 +1,6 @@
 ---
 title: "Santali Unicode Encoding Converter"
-path: "/openspeaks/language-resources/santali-unicode-encoding-converter/"
+path: "/resources/santali-unicode-converter/"
 ark: ofdn-t-000001
 tier: "live"
 section: "tool"
@@ -24,7 +24,7 @@ original_url: "https://theofdn.org/openspeaks/language-resources/santali-unicode
 ---
 The first ever proposal to include Ol chiki, the writing system used for the Santali language, in the Unicode block was [proposed](https://www.unicode.org/L2/L1999/n1956.pdf) by Michael Everson on January 29, 1999. However, there exist a handful of other legacy character encoding systems which are mostly modified from [https://en.wikipedia.org/wiki/ASCII](http://American%20Standard%20Code%20for%20Information%20Interchange) (ASCII). Such encoding systems not only display gibberish on smartphones but also on computers where the font used for typing any document is not used.
 
-***[Read](/openspeaks/language-resources/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/openspeaks/language-resources/sat-santali-olchiki-converter/)) our blog on this issue for more information*.**
+***[Read](/blogs/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/resources/santali-unicode-converter/sat/)) our blog on this issue for more information*.**
 
 Most print publications still use these legacy encoding systems instead of using Unicode where the latter continues to be a universal standard. Until all Santali users move to Unicode, this converter is a temporary fix for making the Santali content accessible to all in a universal standard like Unicode.
 

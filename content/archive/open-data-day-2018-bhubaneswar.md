@@ -1,6 +1,6 @@
 ---
 title: "Open Data Day 2018 celebration in Bhubaneswar"
-path: "/blogs/conference/meetings/open-data-day-2018-bhubaneswar/"
+path: "/blogs/open-data-day-2018-bhubaneswar/"
 tier: "archive"
 section: "archive"
 wp_type: "post"
@@ -14,7 +14,7 @@ original_url: "https://theofdn.org/blogs/conference/meetings/open-data-day-2018-
 ---
 [Open Data Day](http://opendataday.org/) is in town! Every year, data enthusiasts—who advocate and contribute towards making useful data [openly](http://opendatahandbook.org/guide/en/what-is-open-data/) accessible—gather for a day to brainstorm and conduct hands on activities to grow more Openness around data. We have been working on a few open projects since our inception, and are releasing all our data under open licenses. Though our network is [growing](/partners/) bigger and bigger globally, we are planning to celebrate the Open Data Day 2018 along with many other friends and colleagues in Bhubaneswar—in the Indian state of Odisha—where we are based in.
 
-For this year, which will mark our first ever Open Data Day celebration as an organisation, we are planning to do four major activities ([check out the resources that might be useful too](/blogs/conference/meetings/open-data-day-2018-bhubaneswar/)):
+For this year, which will mark our first ever Open Data Day celebration as an organisation, we are planning to do four major activities ([check out the resources that might be useful too](/blogs/open-data-day-2018-bhubaneswar/)):
 
 1.  Organize an offline meetup to bring together students, academics, developers, and other professionals to brainstorm how Open Data can be useful in their work and life, and how they can contribute
 2.  A Wikidata [editathon](https://en.wikipedia.org/wiki/Wikipedia:How_to_run_an_edit-a-thon) to grow [Wikidata](https://wikidata.org) entries related to some of the regional topics

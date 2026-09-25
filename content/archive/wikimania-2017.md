@@ -1,6 +1,6 @@
 ---
 title: "Wikimania 2017: Talk on software and hardware for Wikimedia Commons"
-path: "/blogs/conference/wikimania-2017/"
+path: "/blogs/wikimania-2017/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

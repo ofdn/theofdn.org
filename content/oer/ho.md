@@ -1,6 +1,6 @@
 ---
 title: "Media and information literacy resources in Ho"
-path: "/oer/ho/"
+path: "/resources/ho/"
 ark: ofdn-r-000006
 tier: "live"
 section: "oer"
@@ -21,7 +21,7 @@ tags:
 excerpt: "This page contains MIL (Media and information literacy — information and media in our everyday lives) in the Ho language."
 original_url: "https://theofdn.org/oer/ho/"
 ---
-[![Localization icon Santali](/assets/images/ho-mil-santali.webp)](/oer/global-mil-week-2019/)
+[![Localization icon Santali](/assets/images/ho-mil-santali.webp)](/blogs/global-mil-week-2019/)
 
 UNESCO considers Media and Information Literacy (MIL) as “*an important prerequisite for fostering equitable access to information and knowledge and promoting free, independent and pluralistic media and information systems*“. MIL is broadly based on the “*information and media in our everyday lives*“ and this page lists links to such resources in the ****Santali** (ᱥᱟᱱᱛᱟᱲᱤ),** and its writing system ****Ol Chiki** (ᱚᱞ ᱪᱤᱠᱤ)**. Such resources are intended to be used by both Ho users and others alike. Generally, input tools, mobile apps, character encoding converters, Wikipedia and other Wikimedia projects, typefaces/fonts are the common resources included in such a directory.
 

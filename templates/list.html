@@ -11,6 +11,7 @@
     <li class="card">
       <h2 class="card__title"><a href="{{ p.path }}">{{ p.title }}</a></h2>
       <p class="card__meta">{{ p.date }}</p>
+      {% if p.versions | length > 1 %}<p class="card__meta">Also in: {% for v in p.versions[1:] %}<a href="{{ v.path }}" lang="{{ v.lang }}" hreflang="{{ v.lang }}">{{ v.lang_name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
       {% if p.excerpt %}<p class="card__text">{{ summary(p) }}</p>{% endif %}
     </li>
     {% endfor %}

@@ -1,6 +1,6 @@
 ---
 title: "We’re updating OpenSpeaks and we’d love to hear from you!"
-path: "/openspeaks/content-update-2020/"
+path: "/blogs/content-update-2020/"
 tier: "archive"
 section: "archive"
 wp_type: "post"
@@ -28,7 +28,7 @@ original_url: "https://theofdn.org/openspeaks/content-update-2020/"
 
 ###### [English](#en) \| [ᱥᱟᱱᱛᱟᱲᱤ](#sat)
 
-It has been three years since [OpenSpeaks](/openspeaks/multimedia-toolkit/) was developed as an open toolkit for audio-visual documentation of languages, especially indigenous, endangered and other low-resource languages. Like all other educational resources, it also needs an update. We plan to run a toolkit-wide update and a complete renovation of the first chapter — “[Consent, Rights, Copyright and Open Licensing](/openspeaks/multimedia-toolkit/#ib-toc-anchor-0)” — as it sets the foundation of the entire toolkit. Your inputs will be of great value to help us improve the resource.
+It has been three years since [OpenSpeaks](/resources/multimedia-toolkit/) was developed as an open toolkit for audio-visual documentation of languages, especially indigenous, endangered and other low-resource languages. Like all other educational resources, it also needs an update. We plan to run a toolkit-wide update and a complete renovation of the first chapter — “[Consent, Rights, Copyright and Open Licensing](/resources/multimedia-toolkit/#ib-toc-anchor-0)” — as it sets the foundation of the entire toolkit. Your inputs will be of great value to help us improve the resource.
 
 The form is designed to collect specific inputs that are key to the new additions or improvements. But it also has room for you to share more that are not asked. Whether you are a professional in documenting languages or you only know others who are, we would love to hear from you. Every Open Educational Resource (OER) is built by a community and OpenSpeaks is no exception. With your permission, we would love to attribute for your contribution when we publish. You can prefer to be attributed anonymously or with your name and organisational affiliations.
 

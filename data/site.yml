@@ -30,3 +30,11 @@ ark_kinds:
   typeface: y
   dataset: d
   document: r
+
+# Languages that pages come in, by code (ISO 639), with the name the language
+# has for itself and its English name. A language version of a page is a second file next to the
+# original, named <slug>.<code>.md; see README.md, "Language versions".
+languages:
+  en: {own: English, english: English}
+  sat: {own: ᱥᱟᱱᱛᱟᱲᱤ, english: Santali}
+  or: {own: ଓଡ଼ିଆ, english: Odia}

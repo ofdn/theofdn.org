@@ -54,7 +54,6 @@ LISTS = {
     "/film/": ("Films", ["film"], "Documentary films by O Foundation."),
     "/resources/": ("Resources", ["oer", "tool", "audio-archive"],
                        "Open educational resources, language tools and toolkits."),
-    "/openspeaks/language-resources/": ("Language tools", ["tool"], "Language tools and toolkits."),
     "/publications/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
 }
 # Pages shown first on a list, as {"/list/": ["/page/"]}.
@@ -101,15 +100,52 @@ def load_pages():
             if not meta.get(key):
                 sys.exit(f"{f}: missing '{key}'")
         meta["date"] = str(meta.get("date", ""))
+        # A language version sits next to its original as <slug>.<lang>.md.
+        v = re.fullmatch(r"(.+)\.([a-z]{2,3})", f.stem)
+        if v:
+            meta["version_of"] = (f.parent / f"{v.group(1)}.md").relative_to(ROOT).as_posix()
+            if meta.get("lang", v.group(2)) != v.group(2):
+                sys.exit(f"{f}: lang must be {v.group(2)}, as in the file name")
+            meta["lang"] = v.group(2)
+        meta.setdefault("lang", "en")
         if not re.fullmatch(r"/([a-z0-9-]+/)*", meta["path"]):
             sys.exit(f"{f}: path '{meta['path']}' must start and end with / and use only a-z, 0-9 and -")
         pages.append(meta)
+    link_versions(pages)
     seen = {}
     for p in pages:
         if p["path"] in seen:
             sys.exit(f"{p['file']} and {seen[p['path']]} have the same path {p['path']}")
         seen[p["path"]] = p["file"]
     return pages
+
+
+def link_versions(pages):
+    """Language versions: the original keeps its address, each version adds
+    /<lang>/ to it. Every version lists all of them for the language switcher."""
+    names = (yaml.safe_load((ROOT / "data" / "site.yml").read_text()) or {}).get("languages") or {}
+    by_file = {p["file"]: p for p in pages}
+    for p in pages:
+        p["versions"] = [p]
+    for p in pages:
+        if "version_of" not in p:
+            continue
+        orig = by_file.get(p["version_of"])
+        if not orig:
+            sys.exit(f"{p['file']}: no original at {p['version_of']}")
+        want = f"{orig['path']}{p['lang']}/"
+        if p["path"] != want:
+            sys.exit(f"{p['file']}: path must be {want}")
+        if p["section"] != orig["section"]:
+            sys.exit(f"{p['file']}: section must be {orig['section']}, as in the original")
+        p["original"] = orig
+        orig["versions"].append(p)
+        p["versions"] = orig["versions"]
+    for p in pages:
+        for v in p["versions"]:
+            if v["lang"] not in names:
+                sys.exit(f"{v['file']}: add '{v['lang']}' to languages in data/site.yml")
+            v["lang_name"], v["lang_english"] = names[v["lang"]]["own"], names[v["lang"]]["english"]
 
 
 CAPTION_MARK = "[[caption]]"
@@ -653,6 +689,13 @@ def check_arks(pages, conf):
             label = ARK_PART_LABEL[first] + (f" ({rest})" if rest else "")
             p["ark_part_list"].append({"q": q, "target": str(target), "label": label,
                                        "url": f"{p['ark_url']}/{q}"})
+    # A language version shares the ARK of its original, with /<lang> after it.
+    for p in pages:
+        orig = p.get("original")
+        if orig and orig.get("ark"):
+            p["ark_url"] = f"{orig['ark_url']}/{p['lang']}"
+            orig["ark_part_list"].append({"q": p["lang"], "target": p["path"], "label": p["lang_name"],
+                                          "url": p["ark_url"], "lang": p["lang"], "english": p["lang_english"]})
     for p in pages:
         if p.get("ark_parts") and not p.get("ark") and not p.get("ark_pending"):
             sys.exit(f"{p['file']}: ark_parts needs an ark")
@@ -673,7 +716,7 @@ def citations(page):
     year = page["date"][:4]
     url = SITE_URL + page["path"]
     title = page["title"]
-    ark = f" ARK: {page['ark_url']}" if page.get("ark") else ""
+    ark = f" ARK: {page['ark_url']}" if page.get("ark_url") else ""
     key = re.sub(r"[^a-z0-9]+", "", page["path"].lower())[:30] or "ofdn"
     return {
         "apa": f"{names} ({year}). {title}. O Foundation. {url}",
@@ -727,7 +770,8 @@ def main():
     pages = load_pages()
     by_section = {}
     for p in pages:
-        by_section.setdefault(p["section"], []).append(p)
+        if "original" not in p:  # lists show one card per page, not per language
+            by_section.setdefault(p["section"], []).append(p)
     for items in by_section.values():
         items.sort(key=lambda p: p["date"], reverse=True)
     conf = load_status()
@@ -828,8 +872,6 @@ def legacy_target(path):
         return "/film/"
     if path.startswith("/category/podcast"):
         return "/podcast/"
-    if path.startswith("/category/openspeaks/language-resources"):
-        return "/openspeaks/language-resources/"
     if path.startswith(("/category/oer", "/category/openspeaks")):
         return "/resources/"
     return "/publications/"

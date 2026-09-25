@@ -1,6 +1,6 @@
 ---
 title: "Media and information literacy resources in Odia"
-path: "/oer/odia/"
+path: "/resources/odia/"
 ark: ofdn-r-000002
 tier: "live"
 section: "oer"
@@ -27,7 +27,7 @@ embeds:
     id: "3zEZ6imZCUA"
 original_url: "https://theofdn.org/oer/odia/"
 ---
-[![Localization icon Odia](/assets/images/odia-mil-odia.webp)](/oer/global-mil-week-2019/)
+[![Localization icon Odia](/assets/images/odia-mil-odia.webp)](/blogs/global-mil-week-2019/)
 
 UNESCO considers Media and Information Literacy (MIL) as “*an important prerequisite for fostering equitable access to information and knowledge and promoting free, independent and pluralistic media and information systems*“. MIL is broadly based on the “*information and media in our everyday lives*“ and this page lists links to such resources in the Odia language.
 

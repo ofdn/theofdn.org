@@ -1,6 +1,6 @@
 ---
 title: "Wikimania 2018 Cape Town, South Africa + Decolonizing the Internet"
-path: "/blogs/conference/wikimania2018/"
+path: "/blogs/wikimania2018/"
 tier: "archive"
 section: "archive"
 wp_type: "post"
@@ -32,7 +32,7 @@ Can you imagine a place other than New York City or Papua New Guinea where you c
 
 This year’s Wikimania that was in Cape Town, South Africa, was not only focused around diversity, but also helped Wikimedia affiliate [WhoseKnowledge?](https://whoseknowledge.org) organise a new kind of conference called the [Decolonizing the Internet](https://whoseknowledge.org/decolonizing-the-internet-conference/) (DTI) which helped many to rethink about centring the knowledge of marginalised communities on the Internet. Thanks to Wikimedia Foundation for providing scholarship to Jnanaranjan, Sailesh and Subhashish based on their individual contribution to the Wikimedia movement so that they could participate at Wikimania this year.  Sailesh and Subhashish participated in DTI and brought back many valuable learning on amplifying the voice of marginalised people and topics.
 
-Like [last year](/blogs/conference/wikimania2017/), O Foundation (OFDN) joined forces with the Odia Wikimedians User Group and Wikitongues to host a booth at the Wikimedia community village. This booth helped engage with many visitors and interview many of them both for Wikitongues and [OpenSpeaks](https://openspeaks.com/). These video interviews of people speaking in their native languages — one of which was shot at the Cape Town airport — will soon go live on YouTube as well as Wikimedia Commons.
+Like [last year](/blogs/wikimania2017/), O Foundation (OFDN) joined forces with the Odia Wikimedians User Group and Wikitongues to host a booth at the Wikimedia community village. This booth helped engage with many visitors and interview many of them both for Wikitongues and [OpenSpeaks](https://openspeaks.com/). These video interviews of people speaking in their native languages — one of which was shot at the Cape Town airport — will soon go live on YouTube as well as Wikimedia Commons.
 
 Sailesh, Jnanaranjan and Subhashish divided their time to participate and speak in many sessions in both the conferences.  Sailesh, with his hat of Community Advocate at the Centre for Internet Society’s Access to Knowledge (CIS-A2K), presented about the collaboration with the government of the Indian state of Odisha. As an outcome of a long-time dialog with the government done by the Odia Wikimedians User Group, CIS-A2K and Wikimedia Foundation, the government [released](https://blog.wikimedia.org/2017/09/18/odisha-social-media-free-license/) content (mostly pictures, videos and text) owned by them of as many as 7 websites and 8 social media accounts under a CC-BY 4.0 license. Odisha became arguably the first ever provincial government in India to make such a policy-level move.
 

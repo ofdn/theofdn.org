@@ -1,6 +1,6 @@
 ---
 title: "Digital resources in Ho language"
-path: "/oer/ho-1/"
+path: "/resources/ho-digital-resources/"
 ark: ofdn-r-000003
 tier: "live"
 section: "oer"

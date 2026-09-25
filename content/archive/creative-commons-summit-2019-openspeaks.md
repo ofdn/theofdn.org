@@ -1,6 +1,6 @@
 ---
 title: "Creative Commons Summit 2019: Openness in marginalised languages"
-path: "/blogs/conference/creative-commons-summit-2019-openspeaks/"
+path: "/blogs/creative-commons-summit-2019-openspeaks/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

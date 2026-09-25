@@ -1,6 +1,6 @@
 ---
 title: "Karbi elder D.S. Teron shares folklore, folk songs, games and festivals in Karbi language"
-path: "/openspeaks/karbi/"
+path: "/resources/karbi/"
 ark: ofdn-a-000007
 tier: "live"
 section: "audio-archive"

@@ -49,7 +49,7 @@ Online
 
 Inauguration of Marginalized Community Council
 
-[Meeting notes](/mcc/notes-2019-08-09/)
+[Meeting notes](/blogs/mcc-notes-2019-08-09/)
 
 First meeting of the MCC members whether
 
@@ -182,7 +182,7 @@ Native speaker of Doteli and active contributor to [Doteli-language Wikipedia](h
 
 ###### Technical resources
 
-## [Linguistic tools](/openspeaks/language-resources/)
+## [Linguistic tools](/resources/)
 
 ##### 
 

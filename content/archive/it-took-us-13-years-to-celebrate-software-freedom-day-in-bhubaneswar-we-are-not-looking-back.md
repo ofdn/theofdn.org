@@ -1,6 +1,6 @@
 ---
 title: "It took us 13 years to celebrate Software Freedom Day in Bhubaneswar. We are not looking back!"
-path: "/blogs/conference/it-took-us-13-years-to-celebrate-software-freedom-day-in-bhubaneswar-we-are-not-looking-back/"
+path: "/blogs/it-took-us-13-years-to-celebrate-software-freedom-day-in-bhubaneswar-we-are-not-looking-back/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

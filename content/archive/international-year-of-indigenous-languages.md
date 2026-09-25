@@ -1,6 +1,6 @@
 ---
 title: "What we’re doing for International Year of Indigenous Languages (IYIL)"
-path: "/blogs/campaigns/international-year-of-indigenous-languages/"
+path: "/blogs/international-year-of-indigenous-languages/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

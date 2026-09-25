@@ -1,6 +1,6 @@
 ---
 title: "“Open Curriculum Development For Language Documentation”: OpenSpeaks at MozFest 2017"
-path: "/openspeaks/open-curriculum-development-for-language-documentation-openspeaks-at-mozfest-2017/"
+path: "/blogs/open-curriculum-development-for-language-documentation-openspeaks-at-mozfest-2017/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

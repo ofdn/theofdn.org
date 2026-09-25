@@ -1,6 +1,6 @@
 ---
 title: "OpenSpeaks got wings with a National Geographic Society grant!"
-path: "/blogs/funding/openspeaks-got-wings-with-a-national-geographic-society-grant/"
+path: "/blogs/openspeaks-got-wings-with-a-national-geographic-society-grant/"
 tier: "archive"
 section: "archive"
 wp_type: "post"

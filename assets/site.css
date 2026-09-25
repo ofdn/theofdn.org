@@ -322,6 +322,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
   font-size: clamp(1.2rem, 2.2vw, 1.45rem); line-height: 1.45; max-width: 44rem; margin-top: var(--space-lg);
 }
 .byline { font-family: var(--font-display); font-weight: 600; margin-top: var(--space-md); }
+.page-langs { font-family: var(--font-display); margin-top: var(--space-md); }
+.page-langs a { display: inline-block; min-height: 24px; padding-block: 2px; }
 .notice {
   max-width: var(--max-prose); margin-bottom: var(--space-xl);
   padding: 0.75rem 1rem; border-left: 4px solid var(--color-accent); background: var(--color-surface);

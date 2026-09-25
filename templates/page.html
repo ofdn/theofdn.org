@@ -8,7 +8,9 @@
     transcript, poster/posters, stills -> sections after the text -#}
 {% extends "base.html" %}
 {% block title %}{{ page.title }} | {{ site_name }}{% endblock %}
-{% block meta %}{% if page.excerpt %}<meta name="description" content="{{ summary(page) }}">{% endif %}{% endblock %}
+{% block meta %}{% if page.excerpt %}<meta name="description" content="{{ summary(page) }}">{% endif %}
+{% if page.versions | length > 1 %}{% for v in page.versions %}<link rel="alternate" hreflang="{{ v.lang }}" href="{{ v.path }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ page.versions[0].path }}">{% endif %}{% endblock %}
 {% set kind = {"film": "film", "podcast": "episode"}.get(page.section) %}
 {% set infobox = facts or page.links_list or page.listen or kind %}
 {% block main_class %}{% if infobox %}film{% else %}page{% endif %}{% endblock %}
@@ -27,18 +29,24 @@
   {% endif %}
 </section>
 {% endif %}
-<div class="{% if infobox %}film__wrap{% else %}page__wrap{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}">
+<div class="{% if infobox %}film__wrap{% else %}page__wrap{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}"{% if page.lang != "en" %} lang="{{ page.lang }}"{% endif %}>
   <header class="{% if infobox %}film__header{% else %}page__header{% endif %}">
-    {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}{% if page.date and not kind %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
+    {% if eyebrow %}<p class="eyebrow" lang="en">{{ eyebrow }}{% if page.date and not kind %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
     {% if not (page.hero and page.title_image) %}<h1 class="{% if infobox %}film__title{% else %}page__title{% endif %}">{{ page.title }}</h1>{% endif %}
     {% if page.lede %}<p class="film__lede">{{ page.lede }}</p>{% endif %}
     {% if page.authors %}<p class="byline">{{ page.authors | join(", ") }}{% if page.date %} · <time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}</p>{% endif %}
-    {% if page.ark %}
-    <p class="ark-permalink">Permanent link: <code>{{ page.ark_url }}</code>
+    {% if page.versions | length > 1 %}
+    <nav class="page-langs" aria-label="Other languages" lang="en">
+      <p>Also in: {% for v in page.versions if v.path != page.path %}<a href="{{ v.path }}" lang="{{ v.lang }}" hreflang="{{ v.lang }}">{{ v.lang_name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    </nav>
+    {% endif %}
+    {% if page.translators %}<p class="byline" lang="en">Translated by {{ page.translators | join(", ") }}</p>{% endif %}
+    {% if page.ark_url %}
+    <p class="ark-permalink" lang="en">Permanent link: <code>{{ page.ark_url }}</code>
       <button type="button" class="copy-btn" data-copy="{{ page.ark_url }}" aria-label="Copy permanent link">Copy</button></p>
-    {% for part in page.ark_part_list %}
-    <p class="ark-permalink">{{ part.label }}: <code>{{ part.url }}</code>
-      <button type="button" class="copy-btn" data-copy="{{ part.url }}" aria-label="Copy permanent link to the {{ part.label }}">Copy</button></p>
+    {% for part in page.ark_part_list or [] %}
+    <p class="ark-permalink" lang="en">{% if part.lang %}<span lang="{{ part.lang }}">{{ part.label }}</span>{% else %}{{ part.label }}{% endif %}: <code>{{ part.url }}</code>
+      <button type="button" class="copy-btn" data-copy="{{ part.url }}" aria-label="Copy permanent link to the {% if part.lang %}{{ part.english }} version{% else %}{{ part.label }}{% endif %}">Copy</button></p>
     {% endfor %}
     {% endif %}
     {% if page.laurels and not page.hero %}

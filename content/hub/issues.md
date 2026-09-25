@@ -51,6 +51,6 @@ Participation of women, LGBTQI people, indigenous and other marginalised groups 
 
 We’re working with some of the underrepresented communities to co-create open resources (Open Source tools and related Open Educational Resources and open data).
 
-[![Santali](/assets/images/issues-santali.webp)](/openspeaks/language-resources/santali-unicode-converter-release/)
+[![Santali](/assets/images/issues-santali.webp)](/blogs/santali-unicode-converter-release/)
 
-This project is aimed at creating resources for the Santali-language including an [ASCII → Ol chiki converter](/openspeaks/language-resources/santali-unicode-converter-release/).
+This project is aimed at creating resources for the Santali-language including an [ASCII → Ol chiki converter](/blogs/santali-unicode-converter-release/).

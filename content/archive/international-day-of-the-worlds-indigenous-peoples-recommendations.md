@@ -1,6 +1,6 @@
 ---
 title: "Recommendations for the growth of indigenous, endangered and other marginalised languages"
-path: "/blogs/campaigns/international-day-of-the-worlds-indigenous-peoples-recommendations/"
+path: "/blogs/international-day-of-the-worlds-indigenous-peoples-recommendations/"
 tier: "archive"
 section: "archive"
 wp_type: "post"
@@ -34,5 +34,5 @@ We’re building a working group—[Marginalized Community Council](/activities/
 
 ## Related posts:
 
-- [What we’re doing for International Year of Indigenous Languages](/blogs/campaigns/international-year-of-indigenous-languages/) (IYIL)
+- [What we’re doing for International Year of Indigenous Languages](/blogs/international-year-of-indigenous-languages/) (IYIL)
 - [A new rotating Twitter campaign will focus on perspectives of language activists from Asia](/blogs/repost-a-new-rotating-twitter-campaign-will-focus-on-perspectives-of-language-activists-from-asia/)

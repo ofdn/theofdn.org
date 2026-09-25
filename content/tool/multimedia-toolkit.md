@@ -1,6 +1,6 @@
 ---
 title: "OpenSpeaks Multimedia Toolkit"
-path: "/openspeaks/multimedia-toolkit/"
+path: "/resources/multimedia-toolkit/"
 ark: ofdn-r-000004
 tier: "live"
 section: "tool"
@@ -42,7 +42,7 @@ Table of Contents
 
 |  |
 |----|
-| ***A 2020 Creative Commons Global Summit session titled “[Building consent from bottom up](https://ccglobalsummit2020virtual.sched.com/event/7b75062e34c3f7ee6571c0e7750d27bd)” helped brainstorm ideas around this Chapter. Many of the collected ideas contributed in furthering this chapter and the development is still under process. Please submit your ideas [here](/openspeaks/content-update-2020/) to improve this. The development of this Chapter was also possible through a [Creative Commons Global Network Communities Activity Fund](https://network.creativecommons.org/creative-commons-global-network-communities-activity-fund/) in 2020.*** |
+| ***A 2020 Creative Commons Global Summit session titled “[Building consent from bottom up](https://ccglobalsummit2020virtual.sched.com/event/7b75062e34c3f7ee6571c0e7750d27bd)” helped brainstorm ideas around this Chapter. Many of the collected ideas contributed in furthering this chapter and the development is still under process. Please submit your ideas [here](/blogs/content-update-2020/) to improve this. The development of this Chapter was also possible through a [Creative Commons Global Network Communities Activity Fund](https://network.creativecommons.org/creative-commons-global-network-communities-activity-fund/) in 2020.*** |
 
 While making audio and video documentations of language, you encounter questions related to consent, rights and copyright, and licensing. Some of the most asked questions can be:
 
@@ -337,7 +337,7 @@ Making the recorded content accessible for the people with disability is extreme
     Yes. We encourage everyone to make use of this content in their own work, translate, and even distribute for commercial reproduction. However, when you do that, please attribute (see next answer for details) properly.
 7.  **What license OpenSpeaks is available under and how to attribute when I use any content?**\
     OpenSpeaks is currently licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) License (see license terms [here](https://creativecommons.org/licenses/by-sa/3.0/)). If you use the content from here from this website, cite as below:\
-    APAMLAHarvardVancouverChicagoIEEEO Foundation (OFDN) (September 24, 2026) **OpenSpeaks Multimedia Toolkit**. Retrieved from [https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/)."**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) - September 24, 2026, [https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/)O Foundation (OFDN) August 26, 2019 **OpenSpeaks Multimedia Toolkit.**, viewed September 24, 2026,\<[https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/)\>O Foundation (OFDN) - **OpenSpeaks Multimedia Toolkit.** \[Internet\]. \[Accessed September 24, 2026\]. Available from: [https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/)"**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) - Accessed September 24, 2026. [https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/)"**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) \[Online\]. Available: [https://theofdn.org/openspeaks/multimedia-toolkit/](/openspeaks/multimedia-toolkit/). \[Accessed: September 24, 2026\]\
+    APAMLAHarvardVancouverChicagoIEEEO Foundation (OFDN) (September 24, 2026) **OpenSpeaks Multimedia Toolkit**. Retrieved from [https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/)."**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) - September 24, 2026, [https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/)O Foundation (OFDN) August 26, 2019 **OpenSpeaks Multimedia Toolkit.**, viewed September 24, 2026,\<[https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/)\>O Foundation (OFDN) - **OpenSpeaks Multimedia Toolkit.** \[Internet\]. \[Accessed September 24, 2026\]. Available from: [https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/)"**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) - Accessed September 24, 2026. [https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/)"**OpenSpeaks Multimedia Toolkit.**" O Foundation (OFDN) \[Online\]. Available: [https://theofdn.org/resources/multimedia-toolkit/](/resources/multimedia-toolkit/). \[Accessed: September 24, 2026\]\
     However, if you’re citing anything from Wikiversity, you need to attribute to all the contributors as below:\
     **Wikiversity contributors. https://en.wikiversity.org/w/index.php?title=OpenSpeaks&action=history. OpenSpeaks Multimedia Toolkit. \[OER\] Published September 23, 2020. Accessed MMM DD, YYYY.**\
     (NOTE: *Replace the YYYY with the actual year above e.g. 2020. Similarly, replace MMM with the month e.g. September and DD with the date 23*)

@@ -1,6 +1,7 @@
 ---
 title: "ᱥᱟᱱᱛᱟᱲᱤ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ ᱥᱚᱫᱚᱨᱮᱱᱟ"
-path: "/openspeaks/language-resources/sat-santali-olchiki-converter/"
+path: "/resources/santali-unicode-converter/sat/"
+lang: sat
 tier: "live"
 section: "tool"
 wp_type: "post"
@@ -32,5 +33,5 @@ original_url: "https://theofdn.org/openspeaks/language-resources/sat-santali-olc
 
 [[embed:0]]
 
-- [ᱵᱟᱹᱲᱛᱤ ᱵᱟᱰᱟᱭᱢᱮ ᱱᱚᱸᱰᱮ](/openspeaks/language-resources/santali-unicode-converter-release/)\
-  [ᱥᱟᱱᱛᱟᱲᱤ ᱛᱮ ᱵᱟᱹᱲᱛᱤ ᱰᱤᱡᱤᱴᱟᱞ ᱨᱤᱥᱚᱨᱥ ᱞᱟᱹᱜᱤᱫ](/oer/santali/)
+- [ᱵᱟᱹᱲᱛᱤ ᱵᱟᱰᱟᱭᱢᱮ ᱱᱚᱸᱰᱮ](/blogs/santali-unicode-converter-release/)\
+  [ᱥᱟᱱᱛᱟᱲᱤ ᱛᱮ ᱵᱟᱹᱲᱛᱤ ᱰᱤᱡᱤᱴᱟᱞ ᱨᱤᱥᱚᱨᱥ ᱞᱟᱹᱜᱤᱫ](/resources/santali/)

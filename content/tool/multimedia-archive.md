@@ -1,6 +1,6 @@
 ---
 title: "Multimedia archive"
-path: "/openspeaks/multimedia-archive/"
+path: "/resources/multimedia-archive/"
 ark: ofdn-r-000005
 tier: "live"
 section: "tool"

@@ -22,12 +22,12 @@ At OpenSpeaks, we are working with communities to co-design open resources for i
 ## Resources
 
 [**LEARN**\
-*from **toolkit*** *for l*](/openspeaks/multimedia-toolkit/)*anguage digital activists*
+*from **toolkit*** *for l*](/resources/multimedia-toolkit/)*anguage digital activists*
 
 ![CC-icon](/assets/logos/icon-creative-commons.webp) CONSENT, COPYRIGHT & OPEN LICENSING\
 ![Camera-icon](/assets/logos/icon-camera.webp) MULTIMEDIA RECORDING GUIDE\
 ![XML-icon](/assets/logos/icon-xml.webp) METADATA COLLECTION & PUBLICATION\
-![Accessibility-icon](/assets/logos/icon-accessibility.webp) ACCESSIBILITY [MORE ▶︎](/openspeaks/multimedia-toolkit/)
+![Accessibility-icon](/assets/logos/icon-accessibility.webp) ACCESSIBILITY [MORE ▶︎](/resources/multimedia-toolkit/)
 
 **CONTRIBUTE**\
 *to ***Wikiversity** *with more resources & translations*

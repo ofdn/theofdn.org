@@ -1,6 +1,6 @@
 ---
 title: "Our participation at Wikimania 2017, Montreal, Canada"
-path: "/blogs/conference/wikimania2017/"
+path: "/blogs/wikimania2017/"
 tier: "archive"
 section: "archive"
 wp_type: "post"
