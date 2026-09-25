@@ -30,18 +30,18 @@ ARK_PART_LABEL = {"video": "Video", "audio": "Audio", "pdf": "PDF", "transcript"
 
 # Header navigation. Contact, donate and policies sit in the footer.
 NAV = [
+    ("Initiatives", "/work/"),
     ("Films", "/film/"),
     ("Podcast", "/podcast/"),
     ("Resources", "/resources/"),
-    ("Initiatives", "/work/"),
     ("Publications", "/publications/"),
     ("About", "/about/"),
 ]
 FOOTER_NAV = [
     ("About", [("About us", "/about/"), ("People", "/about/#people"), ("Core values", "/about/#core-values"),
                ("Collaborators", "/about/#present-and-past-collaborators"), ("Contact", "/reach-out/")]),
-    ("Work", [("Films", "/film/"), ("Podcast", "/podcast/"), ("Resources", "/resources/"),
-              ("Initiatives", "/work/"), ("Publications", "/publications/")]),
+    ("Work", [("Initiatives", "/work/"), ("Films", "/film/"), ("Podcast", "/podcast/"),
+              ("Resources", "/resources/"), ("Publications", "/publications/")]),
     ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
                   ("Donate", "/donate/")]),
     ("Follow", [("YouTube", "https://www.youtube.com/channel/UCk4NuEPO6JbTm_8Ybod2eOQ"),
@@ -53,12 +53,12 @@ FOOTER_NAV = [
 LISTS = {
     "/film/": ("Films", ["film"], "Documentary films by O Foundation."),
     "/resources/": ("Resources", ["oer", "tool", "audio-archive"],
-                       "Open educational resources, language tools and toolkits, including OpenSpeaks."),
+                       "Open educational resources, language tools and toolkits."),
     "/openspeaks/language-resources/": ("Language tools", ["tool"], "Language tools and toolkits."),
     "/publications/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
 }
-# Pages shown first on a list, such as OpenSpeaks on Resources.
-LIST_PINNED = {"/resources/": ["/openspeaks/"]}
+# Pages shown first on a list, as {"/list/": ["/page/"]}.
+LIST_PINNED = {}
 EYEBROW = {
     "film": "Documentary film", "podcast": "Podcast", "oer": "Open educational resource",
     "tool": "Language tool", "audio-archive": "Audio archive", "archive": "Archive", "blog": "Blog",
