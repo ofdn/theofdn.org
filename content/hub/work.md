@@ -1,61 +1,51 @@
 ---
-title: "Focus Areas & Projects"
+title: "Initiatives"
 path: "/work/"
 tier: "live"
 section: "hub"
 wp_type: "page"
 wp_id: 996
 date: "2019-06-11"
-modified: "2026-08-22"
-excerpt: "Our focus areas Research 🔍 Just like the participation of underrepresented communities on the Internet, the information about them is also largely missing on the Internet. A big part of our work is to learn from the native speakers about their challenges and collecting data about the knowledge gaps. BUILD Open Resources ⚙ People are […]"
+modified: "2026-09-25"
+excerpt: "OpenSpeaks, Archiving the Present, OCR for Santali and historical Odia, type design and documentary films."
 original_url: "https://theofdn.org/work/"
 ---
-#### Our focus areas
+## Documentary films
 
-#### Research 🔍
+We have made [10 documentary films](/film/) since 2018. Elder Gyani Maiya Sen Kusunda narrates [*Gyani Maiya*](/film/gyani-maiya/) (2019) in the Kusunda language of Nepal. [*Mage Porob*](/film/mage-porob/) follows a Ho village holding its harvest festival amid mining and land loss, and [*Remosam*](/film/remosam/) the Bondak people of the Bonda hills in Odisha. In [*Nani Ma*](/film/nanima/) (2022), 95-year-old Musamoni Panigrahi shares songs and stories shaped by the 1866 Orissa famine. [*The Volunteer Archivists*](/film/tva/) (2022) follows the people digitising two centuries of printed Odia books.
 
-Just like the participation of underrepresented communities on the Internet, the [information](https://tspace.library.utoronto.ca/bitstream/1807/73185/1/Wemigwans_Jennifer_201606_PhD_thesis.pdf) about them is also [largely missing](https://whoseknowledge.org/wp-content/uploads/2018/10/DTI-2018-Summary-Report.pdf) on the Internet. A big part of our work is to learn from the native speakers about their challenges and collecting data about the knowledge gaps.
+## OpenSpeaks
 
-#### BUILD Open Resources ⚙
+[OpenSpeaks](/openspeaks/), a community collective to document and archive languages. It builds capacity, co-documents audio-visual media, and makes free and open-source software, frameworks and workflows with speakers of endangered, Indigenous and other local languages. Between 2017 and 2026, it has documented over 20 South Asian languages.
 
-People are the power! We work closely with communities, engage with them through consensus, to co-create open resources (Open Source tools, Open Educational Resources, Open data) after identifying the areas need the most attention and intervention.
+Recordings are archived at the [OpenSpeaks Archives](https://meta.wikimedia.org/wiki/OpenSpeaks/Archives), the [Endangered Languages Archive](https://www.elararchive.org/dk0848), the Language Archive Cologne ([bundle 1](https://hdl.handle.net/11341/0000-0000-0000-439E), [bundle 2](https://hdl.handle.net/11341/0000-0000-0000-A231)) and the [Library of Congress](https://www.loc.gov/item/2024307217/).
 
-#### Community Capacity building 👥
+## Archiving the Present
 
-Based on our assessment of a community’s need, we provide trainings using open curriculum design, open methodologies and other open resources.
+[Archiving the Present](https://archivingthepresent.cc) is a community network for archiving oral languages, memories and knowledges, organised by OpenSpeaks. Between 18 May and 24 August 2026, it ran eight online sessions for 101 applicants from 14 countries, working in about 115 languages.
 
-#### Media development 🎥
+The network launched on 3 September 2026 at TinkerSpace in Kochi, with 34 people. Nineteen of them are community documenters and archivists working in 27 languages and varieties. The sessions became a manual, *Archiving the Present: A Community Guide to Archiving Languages, Memories, and Knowledges*, in [print and as an e-book](https://archivingthepresent.cc/manual/), with cover art by Siddhesh Gautam, and a free [course on WikiLearn](https://learn.wiki/courses/course-v1:OpenSpeaks+OS-001+2026-01/about). Samagata Foundation, The Wikimedia Foundation, Creative Commons supported the network.
 
-Media development is a key part of our work which cuts across all our activities. We also have been developing  toolkit (*see [OpenSpeaks](https://openspeaks.com), our indigenous language toolkit*) for remote trainings.
+## Speech data
 
-#### [Check out the issues we're addressing](/issues/)
+OpenSpeaks Voice: Odia holds over 25 hours of Odia speech under CC0. Nearly 66,000 words (about 22 hours) are on Wikimedia Commons, recorded with Lingua Libre, and 8 hours of sentences are on Mozilla Common Voice. About 600 recordings are by the late Musamoni Panigrahi in Baleswari Odia, taken from the archival footage of *Nani Ma*. Subhashish Panigrahi recorded the rest in Baleswari and Mugalbandi Odia. The Library of Congress catalogued the dataset in 2024 as [OpenSpeaks Data Pages](https://www.loc.gov/item/2024307217/), then the largest public-domain speech dataset in Odia. The method is in the paper [Building a Public Domain Voice Database for Odia](https://doi.org/10.1145/3487553.3524931) (The Web Conference 2022).
 
--  Initiatives
+## Text recognition (OCR)
 
-![OpenSpeaks logo](/assets/logos/openspeaks.svg) **OpenSpeaks** is our multimedia open resource toolkit for language documentation. (*[more](https://openspeaks.com)*)
+We train [Tesseract](https://github.com/tesseract-ocr/tesseract) models so that printed text in our languages can be searched and reused. They are open in [ofdn/tessdata_contrib](https://github.com/ofdn/tessdata_contrib).
 
-![Pothi WikiProject logo](/assets/logos/pothi-wikiproject.webp)**Pothi** is a multimedia resource project for documenting intangible cultural heritage like performance arts. *([more](/openspeaks/)*)
+- **Santali (Ol Chiki):** the first LSTM model for Ol Chiki, trained with the Noto Sans Ol Chiki and Guru Gomke fonts.
+- **Historical Odia:** for Odia printed in nineteenth- and early twentieth-century letterpress. The standard Odia model, last updated in 2017, fails on this type. Ours is fine-tuned on 5,800 lines set in Chapakala 19.
+- **Ho (Warang Citi):** in training. Warang Citi is the script Lako Bodra created for Ho.
 
--  vital technical infrastructure
+## Type design
 
-We’re working with some of the underrepresented communities to co-create open resources (Open Source tools and related Open Educational Resources and open data).
+[Chapakala 19](/type/) revives the Odia letterpress type of an 1875 *Oriya New Testament*. Subhashish Panigrahi designed it between 2024 and 2026, with advice from Nasim Ali, Yesha Goshar and Liang Hai. The font is under the SIL Open Font License. Its letterforms trained the historical Odia OCR model above.
 
-[![Santali](/assets/images/issues-santali.webp)](/blogs/santali-unicode-converter-release/)
+## Earlier work
 
-This project is aimed at creating resources for the Santali-language including an [ASCII → Ol chiki converter](/blogs/santali-unicode-converter-release/).
-
--  Sitemap
-
-<!-- -->
-
-- [Home](/)
-- [Issues we work on](/issues/)
-- [Our focus areas and initiatives](/work/)
-  - [OpenSpeaks](https://openspeaks.com)—underrepresented language documentation
-  - Pothi—Cultural heritage documentation
-- [People behind OFDN](/about/#people)
-- [Activities](/activities/) and [publications](/publications/)
-- [Media mentions](/news/)
-- [Reach out to us](/reach-out/)
-- [About us](/about/)
-- [Site policies](/policies/)
+- [OFDN Conversations](/podcast/): a podcast with activists, artists and technologists. Six episodes, 2020 to 2023.
+- [Language resources](/resources/): media and information literacy resources in Santali, Odia, Ho and Mihaq (Kusunda), and tools such as the [Santali Unicode Encoding Converter](/resources/santali-unicode-converter/), 2018 to 2021.
+- [Pothi](/activities/pothi/): documentation of intangible cultural heritage, led by Prateek Pattanaik, until 2021.
+- [Marginalized Community Council](/activities/marginalized-community-council/): an online working group of activists, started in 2019 and coordinated by Ramjit Tudu.
+- [Events](/activities/): conferences and workshops we organised or took part in, 2017 to 2018.
