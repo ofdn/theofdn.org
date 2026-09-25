@@ -135,19 +135,23 @@ Images and video. Paths point to files in `assets/images/`:
 
 ## ARK identifiers
 
-O Foundation's ARK NAAN is 15056. Films, audio, resources, tools, typefaces and reports get an ARK. Blog posts, news and archived pages do not.
+O Foundation's ARK NAAN is 15056. Any page can have an ARK: live or archived, a blog post too. Give one to pages people will cite or link to for a long time.
 
-Ids take the form `ofdn-<letter>-<six digits>`:
+Ids take the form `ofdn-<letter>-<six digits>`. The letter is the kind of page:
 
-- `f` films
+- `f` film or video
 - `a` audio: podcast episodes and audio archives
-- `r` resources and toolkits
-- `t` tools and typefaces
-- `d` reports and documents
+- `r` resource: an OER, guide or tutorial
+- `t` tool or typeface
+- `d` report or document
 
-1. Find the highest number in use for that letter: `grep -rh "^ark: ofdn-f" content | sort | tail -1`.
-2. Add the next number to the page: `ark: ofdn-f-000010`.
-3. Build. The build stops if an id is used twice.
+To add one, choose the kind and run:
+
+```
+python3 scripts/add_ark.py content/archive/dti2018.md resource
+```
+
+The kinds are `film`, `audio`, `resource`, `tool` and `document`. The script adds the next free id to the page. Build to check it. The build stops if an id is used twice.
 
 Never change or reuse an id once it is published. Do not delete a page that has an ARK; set `status: archive` on it instead. If a page moves, change its `path`; the ARK follows it.
 
