@@ -28,7 +28,7 @@ ARK_PART = re.compile(r"^(video|audio|pdf|transcript|subtitles|files)(/[a-z0-9-]
 ARK_PART_LABEL = {"video": "Video", "audio": "Audio", "pdf": "PDF", "transcript": "Transcript",
                   "subtitles": "Subtitles", "files": "Files"}
 
-# Header navigation. Contact, donate and policies sit in the footer.
+# Header navigation. Contact and policies sit in the footer.
 NAV = [
     ("Initiatives", "/work/"),
     ("Films", "/film/"),
@@ -38,12 +38,9 @@ NAV = [
     ("About", "/about/"),
 ]
 FOOTER_NAV = [
-    ("About", [("About us", "/about/"), ("People", "/about/#people"), ("Core values", "/about/#core-values"),
-               ("Collaborators", "/about/#present-and-past-collaborators"), ("Contact", "/reach-out/")]),
+    ("About", [("About us", "/about/"), ("Contact", "/reach-out/"), ("Site policies", "/policies/")]),
     ("Work", [("Initiatives", "/work/"), ("Films", "/film/"), ("Podcast", "/podcast/"),
               ("Resources", "/resources/"), ("Publications", "/publications/")]),
-    ("Policies", [("Site policies", "/policies/"), ("Licensing", "/licensing/"), ("Issues", "/issues/"),
-                  ("Donate", "/donate/")]),
     ("Follow", [("YouTube", "https://www.youtube.com/channel/UCk4NuEPO6JbTm_8Ybod2eOQ"),
                 ("Instagram", "https://instagram.com/ofdnorg/"), ("Facebook", "https://facebook.com/theofdn/"),
                 ("X (Twitter)", "https://twitter.com/ofdnorg/"), ("GitHub", "https://github.com/ofdn")]),

@@ -58,4 +58,4 @@ This project is aimed at creating resources for the Santali-language including a
 - [Media mentions](/news/)
 - [Reach out to us](/reach-out/)
 - [About us](/about/)
-- [Licensing](/licensing/)
+- [Site policies](/policies/)

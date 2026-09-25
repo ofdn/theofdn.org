@@ -129,6 +129,6 @@ This page displays COVID-19 emergency information (testing facilities, availabil
 - OFDN is only the host this information portal and does not have any liability or provide any guarantee of the accuracy.
 - We would request the viewers to assume good faith and report to the volunteers if any error is found.
 - The contents of this page cannot be used for any legal or other claims.
-- This page might contain personal information such as names and phone numbers as they are key to emergency response. OFDN would not be responsible for consent and privacy related issues. This page is an exempt from the site-wide [Privacy Policy](/policies/).
+- This page might contain personal information such as names and phone numbers as they are key to emergency response. OFDN would not be responsible for consent and privacy related issues. This page is an exempt from the site-wide [privacy policy](/policies/#privacy).
 - The databases displayed in this page are hosted outside the OFDN servers and they are embedded in this page. That might cause accessibility issues during display in different devices.
 
