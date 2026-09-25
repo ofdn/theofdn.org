@@ -7,6 +7,9 @@ wp_type: "post"
 wp_id: 874
 date: "2018-11-22"
 modified: "2019-07-31"
+authors:
+  - "Prateek Pattanaik"
+  - "Subhashish Panigrahi"
 categories:
   - "Blogs"
 excerpt: "Compiled by Subhashish Panigrahi and Prateek Pattanaik for O Foundation (OFDN) All the comments except the one from Dr. Nasim Ali are compiled from interviews conducted during November 12-22, 2018. Individual comments can be attributed to the experts and the whole document is released as a compilation by O Foundation under a CC-BY-SA 4.0 International […]"

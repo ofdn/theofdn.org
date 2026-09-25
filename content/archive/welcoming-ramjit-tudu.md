@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1913
 date: "2019-10-06"
 modified: "2019-10-07"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Asia-Pacific"
   - "Blogs"

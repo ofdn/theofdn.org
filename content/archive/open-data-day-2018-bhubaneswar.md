@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 294
 date: "2018-02-03"
 modified: "2018-02-15"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Meetings"
 excerpt: "Open Data Day is in town! Every year, data enthusiasts—who advocate and contribute towards making useful data openly accessible—gather for a day to brainstorm and conduct hands on activities to grow more Openness around data. We have been working on a few open projects since our inception, and are releasing all our data under open […]"

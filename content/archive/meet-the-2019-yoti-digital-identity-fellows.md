@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1848
 date: "2019-09-03"
 modified: "2019-09-03"
+authors:
+  - "O Foundation"
 categories:
   - "Blogs"
   - "Reposts"

@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1923
 date: "2019-10-07"
 modified: "2020-12-02"
+authors:
+  - "O Foundation"
 categories:
   - "IYIL 2019"
   - "Language Resources"

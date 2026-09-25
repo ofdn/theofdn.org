@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 2382
 date: "2017-10-27"
 modified: "2020-09-30"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "OpenSpeaks"
 tags:

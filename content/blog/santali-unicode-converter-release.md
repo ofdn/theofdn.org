@@ -7,6 +7,9 @@ wp_type: "post"
 wp_id: 477
 date: "2018-09-12"
 modified: "2020-10-06"
+authors:
+  - "Jnanaranjan Sahu"
+  - "Subhashish Panigrahi"
 categories:
   - "India"
   - "Language Resources"

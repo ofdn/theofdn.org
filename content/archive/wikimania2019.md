@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1389
 date: "2019-08-27"
 modified: "2019-09-29"
+authors:
+  - "O Foundation"
 categories:
   - "Conferences"
 tags:

@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 239
 date: "2017-09-30"
 modified: "2017-10-02"
+authors:
+  - "Sailesh Patnaik"
 categories:
   - "Blogs"
   - "Meetings"

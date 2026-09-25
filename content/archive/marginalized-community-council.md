@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1242
 date: "2019-06-28"
 modified: "2019-08-09"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Blogs"
   - "Marginalized Community Council"

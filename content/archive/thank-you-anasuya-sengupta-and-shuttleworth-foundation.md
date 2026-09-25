@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 338
 date: "2018-08-06"
 modified: "2018-08-10"
+authors:
+  - "Jnanaranjan Sahu"
 categories:
   - "Blogs"
   - "Funding"

@@ -7,6 +7,10 @@ wp_type: "post"
 wp_id: 566
 date: "2018-10-09"
 modified: "2019-01-10"
+authors:
+  - "Prateek Pattanaik"
+  - "Subhashish Panigrahi"
+  - "Jnanaranjan Sahu"
 categories:
   - "Blogs"
 tags:

@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1541
 date: "2019-08-09"
 modified: "2019-08-26"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Campaigns"
   - "Digital rights"

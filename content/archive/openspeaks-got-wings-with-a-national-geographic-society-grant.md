@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1781
 date: "2017-12-12"
 modified: "2020-09-25"
+authors:
+  - "O Foundation"
 categories:
   - "Asia-Pacific"
   - "Funding"

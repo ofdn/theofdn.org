@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 321
 date: "2018-06-21"
 modified: "2018-06-21"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Blogs"
   - "Meetings"

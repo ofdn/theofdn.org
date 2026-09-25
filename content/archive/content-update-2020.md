@@ -7,6 +7,9 @@ wp_type: "post"
 wp_id: 2498
 date: "2020-11-28"
 modified: "2020-12-03"
+authors:
+  - "Subhashish Panigrahi"
+  - "Ramjit Tudu"
 categories:
   - "Language documentation"
   - "OpenSpeaks"

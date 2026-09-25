@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1384
 date: "2019-07-20"
 modified: "2019-08-02"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Conferences"
 excerpt: "This year, we’re fortunate to be there at the Creative Commons Summit 2019 at Lisbon, Portugal. We presented a talk about OpenSpeaks titled—”OpenSpeaks: Open Archives of the Voices of the Commons“. Abstract Half of world’s languages (6500) might be dead in a century’s time (UNESCO). Languages — not just a tool for communications, but a […]"

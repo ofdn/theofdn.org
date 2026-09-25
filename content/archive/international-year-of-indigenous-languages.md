@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1386
 date: "2019-08-02"
 modified: "2019-08-30"
+authors:
+  - "O Foundation"
 categories:
   - "Campaigns"
   - "IYIL 2019"

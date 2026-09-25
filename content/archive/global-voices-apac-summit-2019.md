@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 1222
 date: "2019-07-30"
 modified: "2019-08-01"
+authors:
+  - "O Foundation"
 categories:
   - "Conferences"
   - "Digital rights"

@@ -7,6 +7,8 @@ wp_type: "post"
 wp_id: 104
 date: "2017-08-12"
 modified: "2017-09-30"
+authors:
+  - "Subhashish Panigrahi"
 categories:
   - "Blogs"
   - "Conferences"
