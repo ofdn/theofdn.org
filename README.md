@@ -295,6 +295,34 @@ The short form gives the same result:
 
 For a star rating, start the quote with a line such as `★★★★☆ (4 out of 5)`. The page shows the stars. Screen readers read "Rated 4 out of 5".
 
+## News reports and blog posts
+
+List news reports and blog posts about our work as BibTeX entries inside a `<press>` block. The entries use the same format as psubhashish.com, so you can copy them between the two sites.
+
+```
+<press>
+@online{gv2026,
+  author  = {Chaudhary, Sanjib},
+  title   = {Title of the report},
+  journal = {Global Voices},
+  date    = {2026-09-04},
+  url     = {https://example.org/report},
+  excerpt = {One or two sentences quoted from the report.}
+}
+</press>
+```
+
+Each entry shows the title as a link, then the author, publication and date, then the excerpt as a quote.
+
+- `title` is needed. Everything else is optional.
+- `author`: write "Last, First" or "First Last". Separate several authors with `and`. Names show in full.
+- Publication: use `journal` for a newspaper or magazine. Use `howpublished` for a blog or website.
+- `date` as `2026-09-04`, or `year` alone.
+- `url`, or `doi` for a DOI.
+- `excerpt`: one or two sentences copied exactly from the piece. Do not use `note` for this. On psubhashish.com, `note` fills the publication line.
+
+Entries show newest first. Any page can have one or more `<press>` blocks.
+
 ## Section links
 
 Every heading gets a link that copies its address. No extra step needed.

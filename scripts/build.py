@@ -9,6 +9,7 @@ Needs pandoc, and the Python packages pyyaml, jinja2 and beautifulsoup4.
 import argparse, json, re, shutil, subprocess, sys
 from datetime import date
 from pathlib import Path
+from html import escape as html_escape
 from urllib.parse import quote
 
 import yaml
@@ -292,6 +293,84 @@ def infobox_html(rows, info=None):
     return f'<div class="infobox{" infobox--image" if img else ""}">{img}{dl}</div>'
 
 
+def parse_bibtex(src, where):
+    """BibTeX entries as dicts, in the order written. Same reading as the
+    parser on psubhashish.com, so entries can be copied between the sites."""
+    entries = []
+    for m in re.finditer(r"@(\w+)\s*\{\s*([^,\s]+)\s*,", src):
+        kind = m.group(1).lower()
+        if kind in ("comment", "string", "preamble"):
+            continue
+        depth, i = 1, m.end()
+        while i < len(src) and depth:
+            depth += {"{": 1, "}": -1}.get(src[i], 0)
+            i += 1
+        if depth:
+            sys.exit(f"{where}: entry {m.group(2)} has no closing brace")
+        body, fields, j = src[m.end():i - 1], {"type": kind, "key": m.group(2)}, 0
+        while j < len(body):
+            f = re.match(r"[\s,]*([\w-]+)\s*=\s*", body[j:])
+            if not f:
+                break
+            j += f.end()
+            if body[j:j + 1] == "{":
+                d, k = 0, j
+                while k < len(body):
+                    d += {"{": 1, "}": -1}.get(body[k], 0)
+                    k += 1
+                    if not d:
+                        break
+                value, j = body[j + 1:k - 1], k
+            elif body[j:j + 1] == '"':
+                k = body.index('"', j + 1)
+                value, j = body[j + 1:k], k + 1
+            else:
+                k = body.find(",", j)
+                k = len(body) if k < 0 else k
+                value, j = body[j:k], k
+            fields[f.group(1).lower()] = clean_bibtex(value)
+        entries.append(fields)
+    return entries
+
+
+def clean_bibtex(s):
+    s = re.sub(r"\\(?:textit|textbf|emph|url)\{([^}]*)\}", r"\1", s)
+    s = s.replace("\\&", "&").replace("\\%", "%").replace("---", "—").replace("--", "–").replace("~", "\u00a0")
+    return re.sub(r"\s+", " ", s.replace("{", "").replace("}", "")).strip()
+
+
+def bib_names(field):
+    """"Chaudhary, Sanjib and Pal, Kimmi" → "Sanjib Chaudhary and Kimmi Pal".
+    Names are kept in full, as each person writes them."""
+    names = [" ".join(reversed([x.strip() for x in n.split(",", 1)])) if "," in n else n.strip()
+             for n in re.split(r"\s+and\s+", field) if n.strip()]
+    return " and ".join(names) if len(names) < 3 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def press_html(src, where):
+    """News reports and blog posts: title, author, publication, date and a
+    short excerpt from the piece, newest first."""
+    items = []
+    for e in sorted(parse_bibtex(src, where), key=lambda e: e.get("date") or e.get("year") or "", reverse=True):
+        if not e.get("title"):
+            sys.exit(f"{where}: press entry {e['key']} has no title")
+        url = ("https://doi.org/" + e["doi"]) if e.get("doi") else e.get("url", "")
+        title = html_escape(e["title"])
+        if url:
+            title = f'<a href="{html_escape(url)}">{title}</a>'
+        venue = next((e[k] for k in ("journal", "howpublished", "booktitle", "publisher", "organization") if e.get(k)), "")
+        when = e.get("date") or e.get("year", "")
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", when):
+            when = f"{int(when[8:])} {date(2000, int(when[5:7]), 1):%B} {when[:4]}"
+        meta = [x for x in (html_escape(bib_names(e.get("author", ""))),
+                            f"<cite>{html_escape(venue)}</cite>" if venue else "", html_escape(when)) if x]
+        excerpt = (f'<blockquote class="press__excerpt"' + (f' cite="{html_escape(url)}"' if url else "")
+                   + f'><p>{html_escape(e["excerpt"])}</p></blockquote>') if e.get("excerpt") else ""
+        items.append(f'<li class="press__item"><p class="press__title">{title}</p>'
+                     f'<p class="press__meta">{" · ".join(meta)}</p>{excerpt}</li>')
+    return '<ul class="press">' + "".join(items) + "</ul>"
+
+
 def expand_tags(md, blocks):
     """Short tags for the Markdown body:
       <c>Text</c>                                   caption, on the line after an image
@@ -299,6 +378,7 @@ def expand_tags(md, blocks):
       <info> field: value lines </info>             an infobox inside the text
       <specimen font="file">Sample text</specimen>  type tester; the font is assets/fonts/<file>.woff2
       <inuse font="file"> book/sign/screen: text </inuse>  the font in a few settings
+      <press> BibTeX entries </press>               news reports and blog posts, with an excerpt
     A quote becomes the usual blockquote, so it looks like every other quote.
     A line with only --- starts a new section; a section with <info> gets the film layout."""
     def info(m):
@@ -312,6 +392,10 @@ def expand_tags(md, blocks):
         blocks.append(("inuse", dict(re.findall(r'(\w+)="([^"]*)"', m.group(1))), yaml.safe_load(m.group(2)) or {}))
         return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
     md = re.sub(r"^[ \t]*<inuse\b([^>]*)>[ \t]*\n(.*?)^[ \t]*</inuse>[ \t]*$", inuse, md, flags=re.S | re.M)
+    def press(m):
+        blocks.append(("press", m.group(1)))
+        return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
+    md = re.sub(r"^[ \t]*<press>[ \t]*\n(.*?)^[ \t]*</press>[ \t]*$", press, md, flags=re.S | re.M)
     md = re.sub(r"^[ \t]*<specimen\b([^>]*)>(.*?)</specimen>[ \t]*$", specimen, md, flags=re.S | re.M)
     md = re.sub(r"[ \t]*<(c|caption)>(.*?)</\1>[ \t]*",
                 lambda m: f"\n\n{CAPTION_MARK} {m.group(2).strip()}\n\n", md, flags=re.S)
@@ -506,6 +590,8 @@ def polish(html, page):
                 html = infobox_html(info_rows(block[1], page["file"] + " <info>"), block[1])
             elif block[0] == "inuse":
                 html = inuse_html(block[1], block[2], page["file"])
+            elif block[0] == "press":
+                html = press_html(block[1], page["file"] + " <press>")
             else:
                 html = specimen_html(block[1], block[2], page["file"])
             p.replace_with(BeautifulSoup(html, "html.parser"))

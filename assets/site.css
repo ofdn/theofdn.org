@@ -674,3 +674,16 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 :root[data-theme="dark"] img[src$="/logos/openspeaks.svg"] { filter: invert(1); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img[src$="/logos/openspeaks.svg"] { filter: invert(1); } }
 .eyebrow a { color: inherit; }
+
+/* News reports and blog posts, from a <press> block of BibTeX entries */
+.press { list-style: none; padding: 0; margin-block: var(--space-lg) var(--space-xl); display: grid; gap: var(--space-lg); }
+.prose .press { padding-left: 0; }
+.press__item { border-top: 1px solid var(--color-rule); padding-top: var(--space-md); }
+.prose .press > li + li { margin-top: 0; }
+.press__title { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; line-height: 1.35; margin: 0; }
+.press__meta { font-family: var(--font-display); font-size: 0.95rem; color: var(--color-text-muted); margin-top: var(--space-xs); }
+.press__meta cite { font-style: normal; font-weight: 600; }
+.press .quote { margin-top: var(--space-sm); }
+.press .quote blockquote p { font-size: 1.05rem; }
+.press .quote blockquote p::before { content: "“"; }
+.press .quote blockquote p::after { content: "”"; }
