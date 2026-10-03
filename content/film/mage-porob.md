@@ -1,5 +1,5 @@
 ---
-title: "MAGE POROB—2019 Documentary"
+title: "Mage Porob"
 path: "/film/mage-porob/"
 ark: ofdn-f-000005
 tier: "live"
