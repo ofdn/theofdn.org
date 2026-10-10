@@ -82,7 +82,7 @@ Our documentaries use the OpenSpeaks toolkit. [*Gyani Maiya*](/film/gyani-maiya/
 @online{dw2026languageai,
   author       = {Panigrahi, Subhashish},
   title        = {Your language is training AI. Are you being paid?},
-  howpublished = {DW Akademie},
+  howpublished = {Deutsche Welle (DW)},
   date         = {2026-10-08},
   url          = {https://akademie.dw.com/en/your-language-is-training-ai-are-you-being-paid/a-79379125},
   excerpt      = {AI systems scrape recordings from Indigenous communities across the web, often without speakers' consent, attribution or compensation, says guest author Subhashish Panigrahi.}
