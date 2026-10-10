@@ -76,6 +76,19 @@ In 2026 we presented this work at the Wikimedia Futures Lab in Frankfurt, a semi
 
 Our documentaries use the OpenSpeaks toolkit. [*Gyani Maiya*](/film/gyani-maiya/) (2019) is the memoir of Gyani Maiya Sen Kusunda, co-written with Uday Raj Aaley and Sanjib Chaudhary. [*Mage Porob*](/film/mage-porob/) (2019) was made with Ho villagers in Odisha and [*Remosam*](/film/remosam/) (2019) with the Bondak people of the Bonda hills. See [all our films](/film/).
 
+## In the news
+
+<press>
+@online{dw2026languageai,
+  author       = {Panigrahi, Subhashish},
+  title        = {Your language is training AI. Are you being paid?},
+  howpublished = {DW Akademie},
+  date         = {2026-10-08},
+  url          = {https://akademie.dw.com/en/your-language-is-training-ai-are-you-being-paid/a-79379125},
+  excerpt      = {AI systems scrape recordings from Indigenous communities across the web, often without speakers' consent, attribution or compensation, says guest author Subhashish Panigrahi.}
+}
+</press>
+
 ## Support and partners
 
 OpenSpeaks has been supported by the National Geographic Society (2017), Mozilla Open Leaders (2017), the Online News Association MJ Bear Fellowship (2017), Creative Commons, Grant for the Web (2021), the Wikimedia Foundation (2024 to 2027) and Samagata Foundation. Kiwix is our fiscal sponsor for Wikimedia Foundation grants.
