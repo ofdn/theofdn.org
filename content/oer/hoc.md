@@ -167,8 +167,8 @@ acknowledgements: "Thank you, Mangu Purty, for the video tutorials, many of the 
 
 The Ho language is spoken by over 1.4 million people, mostly in the Indian states of Assam, Bihar, Chhattisgarh, Jharkhand, Odisha and West Bengal, and in Bangladesh. It has been written in Devanagari, Bengali, Odia and Latin scripts. Warang Citi (𑢹𑣗𑣁𑣜𑣊 𑣏𑣂𑣕𑣂) is the most widely accepted script for Ho today. It was created by Lako Bodra, a Ho community leader from Jharkhand. UNESCO lists Ho as a vulnerable language.
 
-This page lists free resources for reading, typing and writing Ho in Warang Citi. Many of them were made by Ho speakers. If Warang Citi shows as empty boxes on your screen, install a font from “Read and type” and reload the page.
+This page lists free resources for reading, typing and writing Ho in Warang Citi. Many of them were made by Ho speakers. If Warang Citi shows as empty boxes on your screen, install a font from [Read and type](#resources-type) and reload the page.
 
-Ho speakers are writing a Ho Wikipedia on the [Wikimedia Incubator](https://incubator.wikimedia.org/wiki/Wp/hoc). It will become a full Wikipedia once more people write articles there. Mangu Purty made three videos that show how to join in. They are under “Watch and listen”, and you can also [download them from Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Instructional_videos_on_using_Wikipedia_in_Ho).
+Ho speakers are writing a Ho Wikipedia on the [Wikimedia Incubator](https://incubator.wikimedia.org/wiki/Wp/hoc). It will become a full Wikipedia once more people write articles there. Mangu Purty made three videos that show how to join in. They are under [Watch and listen](#resources-watch), and you can also [download them from Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Instructional_videos_on_using_Wikipedia_in_Ho).
 
 [[resources]]
