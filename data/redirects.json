@@ -13,7 +13,7 @@
  "/blogs/conference/wikimania2017/": "/blogs/wikimania2017/",
  "/blogs/conference/wikimania2018/": "/blogs/wikimania2018/",
  "/blogs/conference/wikimania2019/": "/blogs/wikimania2019/",
- "/blogs/digital-resources-for-santali-ol-chiki-mobile-and-desktop-users/": "/resources/santali/",
+ "/blogs/digital-resources-for-santali-ol-chiki-mobile-and-desktop-users/": "/resources/sat/",
  "/blogs/funding/openspeaks-got-wings-with-a-national-geographic-society-grant/": "/blogs/openspeaks-got-wings-with-a-national-geographic-society-grant/",
  "/blogs/handbook-migrating-to-unicode-from-legacy-systems/": "/resources/handbook-migrating-to-unicode-from-legacy-systems/",
  "/blogs/sat-santali-olchiki-converter/": "/resources/santali-unicode-converter/sat/",
@@ -30,9 +30,9 @@
  "/oer/global-mil-week-2019/": "/blogs/global-mil-week-2019/",
  "/oer/ho-1/": "/resources/hoc/",
  "/oer/ho/": "/resources/hoc/",
- "/oer/mihaq/": "/resources/mihaq/",
- "/oer/odia/": "/resources/odia/",
- "/oer/santali/": "/resources/santali/",
+ "/oer/mihaq/": "/resources/kgg/",
+ "/oer/odia/": "/resources/or/",
+ "/oer/santali/": "/resources/sat/",
  "/open-data-day-2018-bhubaneswar/": "/blogs/open-data-day-2018-bhubaneswar/",
  "/openspeaks/content-update-2020/": "/blogs/content-update-2020/",
  "/openspeaks/karbi/": "/resources/karbi/",
@@ -63,5 +63,8 @@
  "/resources/ho-digital-resources/hoc/": "/resources/hoc/hoc/",
  "/category/openspeaks/language-documentation/ho/": "/resources/hoc/",
  "/tag/ho/": "/resources/hoc/",
- "/resources/ho/": "/resources/hoc/"
+ "/resources/ho/": "/resources/hoc/",
+ "/resources/santali/": "/resources/sat/",
+ "/resources/odia/": "/resources/or/",
+ "/resources/mihaq/": "/resources/kgg/"
 }

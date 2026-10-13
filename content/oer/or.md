@@ -1,6 +1,6 @@
 ---
 title: "Media and information literacy resources in Odia"
-path: "/resources/odia/"
+path: "/resources/or/"
 ark: ofdn-r-000002
 tier: "live"
 section: "oer"

@@ -1,6 +1,6 @@
 ---
 title: "Media and information literacy resources in Santali"
-path: "/resources/santali/"
+path: "/resources/sat/"
 ark: ofdn-r-000001
 tier: "live"
 section: "oer"

@@ -34,4 +34,4 @@ original_url: "https://theofdn.org/openspeaks/language-resources/sat-santali-olc
 [[embed:0]]
 
 - [ᱵᱟᱹᱲᱛᱤ ᱵᱟᱰᱟᱭᱢᱮ ᱱᱚᱸᱰᱮ](/blogs/santali-unicode-converter-release/)\
-  [ᱥᱟᱱᱛᱟᱲᱤ ᱛᱮ ᱵᱟᱹᱲᱛᱤ ᱰᱤᱡᱤᱴᱟᱞ ᱨᱤᱥᱚᱨᱥ ᱞᱟᱹᱜᱤᱫ](/resources/santali/)
+  [ᱥᱟᱱᱛᱟᱲᱤ ᱛᱮ ᱵᱟᱹᱲᱛᱤ ᱰᱤᱡᱤᱴᱟᱞ ᱨᱤᱥᱚᱨᱥ ᱞᱟᱹᱜᱤᱫ](/resources/sat/)

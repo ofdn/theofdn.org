@@ -200,7 +200,7 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 - An announcement is a blog post. It links to the resource page. It does not repeat the tool.
 - A blog post has no category in its address: `/blogs/wikimania2019/`, not `/blogs/conference/wikimania2019/`.
 - `<slug>` is short, lowercase and in Latin letters. Use the name people know the resource by.
-- A language resource page uses the language's ISO 639-3 code as its slug: `/resources/hoc/` for Ho. If the language has no ISO 639-3 code, use its Glottocode. A language variety is a section on its language's page, not a page of its own.
+- A language resource page uses the language's ISO 639 code as its slug. Use the two-letter code when there is one (`/resources/or/` for Odia). Otherwise use the three-letter code (`/resources/hoc/` for Ho). If the language has neither, use its Glottocode. A language variety is a section on its language's page, not a page of its own.
 
 Example:
 

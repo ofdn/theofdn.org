@@ -1,6 +1,6 @@
 ---
 title: "<Language> language resources"
-path: "/resources/<ISO 639-3 code, or Glottocode if there is none>/"
+path: "/resources/<two-letter ISO 639 code, else three-letter code, else Glottocode>/"
 section: "oer"
 tier: "live"
 date: "YYYY-MM-DD"
