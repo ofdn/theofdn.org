@@ -332,7 +332,7 @@ Headings left out show in English.
 
 Near the end of every language resource page is "Use these resources well". It has three short points on checking sources, credit and consent, written once for all pages. Do not call these pages media and information literacy (MIL) resources. The phrase is only a search keyword.
 
-Every language resource page ends with "Help improve this page". It has a "Suggest a resource" link to the contact form, with the message filled in. It also has an "Edit this page on GitHub" link. No step is needed. Read the suggestions in the form's responses, add each resource to the page and credit the person who sent it.
+Every language resource page ends with "Help improve this page". It has a "Suggest a resource or change" link to the contact form, with the message filled in. It also has an "Edit this page on GitHub" link. No step is needed. Read the suggestions in the form's responses, add each resource to the page and credit the person who sent it.
 
 To point readers to a group from the text, link its heading: `[Read and type](#resources-type)`. The address is `#resources-` and the group name.
 
