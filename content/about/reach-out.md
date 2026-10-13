@@ -7,16 +7,13 @@ wp_type: "page"
 wp_id: 128
 date: "2017-08-16"
 modified: "2020-10-06"
-excerpt: "Please fill out the form below to reach out to us. ﻿Loading… Subscribe to our monthly newsletter"
+excerpt: "Write to us using the form on this page."
 embeds:
-  - provider: "link"
+  - provider: "form"
     id: "https://docs.google.com/forms/d/e/1FAIpQLSeeAduvhVtLmL1HQeORj0J7ph_5Yk-0tU2VKAchwowsu5-ehw/viewform?embedded=true"
+    title: "Write to us (Google Form)"
 original_url: "https://theofdn.org/reach-out/"
 ---
-#### Please fill out the form below to reach out to us.
-
-#### 
+Fill in the form below to write to us.
 
 [[embed:0]]
-
-Subscribe to our monthly newsletter

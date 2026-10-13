@@ -455,6 +455,10 @@ def embed_html(e, title, section):
     if p == "tool":
         return (f'<div class="embed-tool"><iframe src="{i}" title="{label}" loading="lazy"></iframe></div>'
                 f'<p class="embed-link"><a href="{i}">Open {label} in its own page</a></p>')
+    if p == "form":  # a Google Form, shown on the page, with a plain link for small screens
+        page = i.replace("?embedded=true", "")
+        return (f'<div class="embed-form"><iframe src="{i}" title="{label}" loading="lazy"></iframe></div>'
+                f'<p class="embed-link"><a href="{page}">Open the form in its own page</a></p>')
     if p == "facebook":
         return f'<p class="embed-link"><a href="{i}">Watch the video on Facebook</a></p>'
     host = re.sub(r"^https?://(www\.)?", "", i).split("/")[0]

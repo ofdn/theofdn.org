@@ -20,7 +20,7 @@ This site has no comments, accounts, analytics or advertising. We do not set coo
 - **Hosting.** GitHub Pages hosts the site. GitHub may log your IP address for security. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 - **Fonts.** The site loads fonts from Google Fonts. Your browser sends Google a request for them. See the [Google Fonts privacy FAQ](https://developers.google.com/fonts/faq/privacy).
 - **Embedded media.** Some pages embed players from Vimeo, the Internet Archive, Spotify and SoundCloud, or media from Wikimedia Commons. These services may collect data about you as if you visited their sites. YouTube videos load only when you press play.
-- **Contact form.** Our [contact form](/reach-out/) is a Google Form. We keep what you send only to reply to you. Ask us, and we will delete it.
+- **Contact form.** Our [contact form](/reach-out/) is a Google Form. It loads from Google when you open that page. We keep what you send only to reply to you. Ask us, and we will delete it.
 
 ## Safe space policy and code of conduct
 
