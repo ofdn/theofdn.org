@@ -749,3 +749,8 @@ a.resource__name:hover .icon { color: var(--color-accent); }
 .prose .resource__source { margin-top: var(--space-sm); }
 .resource__source a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 24px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
 .resource__source .icon { flex: none; width: 18px; height: 18px; color: var(--color-text); }
+.contribute { max-width: var(--max-prose); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-rule); }
+.contribute__links { list-style: none; display: grid; gap: var(--space-md); }
+.contribute__links a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 24px; font-family: var(--font-display); font-weight: 700; }
+.contribute__links .icon { flex: none; width: 20px; height: 20px; color: var(--color-text); }
+.contribute__note { display: block; font-family: var(--font-display); font-size: 0.95rem; color: var(--color-text-muted); }

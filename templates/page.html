@@ -137,6 +137,17 @@
     </ul>
   </section>
   {% endif %}
+  {% if page.contribute %}
+  <section class="contribute" aria-labelledby="contribute" lang="en">
+    <h2 class="label" id="contribute">Help improve this page</h2>
+    <ul class="contribute__links" role="list">
+      <li><a href="{{ page.contribute.suggest }}">{% include "icons/link.svg" %}<span>Suggest a resource</span></a>
+        <span class="contribute__note">A short form. No account needed.</span></li>
+      <li><a href="{{ page.contribute.edit }}">{% include "icons/github.svg" %}<span>Edit this page on GitHub</span></a>
+        <span class="contribute__note">Opens this page's file. GitHub sends your changes to us for review.</span></li>
+    </ul>
+  </section>
+  {% endif %}
   {% if citation %}
   <section class="citation-block" data-citation="{{ citation }}" data-id="{{ page.path | replace('/', '') }}" aria-labelledby="cite">
     <h2 class="label" id="cite">Cite this page</h2>

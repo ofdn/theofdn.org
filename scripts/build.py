@@ -550,6 +550,20 @@ def link_item(entry):
     return {"url": url, "label": label, "icon": icon, "detail": detail}
 
 
+# Language resource pages end with two ways to help: a prefilled contact form
+# (no account needed) and the page's file in GitHub's web editor.
+SUGGEST_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSeeAduvhVtLmL1HQeORj0J7ph_5Yk-0tU2VKAchwowsu5-ehw/viewform"
+SUGGEST_FIELD = "entry.839337160"  # "Questions/comments"
+EDIT_URL = "https://github.com/ofdn/theofdn.org/edit/main/"
+
+
+def contribute_links(page):
+    note = (f"Resource suggestion for {page['title']} ({SITE_URL}{page['path']})\n\n"
+            "Name of the resource:\nLink:\nWho made it:\nWhat it does:\n")
+    return {"suggest": f"{SUGGEST_FORM}?usp=pp_url&{SUGGEST_FIELD}={quote(note)}",
+            "edit": EDIT_URL + page["file"]}
+
+
 RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived", "social", "source")
 
 
@@ -1030,6 +1044,7 @@ def main():
         res = resources_html(p)
         if res:
             body = body.replace("<p>[[resources]]</p>", res) if "<p>[[resources]]</p>" in body else body + res
+        p["contribute"] = contribute_links(p) if p.get("resources") else None
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else "page.html"
