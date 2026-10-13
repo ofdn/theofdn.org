@@ -319,6 +319,8 @@ resource_headings:
 
 Headings left out show in English.
 
+To point readers to a group from the text, link its heading: `[Read and type](#resources-type)`. The address is `#resources-` and the group name.
+
 ## Add a page, blog post or subpage
 
 1. Create a file in the right folder, for example `content/blog/odia-ocr-2026.md`. The file name does not show on the site.
