@@ -218,7 +218,7 @@ Example:
 
 The ARK follows the page. Never remove a line from `data/redirects.json`.
 
-To merge two pages, keep one. Delete the other file, redirect its address to the page you kept, and add its ARK under `ark_aliases` on that page. The old ARK then opens the merged page:
+To merge two pages, keep one and delete the other file. Redirect its address to the page you kept. Add its ARK under `ark_aliases` on that page. The old ARK then opens the merged page:
 
 ```
 ark: ofdn-r-000003
