@@ -259,19 +259,30 @@ Each version shows "Read in" links to the others, and lists show one card per pa
 
 Name every translator in `translators`. The names show on the page.
 
+## Authors
+
+List each author by full name under `authors`. The byline joins them:
+
+- One author: Subhashish Panigrahi
+- Two authors: Subhashish Panigrahi & Mangu Purty
+- Three or more: First Author, Second Author & Third Author
+
+Blog posts and resource pages follow the same rule. Translators are listed the same way.
+
 ## Language resource pages
 
 Use this layout for a page that lists fonts, keyboards, dictionaries, videos and other resources for one language. Start from `page-templates/language-resources.md`. See `content/oer/ho-digital-resources.md` for a full example.
 
-1. Copy the template into `content/oer/` and rename it.
+1. Copy the template into `content/oer/` and rename it to the language code, for example `hoc.md`.
 2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
-3. Fill in `seo`. It is not shown on the page. Search engines read it.
-4. Put links to the language on other sites under `links`. They show under the facts.
-5. Fill in `resources`. Each group becomes a heading with a card for each item.
-6. Write a short introduction above `[[resources]]`.
-7. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
-8. Delete every group and line you did not use.
-9. Commit.
+3. Write `scope`: one line on who the page is for and what it covers. It shows under the title.
+4. Fill in `seo`. It is not shown on the page. Search engines read it.
+5. Put links to the language on other sites under `links`. They show under the facts.
+6. Fill in `resources`. Each group becomes a heading with a card for each item.
+7. Write a short introduction above `[[resources]]`.
+8. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
+9. Delete every group and line you did not use.
+10. Commit.
 
 ### Names of a language
 
@@ -318,6 +329,8 @@ resource_headings:
 ```
 
 Headings left out show in English.
+
+Near the end of every language resource page is "Use these resources well". It has three short points on checking sources, credit and consent, written once for all pages. Do not call these pages media and information literacy (MIL) resources. The phrase is only a search keyword.
 
 Every language resource page ends with "Help improve this page". It has a "Suggest a resource" link to the contact form, with the message filled in. It also has an "Edit this page on GitHub" link. No step is needed. Read the suggestions in the form's responses, add each resource to the page and credit the person who sent it.
 

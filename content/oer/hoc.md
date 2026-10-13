@@ -23,11 +23,13 @@ tags:
   - "Warang Citi"
 excerpt: "Free fonts, keyboards, converters, textbooks, dictionaries and video tutorials for reading and writing the Ho language in the Warang Citi script."
 original_url: "https://theofdn.org/oer/ho-1/"
+scope: "For Ho speakers and learners who want to read, type and write Ho online. Type designers and linguists may also find it useful."
 seo:
   language: Ho
   also_known_as:
     - Ho jagar
   keywords:
+    - media and information literacy
     - Ho language
     - Warang Citi
     - Warang Chiti

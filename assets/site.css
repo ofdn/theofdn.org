@@ -754,3 +754,6 @@ a.resource__name:hover .icon { color: var(--color-accent); }
 .contribute__links a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 24px; font-family: var(--font-display); font-weight: 700; }
 .contribute__links .icon { flex: none; width: 20px; height: 20px; color: var(--color-text); }
 .contribute__note { display: block; font-family: var(--font-display); font-size: 0.95rem; color: var(--color-text-muted); }
+.use-well ul { padding-left: 1.2em; margin-bottom: var(--space-md); font-size: 1rem; line-height: 1.55; }
+.use-well li + li { margin-top: 0.35em; }
+.use-well p { font-size: 1rem; line-height: 1.55; }

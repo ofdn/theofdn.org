@@ -6,13 +6,17 @@ tier: "live"
 date: "YYYY-MM-DD"
 authors:
   - Full Name
+  - Full Name
 excerpt: "One sentence on what the page offers."
+# One line under the title: who the page is for and what it covers.
+scope: "For <language> speakers and learners who want to <read, type and write / listen to and record> <language> online."
 # Not shown on the page. Helps search engines find it.
 seo:
   language: <the name most people search for>
   also_known_as:
     - <other names and spellings>
   keywords:
+    - media and information literacy
     - <words people type to find these resources>
 info_title: About the language
 info:

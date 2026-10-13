@@ -976,6 +976,12 @@ def structured_data(page):
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
 
+def join_names(names):
+    """Bylines: "A", "A & B", "A, B & C"."""
+    names = [str(n) for n in names or []]
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " & " + names[-1] if names else ""
+
+
 def film_name(page):
     """A film's English title, from info.title if it has one."""
     titles = (page.get("info") or {}).get("title")
@@ -1013,6 +1019,7 @@ def main():
     shutil.copytree(ROOT / "tools", out / "tools")
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
+    env.filters["names"] = join_names
     env.globals["film_name"] = film_name
     pages = load_pages()
     by_section = {}

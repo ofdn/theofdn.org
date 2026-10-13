@@ -29,6 +29,7 @@ seo:
   also_known_as:
     - Ho jagar
   keywords:
+    - media and information literacy
     - Ho language
     - Warang Citi
     - Warang Chiti

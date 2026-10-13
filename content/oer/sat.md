@@ -22,11 +22,13 @@ tags:
   - "santali"
 excerpt: "Free fonts, keyboards, converters, dictionaries, news sites and archives for reading and writing Santali in the Ol Chiki script."
 original_url: "https://theofdn.org/oer/santali/"
+scope: "For Santali speakers and learners who want to read, type and write Santali online. Type designers and linguists may also find it useful."
 seo:
   language: Santali
   also_known_as:
     - Santhali
   keywords:
+    - media and information literacy
     - Santali language
     - Ol Chiki
     - Ol Chiki font
