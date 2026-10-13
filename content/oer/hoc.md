@@ -155,7 +155,7 @@ resources:
   credits:
     - name: Mangu Purty
       url: https://rtd.theofdn.org/people/mangu-purty/
-      note: Ho-language scholar, technologist and type designer. Co-wrote this page and translated it into Ho. Made the Building Ho Wikipedia videos and shared many of the resources listed here.
+      note: Ho-language scholar, technologist and type designer. Made the Building Ho Wikipedia videos and shared many of the resources listed here.
     - name: Birbasa (Veer Birsa Munda Ho Students Union, Odisha)
       note: Student collective. Helped make the video on reading Warang Citi in a browser.
   sources:

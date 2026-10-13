@@ -154,6 +154,9 @@ resources:
       url: http://www.ugcnetonline.in/Subject_Code_95.pdf
       note: Syllabus for the national university teaching exam, in Devanagari (PDF).
   archives:
+    - name: Santali-language media on Wikimedia Commons
+      url: https://commons.wikimedia.org/wiki/Category:Santali-language_media
+      note: Freely licensed audio and video in Santali.
     - name: Santali collection, LU Humanities Lab Archive
       url: https://hdl.handle.net/10050/00-0000-0000-0003-A6AF-2
       credit: Lund University Humanities Lab
@@ -172,7 +175,7 @@ resources:
   credits:
     - name: Ramjit Tudu
       url: https://sat.wikipedia.org/wiki/%E1%B1%B5%E1%B1%AE%E1%B1%B5%E1%B1%B7%E1%B1%9F%E1%B1%A8%E1%B1%A4%E1%B1%AD%E1%B1%9F%E1%B1%B9:Ramjit_Tudu
-      note: Santali Wikipedia editor and a founding member of Ol Chiki Tech. Co-wrote this page.
+      note: Santali Wikipedia editor and a founding member of Ol Chiki Tech.
     - name: Anwesh Pati
       note: Gave inputs for this page.
 acknowledgements: "Thank you, Anwesh Pati, for your inputs on this page."

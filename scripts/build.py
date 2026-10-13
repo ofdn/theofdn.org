@@ -73,6 +73,7 @@ LINK_TYPES = [
     ("instagram.com", "Instagram", "instagram"), ("facebook.com", "Facebook", "facebook"),
     ("x.com", "X", "x"), ("twitter.com", "X", "x"), ("wa.me", "WhatsApp", "whatsapp"),
     ("whatsapp.com", "WhatsApp", "whatsapp"), ("t.me", "Telegram", "telegram"),
+    ("commons.wikimedia.org", "Wikimedia Commons", "commons"),
 ]
 STATUSES = ("live", "maintenance", "archive")
 STATUS_TEXT = {
@@ -567,6 +568,11 @@ def contribute_links(page):
 RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived", "social", "source")
 
 
+def icon_svg(name):
+    """An icon file from templates/icons, without its Jinja comment."""
+    return re.sub(r"\{#.*?#\}\s*", "", (ROOT / "templates" / "icons" / name).read_text(), flags=re.S).strip()
+
+
 def social_html(urls, where):
     """Social media accounts as icon links: platform and handle, e.g. Instagram @name."""
     if isinstance(urls, str):
@@ -578,7 +584,7 @@ def social_html(urls, where):
             sys.exit(f"{where}: '{url}' is not a known social media address. Put websites under url.")
         handle = urlparse(url).path.strip("/").split("/")[0]
         shown = f"@{handle}" if handle and item["icon"] in ("instagram", "x", "telegram") else handle
-        icon = (ROOT / "templates" / "icons" / f"{item['icon']}.svg").read_text().strip()
+        icon = icon_svg(f"{item['icon']}.svg")
         lis.append(f'<li><a href="{html_escape(url)}">{icon}<span>{item["label"]}'
                    + (f'<span class="resource__handle"> {html_escape(shown)}</span>' if shown else "")
                    + "</span></a></li>")
@@ -621,9 +627,9 @@ def resources_html(page):
             url = it.get("archived") or it.get("url") or (
                 f"https://www.youtube.com/watch?v={it['youtube']}" if it.get("youtube") else "")
             if url:
-                icon = (ROOT / "templates" / "icons" / f"{link_item(url)['icon']}.svg").read_text().strip()
+                icon = icon_svg(f"{link_item(url)['icon']}.svg")
                 if url.startswith("/"):
-                    icon = (ROOT / "templates" / "icons" / "link.svg").read_text().strip()
+                    icon = icon_svg("link.svg")
                 title = f'<a class="resource__name" href="{html_escape(url)}">{icon}<span>{name}</span></a>'
             else:
                 title = f'<span class="resource__name">{name}</span>'
@@ -635,7 +641,7 @@ def resources_html(page):
                        + (f'<p class="resource__note">{inline_md(it["note"])}</p>' if it.get("note") else "")
                        + (social_html(it["social"], where) if it.get("social") else "")
                        + (f'<p class="resource__source"><a href="{html_escape(it["source"])}">'
-                          + (ROOT / "templates" / "icons" / ("github.svg" if "github.com" in it["source"] else "link.svg")).read_text().strip()
+                          + icon_svg("github.svg" if "github.com" in it["source"] else "link.svg")
                           + '<span lang="en">Source code</span></a></p>' if it.get("source") else "")
                        + "</li>")
         hid = f"resources-{g}"
