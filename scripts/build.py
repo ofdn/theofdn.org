@@ -542,6 +542,63 @@ def link_item(entry):
     return {"url": url, "label": label, "icon": icon, "detail": detail}
 
 
+RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived")
+
+
+def resources_html(page):
+    """Grouped resource cards from `resources:` (language resource pages).
+    Groups and their headings are in data/site.yml `resource_groups`;
+    a page can rename them with `resource_headings:`."""
+    groups = page.get("resources")
+    if not groups:
+        return ""
+    where = page["file"]
+    names = load_status().get("resource_groups") or {}
+    own = page.get("resource_headings") or {}
+    names = {**names, **own}
+    for g in groups:
+        if g not in names:
+            sys.exit(f"{where}: unknown resources group '{g}'. Use one of: {', '.join(names)}")
+    out = []
+    for g, heading in names.items():
+        items = groups.get(g) or []
+        if not items:
+            continue
+        lis = []
+        for it in items:
+            if not isinstance(it, dict) or not it.get("name"):
+                sys.exit(f"{where}: every item under resources: {g} needs a name")
+            extra = set(it) - set(RESOURCE_KEYS)
+            if extra:
+                sys.exit(f"{where}: unknown resources field '{sorted(extra)[0]}'. Use: {', '.join(RESOURCE_KEYS)}")
+            name = inline_md(it["name"])
+            video = ""
+            if it.get("youtube"):
+                video = embed_html({"provider": "youtube", "id": it["youtube"], "title": html_escape(re.sub(r"[*_]", "", str(it["name"])))},
+                                   page["title"], page["section"])
+            url = it.get("archived") or it.get("url") or (
+                f"https://www.youtube.com/watch?v={it['youtube']}" if it.get("youtube") else "")
+            if url:
+                icon = (ROOT / "templates" / "icons" / f"{link_item(url)['icon']}.svg").read_text().strip()
+                if url.startswith("/"):
+                    icon = (ROOT / "templates" / "icons" / "link.svg").read_text().strip()
+                title = f'<a class="resource__name" href="{html_escape(url)}">{icon}<span>{name}</span></a>'
+            else:
+                title = f'<span class="resource__name">{name}</span>'
+            meta = [str(inline_md(it[k])) for k in ("credit", "licence") if it.get(k)]
+            if it.get("archived"):
+                meta.append('<span lang="en">Archived copy; the original link no longer works</span>')
+            lis.append(f'<li class="resource{" resource--video" if video else ""}">{video}{title}'
+                       + (f'<p class="resource__meta">{" · ".join(meta)}</p>' if meta else "")
+                       + (f'<p class="resource__note">{inline_md(it["note"])}</p>' if it.get("note") else "")
+                       + "</li>")
+        hid = f"resources-{g}"
+        en = ' lang="en"' if g not in own and page.get("lang", "en") != "en" else ""
+        out.append(f'<section class="resources" aria-labelledby="{hid}"><h2 id="{hid}"{en}>{inline_md(heading)}</h2>'
+                   f'<ul class="resource-list" role="list">{"".join(lis)}</ul></section>')
+    return "".join(out)
+
+
 def load_status():
     f = ROOT / "data" / "site.yml"
     conf = yaml.safe_load(f.read_text()) if f.exists() else {}
@@ -880,6 +937,9 @@ def main():
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
             p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["blocks"])), p)
+        res = resources_html(p)
+        if res:
+            body = body.replace("<p>[[resources]]</p>", res) if "<p>[[resources]]</p>" in body else body + res
         p["links_list"] = [link_item(x) for x in p.get("links") or []]
         p["listen_list"] = [link_item(x) for x in p.get("listen") or []]
         tpl = "home.html" if p["path"] == "/" else "page.html"

@@ -250,6 +250,49 @@ Each version shows "Also in" links to the others, and lists show one card per pa
 
 Name every translator in `translators`. The names show on the page.
 
+## Language resource pages
+
+Use this layout for a page that lists fonts, keyboards, dictionaries, videos and other resources for one language. Start from `page-templates/language-resources.md`. See `content/oer/ho-digital-resources.md` for a full example.
+
+1. Copy the template into `content/oer/` and rename it.
+2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
+3. Put two or three links under `links`. They show under the facts.
+4. Fill in `resources`. Each group becomes a heading with a card for each item.
+5. Write a short introduction above `[[resources]]` and the thanks below it.
+6. Delete every group and line you did not use.
+7. Commit.
+
+The groups show in this order:
+
+| Group | Heading | For |
+| --- | --- | --- |
+| `type` | Read and type | Fonts, keyboards, converters, character charts |
+| `write` | Write and publish | Wikipedia, Incubator, community websites |
+| `learn` | Learn | Textbooks, dictionaries, lessons |
+| `watch` | Watch and listen | Videos, films, audio |
+| `archives` | Archives and recordings | Archive collections |
+| `people` | People and groups | Everyone who made or shared the resources |
+| `sources` | Sources | Books, papers and proposals cited on the page |
+
+Each item can have these lines:
+
+- `name`: needed.
+- `url`: the link. Use a site address such as `/film/mage-porob/` for a page on this site.
+- `youtube`: a YouTube video id. The video plays inside the card.
+- `credit`: who made it, by full name.
+- `licence`: its licence.
+- `note`: one sentence on what it is. Say so here if a link no longer works.
+- `archived`: an archived copy, for a link that no longer works.
+
+A language version uses the same groups. To show a heading in the language, add it under `resource_headings`:
+
+```
+resource_headings:
+  sources: "𑢷𑣂𑣗𑣚𑣂𑣅𑣉𑣋𑣜𑣁𑣘𑣂"
+```
+
+Headings left out show in English.
+
 ## Add a page, blog post or subpage
 
 1. Create a file in the right folder, for example `content/blog/odia-ocr-2026.md`. The file name does not show on the site.

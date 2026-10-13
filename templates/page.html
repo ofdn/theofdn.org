@@ -67,9 +67,9 @@
   {% endif %}
   {% if infobox %}<div class="film__body">
     <aside class="film__facts" aria-labelledby="details">
-      <h2 class="label" id="details">{{ page.info_title or {"film": "Film details", "episode": "Episode details"}.get(kind, "Details") }}</h2>
+      <h2 class="label" id="details"{% if page.lang != "en" %} lang="en"{% endif %}>{{ page.info_title or {"film": "Film details", "episode": "Episode details"}.get(kind, "Details") }}</h2>
       <dl>
-        {% for key, value in facts %}<div><dt>{{ key }}</dt><dd>{{ value | safe }}</dd></div>
+        {% for key, value in facts %}<div><dt{% if page.lang != "en" %} lang="en"{% endif %}>{{ key }}</dt><dd>{{ value | safe }}</dd></div>
         {% endfor %}
         {% if not facts %}<div><dt>Published</dt><dd>{{ page.date }}</dd></div>{% endif %}
       </dl>
@@ -92,7 +92,7 @@
       </ul>
       {% endif %}
       {% if page.links_list %}
-      <h2 class="label">{{ {"film": "Find this film", "episode": "Find this episode"}.get(kind, "Links") }}</h2>
+      <h2 class="label"{% if page.lang != "en" %} lang="en"{% endif %}>{{ page.links_title or {"film": "Find this film", "episode": "Find this episode"}.get(kind, "Links") }}</h2>
       <ul class="film__links" role="list">
         {% for l in page.links_list %}<li><a href="{{ l.url }}">{% include "icons/" ~ l.icon ~ ".svg" %}{{ l.label }}{% if l.detail %}<span class="film__links-detail">{{ l.detail }}</span>{% endif %}</a></li>
         {% endfor %}

@@ -687,3 +687,28 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .press .quote blockquote p { font-size: 1.05rem; }
 .press .quote blockquote p::before { content: "“"; }
 .press .quote blockquote p::after { content: "”"; }
+
+/* Language resource pages: grouped resources from `resources:` front matter */
+.prose .resources { margin-top: var(--space-2xl); }
+.prose .resource-list {
+  list-style: none; padding: 0; margin: var(--space-lg) 0 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: var(--space-md);
+}
+.prose .resource-list > li + li { margin-top: 0; }
+.resource {
+  padding: var(--space-md); background: var(--color-surface);
+  border: 1px solid var(--color-rule); border-radius: var(--radius-sm);
+}
+.resource--video { grid-column: 1 / -1; }
+.resource--video .embed-video { margin: 0 0 var(--space-md); }
+.resource__name {
+  display: inline-flex; align-items: flex-start; gap: 0.5rem; min-height: 24px;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.35;
+}
+.resource__name .icon { flex: none; width: 20px; height: 20px; margin-top: 0.1rem; color: var(--color-text); }
+a.resource__name:hover .icon { color: var(--color-accent); }
+.resource__meta {
+  margin-top: var(--space-xs); font-family: var(--font-display); font-size: 0.95rem; line-height: 1.45;
+  color: var(--color-text-muted);
+}
+.prose .resource__note { margin-top: var(--space-sm); font-size: 1rem; line-height: 1.55; }

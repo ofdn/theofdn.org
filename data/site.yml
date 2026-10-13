@@ -39,3 +39,14 @@ languages:
   sat: {own: ᱥᱟᱱᱛᱟᱲᱤ, english: Santali}
   or: {own: ଓଡ଼ିଆ, english: Odia}
   hoc: {own: 𑢹𑣉𑣉, english: Ho}
+
+# Language resource pages: the groups under `resources:`, in this order,
+# with their headings. A page can rename a heading with `resource_headings:`.
+resource_groups:
+  type: Read and type
+  write: Write and publish
+  learn: Learn
+  watch: Watch and listen
+  archives: Archives and recordings
+  people: People and groups
+  sources: Sources
