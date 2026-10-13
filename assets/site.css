@@ -547,6 +547,32 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 }
 .copy-btn:hover { color: var(--color-accent); border-color: var(--color-accent); }
 .copy-btn.copied::after { content: " \2713"; }
+/* Icon copy button, copied from the Registry of Type Design (github.com/ofdn/rtd,
+   site-templates/styles.css: button.copy-id, button.copy-icon-btn). RTD colour tokens
+   mapped: --color-outline to --color-border, --color-info-accent to --color-accent. */
+button.copy-id {
+  cursor: pointer;
+}
+button.copy-id:hover {
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+button.copy-id.copied {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+button.copy-id.copied::after {
+  content: " \2713";
+}
+button.copy-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  line-height: 0;
+  flex: none;
+  min-width: 28px; min-height: 28px; /* theofdn.org: keeps the target above 24 px */
+}
 .citation-block { max-width: var(--max-prose); margin-top: var(--space-2xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-rule); }
 .citation-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 0.9rem; font-family: var(--font-display); font-size: 0.95rem; }
 .citation-style {
@@ -712,3 +738,4 @@ a.resource__name:hover .icon { color: var(--color-accent); }
   color: var(--color-text-muted);
 }
 .prose .resource__note { margin-top: var(--space-sm); font-size: 1rem; line-height: 1.55; }
+.prose .resources__thanks { margin-top: var(--space-md); }

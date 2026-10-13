@@ -43,10 +43,10 @@
     {% if page.translators %}<p class="byline" lang="en">Translated by {{ page.translators | join(", ") }}</p>{% endif %}
     {% if page.ark_url %}
     <p class="ark-permalink" lang="en">Permanent link: <code>{{ page.ark_url }}</code>
-      <button type="button" class="copy-btn" data-copy="{{ page.ark_url }}" aria-label="Copy permanent link">Copy</button></p>
+      <button type="button" class="copy-id copy-icon-btn" data-copy="{{ page.ark_url }}" aria-label="Copy permanent link">{% include "icons/copy.svg" %}</button></p>
     {% for part in page.ark_part_list or [] %}
     <p class="ark-permalink" lang="en">{% if part.lang %}<span lang="{{ part.lang }}">{{ part.label }}</span>{% else %}{{ part.label }}{% endif %}: <code>{{ part.url }}</code>
-      <button type="button" class="copy-btn" data-copy="{{ part.url }}" aria-label="Copy permanent link to the {% if part.lang %}{{ part.english }} version{% else %}{{ part.label }}{% endif %}">Copy</button></p>
+      <button type="button" class="copy-id copy-icon-btn" data-copy="{{ part.url }}" aria-label="Copy permanent link to the {% if part.lang %}{{ part.english }} version{% else %}{{ part.label }}{% endif %}">{% include "icons/copy.svg" %}</button></p>
     {% endfor %}
     {% endif %}
     {% if page.laurels and not page.hero %}
@@ -141,7 +141,7 @@
         <option value="vancouver">Vancouver</option>
         <option value="bibtex">BibTeX</option>
       </select>
-      <button type="button" class="copy-btn citation-copy">Copy</button>
+      <button type="button" class="copy-id copy-icon-btn citation-copy" aria-label="Copy citation">{% include "icons/copy.svg" %}</button>
       <button type="button" class="copy-btn citation-download">Download .bib</button>
     </div>
     <pre class="citation-text"></pre>

@@ -22,6 +22,7 @@ title:                {label: Title}
 own_name:             {label: Name in the language}
 speakers:             {label: Speakers}
 spoken_in:            {label: Where it is spoken}
+family:               {label: Language family}
 logline:              {label: Logline}
 director:             {label: Director, role: true}
 producer:             {label: [Producer, Producers], commas: true, role: true}

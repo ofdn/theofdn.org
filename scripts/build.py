@@ -549,7 +549,9 @@ def resources_html(page):
     """Grouped resource cards from `resources:` (language resource pages).
     Groups and their headings are in data/site.yml `resource_groups`;
     a page can rename them with `resource_headings:`."""
-    groups = page.get("resources")
+    groups = dict(page.get("resources") or {})
+    if page.get("acknowledgements"):
+        groups.setdefault("credits", [])
     if not groups:
         return ""
     where = page["file"]
@@ -562,7 +564,7 @@ def resources_html(page):
     out = []
     for g, heading in names.items():
         items = groups.get(g) or []
-        if not items:
+        if not items and not (g == "credits" and page.get("acknowledgements")):
             continue
         lis = []
         for it in items:
@@ -593,9 +595,13 @@ def resources_html(page):
                        + (f'<p class="resource__note">{inline_md(it["note"])}</p>' if it.get("note") else "")
                        + "</li>")
         hid = f"resources-{g}"
+        if g == "credits" and page.get("acknowledgements"):
+            thanks = f'<p class="resources__thanks">{inline_md(page["acknowledgements"])}</p>'
+        else:
+            thanks = ""
         en = ' lang="en"' if g not in own and page.get("lang", "en") != "en" else ""
         out.append(f'<section class="resources" aria-labelledby="{hid}"><h2 id="{hid}"{en}>{inline_md(heading)}</h2>'
-                   f'<ul class="resource-list" role="list">{"".join(lis)}</ul></section>')
+                   + thanks + (f'<ul class="resource-list" role="list">{"".join(lis)}</ul>' if lis else "") + "</section>")
     return "".join(out)
 
 

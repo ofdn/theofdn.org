@@ -258,9 +258,12 @@ Use this layout for a page that lists fonts, keyboards, dictionaries, videos and
 2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
 3. Put two or three links under `links`. They show under the facts.
 4. Fill in `resources`. Each group becomes a heading with a card for each item.
-5. Write a short introduction above `[[resources]]` and the thanks below it.
-6. Delete every group and line you did not use.
-7. Commit.
+5. Write a short introduction above `[[resources]]`.
+6. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
+7. Delete every group and line you did not use.
+8. Commit.
+
+For a written language, start with `type`. Link each typeface and type designer to its record on the Registry of Type Design (rtd.theofdn.org). For a mainly oral language, start with `watch` and `archives`, and leave out `type`.
 
 The groups show in this order:
 
@@ -271,8 +274,8 @@ The groups show in this order:
 | `learn` | Learn | Textbooks, dictionaries, lessons |
 | `watch` | Watch and listen | Videos, films, audio |
 | `archives` | Archives and recordings | Archive collections |
-| `people` | People and groups | Everyone who made or shared the resources |
 | `sources` | Sources | Books, papers and proposals cited on the page |
+| `credits` | Credits and acknowledgements | Everyone who made or shared the resources |
 
 Each item can have these lines:
 
@@ -289,6 +292,7 @@ A language version uses the same groups. To show a heading in the language, add 
 ```
 resource_headings:
   sources: "𑢷𑣂𑣗𑣚𑣂𑣅𑣉𑣋𑣜𑣁𑣘𑣂"
+  credits: "𑢷𑣂𑣕𑣂𑣅𑣈𑣖"
 ```
 
 Headings left out show in English.

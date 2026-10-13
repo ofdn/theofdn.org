@@ -125,7 +125,7 @@ document.querySelectorAll(".embed-play").forEach(function (link) {
 });
 
 // Copy buttons (ARK permalink, citation).
-document.querySelectorAll(".copy-btn[data-copy], .citation-copy").forEach(function (btn) {
+document.querySelectorAll(".copy-btn[data-copy], .copy-id[data-copy], .citation-copy").forEach(function (btn) {
   btn.addEventListener("click", function () {
     if (!navigator.clipboard) return;
     navigator.clipboard.writeText(btn.getAttribute("data-copy")).then(function () {
