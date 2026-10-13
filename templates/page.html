@@ -88,7 +88,7 @@
         {% for l in page.listen_list %}<li><a href="{{ l.url }}">{% include "icons/" ~ l.icon ~ ".svg" %}{{ l.label }}</a></li>
         {% endfor %}
       </ul>
-      {% elif page.embeds or page.press_kit %}
+      {% elif page.embeds | selectattr("provider", "in", ["youtube", "archive", "vimeo"]) | list or page.press_kit %}
       <h2 class="label">Watch and download</h2>
       <ul class="film__links" role="list">
         {% for e in page.embeds or [] %}

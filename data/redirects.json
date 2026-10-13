@@ -54,7 +54,7 @@
  "/podcasts/episode1/": "/podcast/episode1/",
  "/pothi/": "/activities/pothi/",
  "/software-freedom-day-2017-bhubaneswar/": "/blogs/software-freedom-day-2017-bhubaneswar/",
- "/suc/": "/tools/santali-unicode-converter/",
+ "/suc/": "/resources/santali-unicode-converter/",
  "/tools/santali-unicode-encoding-converter/": "/resources/santali-unicode-converter/",
  "/uncategorized/odia-lgr/": "/blogs/white-paper2-lgr-oriya-2018/",
  "/uncategorized/white-paper-lgr-oriya-2018/": "/blogs/white-paper-lgr-oriya-2018/",
@@ -66,5 +66,8 @@
  "/resources/ho/": "/resources/hoc/",
  "/resources/santali/": "/resources/sat/",
  "/resources/odia/": "/resources/or/",
- "/resources/mihaq/": "/resources/kgg/"
+ "/resources/mihaq/": "/resources/kgg/",
+ "/tools/santali-unicode-converter/": "/resources/santali-unicode-converter/",
+ "/huc/": "/resources/ho-unicode-converter/",
+ "/tools/huc/": "/resources/ho-unicode-converter/"
 }

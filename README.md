@@ -271,7 +271,7 @@ Blog posts and resource pages follow the same rule. Translators are listed the s
 
 ## Language resource pages
 
-Use this layout for a page that lists fonts, keyboards, dictionaries, videos and other resources for one language. Start from `page-templates/language-resources.md`. See `content/oer/ho-digital-resources.md` for a full example.
+Use this layout for a page that lists fonts, keyboards, dictionaries, videos and other resources for one language. Start from `page-templates/language-resources.md`. See `content/oer/hoc.md` for a full example.
 
 1. Copy the template into `content/oer/` and rename it to the language code, for example `hoc.md`.
 2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
@@ -335,6 +335,20 @@ Near the end of every language resource page is "Use these resources well". It h
 Every language resource page ends with "Help improve this page". It has a "Suggest a resource or change" link to the contact form, with the message filled in. It also has an "Edit this page on GitHub" link. No step is needed. Read the suggestions in the form's responses, add each resource to the page and credit the person who sent it.
 
 To point readers to a group from the text, link its heading: `[Read and type](#resources-type)`. The address is `#resources-` and the group name.
+
+### Language tool pages
+
+A tool page, such as a font converter, uses the same fields as a language resource page. Start from `page-templates/language-tool.md`. See `content/tool/ho-unicode-converter.md` for a full example.
+
+1. Copy the template into `content/tool/` and rename it, for example `ho-unicode-converter.md`.
+2. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source.
+3. Write `scope` and fill in `seo`, as for a language resource page.
+4. Put the tool right after a short introduction, with `[[embed:0]]`.
+5. Write "How to use it" as numbered steps.
+6. Credit everyone who built or helped build the tool under `credits`.
+7. Commit.
+
+The page has the same "Use these resources well" and "Help improve this page" boxes as a language resource page.
 
 ## Add a page, blog post or subpage
 
@@ -432,6 +446,8 @@ Providers:
 - `commons`: `File:Name.wav`
 - `file`: link to an audio or video file
 - `link`: any other page
+- `form`: a Google Form address ending in `?embedded=true`
+- `converter`: a font-to-Unicode converter, shown in the page. `id` is its name on Jnanaranjan Sahu's server: `suc` (Santali) or `huc` (Ho). Add `fonts` when the converter handles more than one old font. See `page-templates/language-tool.md`.
 
 ## Images and files
 

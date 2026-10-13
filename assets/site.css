@@ -519,8 +519,21 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .hub-podcast h3 a { color: var(--color-text); text-decoration-thickness: 1.5px; }
 .hub-podcast h3 a:hover { color: var(--color-accent); }
 .embed-audio iframe { width: 100%; height: 100%; border: 0; }
-.embed-tool { width: 100%; height: 34rem; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); overflow: hidden; }
-.embed-tool iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+/* Font-to-Unicode converter, drawn in the page */
+.converter { margin: var(--space-lg) 0; padding: var(--space-lg); background: var(--color-surface); border: 1px solid var(--color-rule); border-radius: var(--radius-sm); font-family: var(--font-display); font-size: 1rem; }
+.converter__fonts { border: 0; margin-bottom: var(--space-md); display: flex; flex-wrap: wrap; gap: var(--space-sm) var(--space-lg); }
+.converter__fonts legend { font-weight: 700; margin-bottom: var(--space-sm); }
+.converter__fonts label { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2rem; cursor: pointer; }
+.converter__fonts input { width: 1.1rem; height: 1.1rem; accent-color: var(--color-accent); }
+.converter__panes { display: grid; gap: var(--space-md); }
+@media (min-width: 40rem) { .converter__panes { grid-template-columns: 1fr 1fr; } }
+.converter__pane label { display: block; font-weight: 700; margin-bottom: var(--space-xs); }
+.converter textarea { width: 100%; min-height: 12rem; resize: vertical; padding: 0.6rem; font: 1.125rem/1.6 var(--font-body); color: var(--color-text); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); }
+.converter textarea:focus-visible, .converter__fonts input:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.converter__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm) var(--space-md); margin-top: var(--space-md); }
+.converter__status { font-weight: 600; }
+.converter__status:empty { display: none; }
+.prose .converter__note { margin-top: var(--space-md); font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted); }
 .embed-form { width: 100%; max-width: 640px; height: 1150px; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); overflow: hidden; }
 .embed-form iframe { width: 100%; height: 100%; border: 0; background: #fff; }
 .embed-file figcaption, .embed-link { font-family: var(--font-condensed); font-size: 1rem; }

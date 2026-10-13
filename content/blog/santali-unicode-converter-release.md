@@ -22,8 +22,8 @@ tags:
   - "tools"
 excerpt: "Santali-language text typed in Ol chiki using ASCII and other legacy encoding systems can now be converted to Unicode so that the text can be used universally, online content will be easily searchable and users can reuse content with ease."
 embeds:
-  - provider: "tool"
-    id: "/tools/santali-unicode-converter/"
+  - provider: "converter"
+    id: "suc"
     title: "Santali Unicode Converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/santali-unicode-converter-release/"
 ---

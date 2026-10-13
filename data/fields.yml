@@ -33,6 +33,7 @@ cameraperson:         {label: Cameraperson, role: true}
 recordist:            {label: Recordist, role: true}
 editor:               {label: Editor, role: true}
 designer:             {label: [Designer, Designers], commas: true, role: true}
+developer:            {label: [Developer, Developers], commas: true, role: true}
 cast:                 {label: Cast}
 guest:                {label: [Guest, Guests], commas: true}
 advisor:              {label: [Advisor, Advisors], commas: true}
@@ -55,6 +56,7 @@ duration:             {label: Duration}
 genre:                {label: Genre}
 production_company:   {label: Production company, role: true}
 distributor:          {label: Distributor, role: true}
+funder:               {label: Funded by}
 keywords:             {label: Keywords}
 budget:               {label: Budget}
 subtitles:            {label: Subtitles}

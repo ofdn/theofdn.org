@@ -20,8 +20,8 @@ tags:
   - "santali"
 excerpt: "This web tool converts text typed in legacy encoding systems into Unicode."
 embeds:
-  - provider: "tool"
-    id: "/tools/santali-unicode-converter/"
+  - provider: "converter"
+    id: "suc"
     title: "Santali Unicode Converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/sat-santali-olchiki-converter/"
 ---

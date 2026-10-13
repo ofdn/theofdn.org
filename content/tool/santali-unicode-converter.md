@@ -17,21 +17,44 @@ tags:
   - "tools"
 excerpt: "This converter converts text typed in Santali language using ASCII and other popular legacy character encoding into Unicode. It’s noteworthy to mention that a significant amount of legacy text are available in encodings other than Unicode."
 embeds:
-  - provider: "tool"
-    id: "/tools/santali-unicode-converter/"
+  - provider: "converter"
+    id: "suc"
     title: "Santali Unicode Converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/santali-unicode-encoding-converter/"
+scope: "For anyone with Santali text typed in an older Ol Chiki font, which shows as Latin letters on other phones and computers."
+info_title: About the converter
+info:
+  developer: "[Jnanaranjan Sahu](https://jsahu.me)"
+  release: 12 September 2018
+  funder: Shuttleworth Foundation flash grant, from Anasuya Sengupta
+  language: "[Santali](/resources/sat/)"
+  script: "[Ol Chiki](https://rtd.theofdn.org/scripts/ol-chiki/) (ᱚᱞ ᱪᱤᱠᱤ)"
+  repository: "[ofdn/santali-unicode-converter on GitHub](https://github.com/ofdn/santali-unicode-converter)"
+  licence: MIT
+resources:
+  credits:
+    - name: Jnanaranjan Sahu
+      url: https://jsahu.me
+      note: Built the converter and runs the server that converts the text.
+    - name: Ramjit Tudu
+      url: https://sat.wikipedia.org/wiki/%E1%B1%B5%E1%B1%AE%E1%B1%B5%E1%B1%B7%E1%B1%9F%E1%B1%A8%E1%B1%A4%E1%B1%AD%E1%B1%9F%E1%B1%B9:Ramjit_Tudu
+      note: Helped with the character mapping.
 ---
-The first ever proposal to include Ol chiki, the writing system used for the Santali language, in the Unicode block was [proposed](https://www.unicode.org/L2/L1999/n1956.pdf) by Michael Everson on January 29, 1999. However, there exist a handful of other legacy character encoding systems which are mostly modified from https://en.wikipedia.org/wiki/ASCII (ASCII). Such encoding systems not only display gibberish on smartphones but also on computers where the font used for typing any document is not used.
-
-***[Read](/blogs/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/resources/santali-unicode-converter/sat/)) our blog on this issue for more information*.**
-
-Most print publications still use these legacy encoding systems instead of using Unicode where the latter continues to be a universal standard. Until all Santali users move to Unicode, this converter is a temporary fix for making the Santali content accessible to all in a universal standard like Unicode.
-
-You can copy any Santali text typed in Ol chiki using one of the most used legacy encoding (see [example](https://web.archive.org/web/20210312035032/https://ova.gov.in/wp-content/plugins/anubada/uploads/09-04-2019-10-27-50-Santali%20(Tri-lingual%20Book).pdf)) on the left field of the converter and it converts the text instantly into Unicode. Once converted, there might be a need for some minor proofreading but the Unicode text could be used and anyone using a modern computer or smartphone that has the right fonts built-in can read it without the need for any font installation.
-
-**Try the converter below:**
-
-- - 
+Some Santali text is typed in older Ol Chiki fonts that show Ol Chiki letters in place of Latin letters. Open the text on a phone or computer without the same font, and only the Latin letters show. This converter changes the text into Unicode. Unicode works on every phone and computer.
 
 [[embed:0]]
+
+## How to use it
+
+1. Copy the Santali text from your file. See an [example of a book typed in an older font](https://web.archive.org/web/20210312035032/https://ova.gov.in/wp-content/plugins/anubada/uploads/09-04-2019-10-27-50-Santali%20(Tri-lingual%20Book).pdf).
+2. Paste it in the first box. The Unicode text shows in the second box.
+3. Read through the Unicode text and correct any small errors.
+4. Select "Copy the Unicode text" and paste it where you need it.
+
+To read the Unicode text, you need an Ol Chiki Unicode font such as [Noto Sans Ol Chiki](https://fonts.google.com/noto/specimen/Noto+Sans+Ol+Chiki). Most new phones and computers already have one.
+
+## Why it is needed
+
+Michael Everson [proposed](https://www.unicode.org/L2/L1999/n1956.pdf) adding Ol Chiki to Unicode on 29 January 1999. It was added in 2008, in Unicode 5.1. Before and after that, many Santali fonts used their own encodings, mostly built on [ASCII](https://en.wikipedia.org/wiki/ASCII). Many print publications, such as the Santali magazine Fagun, still use them. Text typed in these fonts cannot be searched online. It cannot be read on a device without the same font either. Until everyone moves to Unicode, this converter helps make that text readable everywhere.
+
+Read the [blog post on the converter's release](/blogs/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/resources/santali-unicode-converter/sat/)) for more.

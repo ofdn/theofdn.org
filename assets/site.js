@@ -274,3 +274,40 @@ document.querySelectorAll("main h2[id], main h3[id]").forEach(function (h) {
     });
   });
 })();
+
+// Font-to-Unicode converters (Santali, Ho). Jnanaranjan Sahu's server does the conversion.
+document.querySelectorAll(".converter").forEach(function (box) {
+  var input = box.querySelector("#converter-in"), output = box.querySelector("#converter-out");
+  var status = box.querySelector(".converter__status"), timer, asked = 0;
+  function font() {
+    var f = box.querySelector("input[name=converter-font]:checked");
+    return f ? f.value : "";
+  }
+  function convert() {
+    var text = input.value, ask = ++asked;
+    if (!text) { output.value = ""; status.textContent = ""; return; }
+    var data = new URLSearchParams({ input_text: text });
+    if (font()) data.append("type", font());
+    fetch(box.getAttribute("data-api"), { method: "POST", body: data })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (ask !== asked) return;
+        output.value = d.unicode || "";
+        status.textContent = "";
+      })
+      .catch(function () { status.textContent = "The converter could not be reached. Please try again later."; });
+  }
+  function later() { clearTimeout(timer); timer = setTimeout(convert, 300); }
+  input.addEventListener("input", later);
+  box.querySelectorAll("input[name=converter-font]").forEach(function (r) { r.addEventListener("change", convert); });
+  box.querySelector(".converter__copy").addEventListener("click", function () {
+    if (!output.value) { status.textContent = "There is nothing to copy yet. Paste your text in the first box."; return; }
+    output.select();
+    var done = function () { status.textContent = "Copied."; };
+    if (navigator.clipboard) navigator.clipboard.writeText(output.value).then(done);
+    else { document.execCommand("copy"); done(); }
+  });
+  box.querySelector(".converter__clear").addEventListener("click", function () {
+    input.value = ""; output.value = ""; status.textContent = ""; input.focus();
+  });
+});

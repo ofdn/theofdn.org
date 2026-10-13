@@ -453,9 +453,24 @@ def embed_html(e, title, section):
         return media_tag(url, page, name)
     if p == "file":
         return media_tag(i, i, i.rsplit("/", 1)[-1])
-    if p == "tool":
-        return (f'<div class="embed-tool"><iframe src="{i}" title="{label}" loading="lazy"></iframe></div>'
-                f'<p class="embed-link"><a href="{i}">Open {label} in its own page</a></p>')
+    if p == "converter":  # a font-to-Unicode converter, drawn in the page; the conversion runs on jsahu.me
+        fonts = e.get("fonts") or []
+        choose = ""
+        if fonts:
+            radios = "".join(f'<label><input type="radio" name="converter-font" value="{f["id"]}"{" checked" if n == 0 else ""}> {f["label"]}</label>'
+                             for n, f in enumerate(fonts))
+            choose = f'<fieldset class="converter__fonts"><legend>Which font was the text typed in?</legend>{radios}</fieldset>'
+        return (f'<div class="converter" data-api="https://jsahu.me/api/tools/{i}" lang="en">{choose}'
+                '<div class="converter__panes">'
+                '<div class="converter__pane"><label for="converter-in">1. Paste text typed in the old font</label>'
+                '<textarea id="converter-in" rows="10" spellcheck="false"></textarea></div>'
+                '<div class="converter__pane"><label for="converter-out">2. Unicode text</label>'
+                '<textarea id="converter-out" rows="10" spellcheck="false"></textarea></div></div>'
+                '<div class="converter__actions"><button type="button" class="copy-btn converter__copy">Copy the Unicode text</button>'
+                '<button type="button" class="copy-btn converter__clear">Clear both boxes</button>'
+                '<p class="converter__status" role="status"></p></div>'
+                '<p class="converter__note">The text converts as you paste or type. It is sent to a server run by '
+                '<a href="https://jsahu.me">Jnanaranjan Sahu</a> to be converted, and comes back in the second box.</p></div>')
     if p == "form":  # a Google Form, shown on the page, with a plain link for small screens
         page = i.replace("?embedded=true", "")
         return (f'<div class="embed-form"><iframe src="{i}" title="{label}" loading="lazy"></iframe></div>'
@@ -1022,7 +1037,6 @@ def main():
         shutil.rmtree(out)
     out.mkdir()
     shutil.copytree(ROOT / "assets", out / "assets")
-    shutil.copytree(ROOT / "tools", out / "tools")
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
     env.filters["names"] = join_names
