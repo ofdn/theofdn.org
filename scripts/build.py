@@ -558,8 +558,8 @@ EDIT_URL = "https://github.com/ofdn/theofdn.org/edit/main/"
 
 
 def contribute_links(page):
-    note = (f"Resource suggestion for {page['title']} ({SITE_URL}{page['path']})\n\n"
-            "Name of the resource:\nLink:\nWho made it:\nWhat it does:\n")
+    note = (f"Suggestion for {page['title']} ({SITE_URL}{page['path']})\n\n"
+            "What to add or change:\nLink:\nWho made it:\n")
     return {"suggest": f"{SUGGEST_FORM}?usp=pp_url&{SUGGEST_FIELD}={quote(note)}",
             "edit": EDIT_URL + page["file"]}
 
