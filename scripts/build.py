@@ -10,7 +10,7 @@ import argparse, json, re, shutil, subprocess, sys
 from datetime import date
 from pathlib import Path
 from html import escape as html_escape
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 import yaml
 from bs4 import BeautifulSoup
@@ -70,6 +70,9 @@ LINK_TYPES = [
     ("loc.gov", "Library of Congress", "link"), ("youtube.com", "YouTube", "youtube"),
     ("vimeo.com", "Vimeo", "vimeo"), ("spotify.com", "Spotify", "spotify"),
     ("podcasts.apple.com", "Apple Podcasts", "applepodcasts"), ("soundcloud.com", "SoundCloud", "soundcloud"),
+    ("instagram.com", "Instagram", "instagram"), ("facebook.com", "Facebook", "facebook"),
+    ("x.com", "X", "x"), ("twitter.com", "X", "x"), ("wa.me", "WhatsApp", "whatsapp"),
+    ("whatsapp.com", "WhatsApp", "whatsapp"), ("t.me", "Telegram", "telegram"),
 ]
 STATUSES = ("live", "maintenance", "archive")
 STATUS_TEXT = {
@@ -527,8 +530,9 @@ def link_item(entry):
     """A 'links' entry is an address, or a label and url pair."""
     url = entry if isinstance(entry, str) else entry["url"]
     label, icon = None, "link"
+    netloc = urlparse(url).netloc.lower()
     for host, name, ic in LINK_TYPES:
-        if host in url:
+        if netloc == host or netloc.endswith("." + host):
             label, icon = name, ic
             break
     if not isinstance(entry, str) and entry.get("label"):
@@ -542,7 +546,25 @@ def link_item(entry):
     return {"url": url, "label": label, "icon": icon, "detail": detail}
 
 
-RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived")
+RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived", "social")
+
+
+def social_html(urls, where):
+    """Social media accounts as icon links: platform and handle, e.g. Instagram @name."""
+    if isinstance(urls, str):
+        urls = [urls]
+    lis = []
+    for url in urls:
+        item = link_item(url)
+        if item["icon"] == "link":
+            sys.exit(f"{where}: '{url}' is not a known social media address. Put websites under url.")
+        handle = urlparse(url).path.strip("/").split("/")[0]
+        shown = f"@{handle}" if handle and item["icon"] in ("instagram", "x", "telegram") else handle
+        icon = (ROOT / "templates" / "icons" / f"{item['icon']}.svg").read_text().strip()
+        lis.append(f'<li><a href="{html_escape(url)}">{icon}<span>{item["label"]}'
+                   + (f'<span class="resource__handle"> {html_escape(shown)}</span>' if shown else "")
+                   + "</span></a></li>")
+    return f'<ul class="resource__social" role="list">{"".join(lis)}</ul>'
 
 
 def resources_html(page):
@@ -593,6 +615,7 @@ def resources_html(page):
             lis.append(f'<li class="resource{" resource--video" if video else ""}">{video}{title}'
                        + (f'<p class="resource__meta">{" · ".join(meta)}</p>' if meta else "")
                        + (f'<p class="resource__note">{inline_md(it["note"])}</p>' if it.get("note") else "")
+                       + (social_html(it["social"], where) if it.get("social") else "")
                        + "</li>")
         hid = f"resources-{g}"
         if g == "credits" and page.get("acknowledgements"):

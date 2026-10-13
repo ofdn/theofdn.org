@@ -94,6 +94,11 @@ resources:
     - name: Ho Language Education Council, Odisha
       url: http://www.holanguageodishaedu.in/
       archived: https://web.archive.org/web/20230127042333/http://www.holanguageodishaedu.in/
+  connect:
+    - name: Ganesh Birua
+      social:
+        - https://www.instagram.com/ganubirua
+        - https://www.facebook.com/ganesh.birua
   watch:
     - name: "1. 𑢹𑣂𑣕𑣑 1: 𑢿𑣂𑣌𑣂𑣖𑣂𑣂𑣑𑣂𑣅𑣁 𑢦𑣓𑣌𑣅𑣃𑣗𑣈𑣈𑣒𑣜 𑣜𑣈 𑣁𑣌𑣁𑣇𑣀𑣒 𑣗𑣆."
       youtube: Q8TGf1sVdUY

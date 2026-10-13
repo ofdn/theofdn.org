@@ -272,6 +272,7 @@ The groups show in this order:
 | `type` | Read and type | Fonts, keyboards, converters, character charts |
 | `write` | Write and publish | Wikipedia, Incubator, community websites |
 | `learn` | Learn | Textbooks, dictionaries, lessons |
+| `connect` | Connect with the community | Speakers, activists and groups on social media |
 | `watch` | Watch and listen | Videos, films, audio |
 | `archives` | Archives and recordings | Archive collections |
 | `sources` | Sources | Books, papers and proposals cited on the page |
@@ -286,6 +287,7 @@ Each item can have these lines:
 - `licence`: its licence.
 - `note`: one sentence on what it is. Say so here if a link no longer works.
 - `archived`: an archived copy, for a link that no longer works.
+- `social`: a list of social media addresses (Instagram, Facebook, X, WhatsApp, Telegram). Each shows with its icon and handle. Ask the person before you list their accounts.
 
 A language version uses the same groups. To show a heading in the language, add it under `resource_headings`:
 

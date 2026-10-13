@@ -46,6 +46,7 @@ resource_groups:
   type: Read and type
   write: Write and publish
   learn: Learn
+  connect: Connect with the community
   watch: Watch and listen
   archives: Archives and recordings
   sources: Sources

@@ -104,6 +104,12 @@ resources:
       url: http://www.holanguageodishaedu.in/
       archived: https://web.archive.org/web/20230127042333/http://www.holanguageodishaedu.in/
       note: Schools and colleges that teach in Ho, and the council's textbooks.
+  connect:
+    - name: Ganesh Birua
+      note: Activist who promotes the Ho language and culture on social media. Also writes the blog Elabu Etona Warang Citi.
+      social:
+        - https://www.instagram.com/ganubirua
+        - https://www.facebook.com/ganesh.birua
   watch:
     - name: "Building Ho Wikipedia, part 1: creating an account"
       youtube: Q8TGf1sVdUY
@@ -143,8 +149,6 @@ acknowledgements: "Thank you, Mangu Purty, for the video tutorials, many of the 
 The Ho language is spoken by over 1.4 million people, mostly in the Indian states of Assam, Bihar, Chhattisgarh, Jharkhand, Odisha and West Bengal, and in Bangladesh. It has been written in Devanagari, Bengali, Odia and Latin scripts. Warang Citi (𑢹𑣗𑣁𑣜𑣊 𑣏𑣂𑣕𑣂, also spelled Warang Chiti) is the most widely accepted script for Ho today. It was created by Lako Bodra, a Ho community leader from Jharkhand. UNESCO lists Ho as a vulnerable language.
 
 This page lists free resources for reading, typing and writing Ho in Warang Citi. Many of them were made by Ho speakers. If Warang Citi shows as empty boxes on your screen, install a font from “Read and type” and reload the page.
-
-![Icon for Wikipedia links to pages in the Ho language (hoc).](/assets/logos/iso-639-ho.webp)
 
 Ho speakers are writing a Ho Wikipedia on the [Wikimedia Incubator](https://incubator.wikimedia.org/wiki/Wp/hoc). It will become a full Wikipedia once more people write articles there. Mangu Purty made three videos that show how to join in. They are under “Watch and listen”, and you can also [download them from Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Instructional_videos_on_using_Wikipedia_in_Ho).
 

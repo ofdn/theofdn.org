@@ -739,3 +739,8 @@ a.resource__name:hover .icon { color: var(--color-accent); }
 }
 .prose .resource__note { margin-top: var(--space-sm); font-size: 1rem; line-height: 1.55; }
 .prose .resources__thanks { margin-top: var(--space-md); }
+.prose .resource__social { list-style: none; padding: 0; margin: var(--space-sm) 0 0; display: flex; flex-wrap: wrap; gap: var(--space-sm) var(--space-md); }
+.prose .resource__social > li + li { margin-top: 0; }
+.resource__social a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 24px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
+.resource__social .icon { flex: none; width: 18px; height: 18px; color: var(--color-text); }
+.resource__handle { font-weight: 400; }

@@ -52,6 +52,12 @@ resources:
       url: https://
       credit: <who made it>
       note: <one sentence>
+  connect:
+    - name: <person, group or page>
+      note: <who they are and what they share>
+      social:
+        - https://www.instagram.com/<handle>
+        - https://www.facebook.com/<handle>
   watch:
     - name: <video title>
       youtube: <video id>
