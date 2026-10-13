@@ -62,7 +62,7 @@ We train [Tesseract](https://github.com/tesseract-ocr/tesseract) models so that 
 
 ### Santali Unicode Encoding Converter
 
-The [Santali Unicode Encoding Converter](/resources/santali-unicode-converter/) turns Santali text typed in ASCII and other legacy encodings into Unicode Ol Chiki. Jnanaranjan Sahu wrote it; it is under the MIT License.
+The [Santali (Ol Chiki) Unicode converter](/tools/sat/unicode-converter/) turns Santali text typed in ASCII and other legacy encodings into Unicode Ol Chiki. Jnanaranjan Sahu wrote it; it is under the MIT License.
 
 ## Earlier work
 

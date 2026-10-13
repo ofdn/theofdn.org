@@ -24,7 +24,7 @@ excerpt: "Santali-language text typed in Ol chiki using ASCII and other legacy e
 embeds:
   - provider: "converter"
     id: "suc"
-    title: "Santali Unicode Converter"
+    title: "Santali (Ol Chiki) Unicode converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/santali-unicode-converter-release/"
 ---
 Santali-language text typed in Ol chiki using ASCII and other legacy encoding systems can now be converted to Unicode so that the text can be used universally, online content will be easily searchable and users can reuse content with ease.
@@ -35,7 +35,7 @@ But why a common user should bother? Most non-standard character encoding used i
 
 Unicode in a way unifies different fonts — the way characters look because of varied styles and aesthetic looks. In the case of Santali, many publications like the Fagun magazine have been using a non-standard and modified ASCII character encoding since long. But one cannot find their content by a simple Google search as it is not in Unicode.
 
-I’m really excited to announce that with support from community leaders like [Ramjit Tudu](https://twitter.com/Ramjit_Tudu) who supported a lot with the character mapping, we have [built](/resources/santali-unicode-converter/) a converter to convert from Santali text in Latin into text in Ol chiki.
+I’m really excited to announce that with support from community leaders like [Ramjit Tudu](https://twitter.com/Ramjit_Tudu) who supported a lot with the character mapping, we have [built](/tools/sat/unicode-converter/) a converter to convert from Santali text in Latin into text in Ol chiki.
 
 [[embed:0]]
 
@@ -43,7 +43,7 @@ The code is released under an MIT licence and is available in our [GitHub](https
 
 #### **How to use the converter? See the tutorial below:\**
 
-[![https://theofdn.org/wp-content/uploads/2018/09/Santali-Unicode-Converter.gif](/assets/images/santali-unicode-converter-screenshot.webp)](/resources/santali-unicode-converter/)
+[![https://theofdn.org/wp-content/uploads/2018/09/Santali-Unicode-Converter.gif](/assets/images/santali-unicode-converter-screenshot.webp)](/tools/sat/unicode-converter/)
 
 More related
 

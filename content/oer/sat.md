@@ -99,10 +99,6 @@ resources:
     - name: Multiling O Keyboard
       url: https://play.google.com/store/apps/details?id=kl.ime.oh
       note: Android keyboard with Santali in Ol Chiki.
-    - name: Santali Unicode Converter
-      url: /resources/santali-unicode-converter/
-      credit: Made by Jnanaranjan Sahu
-      note: Converts text typed in older Ol Chiki fonts into Unicode, so that it shows correctly on any device.
     - name: Ol Chiki Unicode chart
       url: https://www.unicode.org/charts/PDF/U1C50.pdf
       credit: Unicode Consortium

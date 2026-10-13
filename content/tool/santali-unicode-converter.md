@@ -1,6 +1,6 @@
 ---
-title: "Santali Unicode Encoding Converter"
-path: "/resources/santali-unicode-converter/"
+title: "Santali (Ol Chiki) Unicode converter"
+path: "/tools/sat/unicode-converter/"
 ark: ofdn-t-000001
 tier: "live"
 section: "tool"
@@ -11,15 +11,14 @@ modified: "2019-08-28"
 categories:
   - "Language Resources"
   - "Santali"
-  - "Santali"
 tags:
   - "santali"
   - "tools"
-excerpt: "This converter converts text typed in Santali language using ASCII and other popular legacy character encoding into Unicode. It’s noteworthy to mention that a significant amount of legacy text are available in encodings other than Unicode."
+excerpt: "Converts Santali text typed in older Ol Chiki fonts into Unicode, so that it shows correctly on any phone or computer."
 embeds:
   - provider: "converter"
     id: "suc"
-    title: "Santali Unicode Converter"
+    title: "Santali (Ol Chiki) Unicode converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/santali-unicode-encoding-converter/"
 scope: "For anyone with Santali text typed in an older Ol Chiki font, which shows as Latin letters on other phones and computers."
 info_title: About the converter
@@ -40,21 +39,21 @@ resources:
       url: https://sat.wikipedia.org/wiki/%E1%B1%B5%E1%B1%AE%E1%B1%B5%E1%B1%B7%E1%B1%9F%E1%B1%A8%E1%B1%A4%E1%B1%AD%E1%B1%9F%E1%B1%B9:Ramjit_Tudu
       note: Helped with the character mapping.
 ---
-Some Santali text is typed in older Ol Chiki fonts that show Ol Chiki letters in place of Latin letters. Open the text on a phone or computer without the same font, and only the Latin letters show. This converter changes the text into Unicode. Unicode works on every phone and computer.
+Much Santali text was typed in older Ol Chiki fonts. These fonts store each Ol Chiki letter as a Latin letter: type "a" and the font draws ᱟ. On a phone or computer without the same font, the text shows only as Latin letters. This converter changes it into Unicode. Then it shows in Ol Chiki on any device, and search engines can find it.
 
 [[embed:0]]
 
 ## How to use it
 
-1. Copy the Santali text from your file. See an [example of a book typed in an older font](https://web.archive.org/web/20210312035032/https://ova.gov.in/wp-content/plugins/anubada/uploads/09-04-2019-10-27-50-Santali%20(Tri-lingual%20Book).pdf).
+1. Copy the Santali text from your file. Here is an [example of a book typed in an older font](https://web.archive.org/web/20210312035032/https://ova.gov.in/wp-content/plugins/anubada/uploads/09-04-2019-10-27-50-Santali%20(Tri-lingual%20Book).pdf).
 2. Paste it in the first box. The Unicode text shows in the second box.
 3. Read through the Unicode text and correct any small errors.
 4. Select "Copy the Unicode text" and paste it where you need it.
 
-To read the Unicode text, you need an Ol Chiki Unicode font such as [Noto Sans Ol Chiki](https://fonts.google.com/noto/specimen/Noto+Sans+Ol+Chiki). Most new phones and computers already have one.
+To read the Unicode text, you need an Ol Chiki Unicode font such as [Noto Sans Ol Chiki](https://fonts.google.com/noto/specimen/Noto+Sans+Ol+Chiki). Most Android phones and Windows computers already have one.
 
 ## Why it is needed
 
-Michael Everson [proposed](https://www.unicode.org/L2/L1999/n1956.pdf) adding Ol Chiki to Unicode on 29 January 1999. It was added in 2008, in Unicode 5.1. Before and after that, many Santali fonts used their own encodings, mostly built on [ASCII](https://en.wikipedia.org/wiki/ASCII). Many print publications, such as the Santali magazine Fagun, still use them. Text typed in these fonts cannot be searched online. It cannot be read on a device without the same font either. Until everyone moves to Unicode, this converter helps make that text readable everywhere.
+Michael Everson [proposed](https://www.unicode.org/L2/L1999/n1956.pdf) adding Ol Chiki to Unicode on 29 January 1999. Unicode 5.1 added it in 2008. Until then, Santali fonts each used their own encoding, mostly built on [ASCII](https://en.wikipedia.org/wiki/ASCII). Some publications still use these fonts, such as the Santali magazine Fagun. Their text cannot be searched online. It also cannot be read on a device without the same font.
 
-Read the [blog post on the converter's release](/blogs/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/resources/santali-unicode-converter/sat/)) for more.
+Read the [blog post on the converter's release](/blogs/santali-unicode-converter-release/) ([ᱥᱟᱱᱛᱟᱲᱤ](/tools/sat/unicode-converter/sat/)) for more.

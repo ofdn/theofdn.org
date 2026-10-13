@@ -5,6 +5,7 @@
   <header class="page__header">
     <h1 class="page__title">{{ title }}</h1>
     <p class="page__lede">{{ lede }}</p>
+    {% if more %}<p class="page__lede">Fonts, keyboards, dictionaries and more are on the <a href="{{ more.path }}">{{ more.title }}</a> page.</p>{% endif %}
   </header>
   <ul class="card-list" role="list">
     {% for p in items %}

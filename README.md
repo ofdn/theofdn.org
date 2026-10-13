@@ -187,9 +187,11 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 
 | Page | Address |
 |---|---|
-| Resource: OER, tool, toolkit, handbook, audio archive | `/resources/<slug>/` |
+| Resource: OER, toolkit, handbook, audio archive | `/resources/<slug>/` |
 | Language version of a resource | `/resources/<slug>/<lang>/` |
-| The running tool itself | `/tools/<slug>/` |
+| Tool for one language | `/tools/<code>/<tool>/` |
+| Tool for many languages | `/tools/<slug>/` |
+| Language version of a tool | `/tools/<code>/<tool>/<lang>/` |
 | Blog post, announcement, meeting notes | `/blogs/<slug>/` |
 | Language version of a blog post | `/blogs/<slug>/<lang>/` |
 | Film, podcast episode | `/film/<slug>/`, `/podcast/<slug>/` |
@@ -198,15 +200,17 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 
 - One resource has one page. It carries the ARK.
 - An announcement is a blog post. It links to the resource page. It does not repeat the tool.
+- A tool for one language uses the language code, then the kind of tool: `/tools/sat/unicode-converter/`. Use these kinds: `unicode-converter`, `keyboard`, `font`, `dictionary`, `text-to-speech`, `spell-checker`, `ocr`. Add a new kind here before you use it.
+- `/tools/` opens the Resources & tools list. `/tools/<code>/` lists every tool under that code. The build makes this list by itself.
 - A blog post has no category in its address: `/blogs/wikimania2019/`, not `/blogs/conference/wikimania2019/`.
 - `<slug>` is short, lowercase and in Latin letters. Use the name people know the resource by.
 - A language resource page uses the language's ISO 639 code as its slug. Use the two-letter code when there is one (`/resources/or/` for Odia). Otherwise use the three-letter code (`/resources/hoc/` for Ho). If the language has neither, use its Glottocode. A language variety is a section on its language's page, not a page of its own.
 
 Example:
 
-- Resource: `/resources/santali-unicode-converter/`
-- Santali version: `/resources/santali-unicode-converter/sat/`
-- The converter: `/tools/santali-unicode-converter/`
+- Tool: `/tools/sat/unicode-converter/`
+- Santali version: `/tools/sat/unicode-converter/sat/`
+- Language page: `/resources/sat/`
 - Announcement: `/blogs/santali-unicode-converter-release/`
 - ARK: `ark:15056/ofdn-t-000001`, and `ark:15056/ofdn-t-000001/sat` for the Santali version
 
@@ -238,7 +242,7 @@ A language version is the same page in another language. It is not a new page.
 ```
 ---
 title: "ᱥᱟᱱᱛᱟᱲᱤ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ ᱥᱚᱫᱚᱨᱮᱱᱟ"
-path: "/resources/santali-unicode-converter/sat/"
+path: "/tools/sat/unicode-converter/sat/"
 lang: sat
 section: "tool"
 translators:
@@ -338,15 +342,18 @@ To point readers to a group from the text, link its heading: `[Read and type](#r
 
 ### Language tool pages
 
-A tool page, such as a font converter, uses the same fields as a language resource page. Start from `page-templates/language-tool.md`. See `content/tool/ho-unicode-converter.md` for a full example.
+A tool page, such as a font converter, uses the same template and fields as a language resource page. Start from `page-templates/language-tool.md`. See `content/tool/ho-unicode-converter.md` for a full example.
 
-1. Copy the template into `content/tool/` and rename it, for example `ho-unicode-converter.md`.
-2. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source.
-3. Write `scope` and fill in `seo`, as for a language resource page.
-4. Put the tool right after a short introduction, with `[[embed:0]]`.
-5. Write "How to use it" as numbered steps.
-6. Credit everyone who built or helped build the tool under `credits`.
-7. Commit.
+1. Copy the template into `content/tool/` and rename it, for example `ho-unicode-converter.md`. Set `path` as under Addresses.
+2. Write the title as "<Language> (<script>) <tool>", for example "Ho (Warang Citi) Unicode converter". Leave out the script when the tool works for every script of the language.
+3. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source.
+4. Write `scope` and fill in `seo`, as for a language resource page.
+5. Put the tool right after a short introduction, with `[[embed:0]]`.
+6. Write "How to use it" as numbered steps.
+7. Credit everyone who built or helped build the tool under `credits`.
+8. Commit.
+
+The tool shows up by itself on its language page, first under "Read and type". The card takes the title, the developer and the `excerpt` from the tool page. Write the `excerpt` as one sentence on what the tool does.
 
 The page has the same "Use these resources well" and "Help improve this page" boxes as a language resource page.
 

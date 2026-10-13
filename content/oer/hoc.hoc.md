@@ -81,9 +81,6 @@ resources:
       url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
       source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
       note: "𑣈𑣓𑣁 𑣔𑣉 𑢿𑣂𑣌𑣂𑣘𑣂𑣂𑣑𑣂𑣅𑣁 𑣉𑣀𑣑𑣉𑣄 𑢿𑣂𑣌𑣂𑣖𑣂𑣂𑣑𑣂𑣅𑣁 𑣘𑣚𑣈𑣈𑣒𑣘𑣉𑣉𑣜𑣖 𑣌𑣉 𑣜𑣈 𑣘𑣆𑣒𑣂 𑣜𑣈 𑣁𑣋𑣃𑣃𑣄 𑣕𑣓𑣁"
-    - name: Ho (Warang Chiti) Unicode Converter
-      url: /resources/ho-unicode-converter/
-      credit: Jnanaranjan Sahu
     - name: "𑢡𑣌𑣞𑣁𑣜𑣁𑣖𑣃𑣌𑣁 𑢬𑣓𑣟𑣁𑣜𑣒𑣜"
       url: https://www.aksharamukha.com/converter
       note: "𑢹𑣗𑣁𑣜𑣊 𑢯𑣂𑣕𑣂 𑣕𑣈 𑣉𑣚 𑣁𑣌𑣁𑣓𑣁𑣄 𑣈𑣒𑣄 𑣚𑣈𑣌𑣁𑣓 𑣉𑣚 𑣌𑣉 𑣕𑣈 𑣌𑣓𑣟𑣜𑣒 𑣚𑣋𑣂𑣑"

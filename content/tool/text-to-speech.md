@@ -1,6 +1,6 @@
 ---
 title: "Lekatha: Text-to-speech toolkit"
-path: "/resources/text-to-speech/"
+path: "/tools/text-to-speech/"
 ark: ofdn-t-000003
 tier: "live"
 section: "tool"

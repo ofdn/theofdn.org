@@ -1,6 +1,6 @@
 ---
 title: "ᱥᱟᱱᱛᱟᱲᱤ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ ᱥᱚᱫᱚᱨᱮᱱᱟ"
-path: "/resources/santali-unicode-converter/sat/"
+path: "/tools/sat/unicode-converter/sat/"
 lang: sat
 tier: "live"
 section: "tool"
@@ -22,7 +22,7 @@ excerpt: "This web tool converts text typed in legacy encoding systems into Unic
 embeds:
   - provider: "converter"
     id: "suc"
-    title: "Santali Unicode Converter"
+    title: "Santali (Ol Chiki) Unicode converter"
 original_url: "https://theofdn.org/openspeaks/language-resources/sat-santali-olchiki-converter/"
 ---
 ᱥᱟᱱᱛᱟᱲᱤ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ ᱫᱚ ᱢᱤᱫ ᱪᱤᱠᱤ ᱵᱚᱱᱚᱫᱚᱞ ᱦᱟᱹᱛᱭᱟᱹᱨ ᱵᱟᱝᱢᱟ ᱴᱩᱞ ᱠᱟᱱᱟ ᱾ ᱡᱟᱦᱟᱸ ᱫᱚ ᱱᱚᱱ-ᱤᱭᱩᱱᱤᱠᱚᱰ (non-unicode) ᱯᱷᱚᱸᱴ ᱛᱮ ᱚᱞ ᱟᱠᱟᱱ ᱚᱞ ᱠᱚ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱛᱮ ᱵᱚᱫᱚᱞ ᱚᱪᱚᱭᱟᱭ ᱾ ᱚᱠᱟᱫᱚᱢ ᱢᱮᱛᱟᱜ ᱠᱟᱱ ᱱᱚᱱ-ᱤᱭᱩᱱᱤᱠᱚᱰ ? ᱢᱟᱭᱠᱨᱚᱥᱚᱯᱴ ᱩᱣᱟᱨᱰ ᱮᱢᱟᱱ ᱞᱮᱠᱟᱱ ᱥᱚᱯᱴᱮᱭᱟᱨ ᱛᱮ ᱵᱚᱱ ᱠᱚᱴᱟᱵ ᱟᱠᱟᱫ ᱚᱞ, ᱡᱟᱦᱟᱸ ᱫᱚ ᱟᱨᱢᱤᱫ ᱦᱚᱲ ᱴᱷᱮᱱ ᱠᱚᱯᱤ ᱠᱟᱛᱮ ᱵᱚᱱ ᱠᱳᱞ ᱞᱮᱠᱷᱟᱱ ᱟᱡ ᱛᱮᱜᱮ ᱨᱚᱢᱟᱱ/ᱤᱝᱜᱽᱞᱤᱥ ᱪᱤᱠᱤ ᱨᱮ ᱵᱚᱫᱚᱞᱚᱜ ᱠᱟᱱᱟ ᱾ ᱚᱱᱠᱟᱱ ᱠᱚᱴᱟᱵᱟᱜ ᱚᱞ ᱠᱚ ᱜᱮ ᱱᱚᱱ-ᱤᱭᱩᱱᱤᱠᱚᱰ ᱚᱞ ᱫᱚ ᱾ ᱚᱱᱟ ᱱᱚᱱ-ᱤᱭᱩᱱᱤᱠᱚᱰ ᱚᱞ ᱜᱮ ᱤᱭᱩᱱᱤᱠᱚᱰ ᱛᱮ ᱵᱚᱫᱚᱞ ᱞᱮᱠᱷᱟᱱ ᱡᱟᱦᱟᱸ ᱨᱮ ᱵᱚᱱ ᱠᱚᱯᱤ ᱯᱮᱥᱴ ᱨᱮᱦᱚᱸ ᱚᱞᱪᱤᱠᱤ ᱛᱮᱜᱮ ᱧᱮᱞᱚᱜ-ᱟ ᱾

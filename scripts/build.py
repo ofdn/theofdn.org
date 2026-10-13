@@ -50,8 +50,8 @@ FOOTER_NAV = [
 # Listing pages. The old WordPress category addresses redirect here.
 LISTS = {
     "/film/": ("Films", ["film"], "Documentary films by O Foundation."),
-    "/resources/": ("Resources", ["oer", "tool", "audio-archive"],
-                       "Open educational resources, language tools and toolkits."),
+    "/resources/": ("Resources & tools", ["oer", "tool", "audio-archive"],
+                       "Language resources and technological tools."),
     "/publications/": ("Publications", ["blog", "archive"], "Blog posts, reports and older pages kept as a record."),
 }
 # Pages shown first on a list, as {"/list/": ["/page/"]}.
@@ -606,6 +606,28 @@ def social_html(urls, where):
     return f'<ul class="resource__social" role="list">{"".join(lis)}</ul>'
 
 
+def add_tool_cards(page, pages):
+    """Put a card for each tool at /tools/<code>/<tool>/ first under `type` on the
+    language page at /resources/<code>/ (and its language versions). A card the
+    page already has for the same address is kept as written."""
+    code = page["path"].strip("/").split("/")[1]
+    groups = dict(page.get("resources") or {})
+    have = {it.get("url") for items in groups.values() for it in items or []}
+    cards = []
+    for t in sorted(pages, key=lambda t: t["title"]):
+        parts = t["path"].strip("/").split("/")
+        if t["section"] != "tool" or "original" in t or parts[:2] != ["tools", code] or len(parts) != 3 or t["path"] in have:
+            continue
+        dev = (t.get("info") or {}).get("developer")
+        card = {"name": t["title"], "url": t["path"], "note": t.get("excerpt", "")}
+        if dev:
+            card["credit"] = "Made by " + re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", " and ".join(dev) if isinstance(dev, list) else str(dev))
+        cards.append(card)
+    if cards:
+        groups["type"] = cards + list(groups.get("type") or [])
+        page["resources"] = groups
+
+
 def resources_html(page):
     """Grouped resource cards from `resources:` (language resource pages).
     Groups and their headings are in data/site.yml `resource_groups`;
@@ -1071,6 +1093,8 @@ def main():
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
             p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["blocks"])), p)
+        if p["section"] == "oer":
+            add_tool_cards(p, pages)
         res = resources_html(p)
         if res:
             body = body.replace("<p>[[resources]]</p>", res) if "<p>[[resources]]</p>" in body else body + res
@@ -1093,6 +1117,22 @@ def main():
         items = [p for p in pages if p["path"] in LIST_PINNED.get(path, [])] + items
         html = env.get_template("list.html").render(
             title=title, lede=lede, items=items, summary=summary, current=path, status=site_status, **common)
+        write(path, html)
+
+    # /tools/<code>/: every tool at /tools/<code>/<tool>/, made from the pages themselves.
+    tool_lists = {}
+    for p in by_section.get("tool", []):
+        parts = p["path"].strip("/").split("/")
+        if len(parts) == 3:
+            tool_lists.setdefault(f"/tools/{parts[1]}/", []).append(p)
+    for path, items in tool_lists.items():
+        code = path.strip("/").split("/")[1]
+        lang = next((p for p in pages if p["path"] == f"/resources/{code}/"), None)
+        name = ((lang.get("seo") or {}).get("language") if lang else None) or code
+        items.sort(key=lambda p: p["title"])
+        html = env.get_template("list.html").render(
+            title=f"{name} tools", lede=f"Tools for reading, typing and using {name} on phones and computers.",
+            more=lang, items=items, summary=summary, current="/resources/", status=site_status, **common)
         write(path, html)
 
     redirects = json.loads((ROOT / "data" / "redirects.json").read_text())
@@ -1143,7 +1183,7 @@ def main():
 
     (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, **common), base))
     (out / ".nojekyll").write_text("")
-    urls = [SITE_URL + p["path"] for p in pages] + [SITE_URL + p for p in LISTS]
+    urls = [SITE_URL + p["path"] for p in pages] + [SITE_URL + p for p in LISTS] + [SITE_URL + p for p in tool_lists]
     (out / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{u}</loc></url>\n" for u in sorted(urls)) + "</urlset>\n")

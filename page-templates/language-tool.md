@@ -1,10 +1,12 @@
 ---
-title: "<Language> (<script>) Unicode Converter"
-path: "/resources/<language>-unicode-converter/"
+title: "<Language> (<script>) Unicode converter"
+# <code>: the language code, as for language resource pages. Kinds of tool are listed in the README.
+path: "/tools/<code>/unicode-converter/"
 section: "tool"
 tier: "live"
 ark: tool
 date: "YYYY-MM-DD"
+# Also the note on the tool's card on the language page.
 excerpt: "One sentence on what the tool does."
 # One line under the title: who the tool is for.
 scope: "For anyone with <language> text typed in an older <script> font, which shows as Latin letters on other phones and computers."

@@ -1,6 +1,6 @@
 ---
-title: "Ho (Warang Citi) Unicode Converter"
-path: "/resources/ho-unicode-converter/"
+title: "Ho (Warang Citi) Unicode converter"
+path: "/tools/hoc/unicode-converter/"
 ark: ofdn-t-000004
 tier: "live"
 section: "tool"
@@ -12,7 +12,7 @@ tags:
   - "ho"
   - "warang citi"
   - "tools"
-excerpt: "Converts Ho text typed in the older Boyo Gagrai and Ghanshyam Bodra Warang Citi fonts into Unicode."
+excerpt: "Converts Ho text typed in the older Boyo Gagrai and Ghanshyam Bodra Warang Citi fonts into Unicode, so that it shows correctly on any phone or computer."
 scope: "For anyone with Ho text typed in an older Warang Citi font, which shows as Latin letters on other phones and computers."
 seo:
   language: Ho
@@ -37,14 +37,14 @@ resources:
 embeds:
   - provider: "converter"
     id: "huc"
-    title: "Ho (Warang Citi) Unicode Converter"
+    title: "Ho (Warang Citi) Unicode converter"
     fonts:
       - id: boyo_gagrai
         label: Boyo Gagrai
       - id: ghansyam
         label: Ghanshyam Bodra
 ---
-Much Ho text was typed in older Warang Citi fonts, such as Boyo Gagrai and [Ghanshyam Bodra](https://rtd.theofdn.org/typefaces/ghanshyambodra11/). They show Warang Citi letters in place of Latin letters. Open the text on a phone or computer without the same font, and only the Latin letters show. This converter changes the text into Unicode. Unicode works on every phone and computer.
+Much Ho text was typed in older Warang Citi fonts, such as Boyo Gagrai and [Ghanshyam Bodra](https://rtd.theofdn.org/typefaces/ghanshyambodra11/). These fonts store each Warang Citi letter as a Latin letter. In Boyo Gagrai, type "a" and the font draws 𑣁. Open the text on a phone or computer without the same font, and only the Latin letters show. This converter changes the text into Unicode. Unicode works on every phone and computer.
 
 [[embed:0]]
 

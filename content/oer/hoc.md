@@ -86,10 +86,6 @@ resources:
       url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
       note: Type Ho in Warang Citi on Wikipedia and other Wikimedia projects. The link shows how to turn it on and which keys to press.
       source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
-    - name: Ho (Warang Chiti) Unicode Converter
-      url: /resources/ho-unicode-converter/
-      credit: Made by Jnanaranjan Sahu
-      note: "Converts text typed in the older Boyo Gagrai and [Ghanshyam Bodra](https://rtd.theofdn.org/typefaces/ghanshyambodra11/) fonts into Unicode, so that it shows correctly on any device."
     - name: Aksharamukha converter
       url: https://www.aksharamukha.com/converter
       note: Converts text between Warang Citi and other scripts.
