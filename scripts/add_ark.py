@@ -37,7 +37,7 @@ def split(text):
 
 def next_id(letter):
     used = [int(m) for f in (ROOT / "content").rglob("*.md")
-            for m in re.findall(rf"^ark: ofdn-{letter}-(\d{{6}})\s*$", f.read_text(), re.M)]
+            for m in re.findall(rf"^(?:ark:|  -) ofdn-{letter}-(\d{{6}})\s*$", f.read_text(), re.M)]  # ark and ark_aliases
     return f"ofdn-{letter}-{max(used, default=0) + 1:06d}"
 
 

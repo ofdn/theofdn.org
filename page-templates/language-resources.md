@@ -7,9 +7,21 @@ date: "YYYY-MM-DD"
 authors:
   - Full Name
 excerpt: "One sentence on what the page offers."
+# Not shown on the page. Helps search engines find it.
+seo:
+  language: <the name most people search for>
+  also_known_as:
+    - <other names and spellings>
+  keywords:
+    - <words people type to find these resources>
 info_title: About the language
 info:
-  own_name: "<name in its own script> (<English name>)"
+  # A language can have more than one name. Use the name its speakers use
+  # (the endonym) for the title and for own_name. Names that others use
+  # (exonyms) go under other_names. Ask speakers before listing a name.
+  # Leave out any name that speakers find hurtful.
+  own_name: "<name in its own script> (<the same name in Latin letters>)"
+  other_names: <names others use>
   speakers: <number, with its source in the text>
   spoken_in: <regions and countries>
   family: <language family>

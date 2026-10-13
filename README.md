@@ -218,6 +218,14 @@ Example:
 
 The ARK follows the page. Never remove a line from `data/redirects.json`.
 
+To merge two pages, keep one. Delete the other file, redirect its address to the page you kept, and add its ARK under `ark_aliases` on that page. The old ARK then opens the merged page:
+
+```
+ark: ofdn-r-000003
+ark_aliases:
+  - ofdn-r-000006
+```
+
 ## Language versions
 
 A language version is the same page in another language. It is not a new page.
@@ -256,12 +264,22 @@ Use this layout for a page that lists fonts, keyboards, dictionaries, videos and
 
 1. Copy the template into `content/oer/` and rename it.
 2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
-3. Put two or three links under `links`. They show under the facts.
-4. Fill in `resources`. Each group becomes a heading with a card for each item.
-5. Write a short introduction above `[[resources]]`.
-6. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
-7. Delete every group and line you did not use.
-8. Commit.
+3. Fill in `seo`. It is not shown on the page. Search engines read it.
+4. Put links to the language on other sites under `links`. They show under the facts.
+5. Fill in `resources`. Each group becomes a heading with a card for each item.
+6. Write a short introduction above `[[resources]]`.
+7. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
+8. Delete every group and line you did not use.
+9. Commit.
+
+### Names of a language
+
+A language can have more than one name. The name its speakers use is the endonym. A name other people use is an exonym. Some exonyms are old colonial names, and some are hurtful.
+
+- Use the speakers' own name in the title and in `own_name`.
+- Put other names in `other_names` only after you ask speakers.
+- Leave out names that speakers find hurtful.
+- Put other spellings that people search for in `seo`, under `also_known_as`.
 
 For a written language, start with `type`. Link each typeface and type designer to its record on the Registry of Type Design (rtd.theofdn.org). For a mainly oral language, start with `watch` and `archives`, and leave out `type`.
 

@@ -1,6 +1,6 @@
 ---
 title: "𑢹𑣉𑣉 𑢮𑣋𑣁𑣜 𑢼𑣂𑣞𑣉𑣉𑣜𑣞 𑣌𑣉"
-path: "/resources/ho-digital-resources/hoc/"
+path: "/resources/ho/hoc/"
 lang: hoc
 authors:
   - "Subhashish Panigrahi"
@@ -24,6 +24,18 @@ original_url: "https://web.archive.org/web/20190822093640/https://openspeaks.com
 resource_headings:
   sources: "𑢷𑣂𑣗𑣚𑣂𑣅𑣉𑣋𑣜𑣁𑣘𑣂"
   credits: "𑢷𑣂𑣕𑣂𑣅𑣈𑣖"
+seo:
+  language: Ho
+  also_known_as:
+    - Ho jagar
+  keywords:
+    - Ho language
+    - Warang Citi
+    - Warang Chiti
+    - Warang Citi font
+    - Warang Citi keyboard
+    - Ho Wikipedia
+    - Ho dictionary
 info_title: About the language
 info:
   own_name: "𑢹𑣉𑣉"
@@ -67,6 +79,7 @@ resources:
     - name: "𑢹𑣗𑣁𑣜𑣊 𑢯𑣂𑣕𑣂 𑣕𑣈 𑣉𑣚 𑣕𑣈𑣅𑣄 𑣆𑣓𑣘𑣃𑣒 𑣒𑣃𑣃𑣚"
       url: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
       note: "𑣈𑣓𑣁 𑣔𑣉 𑢿𑣂𑣌𑣂𑣘𑣂𑣂𑣑𑣂𑣅𑣁 𑣉𑣀𑣑𑣉𑣄 𑢿𑣂𑣌𑣂𑣖𑣂𑣂𑣑𑣂𑣅𑣁 𑣘𑣚𑣈𑣈𑣒𑣘𑣉𑣉𑣜𑣖 𑣌𑣉 𑣜𑣈 𑣘𑣆𑣒𑣂 𑣜𑣈 𑣁𑣋𑣃𑣃𑣄 𑣕𑣓𑣁"
+    - name: HoApp
     - name: Ho (Warang Chiti) Unicode Converter
       url: https://jsahu.me/tools/huc
       credit: Jnanaranjan Sahu
@@ -88,6 +101,9 @@ resources:
     - name: "𑢹𑣉𑣉 𑣎𑣋𑣁𑣜 𑣌𑣂𑣕𑣈 𑣌𑣉 𑣉𑣀𑣑𑣉𑣄 𑢬𑣎𑣂 𑢷𑣃𑣜𑣃"
       url: https://bharatavani.in/
       note: "𑢫𑣐𑣂𑣑, 𑢹𑣉𑣖𑣙𑣅𑣉𑣖 𑢸𑣂𑣒𑣂𑣌𑣁, 𑢬𑣋𑣉𑣚, 𑢸𑣉𑣉𑣔, 𑢾𑣓𑣁𑣋𑣉𑣖 𑢾𑣋𑣉𑣖, 𑢸𑣂𑣒𑣂𑣌𑣁, 𑢴𑣃𑣓𑣂𑣅𑣁 𑢹𑣂𑣕𑣈𑣙𑣞𑣁 𑣈𑣖𑣁 – 𑢹𑣉𑣉 𑢹𑣅𑣁𑣖 𑢸𑣘𑣁𑣔𑣂𑣜 𑢮𑣃𑣖𑣚𑣁𑣅, 𑢨𑣒𑣈 𑢵𑣃𑣜𑣕𑣃𑣊 𑢸𑣂𑣒𑣂𑣌𑣁 𑢡𑣌𑣁𑣛𑣁, 𑢩𑣑𑣂𑣞𑣁 𑣘𑣁 𑣈𑣕𑣈 𑣁𑣜𑣞𑣁𑣚 𑣁𑣌𑣁𑣓 𑣌𑣂𑣕𑣈𑣗 𑣌𑣉. 𑢷𑣁𑣜𑣁𑣕𑣗𑣁𑣓𑣂, 𑢨𑣖𑢨𑣏𑢡𑣜𑢱𑣂, 𑢷𑣁𑣜𑣁𑣕 𑢾𑣜𑣌𑣁𑣜"
+    - name: Hende Sadom
+      url: https://github.com/Singitur/hende-sadom
+      credit: "[𑢶𑣊𑣋𑣃 𑢸𑣃𑣜𑣕𑣂](https://rtd.theofdn.org/people/mangu-purty/)"
     - name: "𑢾𑣟𑣁𑣜𑣕𑣖𑣉𑣉𑣜 𑢬𑣉𑣚𑣈𑣈𑣎 𑢺𑣈𑣗𑣉𑣜𑣈𑣈𑣒𑣉𑣜𑣂 𑣘𑣉𑣉𑣜 𑢨𑣀𑣑𑣈𑣈𑣍𑣎𑣜𑣑 𑢺𑣈𑣊𑣋𑣟𑣈𑣈𑣎𑣞 𑢱𑣉𑣌𑣅𑣃𑣖𑣈𑣀𑣒𑣈𑣈𑣞𑣓"
       url: https://langhotspots.swarthmore.edu/Ho/index.html
       note: "𑣜𑣈 𑣖𑣈𑣓𑣄 𑣕𑣓 𑣖𑣂𑣈𑣑 𑣟𑣂𑣑𑣂𑣅𑣉, 𑣈𑣓 𑣜𑣈 𑣖𑣂𑣈𑣑 𑣙𑣉𑣉 𑢹𑣉𑣉 𑣕𑣈 𑣌𑣙𑣁𑣓𑣂𑣄 𑣌𑣎𑣂𑣆 𑣕𑣓𑣁 𑣉𑣀𑣑𑣉𑣄 𑢹𑣗𑣁𑣜𑣊 𑢯𑣂𑣕𑣂𑣄 𑣈𑣕𑣉 𑣌𑣉 𑣕𑣓𑣁."

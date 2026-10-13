@@ -847,6 +847,11 @@ def check_arks(pages, conf):
             sys.exit(f"{p['file']}: ark {a} is already used by {seen[a]}")
         seen[a] = p["file"]
         p["ark"] = a
+        # Ids of pages merged into this one keep resolving here. Never reuse them.
+        for old in p.get("ark_aliases") or []:
+            if not ARK_ID.match(str(old)) or old in seen:
+                sys.exit(f"{p['file']}: ark_aliases: {old} is not a free ARK id")
+            seen[old] = p["file"]
         p["ark_url"] = f"https://n2t.net/ark:{ARK_NAAN}/{a}"
         p["ark_part_list"] = []
         for q, target in (p.get("ark_parts") or {}).items():
@@ -896,6 +901,55 @@ def citations(page):
                    + "},\n  publisher = {O Foundation},\n  year      = {" + year + "},\n  url       = {" + url
                    + "},\n  urldate   = {__ACCESSED__}" + (",\n  note      = {" + ark.strip() + "}" if ark else "") + "\n}"),
     }
+
+
+SAME_AS_HOSTS = ("wikidata.org", "wikipedia.org", "glottolog.org", "endangeredlanguages.com",
+                 "language-archives.org", "wals.info", "wikitongues.org", "ethnologue.com")
+
+
+def structured_data(page):
+    """schema.org JSON-LD for search engines. Not shown on the page.
+    Language resource pages add what the `seo:` block and `info:` say about the language."""
+    url = SITE_URL + page["path"]
+    data = {"@context": "https://schema.org", "@type": "WebPage", "name": page["title"], "url": url,
+            "inLanguage": page.get("lang", "en"),
+            "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/"}}
+    if page.get("excerpt"):
+        data["description"] = summary(page)
+    if page.get("ark_url"):
+        data["identifier"] = page["ark_url"]
+    if page.get("date"):
+        data["datePublished"] = page["date"]
+    if page.get("modified"):
+        data["dateModified"] = str(page["modified"])
+    if page.get("authors"):
+        data["author"] = [{"@type": "Person", "name": n} for n in page["authors"]]
+    if page.get("translators"):
+        data["translator"] = [{"@type": "Person", "name": n} for n in page["translators"]]
+    seo = page.get("seo") or {}
+    if page.get("resources") or seo:
+        data["@type"] = ["WebPage", "LearningResource"]
+        data["license"] = "https://creativecommons.org/licenses/by-sa/4.0/"
+    if seo.get("keywords"):
+        data["keywords"] = ", ".join(seo["keywords"])
+    if seo.get("language"):
+        info = page.get("info") or {}
+        lang = {"@type": "Language", "name": seo["language"]}
+        names = [re.sub(r"\s*\(.*?\)\s*$", "", str(info["own_name"]))] if info.get("own_name") else []
+        names += [str(n) for n in seo.get("also_known_as") or []]
+        if names:
+            lang["alternateName"] = names
+        if info.get("iso639"):
+            lang["identifier"] = [{"@type": "PropertyValue", "propertyID": "ISO 639-3", "value": str(info["iso639"])}]
+        if info.get("glottolog"):
+            lang.setdefault("identifier", []).append(
+                {"@type": "PropertyValue", "propertyID": "Glottocode", "value": str(info["glottolog"])})
+        same = [str(x if isinstance(x, str) else x["url"]) for x in page.get("links") or []]
+        same = [u for u in same if any(urlparse(u).netloc.endswith(h) for h in SAME_AS_HOSTS)]
+        if same:
+            lang["sameAs"] = same
+        data["about"] = lang
+    return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
 
 def film_name(page):
@@ -974,7 +1028,8 @@ def main():
         tpl = "home.html" if p["path"] == "/" else "page.html"
         cite = citations(p)
         html = env.get_template(tpl).render(
-            page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]),
+            page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]), jsonld=structured_data(p),
+            site_url=SITE_URL,
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
             current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md,
             status=page_status(p, conf), **common)
@@ -1001,6 +1056,11 @@ def main():
 
     # ARK: a redirect page at each form of each ARK, plus the resolver's test id.
     for p in pages:
+        for old in p.get("ark_aliases") or []:
+            for a in ark_paths(str(old)):
+                dest = out / a / "index.html"
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_text(env.get_template("redirect.html").render(target=base + p["path"]))
         if p.get("ark"):
             for a in ark_paths(p["ark"]):
                 dest = out / a / "index.html"

@@ -20,6 +20,7 @@ image:                {image: true}
 alt:                  {image: true}
 title:                {label: Title}
 own_name:             {label: Name in the language}
+other_names:          {label: Other names}
 speakers:             {label: Speakers}
 spoken_in:            {label: Where it is spoken}
 family:               {label: Language family}
