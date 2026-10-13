@@ -9,6 +9,7 @@ wp_id: 361
 date: "2018-08-07"
 authors:
   - "Subhashish Panigrahi"
+  - "Ramjit Tudu"
 modified: "2026-10-13"
 categories:
   - "Language Resources"
@@ -171,10 +172,10 @@ resources:
   credits:
     - name: Ramjit Tudu
       url: https://sat.wikipedia.org/wiki/%E1%B1%B5%E1%B1%AE%E1%B1%B5%E1%B1%B7%E1%B1%9F%E1%B1%A8%E1%B1%A4%E1%B1%AD%E1%B1%9F%E1%B1%B9:Ramjit_Tudu
-      note: Santali Wikipedia editor. Gave inputs for this page.
+      note: Santali Wikipedia editor and a founding member of Ol Chiki Tech. Co-wrote this page.
     - name: Anwesh Pati
       note: Gave inputs for this page.
-acknowledgements: "Thank you, Ramjit Tudu and Anwesh Pati, for your inputs on this page."
+acknowledgements: "Thank you, Anwesh Pati, for your inputs on this page."
 ---
 
 *This page was first published in August 2018, when the Santali Wikipedia went live.*
