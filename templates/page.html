@@ -17,21 +17,22 @@
 {% if page.excerpt %}<meta property="og:description" content="{{ summary(page) }}">{% endif %}
 {% if page.featured_image %}<meta property="og:image" content="{{ site_url }}{{ page.featured_image }}">{% endif %}
 <script type="application/ld+json">{{ jsonld | safe }}</script>
-{#- For Zotero, Mendeley and other reference managers: Highwire Press and Dublin Core tags. #}
+{#- For Zotero, Mendeley and other reference managers: Highwire Press and Dublin Core tags.
+    No <link rel="schema.DC"> lines: Cloudflare rewrites their http:// to https://, and Zotero then
+    ignores the DC and eprints tags. Zotero assumes these schemas by default. #}
 <meta name="citation_title" content="{{ page.title }}">
 {% for a in page.authors or [] %}<meta name="citation_author" content="{{ a }}">
 {% endfor %}{% if page.date %}<meta name="citation_publication_date" content="{{ page.date | replace('-', '/') }}">{% endif %}
 {% if page.updated %}<meta name="citation_online_date" content="{{ page.updated | replace('-', '/') }}">{% endif %}
 <meta name="citation_publisher" content="{{ site_name }}">
+{% if page.section == "oer" %}<meta name="citation_technical_report_institution" content="{{ site_name }}">{% endif %}
 <meta name="citation_language" content="{{ page.lang }}">
 <meta name="citation_public_url" content="{{ site_url }}{{ page.path }}">
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
 <meta name="DC.title" content="{{ page.title }}">
 {% for a in page.authors or [] %}<meta name="DC.creator" content="{{ a }}">
 {% endfor %}{% if page.date %}<meta name="DC.date" content="{{ page.date }}">{% endif %}
 <meta name="DC.publisher" content="{{ site_name }}">
 <meta name="DC.rights" content="{{ page.rights }}">
-<link rel="schema.eprints" href="http://purl.org/eprint/terms/">
 <meta name="eprints.place_of_pub" content="{{ site_place }}">
 <meta name="DC.language" content="{{ page.lang }}">
 <meta name="DC.identifier" content="{{ site_url }}{{ page.path }}">
