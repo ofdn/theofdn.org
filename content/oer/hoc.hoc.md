@@ -20,7 +20,7 @@ tags:
   - "Ho"
   - "Warang Citi"
 excerpt: "Digital resources for the Ho language in Warang Citi: input tools, fonts, Ho Wikipedia and video tutorials."
-original_url: "https://web.archive.org/web/20190822093640/https://openspeaks.com/languages/ho/"
+original_url: "https://theofdn.org/oer/ho-1/"
 resource_headings:
   sources: "𑢷𑣂𑣗𑣚𑣂𑣅𑣉𑣋𑣜𑣁𑣘𑣂"
   credits: "𑢷𑣂𑣕𑣂𑣅𑣈𑣖"

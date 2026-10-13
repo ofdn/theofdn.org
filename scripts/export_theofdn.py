@@ -38,7 +38,7 @@ DEAD_LINK_TARGETS = {
     "/wikimania2017": "/blogs/conference/wikimania2017/",
     "/category/tools/language-tool": "/category/openspeaks/language-resources/",
     "/globalvoices.org": "https://globalvoices.org/",
-    "/openspeaks.com": "https://openspeaks.com/",
+    "/openspeaks.com": "/openspeaks/",  # the old domain is no longer ours; never link it
 }
 # Standalone tools on the server, outside WordPress. Copied as they are.
 STATIC_TOOLS = {"suc": ["index.html", "script.js", "Shuttleworth Funded.jpg"]}

@@ -44,4 +44,4 @@ The timeline looks like this:
 
 We cannot wait to share more about this project when we start our on-ground documentation work soon.
 
-*This is a part of a [blog series](https://web.archive.org/web/20190917210459/https://openspeaks.com/topics/blog/ngs/) updating about our ongoing work supported by NGS.*
+*This is a part of a blog series updating about our ongoing work supported by NGS.*
