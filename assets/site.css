@@ -744,3 +744,6 @@ a.resource__name:hover .icon { color: var(--color-accent); }
 .resource__social a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 24px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
 .resource__social .icon { flex: none; width: 18px; height: 18px; color: var(--color-text); }
 .resource__handle { font-weight: 400; }
+.prose .resource__source { margin-top: var(--space-sm); }
+.resource__source a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 24px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
+.resource__source .icon { flex: none; width: 18px; height: 18px; color: var(--color-text); }

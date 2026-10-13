@@ -305,6 +305,7 @@ Each item can have these lines:
 - `licence`: its licence.
 - `note`: one sentence on what it is. Say so here if a link no longer works.
 - `archived`: an archived copy, for a link that no longer works.
+- `source`: the source code of a tool. It shows as a "Source code" link under the card. Put the page that shows people how to use the tool under `url`.
 - `social`: a list of social media addresses (Instagram, Facebook, X, WhatsApp, Telegram). Each shows with its icon and handle. Ask the person before you list their accounts.
 
 A language version uses the same groups. To show a heading in the language, add it under `resource_headings`:

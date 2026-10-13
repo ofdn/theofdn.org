@@ -51,7 +51,8 @@ resources:
   # video recordings) and leave out `type`.
   type:
     - name: <font, keyboard, converter or character chart>
-      url: https://
+      url: <a page that shows people how to use it>
+      source: <its source code, if it has any>
       credit: <who made it>
       licence: <licence>
       note: <one sentence on what it does>

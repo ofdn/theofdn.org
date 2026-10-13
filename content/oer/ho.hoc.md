@@ -77,7 +77,8 @@ resources:
       credit: "[Ghanshyam Bodra](https://rtd.theofdn.org/people/ghanshyam-bodra/)"
     - name: BoyoGagraiUnicode Regular
     - name: "𑢹𑣗𑣁𑣜𑣊 𑢯𑣂𑣕𑣂 𑣕𑣈 𑣉𑣚 𑣕𑣈𑣅𑣄 𑣆𑣓𑣘𑣃𑣒 𑣒𑣃𑣃𑣚"
-      url: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
+      url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
+      source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
       note: "𑣈𑣓𑣁 𑣔𑣉 𑢿𑣂𑣌𑣂𑣘𑣂𑣂𑣑𑣂𑣅𑣁 𑣉𑣀𑣑𑣉𑣄 𑢿𑣂𑣌𑣂𑣖𑣂𑣂𑣑𑣂𑣅𑣁 𑣘𑣚𑣈𑣈𑣒𑣘𑣉𑣉𑣜𑣖 𑣌𑣉 𑣜𑣈 𑣘𑣆𑣒𑣂 𑣜𑣈 𑣁𑣋𑣃𑣃𑣄 𑣕𑣓𑣁"
     - name: HoApp
     - name: Ho (Warang Chiti) Unicode Converter

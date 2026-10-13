@@ -546,7 +546,7 @@ def link_item(entry):
     return {"url": url, "label": label, "icon": icon, "detail": detail}
 
 
-RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived", "social")
+RESOURCE_KEYS = ("name", "url", "youtube", "credit", "licence", "note", "archived", "social", "source")
 
 
 def social_html(urls, where):
@@ -616,6 +616,9 @@ def resources_html(page):
                        + (f'<p class="resource__meta">{" · ".join(meta)}</p>' if meta else "")
                        + (f'<p class="resource__note">{inline_md(it["note"])}</p>' if it.get("note") else "")
                        + (social_html(it["social"], where) if it.get("social") else "")
+                       + (f'<p class="resource__source"><a href="{html_escape(it["source"])}">'
+                          + (ROOT / "templates" / "icons" / ("github.svg" if "github.com" in it["source"] else "link.svg")).read_text().strip()
+                          + '<span lang="en">Source code</span></a></p>' if it.get("source") else "")
                        + "</li>")
         hid = f"resources-{g}"
         if g == "credits" and page.get("acknowledgements"):

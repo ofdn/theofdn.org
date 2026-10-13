@@ -81,8 +81,9 @@ resources:
     - name: BoyoGagraiUnicode Regular
       note: A Warang Citi font. Its download link is no longer public.
     - name: Ho input method
-      url: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
-      note: Type Ho in Warang Citi on Wikipedia and other Wikimedia projects. The link opens its source code.
+      url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
+      note: Type Ho in Warang Citi on Wikipedia and other Wikimedia projects. The link shows how to turn it on and which keys to press.
+      source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
     - name: HoApp
       note: An Android app for typing Ho in Warang Citi. It is no longer on Google Play.
     - name: Ho (Warang Chiti) Unicode Converter
