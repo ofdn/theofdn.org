@@ -32,7 +32,7 @@ The Confederation of Indian Industry (CII), an Indian nonprofit that is managed 
 **Wikipedia: Documenting the history of humanity in real time**:\
 The first session that was conducted by Subhashish Panigrahi focused on how Wikipedia has a symbiotic relation with the world outside and the knowledge commons. Business organisations being a key part of this large ecosystem, and it is often critical that business owners have the knowhow about the way Wikipedia works. The lack of the same might lead to pumping wrong information which can lead to potential vandalism and a gross loss of time and effort of both the Wikipedians and the businesses.
 
-Subhashish also emphasised about the importance of languages and the digital preservation of the same citing some of the works from the [OpenSpeaks](http://openspeaks.com/) project.
+Subhashish also emphasised about the importance of languages and the digital preservation of the same citing some of the works from the [OpenSpeaks](/openspeaks/) project.
 
 **Documenting** **tangible and intangible heritage\**
 

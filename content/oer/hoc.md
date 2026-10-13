@@ -163,7 +163,7 @@ resources:
       url: https://www.unicode.org/charts/PDF/U118A0.pdf
 acknowledgements: "Thank you, Mangu Purty, for the video tutorials, many of the resource links and the Ho translation, and thank you, Birbasa (Veer Birsa Munda Ho Students Union, Odisha), for helping us make the Warang Citi tutorial."
 ---
-*This page was first published on [OpenSpeaks](http://openspeaks.com/languages/ho/) in 2019. It is also available in Ho, written in Warang Citi.*
+*This page was first published on [OpenSpeaks](/openspeaks/) in 2019.*
 
 The Ho language is spoken by over 1.4 million people, mostly in the Indian states of Assam, Bihar, Chhattisgarh, Jharkhand, Odisha and West Bengal, and in Bangladesh. It has been written in Devanagari, Bengali, Odia and Latin scripts. Warang Citi (𑢹𑣗𑣁𑣜𑣊 𑣏𑣂𑣕𑣂) is the most widely accepted script for Ho today. It was created by Lako Bodra, a Ho community leader from Jharkhand. UNESCO lists Ho as a vulnerable language.
 

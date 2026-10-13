@@ -170,7 +170,7 @@ Native speaker of Doteli and active contributor to [Doteli-language Wikipedia](h
 
 ###### Marginalized language resources
 
-## [OpenSpeaks](https://openspeaks.com/)
+## [OpenSpeaks](/openspeaks/)
 
 ###### Intangible cultural heritage documentation
 

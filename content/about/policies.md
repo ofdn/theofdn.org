@@ -34,7 +34,7 @@ This policy applies to everyone who takes part in our work, online and offline. 
 
 - **Content.** Original content on this site is under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) licence. A page may say otherwise. We may use some copyright material under fair use. If we do, we say so clearly on that page.
 - **Site code.** The source code of this site is under the [Anti-Capitalist Software License (v 1.4)](https://github.com/ofdn/theofdn.org/blob/main/LICENSE). The [Santali Unicode Encoding Converter](/resources/santali-unicode-converter/) is under the MIT License.
-- **Other software.** Our software is on [GitHub](https://github.com/ofdn). Each repository names its licence. [OpenSpeaks](https://openspeaks.com/) has its [own repositories](https://github.com/OpenSpeaks).
+- **Other software.** Our software is on [GitHub](https://github.com/ofdn). Each repository names its licence. [OpenSpeaks](/openspeaks/) has its [own repositories](https://github.com/OpenSpeaks).
 - **Fonts.** Our fonts are under the [SIL Open Font License](https://openfontlicense.org/). Each font page gives the details.
 - **Data.** Our data is released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/), which places it in the public domain.
 - **Scholarly work.** Our scholarly work is published as [Open Access](https://www.plos.org/open-access/).

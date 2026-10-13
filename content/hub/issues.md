@@ -43,9 +43,9 @@ Participation of women, LGBTQI people, indigenous and other marginalised groups 
 
 -  Initiatives
 
-[![OpenSpeaks logo](/assets/logos/openspeaks.svg)](https://openspeaks.com) **OpenSpeaks** is our multimedia open resource toolkit for language documentation. (*[more](https://openspeaks.com)*)
+[![OpenSpeaks logo](/assets/logos/openspeaks.svg)](/openspeaks/) **OpenSpeaks** is our multimedia open resource toolkit for language documentation. (*[more](/openspeaks/)*)
 
-[![Pothi logo](/assets/logos/pothi-white.webp)](/activities/pothi/)**Pothi** is a multimedia resource project for documenting intangible cultural heritage like performance arts. *([more](https://openspeaks.com)*)
+[![Pothi logo](/assets/logos/pothi-white.webp)](/activities/pothi/)**Pothi** is a multimedia resource project for documenting intangible cultural heritage like performance arts. *([more](/activities/pothi/)*)
 
 -  vital technical infrastructure
 
