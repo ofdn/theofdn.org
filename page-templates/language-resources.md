@@ -1,6 +1,6 @@
 ---
-title: "Digital resources for the <Language> language"
-path: "/resources/<slug>/"
+title: "<Language> language resources"
+path: "/resources/<ISO 639-3 code, or Glottocode if there is none>/"
 section: "oer"
 tier: "live"
 date: "YYYY-MM-DD"

@@ -45,7 +45,7 @@
     {% if page.authors %}<p class="byline">{{ page.authors | join(", ") }}{% if page.date %} · <time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}</p>{% endif %}
     {% if page.versions | length > 1 %}
     <nav class="page-langs" aria-label="Other languages" lang="en">
-      <p>Also in: {% for v in page.versions if v.path != page.path %}<a href="{{ v.path }}" lang="{{ v.lang }}" hreflang="{{ v.lang }}">{{ v.lang_name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      <p>Read in: {% for v in page.versions if v.path != page.path %}<a href="{{ v.path }}" lang="{{ v.lang }}" hreflang="{{ v.lang }}">{{ v.lang_name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
     </nav>
     {% endif %}
     {% if page.translators %}<p class="byline" lang="en">Translated by {{ page.translators | join(", ") }}</p>{% endif %}

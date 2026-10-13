@@ -1,6 +1,6 @@
 ---
 title: "𑢹𑣉𑣉 𑢮𑣋𑣁𑣜 𑢼𑣂𑣞𑣉𑣉𑣜𑣞 𑣌𑣉"
-path: "/resources/ho/hoc/"
+path: "/resources/hoc/hoc/"
 lang: hoc
 authors:
   - "Subhashish Panigrahi"
@@ -80,7 +80,6 @@ resources:
       url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
       source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
       note: "𑣈𑣓𑣁 𑣔𑣉 𑢿𑣂𑣌𑣂𑣘𑣂𑣂𑣑𑣂𑣅𑣁 𑣉𑣀𑣑𑣉𑣄 𑢿𑣂𑣌𑣂𑣖𑣂𑣂𑣑𑣂𑣅𑣁 𑣘𑣚𑣈𑣈𑣒𑣘𑣉𑣉𑣜𑣖 𑣌𑣉 𑣜𑣈 𑣘𑣆𑣒𑣂 𑣜𑣈 𑣁𑣋𑣃𑣃𑣄 𑣕𑣓𑣁"
-    - name: HoApp
     - name: Ho (Warang Chiti) Unicode Converter
       url: https://jsahu.me/tools/huc
       credit: Jnanaranjan Sahu

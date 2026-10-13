@@ -1,6 +1,6 @@
 ---
 title: "Digital resources for the Ho language"
-path: "/resources/ho/"
+path: "/resources/hoc/"
 ark: ofdn-r-000003
 ark_aliases:
   - ofdn-r-000006
@@ -84,8 +84,6 @@ resources:
       url: https://www.mediawiki.org/wiki/Help:Extension:UniversalLanguageSelector/Input_methods/hoc-transliteration
       note: Type Ho in Warang Citi on Wikipedia and other Wikimedia projects. The link shows how to turn it on and which keys to press.
       source: https://github.com/wikimedia/jquery.ime/tree/master/rules/hoc
-    - name: HoApp
-      note: An Android app for typing Ho in Warang Citi. It is no longer on Google Play.
     - name: Ho (Warang Chiti) Unicode Converter
       url: https://jsahu.me/tools/huc
       credit: Made by Jnanaranjan Sahu

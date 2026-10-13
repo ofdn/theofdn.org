@@ -28,8 +28,8 @@
  "/licensing/": "/policies/#licences",
  "/mcc/notes-2019-08-09/": "/blogs/mcc-notes-2019-08-09/",
  "/oer/global-mil-week-2019/": "/blogs/global-mil-week-2019/",
- "/oer/ho-1/": "/resources/ho/",
- "/oer/ho/": "/resources/ho/",
+ "/oer/ho-1/": "/resources/hoc/",
+ "/oer/ho/": "/resources/hoc/",
  "/oer/mihaq/": "/resources/mihaq/",
  "/oer/odia/": "/resources/odia/",
  "/oer/santali/": "/resources/santali/",
@@ -59,8 +59,9 @@
  "/uncategorized/odia-lgr/": "/blogs/white-paper2-lgr-oriya-2018/",
  "/uncategorized/white-paper-lgr-oriya-2018/": "/blogs/white-paper-lgr-oriya-2018/",
  "/wikimania2017/": "/blogs/wikimania2017/",
- "/resources/ho-digital-resources/": "/resources/ho/",
- "/resources/ho-digital-resources/hoc/": "/resources/ho/hoc/",
- "/category/openspeaks/language-documentation/ho/": "/resources/ho/",
- "/tag/ho/": "/resources/ho/"
+ "/resources/ho-digital-resources/": "/resources/hoc/",
+ "/resources/ho-digital-resources/hoc/": "/resources/hoc/hoc/",
+ "/category/openspeaks/language-documentation/ho/": "/resources/hoc/",
+ "/tag/ho/": "/resources/hoc/",
+ "/resources/ho/": "/resources/hoc/"
 }

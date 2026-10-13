@@ -14,7 +14,7 @@ tags:
   - "adivasi"
   - "Ho"
   - "indigenous languages"
-excerpt: "In the face of ongoing mining and land loss, the Ho indigenous village in eastern India struggles to find hope and joy in their annual harvest celebration as it witnesses the devastating effects on their community and the natural world."
+excerpt: "A Ho Indigenous village in Keshpada, Mayurbhanj district, Odisha, prepares for its annual harvest festival, Mage Porob."
 featured_image: "/assets/images/mage-porob-poster.webp"
 embeds:
   - provider: "vimeo"

@@ -200,6 +200,7 @@ The words are `video`, `audio`, `pdf`, `transcript`, `subtitles` and `files`. Ad
 - An announcement is a blog post. It links to the resource page. It does not repeat the tool.
 - A blog post has no category in its address: `/blogs/wikimania2019/`, not `/blogs/conference/wikimania2019/`.
 - `<slug>` is short, lowercase and in Latin letters. Use the name people know the resource by.
+- A language resource page uses the language's ISO 639-3 code as its slug: `/resources/hoc/` for Ho. If the language has no ISO 639-3 code, use its Glottocode. A language variety is a section on its language's page, not a page of its own.
 
 Example:
 
@@ -254,7 +255,7 @@ excerpt: "One or two sentences in the language."
 
 The original keeps the short address, in whatever language it was first written. A page first written in Santali has its English version at `/<slug>/en/`.
 
-Each version shows "Also in" links to the others, and lists show one card per page with its languages. A version shares the ARK of the original, with the code after it. Do not give a version its own `ark`.
+Each version shows "Read in" links to the others, and lists show one card per page with its languages. A version shares the ARK of the original, with the code after it. Do not give a version its own `ark`.
 
 Name every translator in `translators`. The names show on the page.
 
