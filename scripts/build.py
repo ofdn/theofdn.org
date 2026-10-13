@@ -792,6 +792,9 @@ def polish(html, page):
 
     # Jump links to a part of the same page that no longer exists become text.
     ids = {t.get("id") for t in soup.find_all(id=True)}
+    ids |= {f"resources-{g}" for g in page.get("resources") or {}}  # added after this step
+    if page.get("acknowledgements"):
+        ids.add("resources-credits")
     for a in soup.find_all("a", href=True):
         if a["href"].startswith("#") and len(a["href"]) > 1 and a["href"][1:] not in ids:
             a.unwrap()

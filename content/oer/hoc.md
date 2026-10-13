@@ -1,5 +1,5 @@
 ---
-title: "Digital resources for the Ho language"
+title: "Ho language resources"
 path: "/resources/hoc/"
 ark: ofdn-r-000003
 ark_aliases:
