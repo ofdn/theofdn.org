@@ -19,7 +19,7 @@ embeds:
 original_url: "https://theofdn.org/marginalizedaadhaar/"
 ---
 
-Aadhaar, India’s digital identity program, has been marketed by its makers as the most reliable identification for public benefits. But human rights advocates feel the other way. And they all the reasons to do so. Several facts suggest systemic exclusions for many of India’s marginalised peoples and the aggressive push for including every person’s private data on a database to finally use the same data for mass surveillance. Aadhaar has been oversimplified as a 12-digit unique number that can be used to authenticate at a point of service — government or private. However, it is tied to a person’s biometric data like fingerprint and iris scan, and a range of personal data. The complex role that Aadhaar plays in the lives of some of the most marginalised communities is what Yoti Digital Identity Fellow [Subhashish Panigrahi](https://www.yoti.com/author/subhashishyotifellows-com/) aims to study through the project [MarginalizedAadhaar](https://yotifellows.com).
+Aadhaar, India’s digital identity program, has been marketed by its makers as the most reliable identification for public benefits. But human rights advocates feel the other way. And they all the reasons to do so. Several facts suggest systemic exclusions for many of India’s marginalised peoples and the aggressive push for including every person’s private data on a database to finally use the same data for mass surveillance. Aadhaar has been oversimplified as a 12-digit unique number that can be used to authenticate at a point of service — government or private. However, it is tied to a person’s biometric data like fingerprint and iris scan, and a range of personal data. The complex role that Aadhaar plays in the lives of some of the most marginalised communities is what Yoti Digital Identity Fellow [Subhashish Panigrahi](https://web.archive.org/web/20210128051451/https://www.yoti.com/author/subhashishyotifellows-com/) aims to study through the project MarginalizedAadhaar.
 
 ## Podcasts
 
@@ -35,7 +35,7 @@ In the first episode of this podcast, rights activist and author Raghu Godavar d
 
 [[embed:1]]
 
-Updates and insights from the field study including 20 individuals from two Indian states who share different levels of marginalisation (including access to information and exclusion in social benefits) because of Aadhaar, interviews with human rights advocates for alternate narratives that counter claims by Aadhaar’s supporters — the authorities and other actors. ([read more](https://www.yoti.com/blog/subhashish-field-diary-january-2020/)…)
+Updates and insights from the field study including 20 individuals from two Indian states who share different levels of marginalisation (including access to information and exclusion in social benefits) because of Aadhaar, interviews with human rights advocates for alternate narratives that counter claims by Aadhaar’s supporters — the authorities and other actors. ([read more](https://web.archive.org/web/20210108164048/https://www.yoti.com/blog/subhashish-field-diary-january-2020/)…)
 
 ### November 2019
 

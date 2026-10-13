@@ -97,12 +97,12 @@ Nani Ma was selected for the Mozilla Festival 2023 (International Premiere), Lif
 ## Reviews and publications
 
 - [*Film Carnage*](https://filmcarnage.com/2023/03/28/review-nani-ma/) (by Rebecca Cherry)
-- [*Film Threat*](https://filmthreat.com/reviews/nani-ma/) (by Benjamin Franz)
+- *Film Threat* (by Benjamin Franz)
 - [*Orissa Post*](http://odishapostepaper.com/viewmap/192691.jpg), “Nani Ma: A defence of diversity” (by Atri Prasad Rout)
 - [UK Film Reviews](https://www.ukfilmreview.co.uk/reviews/nani-ma) (by Swati Verma)
 - [ETV Bharat Odia](https://www.etvbharat.com/oriya/odisha/videos/entertainment/two-documentary-film-nani-maa-and-the-voulnter-archivists-released/or20230510201157712712834) (by Debasmita Rout)
 
-For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/#contact).
 
 ## Screenings
 

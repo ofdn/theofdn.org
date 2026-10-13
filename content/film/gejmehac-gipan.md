@@ -41,7 +41,7 @@ info:
   genre: Documentary
   distributor: O Foundation
   website: https://theofdn.org/film/gejmehac-gipan
-  contact: '[Subhashish Panigrahi](https://psubhashish.com/contact)'
+  contact: '[Subhashish Panigrahi](https://psubhashish.com/#contact)'
 stills:
 - /assets/images/gejmehac-gipan-still-1.webp
 - /assets/images/gejmehac-gipan-still-2.webp

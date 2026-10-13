@@ -30,9 +30,9 @@ Earlier this year, we were lucky to be awarded an [Early Career Grant](https://w
 
 As the time frame of this grant is short we are planning to focus on 2–3 native languages that need immediate attention for preservation. So far, we have identified two languages—[Bonda](https://en.wikipedia.org/wiki/Bonda_language), and Bodo Gadaba (or Gutob) language—both spoken in primarily in the Indian state of Odisha, and partly in Andhra Pradesh. The low population of the languages (roughly 8000 speakers) in addition to geopolitical situation place very unique challenges in front of these languages. Most people in these communities do not even have access to basic amenities, let alone be digital documentation of their enchanting stories.
 
-We are very thankful to our partner [Council of Analytical Tribal Studies](http://Council%20of%20Analytical%20Tribal%20Studies) (COATS), a research and academic institution, which has kindly agreed to join us for our research and documentation work. Most of our work will be done in collaboration with COATS.
+We are very thankful to our partner Council of Analytical Tribal Studies (COATS), a research and academic institution, which has kindly agreed to join us for our research and documentation work. Most of our work will be done in collaboration with COATS.
 
-This project would not have been started without the kind advice of three individuals—[Sunil Abraham](https://cis-india.org/about/people/our-team#Pranesh_Prakash), Executive Director of the Centre for Internet and Society; [Eddie Avila](https://rising.globalvoices.org/blog/author/eduardoavila/page/5/), Director of Rising Voices, Global Voices; and [Daniel Bogre Udell](https://wikitongues.org/who/), Director and Co-founder of Wikitongues—thank you so much Sunil, Eddie, and Daniel.
+This project would not have been started without the kind advice of three individuals—[Sunil Abraham](https://cis-india.org/about/people/our-team#Pranesh_Prakash), Executive Director of the Centre for Internet and Society; [Eddie Avila](https://rising.globalvoices.org/blog/author/eduardoavila/page/5/), Director of Rising Voices, Global Voices; and [Daniel Bogre Udell](https://web.archive.org/web/20210511144057/https://wikitongues.org/who/), Director and Co-founder of Wikitongues—thank you so much Sunil, Eddie, and Daniel.
 
 The timeline looks like this:
 

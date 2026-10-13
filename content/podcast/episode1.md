@@ -77,7 +77,7 @@ I met with her in London while attending the Decolonizing the Internet’s Langu
 
 \[Dr. Seyfeddinipur\]
 
-The [Endangered Languages Documentation Programme](https://www.eldp.net/) is a funding program that supports linguists, anthropologists, documenters, community members in their efforts to document their language. We provide funding to go out, live, work in and with the community, and to record the ways language is used in everyday life in songs and rituals and poetry, in oral literature and so on. The recordings that are being made are then brought back into the [Endangered Languages Archive](https://www.soas.ac.uk/elar/) — which is a digital archive — that makes these recordings available to the community, to scholars, to the public free of charge.
+The [Endangered Languages Documentation Programme](https://www.eldp.net/) is a funding program that supports linguists, anthropologists, documenters, community members in their efforts to document their language. We provide funding to go out, live, work in and with the community, and to record the ways language is used in everyday life in songs and rituals and poetry, in oral literature and so on. The recordings that are being made are then brought back into the [Endangered Languages Archive](https://www.elararchive.org/) — which is a digital archive — that makes these recordings available to the community, to scholars, to the public free of charge.
 
 So it’s openly accessible. It is free of charge. So, these are the key components of what we do. The Programme of the Endangered Languages and the Endangered Language Documentation Archive were basically a response 20 years ago to the decline in linguistic diversity because of globalisation, climate change and urbanisation.
 
@@ -95,7 +95,7 @@ So, what is happening is that we’re losing the linguistic diversity of humanit
 
 So, our linguists and our community members go and make these recordings, and they bring these back into our digital archive. So, this archive is a digital archive that holds recordings in over [500 languages](https://www.eldp.net/en/our+projects/map/) and all these languages are highly endangered. They will very likely be falling silence within the next 100 years or 50 years or 10 years.
 
-Some of these collections are this recordings of last speakers that are quite old. We even have recordings of speakers that died during project. So, it’s the last recording of someone. We feel it’s a very important thing that the digital advent has allowed us to to equip linguists or field workers to go and to record as much as possible in the way language is used, and not as abstracted as it is written in grammars. It is also an important thing to have a grammar but the idea behind this is what the main author of the seminal paper Nikolaus P. Himmelmann called a “[multipurpose](https://elldo.amu.edu.pl/wp-content/uploads/2016/10/Himmelmann2006.pdf) record” — a record of a language (Himmelmann 2006) that is there for the historian, the speaker, the grandchildren of the speakers. It is the oral history of the person who’s interested in rituals, in religious contexts, the ethnic musicologists, but also the public, the people want to know how do people live in these place and how they used to speak.
+Some of these collections are this recordings of last speakers that are quite old. We even have recordings of speakers that died during project. So, it’s the last recording of someone. We feel it’s a very important thing that the digital advent has allowed us to to equip linguists or field workers to go and to record as much as possible in the way language is used, and not as abstracted as it is written in grammars. It is also an important thing to have a grammar but the idea behind this is what the main author of the seminal paper Nikolaus P. Himmelmann called a “[multipurpose](https://web.archive.org/web/20211001195525/http://elldo.amu.edu.pl/wp-content/uploads/2016/10/Himmelmann2006.pdf) record” — a record of a language (Himmelmann 2006) that is there for the historian, the speaker, the grandchildren of the speakers. It is the oral history of the person who’s interested in rituals, in religious contexts, the ethnic musicologists, but also the public, the people want to know how do people live in these place and how they used to speak.
 
 And each language is a testimony to the creativity of the human mind, right?
 
@@ -117,7 +117,7 @@ I must mention here that the [United Nations Educational, Scientific and Cultura
 
 2019 was declared as the [International Year of Indigenous Languages](https://en.iyil2019.org/) (IYIL) to encourage indigenous-language communities, and to help promote indigenous languages.
 
-You can check out [iyil2019.org](https://iyil2019.org) for more details about this campaign.
+You can check out iyil2019.org for more details about this campaign.
 
 { 10:38 – 12:19}
 
@@ -239,7 +239,7 @@ Recently, Dr. Seyfeddinipur’s own institution the SOAS World’s Languages Ins
 
 ## References
 
-Himmelmann, Nikolaus P. (2006). Empirical Linguistics and Language Documentation (ELLDo) – MA program at the Faculty of Modern Languages and Literatures, Adam Mickiewicz University in Poznan. <https://elldo.amu.edu.pl/wp-content/uploads/2016/10/Himmelmann2006.pdf> “An initial, preliminary answer to this question is:a language documentation is a lasting, multipurpose record of a language.”
+Himmelmann, Nikolaus P. (2006). Empirical Linguistics and Language Documentation (ELLDo) – MA program at the Faculty of Modern Languages and Literatures, Adam Mickiewicz University in Poznan. <https://web.archive.org/web/20211001195525/http://elldo.amu.edu.pl/wp-content/uploads/2016/10/Himmelmann2006.pdf> “An initial, preliminary answer to this question is:a language documentation is a lasting, multipurpose record of a language.”
 
 ## Preferred citation
 

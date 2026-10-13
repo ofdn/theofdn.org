@@ -65,7 +65,7 @@ Uday Raj Aaley, a researcher who was instrumental in compiling a dictionary titl
 
 [[embed:1]]
 
-Gayatri Parameswaran and Felix Gaedtke from NowHere Media interviewed Sen-Kusunda in 2013. Their work later led to the production of docufiction “[Kusunda](https://www.idfa.nl/en/film/7371f204-e37b-46a7-a089-5aa554eab6af/kusunda/idfa-forum)” (2021). ([Gaedtke](#gaedtke))
+Gayatri Parameswaran and Felix Gaedtke from NowHere Media interviewed Sen-Kusunda in 2013. Their work later led to the production of docufiction “[Kusunda](https://web.archive.org/web/20191209180202/https://www.idfa.nl/en/film/7371f204-e37b-46a7-a089-5aa554eab6af/kusunda/idfa-forum)” (2021). ([Gaedtke](#gaedtke))
 
 [[embed:2]]
 
@@ -87,7 +87,7 @@ Kusunda
 
 Sources:
 
-- [UNESCO Atlas of the World’s Languages in Danger](http://www.unesco.org/languages-atlas/en/atlasmap/language-id-1259.html)
+- UNESCO Atlas of the World’s Languages in Danger
 - [Endangered Language Project](http://www.endangeredlanguages.com/lang/5873)
 - Glottolog: [kusu1250](http://glottolog.org/resource/languoid/id/kusu1250)
 - [IETF](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry)

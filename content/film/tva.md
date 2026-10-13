@@ -89,7 +89,7 @@ Srujanika was founded as a volunteer-led collective by scientist couple Nikhil M
 - “*[The Volunteer Odia Archivists](https://www.endangeredalphabets.com/2022/11/16/the-volunteer-odia-archivists/)*”. Endangered Alphabets. (by Tim Brookes)
 - “*[The Volunteer Archivist](http://odishapostepaper.com/m/200324/643703bba60b2)*”. Orissa Post. (by Dhanada K. Mishra, PhD)
 
-For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/#contact).
 
 ## Screenings
 

@@ -64,7 +64,7 @@ The OpenSpeaks Oral Knowledge Framework sets out how to record, describe, licens
 - Subhashish Panigrahi. [Citing Oral History: A Framework for Low-Resourced Language Audio-visual Documentation](https://doi.org/10.5281/zenodo.22819666). Language Documentation and Archiving 2026, Berlin.
 - Subhashish Panigrahi. [Building Foundational Language Data with A Community-First Approach](https://doi.org/10.5281/zenodo.13882111). Language Documentation and Archiving 2024, Berlin.
 - Subhashish Panigrahi. [OpenSpeaks before AI: Frameworks for Creating the AI/ML Building Blocks for Low-Resource Languages](https://doi.org/10.1145/3591211). *Interactions* 30(3), 2023.
-- Subhashish Panigrahi. [OpenSpeaks: Transforming Learning of Tech Innovations in Low-Resource Language Documentations to Open Educational Resources](https://www.linguapax.org/wp-content/uploads/2022/02/LinguapaxReview9-2021-low.pdf). *Linguapax Review* 9, 2021.
+- Subhashish Panigrahi. OpenSpeaks: Transforming Learning of Tech Innovations in Low-Resource Language Documentations to Open Educational Resources. *Linguapax Review* 9, 2021.
 
 In 2026 we presented this work at the Wikimedia Futures Lab in Frankfurt, a seminar at TU Darmstadt, WikiConference India in Kochi (with Ramjit Tudu and Sanjib Chaudhary) and IndiaFOSS in Bengaluru (with Sneha Mundari).
 

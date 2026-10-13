@@ -84,7 +84,7 @@ Fork on [![GitHub Logo.png](/assets/logos/github.webp)](https://github.com/OdiaW
 >
 > `cd Kathabhidhana`
 >
-> `ruby -e "$(curl -fsSL `[`https://raw.githubusercontent.com/Homebrew/install/master/install`](https://raw.githubusercontent.com/Homebrew/install/master/install)`)" < /dev/null 2> /dev/null`
+> `ruby -e "$(curl -fsSL `[`https://raw.githubusercontent.com/Homebrew/install/master/install`](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)`)" < /dev/null 2> /dev/null`
 >
 > `brew install portaudio`
 >
@@ -135,4 +135,4 @@ To upload all the ogg files to Wikimedia Commons This will record the sounds in 
 - “[Kathabhidhana, open source toolkit to record pronunciations of any world language](https://wikimedia.org.uk/wiki/Celtic_Knot_Conference_2017/Programme/CK129)“. Celtic Knot Conference 2017, University of Edinburgh. (*Selected, Workshop on July 6*)
 
 ### Some social media shout-outs:\
-[Kathabhidhana](https://twitter.com/i/moments/898061810217213956)
+Kathabhidhana

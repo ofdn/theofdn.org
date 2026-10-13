@@ -93,4 +93,4 @@ Mining has destroyed the indigenous Ho land while bringing grave disrespect to t
 
 - [*Edex Live*](https://www.edexlive.com/happening/2018/aug/25/o-foundation-and-national-geographic-set-out-to-document-endangered-languages-before-they-are-lost-f-3728.html), *The New Indian Express* \[by Seema Rajpal\]
 
-For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/#contact).

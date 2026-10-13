@@ -109,13 +109,13 @@ Gyani Maiya was awarded Best Screenplay at the International Film & Entertainmen
 - [Asia Matters For America](https://asiamattersforamerica.org/articles/speaker-of-endangered-kusunda-language-heard-in-washington-dc), East-West Center \[by Ramil Mercado\]
 - [*Global Voices*](https://globalvoices.org/2022/10/20/filming-gyani-maiya-sen-who-inspired-efforts-to-revive-the-dying-kusunda-language-in-nepal/) \[by Sanjib Chaudhary and Subhashish Panigrahi\]—available in English, [Malagasy](https://mg.globalvoices.org/2022/10/22/160586/ "Read this post in Malagasy"), [Português](https://pt.globalvoices.org/2022/10/25/filmando-gyani-maiya-sen-que-estimulou-esforcos-para-reavivar-a-lingua-em-extincao-kusunda-no-nepal/ "Read this post in Português") and [Español](https://es.globalvoices.org/2022/11/07/filmaciones-de-gyani-maiya-sen-que-inspiro-iniciativas-por-revivir-el-moribundo-kusunda-en-nepal/ "Read this post in Español")
 - [*Edex Live*](https://www.edexlive.com/happening/2018/aug/25/o-foundation-and-national-geographic-set-out-to-document-endangered-languages-before-they-are-lost-f-3728.html), *The New Indian Express* \[by Seema Rajpal\]
-- [*Himal Khabar*](https://www.himalkhabar.com/news/116158/) \[in Nepali\]
+- [*Himal Khabar*](https://web.archive.org/web/20201231125905/https://www.himalkhabar.com/news/116158) \[in Nepali\]
 - [*Tuoitre Cuoituan*](https://cuoituan.tuoitre.vn/o-noi-nguoi-ta-khong-biet-noi-khong-20220825110641026.htm) \[in Viet by Phan Bao\]
 
-For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/contact).
+For screenings, reviews, interviews and other queries, contact [Subhashish Panigrahi](https://psubhashish.com/#contact).
 
 ## Screenings
 
 - June 2023: dWeb Camp 2023, Navarro (US)
-- March 2023, [8th International Conference on Language Documentation & Conservation](http://ling.lll.hawaii.edu/sites/icldc/video-screening-event/%20w), University of Hawaiʻi at Mānoa (US)
+- March 2023, 8th International Conference on Language Documentation & Conservation, University of Hawaiʻi at Mānoa (US)
 - January 2023,  [Lost Origins Gallery](https://lostorigins.gallery/gallery-events/gyani-maiya-screening/), Washington D.C. (US)

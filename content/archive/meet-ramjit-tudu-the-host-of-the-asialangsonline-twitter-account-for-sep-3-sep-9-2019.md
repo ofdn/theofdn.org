@@ -32,7 +32,7 @@ Each week, the upcoming host will answer several questions about their backgroun
 
 **RV: What is the current status of your language on the internet and offline?**
 
-> Santali language is one of the official languages of India, this language is spoken by the Santal communities in the states of Odisha, West Bengal, Jharkhand, Bihar, Assam in India and some of the states of Nepal and Bangladesh as well. This language has been included in educational curriculum of Odisha, West Bengal and Jharkhand. Santali is also widely used on social media applications like Facebook and WhatsApp. However, there have been only few websites entirely in Santali language. [Vikashpedia](http://http//sat.vikaspedia.in/) and [Wikipedia](http://sat.wikipedia.org/) are among few websites that carry information on Santali language and the communities.
+> Santali language is one of the official languages of India, this language is spoken by the Santal communities in the states of Odisha, West Bengal, Jharkhand, Bihar, Assam in India and some of the states of Nepal and Bangladesh as well. This language has been included in educational curriculum of Odisha, West Bengal and Jharkhand. Santali is also widely used on social media applications like Facebook and WhatsApp. However, there have been only few websites entirely in Santali language. [Vikashpedia](https://sat.vikaspedia.in/) and [Wikipedia](http://sat.wikipedia.org/) are among few websites that carry information on Santali language and the communities.
 
 **RV: On what topics do you plan to focus during the week that you’ll manage the @AsiaLangsOnline Twitter account?**
 

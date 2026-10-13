@@ -15,11 +15,11 @@ categories:
 excerpt: "This post was originally authored by Ken Banks of Yoti Ltd. and was published on the Yoti blog. Blog copyrighted by the original author. Earlier this year, after an extended period of ­research and evaluation, we announced the launch of a new Social Purpose Strategy. With an unashamed grassroots focus, each activity is designed to […]"
 original_url: "https://theofdn.org/blogs/meet-the-2019-yoti-digital-identity-fellows/"
 ---
-*This post was originally authored by [Ken Banks](https://www.yoti.com/author/ken-banks/) of Yoti Ltd. and was [published](https://www.yoti.com/our-fellows/) on the Yoti blog. Blog copyrighted by the original author.*
+*This post was originally authored by [Ken Banks](https://web.archive.org/web/20210128060423/https://www.yoti.com/author/ken-banks/) of Yoti Ltd. and was [published](https://web.archive.org/web/20191109093219/https://www.yoti.com/our-fellows/) on the Yoti blog. Blog copyrighted by the original author.*
 
-Earlier this year, after an extended period of ­research and evaluation, we announced the launch of a new [Social Purpose Strategy](https://www.yoti.com/wp-content/uploads/2019/08/Yoti_Social_Purpose_Strategy.pdf). With an unashamed grassroots focus, each activity is designed to help us better understand, support and empower individuals and organisations working on critical issues of identity, primarily in the Global South.
+Earlier this year, after an extended period of ­research and evaluation, we announced the launch of a new [Social Purpose Strategy](https://web.archive.org/web/20210715090453/https://www.yoti.com/wp-content/uploads/2019/08/Yoti_Social_Purpose_Strategy.pdf). With an unashamed grassroots focus, each activity is designed to help us better understand, support and empower individuals and organisations working on critical issues of identity, primarily in the Global South.
 
-A flagship activity from the Strategy is a [Fellowship Programme](https://www.yoti.com/blog/announcing-our-new-fellowship-programme/) which we launched in April. Over a two-month application period we invited proposals for research, media, policy or development solutions based on four key themes related to identity or digital identity.
+A flagship activity from the Strategy is a Fellowship Programme which we launched in April. Over a two-month application period we invited proposals for research, media, policy or development solutions based on four key themes related to identity or digital identity.
 
 With a preference for applicants from the Global South, outputs from the Fellow’s activities could be anything from a technical platform, a report, a website, a book, a policy paper, a film or any other medium relevant to their proposal.
 

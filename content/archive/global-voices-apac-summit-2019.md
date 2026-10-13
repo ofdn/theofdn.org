@@ -28,7 +28,7 @@ Our Subhashish Panigrahi participated in this two-day forum in Taipei city, Taiw
 >
 > — O Foundation (OFDN) (@ofdnorg) [June 2, 2019](https://twitter.com/ofdnorg/status/1135067316507385856?ref_src=twsrc%5Etfw)
 
-> Now happening: Panel discussion on the rise of digital authoritarianism in the Asia Pacific by [@lotus_ruan](https://twitter.com/lotus_ruan?ref_src=twsrc%5Etfw) from [@citizenlab](https://twitter.com/citizenlab?ref_src=twsrc%5Etfw); Subhashish Panigrahi ([@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)); Pongpan Chumjai from [@prachatai](https://twitter.com/prachatai?ref_src=twsrc%5Etfw); Cédric Alvani from [@RSF_eastasia](https://twitter.com/RSF_eastasia?ref_src=twsrc%5Etfw), Ivan Sigal [@ivonotes](https://twitter.com/ivonotes?ref_src=twsrc%5Etfw) from [@globalvoices](https://twitter.com/globalvoices?ref_src=twsrc%5Etfw) [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/ASfCHG2hOd](https://t.co/ASfCHG2hOd)
+> Now happening: Panel discussion on the rise of digital authoritarianism in the Asia Pacific by [@lotus_ruan](https://twitter.com/lotus_ruan?ref_src=twsrc%5Etfw) from [@citizenlab](https://twitter.com/citizenlab?ref_src=twsrc%5Etfw); Subhashish Panigrahi ([@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw)); Pongpan Chumjai from [@prachatai](https://twitter.com/prachatai?ref_src=twsrc%5Etfw); Cédric Alvani from @RSF_eastasia, Ivan Sigal [@ivonotes](https://twitter.com/ivonotes?ref_src=twsrc%5Etfw) from [@globalvoices](https://twitter.com/globalvoices?ref_src=twsrc%5Etfw) [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/ASfCHG2hOd](https://t.co/ASfCHG2hOd)
 >
 > — EngageMedia (@EngageMedia) [June 2, 2019](https://twitter.com/EngageMedia/status/1135022415929532416?ref_src=twsrc%5Etfw)
 
@@ -76,7 +76,7 @@ Our Subhashish Panigrahi participated in this two-day forum in Taipei city, Taiw
 
 > [\#India](https://twitter.com/hashtag/India?src=hash&ref_src=twsrc%5Etfw) [\#digitalfreedom](https://twitter.com/hashtag/digitalfreedom?src=hash&ref_src=twsrc%5Etfw) [\#freedomofexpression](https://twitter.com/hashtag/freedomofexpression?src=hash&ref_src=twsrc%5Etfw) [\#gvapsummit2019](https://twitter.com/hashtag/gvapsummit2019?src=hash&ref_src=twsrc%5Etfw) <https://t.co/aGKdjHQe7W>
 >
-> — Emma Lewis (@Petchary) [June 2, 2019](https://twitter.com/Petchary/status/1135027508942901249?ref_src=twsrc%5Etfw)
+> — Emma Lewis (@Petchary) June 2, 2019
 
 > আমরা যেন প্রান্তিক মানুষের কথা ভুলে না যাই, তাদের ইন্টারনেট এ প্রবেশাধিকার দিতে কাজ করি। [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw) [\#GVAPSummit2019](https://twitter.com/hashtag/GVAPSummit2019?src=hash&ref_src=twsrc%5Etfw)
 >

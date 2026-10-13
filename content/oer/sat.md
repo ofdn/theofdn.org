@@ -7,6 +7,8 @@ section: "oer"
 wp_type: "post"
 wp_id: 361
 date: "2018-08-07"
+authors:
+  - "Subhashish Panigrahi"
 modified: "2026-10-13"
 categories:
   - "Language Resources"

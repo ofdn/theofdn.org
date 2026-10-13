@@ -100,7 +100,7 @@ Working on reviving and revitalising Eastern Tharu languages, digital activism i
 
 Digital activist working for preservation and protect of endangered languages
 
-[Twitter ](https://twitter.com/Abhinasds)
+Twitter 
 
 ###### Kusunda, Tharu
 
@@ -116,7 +116,7 @@ Independent researcher working for Kusunda, a language isolate and almost extinc
 
 Expertise with over eight years in Socio-Cultural Anthropology and Tribal Customary Law of Jharkhand, India; Interfaces with indigenous communities and government officials; Interested in preservation of intangible cultural heritage of marginalised Communities
 
-[Link ](https://www.cujtcl.com/current-faculty-members/walter-beck)
+Link 
 
 ###### Nepali, Kusunda, Hindi
 
@@ -124,7 +124,7 @@ Expertise with over eight years in Socio-Cultural Anthropology and Tribal Custom
 
 Interested in growing Kusunda language resources and outreach
 
-[Twitter ](https://twitter.com/Abhinasds)
+Twitter 
 
 ###### Mundari, Sadri
 
@@ -148,7 +148,7 @@ Activist in indigenous movement initiatives—Nepal Federation of Indigenous Nat
 
 Native speaker of Ho language— active on bringing digital platform, building the Ho Wikipedia, and other digital resources including fonts and input methods, and contributor community
 
-[Twitter ](https://twitter.com/ManguPurty)
+Twitter 
 
 ###### Mundari, Birhor, Ho
 

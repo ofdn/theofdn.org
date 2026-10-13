@@ -34,7 +34,7 @@ Recording native speakers speaking their languages is critical to the humanity. 
 
 These resources are divided into four interrelated chapters: a) Consent, Copyright and Open Licensing, b) Multimedia (audiovisual) recording, c) Metadata collection and publication, and d) Accessibility.
 
-Different practitioners use different methodologies for the recording as their purpose of the documentation is different. For instance, linguistic documentary as a practice focuses on collecting the rich linguistic data of a language ([Seyfeddinipur](https://scholarspace.manoa.hawaii.edu/bitstream/10125/24965/seyfeddinipur_rau.pdf)<sup>​1​</sup>)  like recording the everyday conversation in a marketplace whereas documentary filmmakers focus on the aesthetics and storytelling.
+Different practitioners use different methodologies for the recording as their purpose of the documentation is different. For instance, linguistic documentary as a practice focuses on collecting the rich linguistic data of a language (Seyfeddinipur<sup>​1​</sup>)  like recording the everyday conversation in a marketplace whereas documentary filmmakers focus on the aesthetics and storytelling.
 
 Table of Contents
 
@@ -194,7 +194,7 @@ Public licenses or public copyright licenses are for the general public. By usin
 
 **Free/Open Licenses**
 
-These licenses are commonly known as open licenses. They are inspired by the [Four Essential Freedoms of the Free Software](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Free_software#Definition_and_the_Four_Essential_Freedoms_of_Free_Software). Such licenses allow everyone to use, modify, share and improve. Different open licenses have different degrees of these four freedoms.
+These licenses are commonly known as open licenses. They are inspired by the [Four Essential Freedoms of the Free Software](https://en.wikipedia.org/wiki/Free_software). Such licenses allow everyone to use, modify, share and improve. Different open licenses have different degrees of these four freedoms.
 
 **Creative Commons Licenses**
 
@@ -269,7 +269,7 @@ Most home lights, when captured in a camera, look flickering and disturbing. Whe
 - **Friendliness and empathy**: The best emotion is captured when your interviewee trusts you the most. Try to be empathetic and friendly, relate to them in a human level and keep a check on their comfort level. They would open up to share something that they care about only when they think they can trust you. Trust is built over time. How do you bring it in a short interview?
 - **Ice braker questions**: You can always ask some trivial ice-breaking questions in the beginning and slowly move towards asking more personal questions.
 - **Body language**: In a physical interview, your body language matters much more than a telephonic or voice/video call. Positive body posture can entirely set the mood of the subject. So a thumb rule is be a good listener and show curiosity to learn from the interviewee. But when you’re interviewing someone speaking a endangered language that is alien to you, you still can start with the same body posture. Even though you won’t understand the vocabulary, being empathetic and trying to relate by observing the interview’s emotional flow. You could reflect that by the right kind of camera moves.
-- **Motion is emotion**: Documenting a language is not just about placing a camera on a tripod and interview someone though that’s a good starting point. But you need to capture the life of someone on the camera if you’re capturing them saying about their life. If a picture means a thousand words, a video means a million! So, take some ample amount of time to shoot some [b-rolls](https://en.wikipedia.org/wiki/b-rolls "w:b-rolls"). For instance, if your interviewee has narrated about a bedtime story during the interview, capture some relevant shots—like kids sitting around an old person, or parents with kids. B-rolls are generally short so shoot really tiny videos (30 seconds – 1 minute max.) and cover a wider range of areas because you never know where you can use them. You can use the b-rolls as [cut shots](https://en.wikipedia.org/wiki/Cut_(transition) "w:Cut (transition)").
+- **Motion is emotion**: Documenting a language is not just about placing a camera on a tripod and interview someone though that’s a good starting point. But you need to capture the life of someone on the camera if you’re capturing them saying about their life. If a picture means a thousand words, a video means a million! So, take some ample amount of time to shoot some [b-rolls](https://en.wikipedia.org/wiki/B-roll "w:b-rolls"). For instance, if your interviewee has narrated about a bedtime story during the interview, capture some relevant shots—like kids sitting around an old person, or parents with kids. B-rolls are generally short so shoot really tiny videos (30 seconds – 1 minute max.) and cover a wider range of areas because you never know where you can use them. You can use the b-rolls as [cut shots](https://en.wikipedia.org/wiki/Cut_(transition) "w:Cut (transition)").
 
 ### Module 2. Hardware and software for recording, and recording process
 
@@ -314,12 +314,12 @@ See the Web Accessibility Initiative (W3C) [guidelines](https://www.w3.org/WAI/m
 
 ### Captioning and subtitling
 
-Making the recorded content accessible for the people with disability is extremely crucial. A deaf person cannot listen to an audio recording or the sound of a video recording. So, it is very important to create captions or subtitles for your audio or video recording. Captioning is a time consuming process and it needs some extra time allotment and budget. There are many ways to add caption. We recommend [Aegisub](http://www.aegisub.org/) ([user manual](http://docs.aegisub.org/)) for captioning on computer as it supports all platforms (Windows, Mac and other Unix operating systems). Many modern video editors also support captioning. If you are collaborating with remote translators then [Amara](https://amara.org/en/videos/create/) is a recommended option. It is an Open Source video subtitling platform (learn how to use it from [here](https://amara.org/en/subtitling-platform/#free-platform)). Popular platforms like [Internet Archive](https://archive.org), [Vimeo](https://archive.org) and [YouTube](https://youtube.org) are supported on Amara. YouTube also supports an in-built [Closed Captioning](https://support.google.com/youtube/answer/2734796?hl=en). We strongly recommend the comprehensive guides that BBC has created (short version here, long version [here](https://bbc.github.io/subtitle-guidelines)) to learn how to create accessible captioning.
+Making the recorded content accessible for the people with disability is extremely crucial. A deaf person cannot listen to an audio recording or the sound of a video recording. So, it is very important to create captions or subtitles for your audio or video recording. Captioning is a time consuming process and it needs some extra time allotment and budget. There are many ways to add caption. We recommend [Aegisub](http://www.aegisub.org/) ([user manual](http://docs.aegisub.org/)) for captioning on computer as it supports all platforms (Windows, Mac and other Unix operating systems). Many modern video editors also support captioning. If you are collaborating with remote translators then [Amara](https://amara.org/en/videos/create/) is a recommended option. It is an Open Source video subtitling platform (learn how to use it from [here](https://amara.org/en/subtitling-platform/#free-platform)). Popular platforms like [Internet Archive](https://archive.org), [Vimeo](https://archive.org) and [YouTube](https://www.youtube.com) are supported on Amara. YouTube also supports an in-built [Closed Captioning](https://support.google.com/youtube/answer/2734796?hl=en). We strongly recommend the comprehensive guides that BBC has created (short version here, long version [here](https://web.archive.org/web/20201218093418/http://bbc.github.io/subtitle-guidelines/)) to learn how to create accessible captioning.
 
 ## Contributors
 
 - Project coordinator and lead author: Subhashish Panigrahi
-- Research and content development for [Santali](https://en.wikiversity.org/wiki/OpenSpeaks/sat): [R Ashwani Banjan Murmu](https://en.wikiversity.org/wiki/User:R_Ashwani_Banjan_Murmu), [Fagu Baskey](https://en.wikiversity.org/wiki/User:Fagu_Baskey) and [Joy sagar Murmu](https://en.wikiversity.org/wiki/User:Joy_sagar_Murmu)
+- Research and content development for [Santali](https://en.wikiversity.org/wiki/OpenSpeaks/sat): R Ashwani Banjan Murmu, [Fagu Baskey](https://en.wikiversity.org/wiki/User:Fagu_Baskey) and [Joy sagar Murmu](https://en.wikiversity.org/wiki/User:Joy_sagar_Murmu)
 
 ## FAQ
 
@@ -344,7 +344,7 @@ Making the recorded content accessible for the people with disability is extreme
 
 ## Bibliography
 
-1.  1\. Seyfeddinipur M, Rau F. Keeping it real: Video data in language documentation and language archiving. *Language Documentation & Conservation*. 2020;14:17. <https://scholarspace.manoa.hawaii.edu/bitstream/10125/24965/seyfeddinipur_rau.pdf>
+1.  1\. Seyfeddinipur M, Rau F. Keeping it real: Video data in language documentation and language archiving. *Language Documentation & Conservation*. 2020;14:17. scholarspace.manoa.hawaii.edu/bitstream/10125/24965/seyfeddinipur_rau.pdf
 
 ## Recommended resources
 

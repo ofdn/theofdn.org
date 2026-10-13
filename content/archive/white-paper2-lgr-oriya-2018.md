@@ -112,7 +112,6 @@ The indigenous people cannot pronounce the airy sounds like “ଖ”, “ଘ”
 
 ## **C. H. Santakar (Telugu and Odia)**
 
-*(play recorded interview at https://drive.google.com/file/d/1eCZA500AxpsMrmVmw1tSHX6ZRfQmZzjc/view?usp=sharing)*
 
 *Mr. Santakar is an eminent journalist and philanthropist based in Koraput, Odisha who has worked widely in the region for citizen journalism training to school children. He also engages with grassroots communities esp. indigenous communities of Koraput and Malkangiri district.*
 
@@ -124,7 +123,6 @@ None pronounces the ‘ଵ’ (0B35) as ‘va’ in Southern Odisha and it is ge
 
 ## **Ramjit Tudu (Santali)**
 
-(*play recorded interview at https://drive.google.com/file/d/1iVI9i9aZUn8obVMV9D6JoBSmh4JvKlBa/view?usp=sharing*)
 
 *Mr. Tudu is an active Santali-language Wikipedian and the founding member of the Ol Chiki Tech, a collective working towards building digital tools for the Santali users using Ol chiki alphabet. He himself has played a vital role for Ol chiki input tools and reviving the Santali Wikipedia where the latter became a live Wikipedia earlier this year as the first indigenous language Wikipedia in India.*
 
@@ -138,7 +136,6 @@ In the past, when Odia script was used for writing Santali ‘bisarga’ (visarg
 
 ## **Mangal Singku (Ho)**
 
-(*play recorded interview at https://drive.google.com/file/d/1YFRA0FIi2YFPw5GNH_nKaxWNGDbPU0NN/view?usp=sharing*)
 
 *Mr. Singhku is working on building digital tools for the Ho language where the latter is spoken by about 1.4 million native speakers spread across six Indian states including Odisha and is written by the Warang Citi alphabet. Historical use exist in Bengali, Devanagari, Latin and Odia alphabet.*
 

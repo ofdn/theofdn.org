@@ -41,5 +41,5 @@ https://freesound.org/people/0ktober/sounds/188828/, https://freesound.org/peopl
 
 ## Reading List
 
-1\. Oxfam India. “Who Tells Our Stories Matters: Representation of Marginalised Caste Groups in Indian Newsrooms”. https://www.oxfamindia.org/sites/default/files/2019-08/Oxfam%20NewsLaundry%20Report_For%20Media%20use.pdf\
+1\. Oxfam India. “Who Tells Our Stories Matters: Representation of Marginalised Caste Groups in Indian Newsrooms”. https://www.oxfamindia.org/sites/default/files/2019-08/Oxfam%20NewsLaundry%20Report_For%20Media%20use.pdf \
 2. Rao, Aprameya. “The great Indian language trouble”. Asian Age. https://www.asianage.com/age-on-sunday/091119/the-great-indian-language-trouble.html

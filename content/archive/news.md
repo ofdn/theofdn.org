@@ -14,7 +14,7 @@ Publication of our work in blogs, television, newspapers, and other media.
 
 **2018**
 
-- “[Kathabhidhana](https://www.outliers.world/projects/kathabhidhana/)“. Outliers. 1 March 2018\
+- “Kathabhidhana“. Outliers. 1 March 2018\
   \[..\]*Kathabhidhana is an open toolkit to record a large number of words. It consists of a few free/libre and open source software, open datasets, methodologies and documentations. It can be used to record pronunciations of words to create dictionary along with pronunciations, and also phonemes to create a text-to-speech software.*\[..\]
 - Rajpal, Seema. “[Odisha’s Prateek Pattanaik is using technology to preserve Odisha’s dying art forms](http://www.edexlive.com/people/2018/apr/23/odishas-prateek-pattanaik-has-mastered-the-art-of-capturing-and-preserving-culture-2552.html)“. EdexLive, *New Indian Express*.  23 April 2018\
   \[..\]*By undertaking arduous journeys to the very depths of districts, Pattanaik has been documenting fading art forms through videos and giving them both Odia and English subtitles*\[..\]

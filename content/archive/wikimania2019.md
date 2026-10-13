@@ -42,7 +42,7 @@ Moderator: Subhashish Panigrahi; Panelists: Anass Sedrati & Kristen Tcherneshoff
 >
 > [O Foundation – OFDN](https://www.facebook.com/theofdn/) यांनी वर पोस्ट केले शनिवार, १७ ऑगस्ट, २०१९
 
-> Wikitonguesers [@ktchernes](https://twitter.com/ktchernes?ref_src=twsrc%5Etfw), [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw) and Anass Sedrati talking about online language activism at [@Wikimania](https://twitter.com/Wikimania?ref_src=twsrc%5Etfw). From translating Wikipedia to creating original video, linguistic representation matters—if you’re in Stockholm, join us! [\#iyil2019](https://twitter.com/hashtag/iyil2019?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/ikpiKaflFE](https://t.co/ikpiKaflFE)
+> Wikitonguesers @ktchernes, [@subhapa](https://twitter.com/subhapa?ref_src=twsrc%5Etfw) and Anass Sedrati talking about online language activism at [@Wikimania](https://twitter.com/Wikimania?ref_src=twsrc%5Etfw). From translating Wikipedia to creating original video, linguistic representation matters—if you’re in Stockholm, join us! [\#iyil2019](https://twitter.com/hashtag/iyil2019?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/ikpiKaflFE](https://t.co/ikpiKaflFE)
 >
 > — Wikitongues (@wikitongues) [August 17, 2019](https://twitter.com/wikitongues/status/1162663202582409216?ref_src=twsrc%5Etfw)
 
@@ -66,7 +66,7 @@ Sailesh and Subhashish also participated in the CivilServant Summit 2019, a rese
 
 ### Last but not the least
 
-- **We organised a meetup inviting Wikimedians who are either native speakers of indigenous languages or are supporting Wikimedia projects in indigenous languages**. Eight Wikimedians joined and initiated a discussion around some of the vital issues with indigenous languages in general and particularly on Wikipedia/Wikimedia projects. This discussion led to the creation of a Telegram chat group, a new public [Wikimedia Space category](https://discuss-space.wmflabs.org/c/languages/indigenous-languages) and the larger goal is to continue the discussion and help build collaborations and resources for indigenous languages on Wikimedia projects (see a [Meta-wiki page](https://meta.wikimedia.org/wiki/Wikimedia_Indigenous_Languages) dedicated for this activity).
+- **We organised a meetup inviting Wikimedians who are either native speakers of indigenous languages or are supporting Wikimedia projects in indigenous languages**. Eight Wikimedians joined and initiated a discussion around some of the vital issues with indigenous languages in general and particularly on Wikipedia/Wikimedia projects. This discussion led to the creation of a Telegram chat group, a new public [Wikimedia Space category](https://web.archive.org/web/20200622180223/https://discuss-space.wmflabs.org/c/languages/indigenous-languages) and the larger goal is to continue the discussion and help build collaborations and resources for indigenous languages on Wikimedia projects (see a [Meta-wiki page](https://meta.wikimedia.org/wiki/Wikimedia_Indigenous_Languages) dedicated for this activity).
 
 ### Some of our recommended talks
 

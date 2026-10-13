@@ -47,7 +47,7 @@ Participants who have signed on to manage the account include:
 - [Pasang Yangjee Sherpa](https://www.twitter.com/PasangYangjee) (Sherpa language)
 - [Janak Raj Bhatta](https://www.twitter.com/JRBhatta) (Doteli language)
 - [Ramjit Tudu](https://www.twitter.com/Ramjit_Tudu) (Santali language)
-- [Mangu Purty](https://www.twitter.com/ManguPurty) (Ho language)
+- Mangu Purty (Ho language)
 - [Benson KC Fang](https://www.twitter.com/cwch) (Taivoan language)
 - [Mulihay Talus](https://www.twitter.com/Kau_Jasmine1126) (Sakizaya language)
 - [Luh Ayu Manik Mas](https://www.twitter.com/LuhAyuManikMas1) (Balinese language)
