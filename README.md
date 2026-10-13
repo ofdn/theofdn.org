@@ -351,6 +351,8 @@ A tool page, such as a font converter, uses the same template and fields as a la
 1. Copy the template into `content/tool/` and rename it, for example `ho-unicode-converter.md`. Set `path` as under Addresses.
 2. Write the title as "<Language> (<script>) <tool>", for example "Ho (Warang Citi) Unicode converter". Leave out the script when the tool works for every script of the language.
 3. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source. The developers are the tool's authors. They show under the title and in "Cite this page". O Foundation is the publisher.
+
+Reference managers such as Zotero read each page's licence and place of publication. The licence is the one under `info` (`licence`), or CC BY-SA 4.0 when there is none. The place is Bhubaneswar.
 4. Write `scope` and fill in `seo`, as for a language resource page.
 5. Put the tool right after a short introduction, with `[[embed:0]]`.
 6. Write "How to use it" as numbered steps.

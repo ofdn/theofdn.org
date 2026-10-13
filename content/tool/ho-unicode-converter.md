@@ -30,6 +30,7 @@ info:
   developer: "[Jnanaranjan Sahu](https://jsahu.me)"
   language: "[Ho](/resources/hoc/)"
   script: "[Warang Citi](https://rtd.theofdn.org/scripts/warang-citi/) (𑢹𑣗𑣁𑣜𑣊 𑣏𑣂𑣕𑣂)"
+  licence: MIT
 resources:
   credits:
     - name: Jnanaranjan Sahu

@@ -30,6 +30,9 @@
 {% for a in page.authors or [] %}<meta name="DC.creator" content="{{ a }}">
 {% endfor %}{% if page.date %}<meta name="DC.date" content="{{ page.date }}">{% endif %}
 <meta name="DC.publisher" content="{{ site_name }}">
+<meta name="DC.rights" content="{{ page.rights }}">
+<link rel="schema.eprints" href="http://purl.org/eprint/terms/">
+<meta name="eprints.place_of_pub" content="{{ site_place }}">
 <meta name="DC.language" content="{{ page.lang }}">
 <meta name="DC.identifier" content="{{ site_url }}{{ page.path }}">
 {% if page.ark_url %}<meta name="DC.identifier" content="{{ page.ark_url }}">{% endif %}

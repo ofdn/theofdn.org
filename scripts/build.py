@@ -18,6 +18,8 @@ from jinja2 import Environment, FileSystemLoader
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE_NAME = "O Foundation"
+SITE_PLACE = "Bhubaneswar"  # place of publication, for citations
+SITE_LICENCE = "CC BY-SA 4.0"  # default licence of a page; info.licence overrides it
 SITE_URL = "https://theofdn.org"
 # ARK: NAAN 15056 (registered 24 Sep 2026). N2T and arks.org forward
 # ark:15056/<id> to https://theofdn.org/ark:15056/<id>, hyphens kept.
@@ -981,7 +983,7 @@ def citations(page):
         "mla": f"{names}. \"{title}.\" O Foundation, {year}, {url}. Accessed __ACCESSED__.",
         "vancouver": f"{names}. {title}. O Foundation; {year} [cited __ACCESSED__]. Available from: {url}",
         "bibtex": ("@misc{" + key + ",\n  author    = {" + " and ".join(authors) + "},\n  title     = {" + title
-                   + "},\n  publisher = {O Foundation},\n  year      = {" + year + "},\n  url       = {" + url
+                   + "},\n  publisher = {O Foundation},\n  address   = {" + SITE_PLACE + "},\n  year      = {" + year + "},\n  url       = {" + url
                    + "},\n  urldate   = {__ACCESSED__}" + (",\n  note      = {" + ark.strip() + "}" if ark else "") + "\n}"),
     }
 
@@ -996,7 +998,8 @@ def structured_data(page):
     url = SITE_URL + page["path"]
     data = {"@context": "https://schema.org", "@type": "WebPage", "name": page["title"], "url": url,
             "inLanguage": page.get("lang", "en"),
-            "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/"}}
+            "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/",
+                          "address": {"@type": "PostalAddress", "addressLocality": SITE_PLACE, "addressCountry": "IN"}}}
     if page.get("excerpt"):
         data["description"] = summary(page)
     if page.get("ark_url"):
@@ -1093,7 +1096,7 @@ def main():
     site_status = page_status(None, conf)
     import hashlib
     asset_v = hashlib.sha1((ROOT / "assets/site.css").read_bytes() + (ROOT / "assets/site.js").read_bytes()).hexdigest()[:8]
-    common = {"asset_v": asset_v, "nav": NAV, "footer_nav": FOOTER_NAV, "site_name": SITE_NAME, "year": date.today().year}
+    common = {"asset_v": asset_v, "nav": NAV, "footer_nav": FOOTER_NAV, "site_name": SITE_NAME, "site_place": SITE_PLACE, "year": date.today().year}
 
     def write(path, html):
         dest = out / path.strip("/") / "index.html" if path != "/" else out / "index.html"
@@ -1111,6 +1114,8 @@ def main():
             p["trailer_html"] = embed_html(p["trailer"], p["title"] + ", trailer", p["section"])
         if p.get("transcript"):  # optional, for films and podcast episodes
             p["transcript_html"] = polish(markdown_to_html(expand_tags(str(p["transcript"]), p["blocks"])), p)
+        lic = (p.get("info") or {}).get("licence")
+        p["rights"] = re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", str(lic)) if lic else SITE_LICENCE
         if p["section"] == "oer":
             add_tool_cards(p, pages)
         res = resources_html(p)
