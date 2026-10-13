@@ -102,6 +102,8 @@ def load_pages():
             if not meta.get(key):
                 sys.exit(f"{f}: missing '{key}'")
         meta["date"] = str(meta.get("date", ""))
+        if meta["section"] in ("oer", "tool") and meta.get("modified"):  # resources show when their content last changed
+            meta["updated"] = str(meta["modified"])
         # A language version sits next to its original as <slug>.<lang>.md.
         v = re.fullmatch(r"(.+)\.([a-z]{2,3})", f.stem)
         if v:
@@ -114,6 +116,14 @@ def load_pages():
             sys.exit(f"{f}: path '{meta['path']}' must start and end with / and use only a-z, 0-9 and -")
         pages.append(meta)
     link_versions(pages)
+    # A tool's developers are its authors (byline, "Cite this page", reference managers).
+    # A language version takes them from the original.
+    by_file = {p["file"]: p for p in pages}
+    for p in pages:
+        if p["section"] == "tool" and not p.get("authors"):
+            dev = (p.get("info") or by_file.get(p.get("version_of"), {}).get("info") or {}).get("developer")
+            if dev:
+                p["authors"] = [re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", str(d)) for d in (dev if isinstance(dev, list) else [dev])]
     seen = {}
     for p in pages:
         if p["path"] in seen:
@@ -626,6 +636,8 @@ def add_tool_cards(page, pages):
     if cards:
         groups["type"] = cards + list(groups.get("type") or [])
         page["resources"] = groups
+    if any(t["section"] == "tool" and t["path"].startswith(f"/tools/{code}/") for t in pages):
+        page["tools_list"] = f"/tools/{code}/"
 
 
 def resources_html(page):
@@ -687,8 +699,12 @@ def resources_html(page):
         else:
             thanks = ""
         en = ' lang="en"' if g not in own and page.get("lang", "en") != "en" else ""
+        more = ""
+        if g == "type" and page.get("tools_list"):
+            name = (page.get("seo") or {}).get("language") or ""
+            more = f'<p class="resources__more" lang="en"><a href="{page["tools_list"]}">All {name} tools</a></p>'
         out.append(f'<section class="resources" aria-labelledby="{hid}"><h2 id="{hid}"{en}>{inline_md(heading)}</h2>'
-                   + thanks + (f'<ul class="resource-list" role="list">{"".join(lis)}</ul>' if lis else "") + "</section>")
+                   + thanks + (f'<ul class="resource-list" role="list">{"".join(lis)}</ul>' if lis else "") + more + "</section>")
     return "".join(out)
 
 
@@ -987,8 +1003,8 @@ def structured_data(page):
         data["identifier"] = page["ark_url"]
     if page.get("date"):
         data["datePublished"] = page["date"]
-    if page.get("modified"):
-        data["dateModified"] = str(page["modified"])
+    if page.get("updated") or page.get("modified"):
+        data["dateModified"] = str(page.get("updated") or page["modified"])
     if page.get("authors"):
         data["author"] = [{"@type": "Person", "name": n} for n in page["authors"]]
     if page.get("translators"):
@@ -1013,8 +1029,10 @@ def structured_data(page):
                 {"@type": "PropertyValue", "propertyID": "Glottocode", "value": str(info["glottolog"])})
         same = [str(x if isinstance(x, str) else x["url"]) for x in page.get("links") or []]
         same = [u for u in same if any(urlparse(u).netloc.endswith(h) for h in SAME_AS_HOSTS)]
+        if info.get("glottolog"):
+            same.append(f"https://glottolog.org/resource/languoid/id/{info['glottolog']}")
         if same:
-            lang["sameAs"] = same
+            lang["sameAs"] = list(dict.fromkeys(same))
         data["about"] = lang
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 

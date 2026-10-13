@@ -372,6 +372,9 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
   .film__body { grid-template-columns: minmax(14rem, 17rem) 1fr; gap: var(--space-3xl); }
   .film__facts { align-self: start; }
   .film__main { order: 2; }
+  /* Shared boxes at the end line up with the text column, not the infobox. */
+  .film__wrap .page-end { display: grid; grid-template-columns: minmax(14rem, 17rem) 1fr; column-gap: var(--space-3xl); }
+  .film__wrap .page-end > * { grid-column: 2; max-width: 46rem; }
 }
 .film__facts { font-family: var(--font-display); font-size: 1rem; line-height: 1.45; }
 .film__facts dl { margin-bottom: var(--space-xl); }
@@ -533,6 +536,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .converter__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm) var(--space-md); margin-top: var(--space-md); }
 .converter__status { font-weight: 600; }
 .converter__status:empty { display: none; }
+.resources__more { margin-top: var(--space-md); font-family: var(--font-display); font-weight: 600; }
 .prose .converter__note { margin-top: var(--space-md); font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted); }
 .embed-form { width: 100%; max-width: 640px; height: 1150px; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); overflow: hidden; }
 .embed-form iframe { width: 100%; height: 100%; border: 0; background: #fff; }

@@ -17,6 +17,23 @@
 {% if page.excerpt %}<meta property="og:description" content="{{ summary(page) }}">{% endif %}
 {% if page.featured_image %}<meta property="og:image" content="{{ site_url }}{{ page.featured_image }}">{% endif %}
 <script type="application/ld+json">{{ jsonld | safe }}</script>
+{#- For Zotero, Mendeley and other reference managers: Highwire Press and Dublin Core tags. #}
+<meta name="citation_title" content="{{ page.title }}">
+{% for a in page.authors or [] %}<meta name="citation_author" content="{{ a }}">
+{% endfor %}{% if page.date %}<meta name="citation_publication_date" content="{{ page.date | replace('-', '/') }}">{% endif %}
+{% if page.updated %}<meta name="citation_online_date" content="{{ page.updated | replace('-', '/') }}">{% endif %}
+<meta name="citation_publisher" content="{{ site_name }}">
+<meta name="citation_language" content="{{ page.lang }}">
+<meta name="citation_public_url" content="{{ site_url }}{{ page.path }}">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.title" content="{{ page.title }}">
+{% for a in page.authors or [] %}<meta name="DC.creator" content="{{ a }}">
+{% endfor %}{% if page.date %}<meta name="DC.date" content="{{ page.date }}">{% endif %}
+<meta name="DC.publisher" content="{{ site_name }}">
+<meta name="DC.language" content="{{ page.lang }}">
+<meta name="DC.identifier" content="{{ site_url }}{{ page.path }}">
+{% if page.ark_url %}<meta name="DC.identifier" content="{{ page.ark_url }}">{% endif %}
+{% if page.excerpt %}<meta name="DC.description" content="{{ summary(page) }}">{% endif %}
 {% if page.versions | length > 1 %}{% for v in page.versions %}<link rel="alternate" hreflang="{{ v.lang }}" href="{{ v.path }}">
 {% endfor %}<link rel="alternate" hreflang="x-default" href="{{ page.versions[0].path }}">{% endif %}{% endblock %}
 {% set kind = {"film": "film", "podcast": "episode"}.get(page.section) %}
@@ -43,7 +60,7 @@
     {% if not (page.hero and page.title_image) %}<h1 class="{% if infobox %}film__title{% else %}page__title{% endif %}">{{ page.title }}</h1>{% endif %}
     {% if page.lede %}<p class="film__lede">{{ page.lede }}</p>{% endif %}
     {% if page.scope %}<p class="film__lede page-scope">{{ page.scope }}</p>{% endif %}
-    {% if page.authors %}<p class="byline">{{ page.authors | names }}{% if page.date %} · <time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}</p>{% endif %}
+    {% set updated = page.updated if page.updated and page.updated > page.date else none %}{% if page.authors %}<p class="byline">{{ page.authors | names }}{% if page.date %} · <time datetime="{{ page.date }}">{{ page.date }}</time>{% endif %}{% if updated %} · Updated <time datetime="{{ updated }}">{{ updated }}</time>{% endif %}</p>{% elif updated %}<p class="byline" lang="en">Updated <time datetime="{{ updated }}">{{ updated }}</time></p>{% endif %}
     {% if page.versions | length > 1 %}
     <nav class="page-langs" aria-label="Other languages" lang="en">
       <p>Read in: {% for v in page.versions if v.path != page.path %}<a href="{{ v.path }}" lang="{{ v.lang }}" hreflang="{{ v.lang }}">{{ v.lang_name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
@@ -138,6 +155,7 @@
     </ul>
   </section>
   {% endif %}
+  <div class="page-end">
   {% if page.contribute %}
   <section class="contribute use-well" aria-labelledby="use-well" lang="en">
     <h2 class="label" id="use-well">Use these resources well</h2>
@@ -146,7 +164,7 @@
       <li>Credit the people whose words, recordings and knowledge you use, by name.</li>
       <li>Ask for consent before you record people or publish community knowledge.</li>
     </ul>
-    <p>To learn more, read the <a href="https://archivingthepresent.cc/manual/"><cite>Archiving the Present</cite> manual</a>, take the <a href="https://learn.wiki/courses/course-v1:OpenSpeaks+OS-001+2026-01/about">free course on WikiLearn</a>, or read about the <a href="/openspeaks/#framework-and-research">OpenSpeaks Oral Knowledge Framework</a>.</p>
+    <p>To learn more, read the <a href="https://archivingthepresent.cc/manual/"><cite>Archiving the Present</cite> manual</a>, take the <a href="https://learn.wiki/courses/course-v1:OpenSpeaks+OS-001+2026-01/about">free course on WikiLearn</a>, or read about the <a href="/openspeaks/#framework-and-research">OpenSpeaks Oral Knowledge Framework</a>. See <a href="https://rtd.theofdn.org/">Registry of Type Design</a> for scripts, their inventors, typefaces/fonts and their creators.</p>
   </section>
   <section class="contribute" aria-labelledby="contribute" lang="en">
     <h2 class="label" id="contribute">Help improve this page</h2>
@@ -176,5 +194,6 @@
     <pre class="citation-text"></pre>
   </section>
   {% endif %}
+  </div>
 </div>
 {% endblock %}

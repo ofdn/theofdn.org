@@ -45,6 +45,10 @@ Always needed:
 - `section`: one of the folders above.
 - `tier`: `live` or `archive`.
 - `date`: `2026-09-24`.
+
+On resource and tool pages, also set:
+
+- `modified`: the day you last changed what the page says. It shows as "Updated" under the title. Do not change it for a new address or a fixed link.
 - `excerpt`: one or two sentences for lists and search engines.
 
 Optional, on any page:
@@ -281,7 +285,7 @@ Use this layout for a page that lists fonts, keyboards, dictionaries, videos and
 2. Fill in `info`. These facts show in the box beside the text. Leave out any line you cannot source.
 3. Write `scope`: one line on who the page is for and what it covers. It shows under the title.
 4. Fill in `seo`. It is not shown on the page. Search engines read it.
-5. Put links to the language on other sites under `links`. They show under the facts.
+5. Put links to the language on other sites under `links`. They show under the facts. Leave out Glottolog: the Glottocode row already links to it.
 6. Fill in `resources`. Each group becomes a heading with a card for each item.
 7. Write a short introduction above `[[resources]]`.
 8. Write the thanks in `acknowledgements`. It shows under "Credits and acknowledgements", above the cards in `credits`.
@@ -346,7 +350,7 @@ A tool page, such as a font converter, uses the same template and fields as a la
 
 1. Copy the template into `content/tool/` and rename it, for example `ho-unicode-converter.md`. Set `path` as under Addresses.
 2. Write the title as "<Language> (<script>) <tool>", for example "Ho (Warang Citi) Unicode converter". Leave out the script when the tool works for every script of the language.
-3. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source.
+3. Fill in `info`: developer, release date, funder, language, script, repository and licence. Leave out any line you cannot source. The developers are the tool's authors. They show under the title and in "Cite this page". O Foundation is the publisher.
 4. Write `scope` and fill in `seo`, as for a language resource page.
 5. Put the tool right after a short introduction, with `[[embed:0]]`.
 6. Write "How to use it" as numbered steps.

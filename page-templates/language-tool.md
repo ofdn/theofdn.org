@@ -6,6 +6,8 @@ section: "tool"
 tier: "live"
 ark: tool
 date: "YYYY-MM-DD"
+# The day you last changed what the page says. Shows as "Updated".
+modified: "YYYY-MM-DD"
 # Also the note on the tool's card on the language page.
 excerpt: "One sentence on what the tool does."
 # One line under the title: who the tool is for.

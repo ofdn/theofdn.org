@@ -4,6 +4,8 @@ path: "/resources/<two-letter ISO 639 code, else three-letter code, else Glottoc
 section: "oer"
 tier: "live"
 date: "YYYY-MM-DD"
+# The day you last changed what the page says. Shows as "Updated".
+modified: "YYYY-MM-DD"
 authors:
   - Full Name
   - Full Name
@@ -42,8 +44,6 @@ links:
     url: https://en.wikipedia.org/wiki/<Language>_language
   - label: Wikidata
     url: https://www.wikidata.org/wiki/<Q-id>
-  - label: Glottolog
-    url: https://glottolog.org/resource/languoid/id/<glottocode>
   - label: Endangered Languages Project
     url: https://endangeredlanguages.com/elp-language/<id>
   - label: Open Language Archives Community (OLAC)

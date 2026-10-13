@@ -10,7 +10,7 @@ translators:
 tier: "live"
 section: "oer"
 date: "2019-07-23"
-modified: "2019-08-22"
+modified: "2026-10-13"
 categories:
   - "Ho"
   - "Language Resources"
@@ -55,8 +55,6 @@ links:
     url: https://en.wikipedia.org/wiki/Ho_language
   - label: Wikidata
     url: https://www.wikidata.org/wiki/Q33270
-  - label: Glottolog
-    url: https://glottolog.org/resource/languoid/id/hooo1248
   - label: Endangered Languages Project
     url: https://endangeredlanguages.com/elp-language/10969
   - label: Open Language Archives Community (OLAC)

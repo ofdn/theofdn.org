@@ -55,8 +55,6 @@ links:
     url: https://en.wikipedia.org/wiki/Santali_language
   - label: Wikidata
     url: https://www.wikidata.org/wiki/Q33965
-  - label: Glottolog
-    url: https://glottolog.org/resource/languoid/id/sant1410
   - label: Ethnologue
     url: https://www.ethnologue.com/language/sat/
   - label: Open Language Archives Community (OLAC)
@@ -146,9 +144,6 @@ resources:
       url: https://www.loc.gov/catdir/cpso/romanization/santali.pdf
       credit: Library of Congress
       note: How to write Ol Chiki in Latin letters (PDF).
-    - name: UGC NET Santali syllabus, December 2013
-      url: http://www.ugcnetonline.in/Subject_Code_95.pdf
-      note: Syllabus for the national university teaching exam, in Devanagari (PDF).
   archives:
     - name: Santali-language media on Wikimedia Commons
       url: https://commons.wikimedia.org/wiki/Category:Santali-language_media
