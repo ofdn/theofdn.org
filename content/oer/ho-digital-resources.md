@@ -130,7 +130,7 @@ resources:
       youtube: TVBGKp6k_IY
       url: /film/mage-porob/
       credit: Documentary film by Subhashish Panigrahi, 2019, 40 minutes
-      note: A Ho village in Keshpada, Mayurbhanj district, Odisha, prepares for the Mage Porob harvest festival while mining takes its land.
+      note: A Ho village in Keshpada, Mayurbhanj district, Odisha, prepares for the Mage Porob harvest festival.
   credits:
     - name: Mangu Purty
       url: https://rtd.theofdn.org/people/mangu-purty/
