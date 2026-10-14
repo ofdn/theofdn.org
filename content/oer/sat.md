@@ -124,7 +124,6 @@ resources:
       note: A Santali newspaper and its website.
     - name: Ayo Arang
       url: https://ayoarang.in/
-      archived: https://web.archive.org/web/20260617153618/https://ayoarang.in/
       note: Online magazine by Santali women writers.
     - name: Birmali
       url: https://birmali.com/
