@@ -123,8 +123,8 @@ resources:
       archived: https://web.archive.org/web/20210110114451/https://khoborkagoj.com/
       note: A Santali newspaper and its website.
     - name: Ayo Arang
-      url: http://ayoarang.com/
-      archived: https://web.archive.org/web/20210103015601/http://ayoarang.com/
+      url: https://ayoarang.in/
+      archived: https://web.archive.org/web/20260617153618/https://ayoarang.in/
       note: Online magazine by Santali women writers.
     - name: Birmali
       url: https://birmali.com/
