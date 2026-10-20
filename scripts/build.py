@@ -1206,6 +1206,8 @@ def main():
 
     (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, **common), base))
     (out / ".nojekyll").write_text("")
+    (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+    shutil.copy(ROOT / "assets/icons/favicon.ico", out / "favicon.ico")
     urls = [SITE_URL + p["path"] for p in pages] + [SITE_URL + p for p in LISTS] + [SITE_URL + p for p in tool_lists]
     (out / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
