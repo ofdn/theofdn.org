@@ -1,0 +1,120 @@
+{% macro page(name, extra="") %}class="typeface__page{{ extra }}{% if t.bg[name] %} typeface__page--colour{% endif %}"{% if t.bg[name] %} style="--page-bg:{{ t.bg[name] }}"{% endif %}{% endmacro %}
+<section class="typeface"{% if t.font %} style="--specimen-font:'specimen-{{ t.font }}'"{% endif %} aria-labelledby="{{ t.id }}">
+  {% if t.face %}{{ t.face | safe }}{% endif %}
+  {% if t.display %}
+  <div {{ page("title", " typeface__page--hero") }}>
+    <h2 class="typeface__name visually-hidden" id="{{ t.id }}">{{ t.name }}</h2>
+    <p class="typeface__hero" lang="{{ t.lang }}" aria-hidden="true" data-fit="420"><span>{{ t.display }}</span></p>
+  </div>
+  {% endif %}
+
+  <div {{ page("information") }}>
+    {% if not t.display %}<h2 class="typeface__name" id="{{ t.id }}">{{ t.name }}</h2>{% endif %}
+    <div class="typeface__row">
+      <h3 class="typeface__label">{% if t.display %}{{ t.name }}{% else %}Information{% endif %}</h3>
+      <div>
+        {% if t.subtitle %}<p class="typeface__subtitle">{{ t.subtitle }}</p>{% endif %}
+        <div class="typeface__about">{{ t.about_html | safe }}</div>
+        {% if t.credit_rows %}
+        <details class="typeface__more" open>
+          <summary>Credits</summary>
+          <dl>{% for label, value in t.credit_rows %}<div><dt>{{ label }}</dt><dd>{{ value | safe }}</dd></div>{% endfor %}</dl>
+        </details>
+        {% endif %}
+        {% if t.detail_rows %}
+        <details class="typeface__more">
+          <summary>Technical details</summary>
+          <dl>{% for label, value in t.detail_rows %}<div><dt>{{ label }}</dt><dd>{{ value | safe }}</dd></div>{% endfor %}</dl>
+        </details>
+        {% endif %}
+        {% if t.link_list or t.glyphs %}
+        <p class="typeface__actions">{% for l in t.link_list %}{{ l }} {% endfor %}{% if t.glyphs %}<a href="#{{ t.id }}-glyphs">See the glyphs</a>{% endif %}</p>
+        {% endif %}
+        {% if t.note %}<p class="typeface__note">{{ t.note }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if t.headline or t.word_list %}
+  <div {{ page("specimens") }}>
+    <h3 class="typeface__label">Specimens</h3>
+    <div class="typeface__specimens" lang="{{ t.lang }}">
+      {% if t.headline %}
+      <figure class="typeface__specimen">
+        <figcaption class="typeface__meta" lang="en"><span>{{ t.metrics.style }}</span><span>{{ t.metrics.weight }}</span><span data-size></span><span></span></figcaption>
+        <p class="typeface__sample typeface__word" data-fit="300"><span>{{ t.headline }}</span></p>
+      </figure>
+      {% endif %}
+      {% for word, conjuncts in t.word_list %}
+      <figure class="typeface__specimen">
+        <figcaption class="typeface__meta" lang="en"><span>{{ t.metrics.style }}</span><span>{{ t.metrics.weight }}</span><span data-size></span><span>{% if conjuncts %}Conjunct{% if conjuncts | length > 1 %}s{% endif %} <span lang="{{ t.lang }}">{{ conjuncts | join(", ") }}</span>{% endif %}</span></figcaption>
+        <p class="typeface__sample typeface__word" data-fit="260"><span>{{ word }}</span></p>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if t.sentences %}
+  <div {{ page("text") }}>
+    <div class="typeface__specimens" lang="{{ t.lang }}">
+      <figure class="typeface__specimen">
+        <figcaption class="typeface__meta" lang="en"><span>{{ t.metrics.style }}</span><span>{{ t.metrics.weight }}</span><span data-size></span><span></span></figcaption>
+        <p class="typeface__sample typeface__text typeface__text--large">{{ t.sentences[0] }}</p>
+      </figure>
+      {% if t.sentences | length > 1 %}
+      <figure class="typeface__specimen">
+        <figcaption class="typeface__meta" lang="en"><span>{{ t.metrics.style }}</span><span>{{ t.metrics.weight }}</span><span data-size></span><span></span></figcaption>
+        <p class="typeface__sample typeface__text typeface__text--medium">{{ t.sentences[1:3] | join(" ") }}</p>
+      </figure>
+      {% endif %}
+    </div>
+  </div>
+
+  <div {{ page("reading") }}>
+    <figure class="typeface__specimen" lang="{{ t.lang }}">
+      <figcaption class="typeface__meta" lang="en"><span>{{ t.metrics.style }}</span><span>{{ t.metrics.weight }}</span><span data-size></span><span></span></figcaption>
+      <p class="typeface__sample typeface__text typeface__text--columns">{{ t.text }}</p>
+    </figure>
+  </div>
+  {% endif %}
+
+  {% if t.source %}
+  <div {{ page("source") }}>
+    <div class="typeface__row">
+      <h3 class="typeface__label">Source</h3>
+      <figure class="compare">
+        <p class="compare__label">{{ t.source.label or "Source" }}</p>
+        {{ t.source_image }}
+        <p class="compare__label">{{ t.name }}</p>
+        <p class="compare__set" lang="{{ t.lang }}">{% for line in t.source.lines %}<span>{{ line }}</span>{% endfor %}</p>
+        {% if t.source.caption %}<figcaption class="caption">{{ t.source_caption }}</figcaption>{% endif %}
+      </figure>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if t.glyphs %}
+  <div {{ page("glyphs") }}>
+    <h3 class="typeface__label" id="{{ t.id }}-glyphs">Glyphs</h3>
+    <p class="typeface__intro">The letters, signs and conjuncts used in the specimens.</p>
+    <div class="typeface__glyphs">
+      <div class="typeface__inspector">
+        <div class="typeface__box">
+          <svg viewBox="0 0 {{ t.box.width }} {{ t.box.height }}" aria-hidden="true"><text x="{{ t.box.width // 2 }}" y="{{ t.box.baseline }}" font-size="{{ t.box.size }}" text-anchor="middle" lang="{{ t.lang }}">{{ t.first_glyph.show }}</text></svg>
+          {% for label, value, top in t.lines %}<span class="typeface__line" style="top:{{ top }}%"><span>{{ label }}</span><span>{{ value }}</span></span>{% endfor %}
+        </div>
+        <p class="typeface__glyph-info" aria-live="polite"><code data-code>{{ t.first_glyph.code }}</code> <span data-name>{{ t.first_glyph.name }}</span></p>
+      </div>
+      <div class="typeface__grid">
+        {% for group, cells in t.glyphs %}
+        <p class="typeface__group">{{ group }}</p>
+        <ul class="typeface__cells{% if group == 'Conjuncts' %} typeface__cells--wide{% endif %}" role="list">
+          {% for c in cells %}<li><button type="button" class="typeface__glyph" lang="{{ t.lang }}" data-code="{{ c.code }}" data-name="{{ c.name }}" aria-label="{{ c.code }} {{ c.name }}" aria-pressed="{{ 'true' if c is sameas t.first_glyph else 'false' }}">{{ c.show }}</button></li>{% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>

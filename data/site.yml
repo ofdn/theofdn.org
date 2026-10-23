@@ -16,6 +16,7 @@ maintenance_message: ""
 # the font from this list and put the full .woff2 in assets/fonts/.
 preview_fonts:
   - chapakala19
+  - chapakala20
 
 # ARK kinds: the word written as "ark: <kind>" on a page, and the letter in the
 # id it gets (ofdn-<letter>-000001). To add a kind, add a line with an unused

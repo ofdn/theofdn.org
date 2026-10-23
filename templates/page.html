@@ -58,7 +58,7 @@
   {% endif %}
 </section>
 {% endif %}
-<div class="{% if infobox %}film__wrap{% else %}page__wrap{% if not page.split %} page__wrap--text{% endif %}{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}"{% if page.lang != "en" %} lang="{{ page.lang }}"{% endif %}>
+<div class="{% if infobox %}film__wrap{% else %}page__wrap{% if not page.split and not page.wide %} page__wrap--text{% endif %}{% endif %}{% if page.path == "/podcast/" %} hub-podcast{% endif %}"{% if page.lang != "en" %} lang="{{ page.lang }}"{% endif %}>
   <header class="{% if infobox %}film__header{% else %}page__header{% endif %}">
     {% if eyebrow %}<p class="eyebrow" lang="en">{{ eyebrow }}{% if page.date and not kind %} · {{ page.date[:4] }}{% endif %}</p>{% endif %}
     {% if not (page.hero and page.title_image) %}<h1 class="{% if infobox %}film__title{% else %}page__title{% endif %}">{{ page.title }}</h1>{% endif %}
@@ -89,6 +89,7 @@
   {% if page.tier == "archive" %}
   <p class="notice">Archived. First published on {{ page.date }}.</p>
   {% endif %}
+  {% if page.tabs_html %}{{ page.tabs_html | safe }}{% endif %}
   {% if page.trailer_html %}
   <section class="film__trailer" aria-labelledby="trailer">
     <h2 class="label" id="trailer">Trailer</h2>
@@ -130,7 +131,7 @@
       {% endif %}
     </aside>
     <div class="film__main prose">{% else %}
-    <div class="prose{% if page.split %} prose--split{% endif %}">{% endif %}
+    <div class="prose{% if page.split %} prose--split{% endif %}{% if page.wide %} prose--wide{% endif %}">{% endif %}
       {{ body | safe }}
       {% if page.transcript_html %}
       <section aria-labelledby="transcript">

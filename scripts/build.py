@@ -6,7 +6,7 @@
 
 Needs pandoc, and the Python packages pyyaml, jinja2 and beautifulsoup4.
 """
-import argparse, json, re, shutil, subprocess, sys
+import argparse, json, re, shutil, subprocess, sys, unicodedata
 from datetime import date
 from pathlib import Path
 from html import escape as html_escape
@@ -231,6 +231,88 @@ def inuse_html(attrs, items, where):
             f'{font_face(font, where, "inuse")}{frames}</div>')
 
 
+TYPEFACE_KEYS = {"name", "subtitle", "colour", "colours", "font", "display", "about", "credits", "details", "links",
+                 "headline", "words", "text", "source", "note"}
+ODIA_CONSONANT = "[\u0b15-\u0b39\u0b5c\u0b5d\u0b5f\u0b71]"
+TYPEFACE_PAGES = ("title", "information", "specimens", "text", "reading", "source", "glyphs")
+CONJUNCT = re.compile(f"{ODIA_CONSONANT}(?:\u0b4d{ODIA_CONSONANT})+")
+
+
+def glyph_groups(text):
+    """The characters and conjuncts of a sample text, grouped for the glyph grid.
+    Vowel signs and marks are shown on କ, as they are never written alone."""
+    def cell(show, chars):
+        return {"show": show, "code": " ".join(f"U+{ord(c):04X}" for c in chars),
+                "name": " + ".join(unicodedata.name(c, "") for c in chars)}
+    groups = {"Vowels": [], "Consonants": [], "Vowel signs and marks": [], "Conjuncts": [], "Digits": [], "Punctuation": []}
+    for c in sorted(set(text)):
+        if not ("\u0b00" <= c <= "\u0b7f" or c in "\u0964\u0965"):
+            continue
+        kind = unicodedata.category(c)
+        if kind == "Nd":
+            groups["Digits"].append(cell(c, c))
+        elif kind == "Po":
+            groups["Punctuation"].append(cell(c, c))
+        elif kind in ("Mn", "Mc"):
+            groups["Vowel signs and marks"].append(cell("କ" + c, c))
+        elif "\u0b05" <= c <= "\u0b14":
+            groups["Vowels"].append(cell(c, c))
+        else:
+            groups["Consonants"].append(cell(c, c))
+    for m in dict.fromkeys(CONJUNCT.findall(text)):
+        groups["Conjuncts"].append(cell(m, m))
+    return [(k, v) for k, v in groups.items() if v]
+
+
+def typeface_html(data, where):
+    """A typeface: its name set large, information, specimens, the source
+    print and a glyph grid. Without a font file only the information shows."""
+    if not isinstance(data, dict) or not data.get("name"):
+        sys.exit(f"{where}: <typeface> needs at least a name")
+    for k in data:
+        if k not in TYPEFACE_KEYS:
+            sys.exit(f"{where}: <typeface> knows {', '.join(sorted(TYPEFACE_KEYS))}, not '{k}'")
+    t = dict(data)
+    t["id"] = re.sub(r"[^a-z0-9]+", "-", str(t["name"]).lower()).strip("-")
+    colours = t.get("colours") or {}
+    for k in colours:
+        if k not in TYPEFACE_PAGES:
+            sys.exit(f"{where}: <typeface> colours knows {', '.join(TYPEFACE_PAGES)}, not '{k}'")
+    t["bg"] = {k: colours.get(k) or t.get("colour") for k in TYPEFACE_PAGES}
+    for c in t["bg"].values():
+        if c and not re.fullmatch(r"#[0-9a-fA-F]{6}", str(c)):
+            sys.exit(f"{where}: <typeface> colours must look like #ffd8a8, not '{c}'")
+    t["about_html"] = markdown_to_html(str(t.get("about", "")))
+    t["credit_rows"] = info_rows(t.get("credits") or {}, where)
+    t["detail_rows"] = info_rows(t.get("details") or {}, where)
+    t["link_list"] = [inline_md(l) for l in t.get("links") or []]
+    font = t.get("font")
+    if font:
+        t["face"] = font_face(font, where, "typeface")
+        m = json.loads((ROOT / "assets" / "fonts" / f"{font}.json").read_text())
+        pad = 180
+        top, height = m["ascender"] + pad, m["ascender"] - m["descender"] + 2 * pad
+        t["metrics"] = m
+        t["box"] = {"width": 2200, "height": height, "baseline": top, "size": m["upm"]}
+        t["lines"] = [(label, v, round((top - v) / height * 100, 2)) for label, v in
+                      (("Ascender", m["ascender"]), ("Letter height", m["letter"]), ("Baseline", 0), ("Descender", m["descender"]))]
+        t["word_list"] = [(w, list(dict.fromkeys(CONJUNCT.findall(w)))) for w in t.get("words") or []]
+        t["sentences"] = [x for x in re.split(r"(?<=\u0964)\s+", str(t.get("text", "")).strip()) if x]
+        src = t.get("source") or {}
+        if src:
+            t["source_image"] = picture(src["image"], src.get("alt", ""))
+            t["source_caption"] = inline_md(src.get("caption", ""))
+        sample = "".join([str(t.get(k, "")) for k in ("display", "headline", "text")] + [str(w) for w in t.get("words") or []]
+                         + [str(l) for l in src.get("lines") or []])
+        t["glyphs"] = glyph_groups(sample)
+        t["first_glyph"] = (dict(t["glyphs"]).get("Consonants") or t["glyphs"][0][1])[0]
+        t["lang"] = script_lang(sample) or "und"
+    elif any(t.get(k) for k in ("display", "headline", "words", "text", "source")):
+        sys.exit(f"{where}: <typeface> {t['name']}: display, headline, words, text and source need a font")
+    env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=True)
+    return env.get_template("typeface.html").render(t=t)
+
+
 def specimen_html(attrs, text, where):
     """A type tester: a slider sets the sample size and a waterfall shows the
     same text at fixed sizes. Readers can type their own text, except in a
@@ -301,6 +383,20 @@ def split_sections(html):
                    + '<div class="film__body"><aside class="film__facts split__info">' + str(box) + "</aside>"
                    + '<div class="film__main">' + "".join(str(n) for n in g) + "</div></div></section>")
     return "".join(out), True
+
+
+def section_tabs(body, names, where):
+    """Links to sections, kept at the top while the page scrolls (front matter
+    'tabs': the section headings, in order)."""
+    from markupsafe import escape
+    soup = BeautifulSoup(body, "html.parser")
+    links = []
+    for name in names:
+        h = next((h for h in soup.find_all("h2") if h.get_text(strip=True) == str(name)), None)
+        if not h or not h.get("id"):
+            sys.exit(f"{where}: tabs: no section heading '{name}'")
+        links.append(f'<li><a href="#{h["id"]}">{escape(name)}</a></li>')
+    return f'<nav class="section-tabs" aria-label="Sections"><ul role="list">{"".join(links)}</ul></nav>'
 
 
 def infobox_html(rows, info=None):
@@ -395,6 +491,7 @@ def expand_tags(md, blocks):
       <specimen font="file">Sample text</specimen>  type tester; the font is assets/fonts/<file>.woff2
       <inuse font="file"> book/sign/screen: text </inuse>  the font in a few settings
       <press> BibTeX entries </press>               news reports and blog posts, with an excerpt
+      <typeface> name, font, words, ... </typeface>  a typeface with specimens and glyphs; see README.md
     A quote becomes the usual blockquote, so it looks like every other quote.
     A line with only --- starts a new section; a section with <info> gets the film layout."""
     def info(m):
@@ -408,6 +505,10 @@ def expand_tags(md, blocks):
         blocks.append(("inuse", dict(re.findall(r'(\w+)="([^"]*)"', m.group(1))), yaml.safe_load(m.group(2)) or {}))
         return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
     md = re.sub(r"^[ \t]*<inuse\b([^>]*)>[ \t]*\n(.*?)^[ \t]*</inuse>[ \t]*$", inuse, md, flags=re.S | re.M)
+    def typeface(m):
+        blocks.append(("typeface", yaml.safe_load(m.group(1)) or {}))
+        return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
+    md = re.sub(r"^[ \t]*<typeface>[ \t]*\n(.*?)^[ \t]*</typeface>[ \t]*$", typeface, md, flags=re.S | re.M)
     def press(m):
         blocks.append(("press", m.group(1)))
         return f"\n\n[[block:{len(blocks) - 1}]]\n\n"
@@ -760,6 +861,9 @@ def polish(html, page):
                 html = inuse_html(block[1], block[2], page["file"])
             elif block[0] == "press":
                 html = press_html(block[1], page["file"] + " <press>")
+            elif block[0] == "typeface":
+                html = typeface_html(block[1], page["file"] + " <typeface>")
+                page["wide"] = True
             else:
                 html = specimen_html(block[1], block[2], page["file"])
             p.replace_with(BeautifulSoup(html, "html.parser"))
@@ -1105,6 +1209,8 @@ def main():
 
     for p in pages:
         body, p["split"] = split_sections(polish(markdown_to_html(p["body_md"]), p))
+        if p.get("tabs"):
+            p["tabs_html"] = section_tabs(body, p["tabs"], p["file"])
         facts = []
         if p.get("info"):
             facts = info_rows(p["info"], p["file"])

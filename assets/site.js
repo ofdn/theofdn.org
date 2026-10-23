@@ -36,6 +36,100 @@
   check();
 })();
 
+// Section tabs: sit under the header, whatever its height, mark the section
+// in view and take the colours of the page under them.
+(function () {
+  var nav = document.querySelector(".section-tabs");
+  var header = document.querySelector(".site-header");
+  if (!nav || !header) return;
+  var root = document.documentElement;
+  new ResizeObserver(function () {
+    root.style.setProperty("--header-h", header.offsetHeight + "px");
+    root.style.setProperty("--tabs-h", nav.offsetHeight + "px");
+    mark();
+  }).observe(header, { box: "border-box" });
+  var links = [].slice.call(nav.querySelectorAll("a"));
+  var pages = [].slice.call(document.querySelectorAll(".typeface__page"));
+  var colours = ["--color-bg", "--color-text", "--color-accent", "--color-rule"];
+  var ticking = false;
+  function mark() {
+    ticking = false;
+    var line = nav.getBoundingClientRect().bottom + 1, cur = links[0], seen = null;
+    links.forEach(function (a) {
+      if (document.getElementById(a.hash.slice(1)).getBoundingClientRect().top <= window.innerHeight / 3) cur = a;
+    });
+    pages.forEach(function (p) {
+      var box = p.getBoundingClientRect();
+      if (box.top <= line + 1 && box.bottom > line) seen = p;
+    });
+    links.forEach(function (a) {
+      if (a === cur) a.setAttribute("aria-current", "true");
+      else a.removeAttribute("aria-current");
+    });
+    var style = seen && getComputedStyle(seen);
+    colours.forEach(function (c) {
+      if (style) nav.style.setProperty(c, style.getPropertyValue(c));
+      else nav.style.removeProperty(c);
+    });
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(mark); }
+  }, { passive: true });
+  mark();
+})();
+
+// Typefaces: specimen words grow to fill the line, each meta line shows the
+// size in use, and a click in the glyph grid shows that glyph large.
+(function () {
+  var fits = [].slice.call(document.querySelectorAll("[data-fit]"));
+  var specimens = [].slice.call(document.querySelectorAll(".typeface__specimen"));
+  if (!fits.length && !specimens.length) return;
+  var first = document.querySelector(".typeface__page--hero");
+  function fit() {
+    // The first title page ends at the bottom of the first screen, under the page title.
+    var room = 0;
+    if (first) {
+      first.style.minHeight = "";
+      var top = first.getBoundingClientRect().top + window.scrollY;
+      if (top < window.innerHeight / 2) {
+        first.style.minHeight = (window.innerHeight - top) + "px";
+        room = window.innerHeight - top - 2 * parseFloat(getComputedStyle(first).paddingBottom);
+      }
+    }
+    fits.forEach(function (el) {
+      el.classList.add("is-fitted");
+      el.style.fontSize = "100px";
+      var w = el.firstElementChild.getBoundingClientRect().width;
+      var max = Number(el.getAttribute("data-fit"));
+      if (room && el.parentNode === first) max = Math.min(max, room / 1.2);
+      el.style.fontSize = Math.min(99 * el.clientWidth / w, max) + "px";
+    });
+    specimens.forEach(function (fig) {
+      var size = parseFloat(getComputedStyle(fig.querySelector(".typeface__sample")).fontSize);
+      fig.querySelector("[data-size]").textContent = Math.round(size) + " px";
+    });
+  }
+  var ticking = false;
+  window.addEventListener("resize", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; fit(); }); }
+  });
+  document.fonts.ready.then(fit);
+})();
+
+document.querySelectorAll(".typeface__glyphs").forEach(function (box) {
+  var big = box.querySelector(".typeface__box text");
+  var code = box.querySelector("[data-code]"), name = box.querySelector("[data-name]");
+  box.querySelectorAll(".typeface__glyph").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      box.querySelector('.typeface__glyph[aria-pressed="true"]').setAttribute("aria-pressed", "false");
+      btn.setAttribute("aria-pressed", "true");
+      big.textContent = btn.textContent;
+      code.textContent = btn.getAttribute("data-code");
+      name.textContent = btn.getAttribute("data-name");
+    });
+  });
+});
+
 // Search page: filters search.json in the browser.
 (function () {
   var list = document.getElementById("search-results");

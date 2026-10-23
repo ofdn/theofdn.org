@@ -59,6 +59,7 @@ Optional, on any page:
 - `embeds`: video and audio. `[[embed:0]]` in the text places the first one.
 - `transcript`: shown after the text.
 - `status`: `archive` or `maintenance` for this page only. See "Site status".
+- `tabs`: section headings to list in a bar that stays at the top while the page scrolls. Each link jumps to its section.
 
 Infobox (a column beside the text). Film and podcast pages always have one; other pages get one when any of these is set:
 
@@ -126,6 +127,41 @@ sign: କଟକ
 screen: ନମସ୍କାର
 </inuse>
 ```
+
+A typeface page shows the name set large, information, specimens, the source print and a glyph grid. Write one `<typeface>` block for each typeface:
+
+```
+<typeface>
+name: Chapakala 19
+subtitle: Revival of 19th-century Odia typeface
+colour: "#ffd8a8"
+font: chapakala19
+display: ଛାପାକଳ ୧୯
+about: |
+  One or two paragraphs about the typeface.
+credits:
+  designer: First1 Last1
+details:
+  script: Odia
+  licence: SIL Open Font License 1.1
+links:
+- "[GitHub repository](https://github.com/ofdn/Chapakala)"
+headline: A short title set across the page.
+words:
+- ଅନିର୍ବାଣ
+text: A passage set at three sizes.
+source:
+  label: 1875 print
+  image: /assets/images/scan.webp
+  alt: Three lines of Odia letterpress text
+  caption: Where the scan comes from.
+  lines:
+  - first line of the scan
+  - second line of the scan
+</typeface>
+```
+
+Each part fills one screen. `colour` sets the ground of the whole typeface, with black text; check that it gives black text at least 7:1. `credits` and `details` take the fields in `data/fields.yml`. Each word in `words` fills one line. The glyph grid shows the letters, signs and conjuncts used in `display`, `words`, `text` and `lines`. Without `font`, only the information shows; add `note` to say why. Run `subset_fonts.py` again after you change any of the text.
 
 Images and video. Paths point to files in `assets/images/`:
 
