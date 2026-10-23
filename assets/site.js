@@ -72,6 +72,12 @@
       else nav.style.removeProperty(c);
     });
   }
+  // The first tab goes back to the top, where the page title and the first typeface's name show together.
+  links[0].addEventListener("click", function (e) {
+    e.preventDefault();
+    history.replaceState(null, "", links[0].hash);
+    window.scrollTo(0, 0);
+  });
   window.addEventListener("scroll", function () {
     if (!ticking) { ticking = true; requestAnimationFrame(mark); }
   }, { passive: true });

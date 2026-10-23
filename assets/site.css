@@ -469,6 +469,7 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
   padding-block: var(--space-3xl);
 }
 .typeface__page--hero { justify-content: flex-end; padding-block: var(--space-xl); }
+.typeface__page--hero > .typeface__name { top: 0; }
 .prose .typeface__name { margin: 0 0 var(--space-xl); font-size: 1.75rem; scroll-margin-top: 0; }
 .typeface__page > .typeface__name:not(.visually-hidden) { scroll-margin-top: var(--space-2xl); }
 .typeface__hero {
@@ -601,6 +602,9 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
 .prose li + li { margin-top: 0.35em; }
 .prose blockquote { border-left: 3px solid var(--color-rule); padding-left: 1em; color: var(--color-text-muted); }
 .prose img { border-radius: var(--radius-sm); }
+/* Logos side by side: two or more images in one paragraph. */
+.prose p:has(> picture + picture, > img + img, > picture + img, > img + picture) { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md) var(--space-2xl); }
+.prose p:has(> picture + picture, > img + img, > picture + img, > img + picture) img { height: 4.5rem; width: auto; }
 .prose picture { display: block; }
 .prose a img { display: inline-block; }
 .prose a:has(img) { display: inline-block; min-width: 24px; min-height: 24px; margin: 0 0.5rem 0.5rem 0; vertical-align: middle; }
@@ -848,8 +852,8 @@ button.copy-icon-btn {
 }
 
 /* OpenSpeaks logo: black paths, turned white in dark mode. */
-:root[data-theme="dark"] img[src$="/logos/openspeaks.svg"] { filter: invert(1); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img[src$="/logos/openspeaks.svg"] { filter: invert(1); } }
+:root[data-theme="dark"] img[src$="/logos/openspeaks.svg"], :root[data-theme="dark"] img[src*="/logos/dinalipi."] { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img[src$="/logos/openspeaks.svg"], :root:not([data-theme="light"]) img[src*="/logos/dinalipi."] { filter: invert(1); } }
 .eyebrow a { color: inherit; }
 
 /* News reports and blog posts, from a <press> block of BibTeX entries */
