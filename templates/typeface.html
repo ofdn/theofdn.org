@@ -1,5 +1,5 @@
 {% macro page(name, extra="") %}class="typeface__page{{ extra }}{% if t.bg[name] %} typeface__page--colour{% endif %}"{% if t.bg[name] %} style="--page-bg:{{ t.bg[name] }}"{% endif %}{% endmacro %}
-<section class="typeface"{% if t.font %} style="--specimen-font:'specimen-{{ t.font }}'"{% endif %} aria-labelledby="{{ t.id }}">
+<section class="typeface"{% if t.font %} style="--specimen-font:'specimen-{{ t.font }}';--mark-room:{{ t.mark_room }}em"{% endif %} aria-labelledby="{{ t.id }}">
   {% if t.face %}{{ t.face | safe }}{% endif %}
   {% if t.display %}
   <div {{ page("title", " typeface__page--hero") }}>

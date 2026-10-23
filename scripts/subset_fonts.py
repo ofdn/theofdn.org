@@ -45,8 +45,15 @@ def texts_for(name):
 
 
 def metrics(font):
-    """Ascender, descender and the height of the consonants, in font units."""
+    """Ascender, descender, the height of the consonants and the highest and
+    lowest points of the glyphs kept, in font units."""
     os2, glyphs, cmap = font["OS/2"], font.getGlyphSet(), font.getBestCmap()
+    bounds = []
+    for name in font.getGlyphOrder():
+        pen = BoundsPen(glyphs)
+        glyphs[name].draw(pen)
+        if pen.bounds:
+            bounds.append(pen.bounds)
     tops = []
     for c in range(0x0B15, 0x0B3A):
         if c in cmap:
@@ -56,6 +63,7 @@ def metrics(font):
                 tops.append(pen.bounds[3])
     style = next((r.toUnicode() for r in font["name"].names if r.nameID == 2), "Regular")
     return {"upm": font["head"].unitsPerEm, "ascender": os2.sTypoAscender, "descender": os2.sTypoDescender,
+            "top": round(max(b[3] for b in bounds)), "bottom": round(min(b[1] for b in bounds)),
             "letter": round(sorted(tops)[len(tops) // 2]) if tops else os2.sxHeight,
             "weight": os2.usWeightClass, "style": style}
 
@@ -69,7 +77,6 @@ def main():
         sys.exit(f"No <specimen>, <inuse> or <typeface> block uses font=\"{name}\".")
     font = TTFont(source)
     out = ROOT / "assets" / "fonts" / f"{name}.woff2"
-    out.with_suffix(".json").write_text(json.dumps(metrics(font)) + "\n")
     opts = subset.Options()
     opts.layout_features = ["*"]  # keep conjuncts and vowel-sign shaping
     opts.name_IDs = ["*"]
@@ -77,6 +84,7 @@ def main():
     sub = subset.Subsetter(opts)
     sub.populate(text=text)
     sub.subset(font)
+    out.with_suffix(".json").write_text(json.dumps(metrics(font)) + "\n")
     out.parent.mkdir(parents=True, exist_ok=True)
     font.flavor = "woff2"
     font.save(out)

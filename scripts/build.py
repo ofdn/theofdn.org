@@ -291,8 +291,10 @@ def typeface_html(data, where):
         t["face"] = font_face(font, where, "typeface")
         m = json.loads((ROOT / "assets" / "fonts" / f"{font}.json").read_text())
         pad = 180
-        top, height = m["ascender"] + pad, m["ascender"] - m["descender"] + 2 * pad
+        high, low = max(m["ascender"], m.get("top", 0)), min(m["descender"], m.get("bottom", 0))
+        top, height = high + pad, high - low + 2 * pad
         t["metrics"] = m
+        t["mark_room"] = round(max(0, high - m["ascender"]) / m["upm"], 3)
         t["box"] = {"width": 2200, "height": height, "baseline": top, "size": m["upm"]}
         t["lines"] = [(label, v, round((top - v) / height * 100, 2)) for label, v in
                       (("Ascender", m["ascender"]), ("Letter height", m["letter"]), ("Baseline", 0), ("Descender", m["descender"]))]

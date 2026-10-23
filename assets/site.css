@@ -451,6 +451,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .prose.prose--wide { max-width: none; }
 .prose--wide > :not(.typeface) { max-width: var(--max-prose); }
 .prose--wide > .typeface { margin-block: 0 var(--space-3xl); }
+.prose--wide > .typeface:has(+ .typeface) { margin-bottom: 0; }
 html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var(--tabs-h, 3rem)); }
 .typeface { container-type: inline-size; }
 /* Each page can have its own ground. On every pastel from Tome's palette:
@@ -458,8 +459,9 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
 .typeface__page--colour {
   --color-bg: var(--page-bg); --color-surface: rgba(0, 0, 0, 0.07); --color-text: #000000; --color-text-muted: #3a3a3a;
   --color-rule: #6b6b6b; --color-border: #000000; --color-accent: #000000; --color-accent-hover: #000000;
-  background: var(--color-bg); color: var(--color-text);
-  box-shadow: 0 0 0 100vmax var(--color-bg); clip-path: inset(0 -100vmax);
+  color: var(--color-text);
+  /* One solid fill out to both screen edges, so neighbouring pages meet without a seam. */
+  border-image: conic-gradient(var(--color-bg) 0 0) fill 0 / / 0 100vmax;
 }
 .typeface + .typeface:not(:has(> .typeface__page--colour:first-of-type)) { border-top: 1px solid var(--color-rule); }
 .typeface__page {
@@ -509,7 +511,8 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
   font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted);
 }
 .typeface__meta [lang] { font-family: var(--specimen-font), var(--font-body); color: var(--color-text); }
-.typeface__sample { font-family: var(--specimen-font), var(--font-body); margin-top: var(--space-sm); }
+/* Room above the first line for marks that rise above the ascender, such as the reph. */
+.typeface__sample { font-family: var(--specimen-font), var(--font-body); margin-top: var(--space-sm); padding-top: var(--mark-room, 0); }
 .typeface__word { font-size: 14cqi; line-height: 1.5; }
 .typeface__word.is-fitted, .typeface__hero.is-fitted { white-space: nowrap; }
 .typeface__word span, .typeface__hero span { display: inline-block; }
