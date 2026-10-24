@@ -6,7 +6,7 @@
 
 Needs pandoc, and the Python packages pyyaml, jinja2 and beautifulsoup4.
 """
-import argparse, json, re, shutil, subprocess, sys, unicodedata
+import argparse, hashlib, json, re, shutil, subprocess, sys, unicodedata
 from datetime import date
 from pathlib import Path
 from html import escape as html_escape
@@ -207,9 +207,11 @@ SPECIMEN_SIZES = (14, 18, 24, 36, 48, 72)
 
 
 def font_face(font, where, tag):
-    if not (ROOT / "assets" / "fonts" / f"{font}.woff2").exists():
+    path = ROOT / "assets" / "fonts" / f"{font}.woff2"
+    if not path.exists():
         sys.exit(f"{where}: <{tag}> font '{font}' needs assets/fonts/{font}.woff2")
-    return (f'<style>@font-face{{font-family:"specimen-{font}";src:url("/assets/fonts/{font}.woff2") format("woff2");'
+    v = hashlib.sha1(path.read_bytes()).hexdigest()[:8]
+    return (f'<style>@font-face{{font-family:"specimen-{font}";src:url("/assets/fonts/{font}.woff2?v={v}") format("woff2");'
             f'font-display:swap}}</style>')
 
 
