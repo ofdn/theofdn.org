@@ -100,9 +100,9 @@ logo: /assets/logos/rtd.svg
 about: |
   Registry of Type Design (RTD) is a free, human- and machine-readable registry of typefaces, the people who made them and the foundries, presses and institutions behind them. It covers digital and pre-digital type in every script. Each record is independently sourced, has a permanent identifier and is published as a citable page.
 
-  RTD keeps bibliographic records for type design, much as library authority files do for authors and their books. As far as we know, it is the first open registry to do so. The data is open under CC BY-SA 4.0. Machines can read all of it: a JSON API, bulk dumps in CSV and NDJSON, and Dublin Core and MARCXML exports. Each id also resolves as an ARK.
+  RTD keeps bibliographic records for type design, much as library authority files do for authors and their books. As far as we know, it is the first open registry to do so. The data is open under CC BY-SA 4.0. Additionally, the records are machine-readable, supporting a JSON API, bulk dumps in CSV and NDJSON, and Dublin Core and MARCXML exports. Each ID also resolves as an ARK.
 
-  Librarians and archivists can match the names in their catalogues against RTD with OpenRefine. Researchers can cite a single record or study the whole dataset. Type designers and foundries can check how their work is credited, and add to it through a form or a pull request on GitHub. Wikidata property P14791 links records both ways. In October 2026 RTD held 260 people, 180 typefaces and 34 foundries and other organisations, in 55 scripts.
+  Librarians and archivists can match the names in their catalogues against RTD with OpenRefine. Researchers can cite a single record or study the whole dataset. Type designers and foundries can check how their work is credited. Wikidata property P14791 links records both ways. In October 2026 RTD held 260 people, 180 typefaces and 34 foundries and other organisations, in 55 scripts.
 credits:
   maintainer: Subhashish Panigrahi
 details:
