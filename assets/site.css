@@ -444,6 +444,12 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 }
 .section-tabs a:hover { border-bottom-color: var(--color-rule); }
 .section-tabs a[aria-current="true"] { font-weight: 700; border-bottom-color: var(--color-accent); }
+/* One row on phones, so the bar does not take a third of the screen. */
+@media (max-width: 560px) {
+  .section-tabs ul { flex-wrap: nowrap; gap: 0.75rem; overflow-x: auto; scrollbar-width: none; }
+  .section-tabs li { flex: none; }
+  .section-tabs a { font-size: 0.85rem; }
+}
 @media (prefers-reduced-motion: no-preference) { html:has(.section-tabs) { scroll-behavior: smooth; } }
 
 /* Typeface (<typeface> block): a run of screen-high pages. A coloured page
@@ -451,7 +457,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, h2:focus-within .heading-anc
 .prose.prose--wide { max-width: none; }
 .prose--wide > :not(.typeface) { max-width: var(--max-prose); }
 .prose--wide > .typeface { margin-block: 0 var(--space-3xl); }
-.prose--wide > .typeface:has(+ .typeface) { margin-bottom: 0; }
+.prose--wide > .typeface:has(+ .typeface), .prose--wide > .typeface:last-child { margin-bottom: 0; }
+main:has(.prose--wide > .typeface:last-child) + .site-footer { margin-top: 0; }
 .prose--wide > :not(.typeface) + .typeface { margin-top: var(--space-3xl); }
 html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var(--tabs-h, 3rem)); }
 .typeface { container-type: inline-size; }

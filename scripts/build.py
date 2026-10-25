@@ -897,7 +897,8 @@ def polish(html, page):
     # WebP with a small fallback for browsers that cannot show WebP.
     for img in soup.find_all("img"):
         src = img.get("src", "")
-        img["loading"] = img.get("loading") or "lazy"
+        # Tab jumps aim before lazy images above the target have a height.
+        img["loading"] = img.get("loading") or ("eager" if page.get("tabs") else "lazy")
         img["decoding"] = "async"
         if img.find_parent("a", class_="embed-play"):
             continue
