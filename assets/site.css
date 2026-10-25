@@ -490,9 +490,9 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
 .prose .typeface__logo { margin-bottom: var(--space-3xl); }
 .typeface__logo img { width: min(100%, 56rem); height: auto; }
 /* Supporter logos in one row */
-#supported-by + p { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md) var(--space-2xl); }
-#supported-by + p img { height: 3.5rem; width: auto; }
-@media (max-width: 560px) { #supported-by + p img { height: 2.75rem; } }
+#acknowledgements + p { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md) var(--space-2xl); }
+#acknowledgements + p img { height: 3.5rem; width: auto; }
+@media (max-width: 560px) { #acknowledgements + p img { height: 2.75rem; } }
 .typeface__row { display: grid; gap: var(--space-lg); }
 @media (min-width: 900px) { .typeface__row { grid-template-columns: minmax(14rem, 17rem) 1fr; column-gap: var(--space-3xl); } }
 .prose .typeface__label { margin: 0; font-size: 1.1rem; font-weight: 700; }
