@@ -233,8 +233,8 @@ def inuse_html(attrs, items, where):
             f'{font_face(font, where, "inuse")}{frames}</div>')
 
 
-TYPEFACE_KEYS = {"name", "subtitle", "colour", "colours", "font", "display", "about", "credits", "details", "links",
-                 "headline", "words", "text", "source", "note"}
+TYPEFACE_KEYS = {"name", "subtitle", "colour", "colours", "font", "display", "logo", "about", "credits", "details",
+                 "links", "headline", "words", "text", "source", "note"}
 ODIA_CONSONANT = "[\u0b15-\u0b39\u0b5c\u0b5d\u0b5f\u0b71]"
 TYPEFACE_PAGES = ("title", "information", "specimens", "text", "reading", "source", "glyphs")
 CONJUNCT = re.compile(f"{ODIA_CONSONANT}(?:\u0b4d{ODIA_CONSONANT})+")

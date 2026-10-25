@@ -9,9 +9,12 @@
   {% endif %}
 
   <div {{ page("information") }}>
-    {% if not t.display %}<h2 class="typeface__name" id="{{ t.id }}">{{ t.name }}</h2>{% endif %}
+    {% if t.logo %}
+    <h2 class="typeface__name visually-hidden" id="{{ t.id }}">{{ t.name }}</h2>
+    <p class="typeface__logo"><img src="{{ t.logo }}" alt=""></p>
+    {% elif not t.display %}<h2 class="typeface__name" id="{{ t.id }}">{{ t.name }}</h2>{% endif %}
     <div class="typeface__row">
-      <h3 class="typeface__label">{% if t.display %}{{ t.name }}{% else %}Information{% endif %}</h3>
+      <h3 class="typeface__label">{% if t.display or t.logo %}{{ t.name }}{% else %}Information{% endif %}</h3>
       <div>
         {% if t.subtitle %}<p class="typeface__subtitle">{{ t.subtitle }}</p>{% endif %}
         <div class="typeface__about">{{ t.about_html | safe }}</div>

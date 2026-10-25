@@ -161,7 +161,7 @@ source:
 </typeface>
 ```
 
-Each part fills one screen. `colour` sets the ground of the whole typeface, with black text; check that it gives black text at least 7:1. `credits` and `details` take the fields in `data/fields.yml`. Each word in `words` fills one line. The glyph grid shows the letters, signs and conjuncts used in `display`, `words`, `text` and `lines`. Without `font`, only the information shows; add `note` to say why. Run `subset_fonts.py` again after you change any of the text.
+Each part fills one screen. `colour` sets the ground of the whole typeface, with black text; check that it gives black text at least 7:1. `credits` and `details` take the fields in `data/fields.yml`. Each word in `words` fills one line. The glyph grid shows the letters, signs and conjuncts used in `display`, `words`, `text` and `lines`. Without `font`, only the information shows; add `note` to say why. For a project with a logo instead of a font, give `logo`; it sits at the top of the information page. Use a dark logo, as coloured pages stay light in dark mode. Run `subset_fonts.py` again after you change any of the text.
 
 Images and video. Paths point to files in `assets/images/`:
 

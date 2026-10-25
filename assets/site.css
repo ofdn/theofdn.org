@@ -471,13 +471,16 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
   padding-block: var(--space-3xl);
 }
 .typeface__page--hero { justify-content: flex-end; padding-block: var(--space-xl); }
-.typeface__page--hero > .typeface__name { top: 0; }
+.typeface__page > .typeface__name.visually-hidden { top: 0; }
+.typeface__page:has(> .typeface__logo) { justify-content: flex-start; }
 .prose .typeface__name { margin: 0 0 var(--space-xl); font-size: 1.75rem; scroll-margin-top: 0; }
 .typeface__page > .typeface__name:not(.visually-hidden) { scroll-margin-top: var(--space-2xl); }
 .typeface__hero {
   font-family: var(--specimen-font), var(--font-body);
   font-size: clamp(4rem, 22cqi, 26rem); line-height: 1.15;
 }
+.prose .typeface__logo { margin-bottom: var(--space-3xl); }
+.typeface__logo img { width: min(100%, 56rem); height: auto; }
 .typeface__row { display: grid; gap: var(--space-lg); }
 @media (min-width: 900px) { .typeface__row { grid-template-columns: minmax(14rem, 17rem) 1fr; column-gap: var(--space-3xl); } }
 .prose .typeface__label { margin: 0; font-size: 1.1rem; font-weight: 700; }
