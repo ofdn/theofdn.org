@@ -94,7 +94,7 @@ text: ପଞ୍ଚାନନ କର୍ମକାରଙ୍କ ତିଆରି ଓ�
 
 <typeface>
 name: Registry of Type Design
-subtitle: Open records of typefaces and the people who made them
+subtitle: Open records of typefaces, the people and the foundries who made them
 colour: "#ffe8cc"
 logo: /assets/logos/rtd.svg
 about: |
