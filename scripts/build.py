@@ -304,7 +304,8 @@ def typeface_html(data, where):
         t["sentences"] = [x for x in re.split(r"(?<=\u0964)\s+", str(t.get("text", "")).strip()) if x]
         src = t.get("source") or {}
         if src:
-            t["source_image"] = picture(src["image"], src.get("alt", ""))
+            # Loaded with the page: a lazy image gains its height mid-jump and pushes the tab targets below it down.
+            t["source_image"] = picture(src["image"], src.get("alt", ""), lazy=False)
             t["source_caption"] = inline_md(src.get("caption", ""))
         sample = "".join([str(t.get(k, "")) for k in ("display", "headline", "text")] + [str(w) for w in t.get("words") or []]
                          + [str(l) for l in src.get("lines") or []])
@@ -646,7 +647,7 @@ def picture(src, alt="", cls="", portrait=None, lazy=True):
         parts.append(f'<source media="(max-width: 700px)" srcset="{portrait}" type="image/webp">')
     parts.append(f'<source srcset="{src}" type="image/webp">')
     attrs = f' class="{cls}"' if cls else ""
-    load = ' loading="lazy"' if lazy else ""
+    load = f' loading="{"lazy" if lazy else "eager"}"'
     parts.append(f'<img src="{fb}" alt="{escape(alt)}"{attrs}{load} decoding="async"></picture>')
     return Markup("".join(parts))
 
@@ -896,7 +897,7 @@ def polish(html, page):
     # WebP with a small fallback for browsers that cannot show WebP.
     for img in soup.find_all("img"):
         src = img.get("src", "")
-        img["loading"] = "lazy"
+        img["loading"] = img.get("loading") or "lazy"
         img["decoding"] = "async"
         if img.find_parent("a", class_="embed-play"):
             continue
