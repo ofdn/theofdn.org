@@ -6,10 +6,10 @@ section: "hub"
 wp_type: "page"
 wp_id: 4709
 date: "2026-04-14"
-modified: "2026-05-27"
-excerpt: "We study type history, develop and maintain open-source typefaces for various scripts for print and display."
+modified: "2026-05-28"
+excerpt: "We study type history, develop and maintain open-source typefaces, and keep records of typefaces, type designers and foundries."
 original_url: "https://theofdn.org/activities/type/"
-lede: "We study type history, develop and maintain open-source typefaces for various scripts for print and display."
+lede: "We study type history, develop and maintain open-source typefaces, and keep records of typefaces, type designers and foundries."
 tabs:
 - Chapakala 19
 - Chapakala 20
@@ -29,7 +29,7 @@ colours:
 font: chapakala19
 display: ଛାପାକଳ ୧୯
 about: |
-  Chapakala 19 revives a nineteenth‑century workhorse Odia letterpress typeface used in printed books, including work from the Orissa Mission Press in Cuttack (est. 1838). It focuses on the fonts used for body text rather than display styles, and follows the shapes and *juktakshara* (conjunct)s found in books printed between roughly 1810 and 1875. The font is built as a Unicode‑based OpenType family and is designed for reading, historical reprints and OCR training on scanned Odia books.
+  Chapakala 19 revives a nineteenth‑century workhorse Odia letterpress typeface used in printed books, including work from the Orissa Mission Press in Cuttack (est. 1838). It focuses on the fonts used for copy (body text), and follows the shapes and *juktakshara* (conjunct)s found in books printed between roughly 1810 and 1875. The typeface is Unicode‑based and OpenType, and is designed for reading, historical reprints and OCR training on scanned Odia books, apart from use in creative and other media.
 credits:
   designer: Subhashish Panigrahi
   advisor: Nasim Ali, Yesha Goshar, Liang Hai
@@ -42,20 +42,18 @@ links:
 - "[GitHub repository](https://github.com/ofdn/Chapakala/tree/main/19)"
 headline: ୧୮୦୦ ଶତକର ଟାଇପ ନମୂନା
 words:
-- ଶ୍ରୀରାମପୁରରେ
+- ପଞ୍ଚାନନ
 - ଟେଷ୍ଟାମେଣ୍ଟ
 - ପରିବର୍ତ୍ତନ
 - ଲେଟରପ୍ରେସ
-text: ଛାପାକଳରେ ଓଡ଼ିଆରେ ମୁଦ୍ରଣ ପାଇଁ ପଞ୍ଚାନନ କର୍ମକାର ଗଢ଼ିଥିଲେ ପ୍ରଥମ ଓଡ଼ିଆ ଟାଇପଫେସ୍ । ଶ୍ରୀରାମପୁରରେ ଏଥିରେ ଛପାଗଲା ପ୍ରଥମ ଓଡ଼ିଆ ଛପା ବହି ଓଡ଼ିଆ ନିଉ ଟେଷ୍ଟାମେଣ୍ଟ । ତା’ ପରେ ସେହି ସମାନ ଲେଟରପ୍ରେସ ଛାପାକଳ ବ୍ୟବହାର କରି ଓଡ଼ିଶାରେ ଛପାଗଲା ଅନେକ ବହି ଓ ପତ୍ରିକା । ପରେ ତିଆରି ହେଲା ଆହୁରି ଅଧିକ ଟାଇପଫେସ୍ । ଏଠି ବ୍ୟବହାର ହୋଇଥିବା ଡିଜିଟାଲ ଫଣ୍ଟଟି ଉକ୍ତ ଆଦ୍ୟ ଟାଇପଫେସ୍ ଭିତରୁ ଏକ । ମୂଳ ଧାତୁ ଟାଇପଟି ହୁଏତ ୧୮୦୦ ଶତକର ଆରମ୍ଭରେ ତିଆରି । ଡିଜିଟାଇଜ୍ କଲାବେଳେ ଖୁବ୍ ବେଶୀ ପରିବର୍ତ୍ତନ କରାଯାଇନାହିଁ ।
+text: ଛାପାକଳରେ ଓଡ଼ିଆରେ ମୁଦ୍ରଣ ପାଇଁ ପଞ୍ଚାନନ କର୍ମକାର ଗଢ଼ିଥିଲେ ପ୍ରଥମ ଓଡ଼ିଆ ଟାଇପଫେସ୍ । ବଙ୍ଗଳାର ଶ୍ରୀରାମପୁରରେ ଏଥିରେ ଛପାଗଲା ପ୍ରଥମ ଓଡ଼ିଆ ଛପା ବହି ‘ଓଡ଼ିଆ ନିଉ ଟେଷ୍ଟାମେଣ୍ଟ’ । ତା‘ ପରେ ସେହି ସମାନ ଲେଟରପ୍ରେସରେ ଓଡ଼ିଶାରେ ଛପାଗଲା ଅନେକ ବହି ଓ ପତ୍ରିକା । ପରେ ନବୀନ ଟାଇପଫେସମାନ ତିଆରି ହେଲା । ଏ ପୃଷ୍ଠାରେ ବ୍ୟବହାର ହୋଇଥିବା ଡିଜିଟାଲ ଫଣ୍ଟଟି ୧୮୦୦ ଶତକର ଆରମ୍ଭରେ ତିଆରି ଉକ୍ତ ଆଦ୍ୟ ଧାତୁ ଟାଇପଫେସ ଆଧାରରେ ତିଆରି । ଡିଜିଟାଲ ରୂପରେ ତିଆରି କଲାବେଳେ ଖୁବ୍ ବେଶୀ ପରିବର୍ତ୍ତନ କରାଯାଇନାହିଁ ।
 source:
   label: 1875 print
   image: /assets/images/type-chapakala19-source-1875.webp
   alt: Three lines of Odia letterpress text from 1875
   caption: "Matthew 3:11–12, *Oriya New Testament*, 1875, page 5. Scan from the [Internet Archive](https://archive.org/details/ORIOLD_DBS_HS)."
   lines:
-  - ଡୁବାଇବେ । ତାହାଙ୍କର ହସ୍ତରେ କୁଲା ଅଛି, ଆଉ ସେ ଆପଣା ଖଳା ଶୁଦ୍ଧ-
-  - ଋପେ ଝାଡ଼ି ଗହମ ସବୁ ଏକଠା କରି ଗୋଲାରେ ରଖିବେ, ପୁଣି ସବୁ ତୂଷକୁ
-  - ଅନିର୍ବାଣ ଅଗ୍ନିରେ ପୋଡାଇବେ ।
+  - ଡୁବାଇବେ । ତାହାଙ୍କର ହସ୍ତରେ କୁଲା ଅଛି, ଆଉ ସେ ଆପଣା ଖଳା ଶୁଦ୍ଧ-ଋପେ ଝାଡ଼ି ଗହମ ସବୁ ଏକଠା କରି ଗୋଲାରେ ରଖିବେ, ପୁଣି ସବୁ ତୂଷକୁ ଅନିର୍ବାଣ ଅଗ୍ନିରେ ପୋଡାଇବେ ।
 </typeface>
 
 <typeface>
