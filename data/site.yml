@@ -10,13 +10,11 @@ status: live
 archive_message: ""
 maintenance_message: ""
 
-# Fonts not yet released. The site only carries a cut-down copy with the
-# characters used in <specimen> and <inuse> on the site, and the tester cannot
-# be typed in. Make the copy with scripts/subset_fonts.py. On release, remove
-# the font from this list and put the full .woff2 in assets/fonts/.
+# name: file in assets/fonts/. After a new export or a text change run
+# scripts/fonts.py <name> <export>. On release, drop the line.
 preview_fonts:
-  - chapakala19
-  - chapakala20
+  chapakala19: 370b965b
+  chapakala20: 9df3aed6
 
 # ARK kinds: the word written as "ark: <kind>" on a page, and the letter in the
 # id it gets (ofdn-<letter>-000001). To add a kind, add a line with an unused

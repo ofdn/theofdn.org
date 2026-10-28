@@ -22,7 +22,7 @@
   {% if b.display %}
   {{ font_face(b.font, page.file, "home") | safe }}
   <div class="home__inner">
-    <p class="home-band__display" style="--specimen-font:'specimen-{{ b.font }}'" lang="or" aria-hidden="true" data-fit="380"><span>{{ b.display }}</span></p>
+    <p class="home-band__display" style="--specimen-font:'{{ family(b.font) }}'" lang="or" aria-hidden="true" data-fit="380"><span>{{ b.display }}</span></p>
   </div>
   {% endif %}
   <div class="home__inner home-band__grid">

@@ -206,12 +206,21 @@ def info_rows(info, where):
 SPECIMEN_SIZES = (14, 18, 24, 36, 48, 72)
 
 
+def font_file(font):
+    return (load_status().get("preview_fonts") or {}).get(font, font)
+
+
+def family(font):
+    return f"specimen-{font_file(font)}"
+
+
 def font_face(font, where, tag):
-    path = ROOT / "assets" / "fonts" / f"{font}.woff2"
+    f = font_file(font)
+    path = ROOT / "assets" / "fonts" / f"{f}.woff2"
     if not path.exists():
-        sys.exit(f"{where}: <{tag}> font '{font}' needs assets/fonts/{font}.woff2")
+        sys.exit(f"{where}: <{tag}> font '{font}' needs assets/fonts/{f}.woff2")
     v = hashlib.sha1(path.read_bytes()).hexdigest()[:8]
-    return (f'<style>@font-face{{font-family:"specimen-{font}";src:url("/assets/fonts/{font}.woff2?v={v}") format("woff2");'
+    return (f'<style>@font-face{{font-family:"{family(font)}";src:url("/assets/fonts/{f}.woff2?v={v}") format("woff2");'
             f'font-display:swap}}</style>')
 
 
@@ -229,7 +238,7 @@ def inuse_html(attrs, items, where):
         f'<figure class="inuse__{k}"><p lang="{script_lang(str(v)) or "und"}">{escape(str(v))}</p>'
         f'<figcaption>{INUSE[k]}</figcaption></figure>' for k, v in items.items())
     name = escape(attrs.get("name") or font)
-    return (f'<div class="inuse" style="--specimen-font:\'specimen-{font}\'" role="group" aria-label="{name} in use">'
+    return (f'<div class="inuse" style="--specimen-font:\'{family(font)}\'" role="group" aria-label="{name} in use">'
             f'{font_face(font, where, "inuse")}{frames}</div>')
 
 
@@ -291,7 +300,8 @@ def typeface_html(data, where):
     font = t.get("font")
     if font:
         t["face"] = font_face(font, where, "typeface")
-        m = json.loads((ROOT / "assets" / "fonts" / f"{font}.json").read_text())
+        t["family"] = family(font)
+        m = json.loads((ROOT / "assets" / "fonts" / f"{font_file(font)}.json").read_text())
         pad = 180
         high, low = max(m["ascender"], m.get("top", 0)), min(m["descender"], m.get("bottom", 0))
         top, height = high + pad, high - low + 2 * pad
@@ -328,7 +338,7 @@ def specimen_html(attrs, text, where):
     name = escape(attrs.get("name") or font)
     preview = font in (load_status().get("preview_fonts") or [])
     lang = script_lang(text) or "und"
-    fam = f"specimen-{font}"
+    fam = family(font)
     t = escape(text)
     rows = "".join(f'<li><span class="specimen__size">{px} px</span>'
                    f'<span class="specimen__line" style="font-size:{px}px" aria-hidden="true">{t}</span></li>'
@@ -1242,7 +1252,7 @@ def main():
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]), jsonld=structured_data(p),
             site_url=SITE_URL,
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
-            current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md, font_face=font_face, embed_html=embed_html,
+            current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md, font_face=font_face, family=family, embed_html=embed_html,
             status=page_status(p, conf), **common)
         write(p["path"], html)
 
