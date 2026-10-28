@@ -545,7 +545,7 @@ html:has(.typeface__page) { scroll-padding-top: calc(var(--header-h, 3rem) + var
 .compare picture img { width: 100%; }
 .compare__label { margin: var(--space-lg) 0 var(--space-sm); font-family: var(--font-condensed); font-size: 1rem; color: var(--color-text-muted); }
 .compare__label:first-child { margin-top: 0; }
-.compare__set { font-family: var(--specimen-font), var(--font-body); font-size: max(3.85cqi, 1.05rem); line-height: 1.42; }
+.compare__set { font-family: var(--specimen-font), var(--font-body); font-size: max(3.5cqi, 1.05rem); line-height: 1.42; }
 .compare__set span { display: block; }
 .compare .caption { margin-top: var(--space-lg); }
 

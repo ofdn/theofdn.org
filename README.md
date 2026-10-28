@@ -98,18 +98,10 @@ To split a page into sections, put `---` on its own line, with an empty line abo
 A type tester shows sample text in a font. Readers can type their own text and change the size:
 
 ```
-<specimen font="chapakala19" name="Chapakala 19">ଉକ୍ତ ଅଛି, “କେହି ଯେବେ ଆପଣା ସ୍ତ୍ରୀକୁ</specimen>
+<specimen font="fontfile" name="Font name">ଉକ୍ତ ଅଛି, “କେହି ଯେବେ ଆପଣା ସ୍ତ୍ରୀକୁ</specimen>
 ```
 
 `font` is a file in `assets/fonts/`, without `.woff2`.
-
-Before a font is released, keep the full file out of this repository. List the font under `preview_fonts` in `data/site.yml`, then run:
-
-```
-python3 scripts/subset_fonts.py chapakala19 ~/path/to/Chapakala19Regular.woff2
-```
-
-This writes a small copy with only the characters used on the site. Readers can change the size but cannot type their own text. Run it again after a new export or a change to the sample text. On release, remove the font from `preview_fonts` and copy the full `.woff2` into `assets/fonts/`.
 
 To show a subtitle under a section heading, put one line in italics right below it:
 
@@ -161,7 +153,7 @@ source:
 </typeface>
 ```
 
-Each part fills one screen. `colour` sets the ground of the whole typeface, with black text; check that it gives black text at least 7:1. `credits` and `details` take the fields in `data/fields.yml`. Each word in `words` fills one line. The glyph grid shows the letters, signs and conjuncts used in `display`, `words`, `text` and `lines`. Without `font`, only the information shows; add `note` to say why. For a project with a logo instead of a font, give `logo`; it sits at the top of the information page. Use a dark logo, as coloured pages stay light in dark mode. Run `subset_fonts.py` again after you change any of the text.
+Each part fills one screen. `colour` sets the ground of the whole typeface, with black text; check that it gives black text at least 7:1. `credits` and `details` take the fields in `data/fields.yml`. Each word in `words` fills one line. The glyph grid shows the letters, signs and conjuncts used in `display`, `words`, `text` and `lines`. Without `font`, only the information shows; add `note` to say why. For a project with a logo instead of a font, give `logo`; it sits at the top of the information page. Use a dark logo, as coloured pages stay light in dark mode.
 
 Images and video. Paths point to files in `assets/images/`:
 
