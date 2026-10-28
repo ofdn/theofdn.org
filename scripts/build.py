@@ -1242,7 +1242,7 @@ def main():
             page=p, body=body, facts=facts, eyebrow=EYEBROW.get(p["section"]), jsonld=structured_data(p),
             site_url=SITE_URL,
             citation=json.dumps(cite, ensure_ascii=False) if cite else None,
-            current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md,
+            current=p["path"], lists=by_section, summary=summary, picture=picture, inline_md=inline_md, font_face=font_face, embed_html=embed_html,
             status=page_status(p, conf), **common)
         write(p["path"], html)
 
