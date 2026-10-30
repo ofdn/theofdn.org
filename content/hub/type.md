@@ -70,7 +70,7 @@ colours:
 font: chapakala20
 display: ଛାପାକଳ ୨୦
 about: |
-  Chapakala 20 extends Chapakala to a twentieth‑century workhorse Odia typeface that appeared across schoolbooks, magazines and general publishing till the end of the letterpress era (early 2000s). Together with Chapakala 19, it aims to cover the copy fonts used in almost all Odia letterpress‑printed books, so that editors, archivists and developers can work with two centuries of Odia print using a single, open type family. This typeface will also use Unicode encoding and OpenType features as Chapakala 19, with glyph shapes and conjuncts redrawn from twentieth‑century specimens.
+  Chapakala 20 is a digital revival of the predominant typeface used in print during the major part of 1900s. It improved on and succeeded the older typeface that was in use in the previous half century. Modern tooling and decades of experiments led to smoother, slender curves and cleaner forms. It was in use till the early 1990s when desktop publishing penetrated the Indian market and displaced the traditional letterpress. This typeface was never digitised and Chapakala 20 is an effort in this direction to allow for same traditional printing style of the 1900s in a modern setting with Unicode support.
 credits:
   designer: Nasim Ali
 details:
@@ -78,13 +78,11 @@ details:
   period: Twentieth century
   status: In-development
   licence: SIL Open Font License 1.1
-headline: ୧୮୦୦ ଶତକର ଟାଇପ ନମୂନା
+headline: ୪ ଅଗଷ୍ଟ ୧୮୬୬
 words:
-- ଶ୍ରୀରାମପୁରରେ
-- ଟେଷ୍ଟାମେଣ୍ଟ
-- ପରିବର୍ତ୍ତନ
-- ଲେଟରପ୍ରେସ
-text: ଛାପାକଳରେ ଓଡ଼ିଆରେ ମୁଦ୍ରଣ ପାଇଁ ପଞ୍ଚାନନ କର୍ମକାର ଗଢ଼ିଥିଲେ ପ୍ରଥମ ଓଡ଼ିଆ ଟାଇପଫେସ୍ । ଶ୍ରୀରାମପୁରରେ ଏଥିରେ ଛପାଗଲା ପ୍ରଥମ ଓଡ଼ିଆ ଛପା ବହି ଓଡ଼ିଆ ନିଉ ଟେଷ୍ଟାମେଣ୍ଟ । ତା’ ପରେ ସେହି ସମାନ ଲେଟରପ୍ରେସ ଛାପାକଳ ବ୍ୟବହାର କରି ଓଡ଼ିଶାରେ ଛପାଗଲା ଅନେକ ବହି ଓ ପତ୍ରିକା । ପରେ ତିଆରି ହେଲା ଆହୁରି ଅଧିକ ଟାଇପଫେସ୍ । ଏଠି ବ୍ୟବହାର ହୋଇଥିବା ଡିଜିଟାଲ ଫଣ୍ଟଟି ଉକ୍ତ ଆଦ୍ୟ ଟାଇପଫେସ୍ ଭିତରୁ ଏକ । ମୂଳ ଧାତୁ ଟାଇପଟି ହୁଏତ ୧୮୦୦ ଶତକର ଆରମ୍ଭରେ ତିଆରି । ଡିଜିଟାଇଜ୍ କଲାବେଳେ ଖୁବ୍ ବେଶୀ ପରିବର୍ତ୍ତନ କରାଯାଇନାହିଁ ।
+- ଉତ୍କଳ ଦୀପିକା
+- ଫକୀରମୋହନ
+text: ଆଧୁନିକ ଯନ୍ତ୍ରବିଦ୍ୟା ଓ କାରିଗରୀ କୌଶଳର ଅଗ୍ରଗତି ସହ ପୁରୁଣା ଧାତୁ ଅକ୍ଷରରେ କ୍ରମାଗତ ସୁଧାର ଓ ମାର୍ଜନ କରି ଓଡ଼ିଆ ମୁଦ୍ରଣର ନବକଳେବର ହେଲା ୨୦ଶ ଶତାବ୍ଦୀର ପୂର୍ବ ଭାଗରେ । ଏଯାବତ୍ ମଧ୍ୟ ନୂଆ ଧାତୁ ଅକ୍ଷରର ସୁଧାର ଓ ବିନ୍ୟାସ ବଙ୍ଗଳା ପ୍ରଦେଶରେ ହେଉଥିଲା । ବିଂଶ ଶତାବ୍ଦୀର ସିଂହଭାଗ (ପ୍ରାୟ ୧୯୯୦ ଯାଏଁ) ଓଡ଼ିଆ ମୁଦ୍ରଣ ଏହି ଟାଇପଫେସ (ଅକ୍ଷର) ରେ ହୋ‍ଇଥିଲା । ଯେହେତୁ ଏହି ସମୟରେ ହିଁ ଓଡ଼ିଶାରେ ଛାପାକଳର ସୁଦୂର ପ୍ରସାର ହୋ‍ଇଥିଲା, ୯୦ ପୂର୍ବରୁ ଓଡ଼ିଆରେ ମୁଦ୍ରିତ ଅଧିକାଂଶ ପୁସ୍ତକ, ପତ୍ରିକା, ଖବରକାଗଜ ଆଦିରେ ଏହି ଟାଇପଫେସ ହିଁ ଦେଖିବାକୁ ମିଳେ । ଡିଜିଟାଲ ବିପ୍ଳବ ପରେ ଏହି ଧାତୁ ମୁଦ୍ରଣ ବିଲୁପ୍ତ ହୋ‍ଇଯାଇଥିବାରୁ ଏହି ପୁରୁଣା ଟାଇପଫେସର ଆବଶ୍ୟକତାକୁ ପୂର୍ଣ୍ଣ କରିବା ଲାଗି ଏଇ ଡିଜିଟାଲ ଅବତାରର ପ୍ରଚେଷ୍ଟା ମାତ୍ର ।
 </typeface>
 
 ## With thanks to
