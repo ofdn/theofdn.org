@@ -32,7 +32,7 @@ OpenSpeaks Voice: Odia holds over 25 hours of Odia speech under CC0. Nearly 66,0
 
 ## Registry of Type Design
 
-The [Registry of Type Design](https://rtd.theofdn.org/) records typefaces and the people who made them, digital and pre-digital, in any script. It holds 167 typefaces and 143 people, including Odia, Ol Chiki and Warang Citi type. Every record has a permanent id and is open under CC BY-SA 4.0 as web pages, a JSON API and CSV downloads. Wikidata links to it through property [P14791](https://www.wikidata.org/wiki/Property:P14791). The data is on [GitHub](https://github.com/ofdn/rtd).
+The [Registry of Type Design](https://rtd.theofdn.org/) records typefaces and the people who made them, digital and pre-digital, in any script. It holds 186 typefaces and 262 people, including Odia, Ol Chiki and Warang Citi type. Every record has a permanent id and is open under CC BY-SA 4.0 as web pages, a JSON API and CSV downloads. Wikidata links to it through property [P14791](https://www.wikidata.org/wiki/Property:P14791). The data is on [GitHub](https://github.com/ofdn/rtd).
 
 ## Type design
 
