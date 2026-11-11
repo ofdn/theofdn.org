@@ -40,7 +40,7 @@ jobs:
 
   build:
     needs: mint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     concurrency:
       group: pages
       cancel-in-progress: true
