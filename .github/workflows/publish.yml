@@ -53,7 +53,8 @@ jobs:
           python-version: "3.12"
       - name: Install pandoc and Python packages
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq pandoc
+          curl -fsSL -o pandoc.deb https://github.com/jgm/pandoc/releases/download/3.1.3/pandoc-3.1.3-1-amd64.deb
+          sudo dpkg -i pandoc.deb
           pip install pyyaml jinja2 beautifulsoup4
       - name: Build
         # BASE_PATH is an optional repository variable for serving under a path
