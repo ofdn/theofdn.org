@@ -12,7 +12,7 @@ original_url: "https://theofdn.org/openspeaks/"
 ---
 <img src="/assets/logos/openspeaks.svg" alt="OpenSpeaks" width="240" height="76">
 
-OpenSpeaks is a community network of language documenters and archivists. We work with speakers of endangered, Indigenous and other local languages in India, Nepal and Sri Lanka to record their languages on audio and video, archive the recordings where they can be cited, and use them on Wikipedia and other Wikimedia projects. Community documenters are paid for this work, at or above local market rates. Between 2017 and 2026, we documented over 20 South Asian languages.
+OpenSpeaks is our flagship initiative for community-based language documentation and archiving-related work. Speakers of endangered, Indigenous and other local languages in India, Nepal and Sri Lanka have recorded their languages on audio and video, archived the recordings and used some of them on Wikipedia and other Wikimedia projects. We recognise fluency in one's mother tongue as a professional skill. Since 2024, we have paid community documenters and reviewers for this work, at or above local market rates. Between 2017 and 2026, we documented over 20 South Asian languages.
 
 OpenSpeaks began in 2017 as a multimedia toolkit for language digital activists, written on Wikimedia Commons with a grant from the National Geographic Society. The [toolkit](https://en.wikiversity.org/wiki/OpenSpeaks) is now kept on Wikiversity.
 
@@ -25,27 +25,15 @@ OpenSpeaks began in 2017 as a multimedia toolkit for language digital activists,
 
 ## OpenSpeaks Archives
 
-<img src="/assets/logos/openspeaks-archives.svg" alt="OpenSpeaks Archives" width="320" height="56" style="background: #1A1714; padding: 12px 16px; border-radius: 4px;">
+<img class="logo-light" src="/assets/logos/openspeaks-archives.svg" alt="OpenSpeaks Archives" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-archives-white.svg" alt="OpenSpeaks Archives" width="320" height="56">
 
 OpenSpeaks Archives is our public archive of community-led recordings in low-resourced languages. It started as a pilot in July 2024, when five community archivists documented their languages. From July 2025 to June 2026, seven OpenSpeaks Fellows documented 13 languages, uploaded 143 files and improved 350 pages across about 70 Wikimedia projects. Those pages were read 599,429 times in that year. Altogether, OpenSpeaks Archives has improved more than 1,000 Wikipedia and Wikimedia pages in over 127 languages.
-
-| Fellow or coordinator | Languages |
-|---|---|
-| Kimmi Pal | Marcha (Rongpo) |
-| Surendra Singh Pangtey | Johari |
-| Arun Gour | Jaunpuri, Jaunsari |
-| Jaiprakash Chauhan | Bangani |
-| Opino Gomango | Sora, Juray, Juang, Gorum (Parengi) |
-| Nenavath Mohan | Lambadi |
-| Sanjib Chaudhary | Saptariya Tharu (Nepal) |
-| Uday Raj Aaley | Raji (Nepal) |
-| Sajehan Buckman | Sri Lankan Malay (Sri Lanka) |
 
 Recordings are kept with a citation at the [Endangered Languages Archive](https://www.elararchive.org/dk0848), the Language Archive Cologne ([Kusunda](https://hdl.handle.net/11341/0000-0000-0000-439E), [Sora](https://hdl.handle.net/11341/0000-0000-0000-A231)) and the [Library of Congress](https://www.loc.gov/item/2024307217/), which holds over 71,000 of our audio files. Our plan for July 2026 to June 2027 adds communities in Bangladesh and Mali.
 
 ## OpenSpeaks Tools
 
-<img src="/assets/logos/openspeaks-tools.svg" alt="OpenSpeaks Tools" width="320" height="56" style="background: #1A1714; padding: 12px 16px; border-radius: 4px;">
+<img class="logo-light" src="/assets/logos/openspeaks-tools.svg" alt="OpenSpeaks Tools" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-tools-white.svg" alt="OpenSpeaks Tools" width="320" height="56">
 
 We build a tool only when nothing else does the job for a language archivist. All four are free and open source, run on Wikimedia Toolforge, and three of them, Subtitler, Tome and Bento, have been stable since August 2026.
 

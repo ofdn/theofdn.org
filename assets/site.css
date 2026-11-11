@@ -831,6 +831,15 @@ button.copy-icon-btn {
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img[src$="/logos/openspeaks.svg"], :root:not([data-theme="light"]) img[src*="/logos/dinalipi."] { filter: invert(1); } }
 .eyebrow a { color: inherit; }
 
+/* Logos with a white version for dark mode */
+.logo-dark { display: none; }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light { display: none; }
+  :root:not([data-theme="light"]) .logo-dark { display: block; }
+}
+
 /* News reports and blog posts, from a <press> block of BibTeX entries */
 .press { list-style: none; padding: 0; margin-block: var(--space-lg) var(--space-xl); display: grid; gap: var(--space-lg); }
 .prose .press { padding-left: 0; }
