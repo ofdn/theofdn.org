@@ -25,7 +25,7 @@ OpenSpeaks began in 2017 as a multimedia toolkit for language digital activists,
 
 ## OpenSpeaks Archives
 
-<img class="logo-light" src="/assets/logos/openspeaks-archives.svg" alt="OpenSpeaks Archives" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-archives-white.svg" alt="OpenSpeaks Archives" width="320" height="56">
+<img class="logo-light" src="/assets/logos/openspeaks-archives-black.svg" alt="OpenSpeaks Archives" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-archives-white.svg" alt="OpenSpeaks Archives" width="320" height="56">
 
 OpenSpeaks Archives is our public archive of community-led recordings in low-resourced languages. It started as a pilot in July 2024, when five community archivists documented their languages. From July 2025 to June 2026, seven OpenSpeaks Fellows documented 13 languages, uploaded 143 files and improved 350 pages across about 70 Wikimedia projects. Those pages were read 599,429 times in that year. Altogether, OpenSpeaks Archives has improved more than 1,000 Wikipedia and Wikimedia pages in over 127 languages.
 
@@ -33,7 +33,7 @@ Recordings are kept with a citation at the [Endangered Languages Archive](https:
 
 ## OpenSpeaks Tools
 
-<img class="logo-light" src="/assets/logos/openspeaks-tools.svg" alt="OpenSpeaks Tools" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-tools-white.svg" alt="OpenSpeaks Tools" width="320" height="56">
+<img class="logo-light" src="/assets/logos/openspeaks-tools-black.svg" alt="OpenSpeaks Tools" width="320" height="56"><img class="logo-dark" src="/assets/logos/openspeaks-tools-white.svg" alt="OpenSpeaks Tools" width="320" height="56">
 
 We build a tool only when nothing else does the job for a language archivist. All four are free and open source, run on Wikimedia Toolforge, and three of them, Subtitler, Tome and Bento, have been stable since August 2026.
 
