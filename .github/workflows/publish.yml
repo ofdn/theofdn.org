@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # picks up new ids from the sites in ark_shoulders
+  schedule:
+    - cron: "37 1 * * *"
 
 permissions:
   contents: read

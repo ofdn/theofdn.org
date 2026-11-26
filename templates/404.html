@@ -9,4 +9,15 @@
     <p>This page does not exist or has moved. Try the <a href="/">home page</a>, <a href="/film/">films</a>, <a href="/resources/">resources</a> or the <a href="/publications/">archive</a>.</p>
   </div>
 </div>
+{% if ark_shoulders %}
+<script>
+// ids under another site's shoulder that have no forwarding page here, such as single words
+(function () {
+  var m = location.pathname.match(/\/ark:\/?15056\/(.+?)\/?$/);
+  if (!m) return;
+  var sites = {{ ark_shoulders | tojson }};
+  for (var s in sites) if (m[1].indexOf(s) === 0) location.replace(sites[s].replace(/ark\.json$/, "ark/") + "#" + m[1].slice(s.length));
+})();
+</script>
+{% endif %}
 {% endblock %}

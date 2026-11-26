@@ -20,6 +20,11 @@ preview_fonts:
 # id it gets (ofdn-<letter>-000001). To add a kind, add a line with an unused
 # letter.
 # Never change or remove a letter once an id with it is published.
+# Other sites whose ids use this NAAN with their own shoulder, and the list
+# of ids each one publishes. The build writes forwarding pages for them.
+ark_shoulders:
+  osa-: https://openspeaks.github.io/archives.theofdn.org/ark.json
+
 ark_kinds:
   film: f
   video: f

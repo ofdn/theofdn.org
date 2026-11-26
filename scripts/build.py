@@ -11,6 +11,7 @@ from datetime import date
 from pathlib import Path
 from html import escape as html_escape
 from urllib.parse import quote, urlparse
+from urllib.request import urlopen
 
 import yaml
 from bs4 import BeautifulSoup
@@ -1309,6 +1310,18 @@ def main():
                     dest.parent.mkdir(parents=True, exist_ok=True)
                     dest.write_text(env.get_template("redirect.html").render(
                         target=t if t.startswith("http") else base + t))
+    # Other sites under this NAAN publish an ark.json of their ids (ark_shoulders in data/site.yml).
+    for shoulder, url in (conf.get("ark_shoulders") or {}).items():
+        try:
+            targets = json.load(urlopen(url, timeout=60))["targets"]
+        except Exception as e:
+            print(f"ark_shoulders: couldn't read {url} ({e}); its ids are not forwarded in this build", file=sys.stderr)
+            continue
+        for i, target in targets.items():
+            for a in ark_paths(shoulder + i):
+                dest = out / a / "index.html"
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_text(env.get_template("redirect.html").render(target=target))
     for a in (f"ark:{ARK_NAAN}/servicestatus", f"ark:/{ARK_NAAN}/servicestatus"):
         (out / a).mkdir(parents=True, exist_ok=True)
         (out / a / "index.html").write_text("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\">"
@@ -1326,7 +1339,7 @@ def main():
     (out / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")))
     write("/search/", env.get_template("search.html").render(current="/search/", status=site_status, **common))
 
-    (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, **common), base))
+    (out / "404.html").write_text(with_base(env.get_template("404.html").render(current="", status=site_status, ark_shoulders=conf.get("ark_shoulders") or {}, **common), base))
     (out / ".nojekyll").write_text("")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
     shutil.copy(ROOT / "assets/icons/favicon.ico", out / "favicon.ico")
