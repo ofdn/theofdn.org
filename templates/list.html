@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block title %}{{ title }} | {{ site_name }}{% endblock %}
 {% block content %}
+{% if current == "/film/" %}
+<figure class="film-reel">
+  <video id="film-reel" autoplay muted loop playsinline preload="metadata" poster="/assets/video/film-reel.jpg" aria-label="Scenes from Gyani Maiya, Mage Porob, MarginalizedAadhaar and Karinding" data-cues="0|Gyani Maiya|2019;6.0|Mage Porob|2019;11.47|MarginalizedAadhaar|2021;17.48|Karinding|2020">
+    <source src="/assets/video/film-reel.webm" type="video/webm">
+    <source src="/assets/video/film-reel.mp4" type="video/mp4">
+  </video>
+  <p class="reel-caption" id="reel-caption" aria-hidden="true"><em>Gyani Maiya</em> 2019</p>
+  <button type="button" class="reel-toggle" id="reel-toggle" aria-controls="film-reel">Pause</button>
+</figure>
+{% endif %}
 <div class="page__wrap">
   <header class="page__header">
     <h1 class="page__title">{{ title }}</h1>

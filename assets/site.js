@@ -411,3 +411,30 @@ document.querySelectorAll(".converter").forEach(function (box) {
     input.value = ""; output.value = ""; status.textContent = ""; input.focus();
   });
 });
+
+// Film reel: titles from data-cues, pause button, paused under reduced motion
+(function () {
+  var reel = document.getElementById("film-reel");
+  var btn = document.getElementById("reel-toggle");
+  if (!reel || !btn) return;
+  var caption = document.getElementById("reel-caption");
+  var cues = reel.dataset.cues.split(";").map(function (c) { return c.split("|"); });
+  var current = -1;
+  function show() { btn.textContent = reel.paused ? "Play" : "Pause"; }
+  reel.addEventListener("timeupdate", function () {
+    var t = reel.currentTime, i = 0;
+    cues.forEach(function (c, n) { if (t >= Number(c[0])) i = n; });
+    var end = i + 1 < cues.length ? Number(cues[i + 1][0]) : reel.duration;
+    if (i !== current) {
+      current = i;
+      caption.innerHTML = "<em>" + cues[i][1] + "</em> " + cues[i][2];
+    }
+    // title comes in a moment after each cut and leaves before the next
+    caption.classList.toggle("is-shown", t > Number(cues[i][0]) + 0.5 && t < end - 0.9);
+  });
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) reel.pause();
+  reel.addEventListener("play", show);
+  reel.addEventListener("pause", show);
+  btn.addEventListener("click", function () { if (reel.paused) reel.play(); else reel.pause(); });
+  show();
+})();
