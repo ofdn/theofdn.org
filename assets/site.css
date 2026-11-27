@@ -222,7 +222,6 @@ main [id] { scroll-margin-top: 5rem; }
 .site-footer__legal { grid-column: 1 / -1; border-top: 1px solid #2E4470; padding-top: var(--space-md); }
 @media (min-width: 900px) {
   .site-footer__brand { grid-column: span 2; }
-  .site-footer__legal { text-align: right; }
 }
 
 /* Site or page status (data/site.yml, or "status:" in a page).
