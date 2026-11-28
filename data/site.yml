@@ -23,7 +23,7 @@ preview_fonts:
 # Other sites whose ids use this NAAN with their own shoulder, and the list
 # of ids each one publishes. The build writes forwarding pages for them.
 ark_shoulders:
-  osa-: https://openspeaks.github.io/archives.theofdn.org/ark.json
+  osa-: https://archives.theofdn.org/ark.json
 
 ark_kinds:
   film: f

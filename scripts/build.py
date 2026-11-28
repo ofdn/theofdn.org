@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 from html import escape as html_escape
 from urllib.parse import quote, urlparse
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 import yaml
 from bs4 import BeautifulSoup
@@ -1313,7 +1313,7 @@ def main():
     # Other sites under this NAAN publish an ark.json of their ids (ark_shoulders in data/site.yml).
     for shoulder, url in (conf.get("ark_shoulders") or {}).items():
         try:
-            targets = json.load(urlopen(url, timeout=60))["targets"]
+            targets = json.load(urlopen(Request(url, headers={"User-Agent": "theofdn-site-build"}), timeout=60))["targets"]
         except Exception as e:
             print(f"ark_shoulders: couldn't read {url} ({e}); its ids are not forwarded in this build", file=sys.stderr)
             continue
